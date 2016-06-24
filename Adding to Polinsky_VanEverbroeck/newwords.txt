@@ -1,0 +1,65 @@
+abellana, abellanae	F	F	F	hazelnut		alună	alune		alluna			L				*lěska	hazel
+acus	F	N	F	needle		ac	ace		ác			L				*jьgъla	needle
+alnus	F	M	F, F, F, F	alder		arin	arini					L				*olьxa; *elьxa; *olьša; *elьša	
+auricula	F	F	N	ear		ureche	urechi					L				*uxo	
+bucca	F	F	F	cheek, jaw, mouth		bucă	buci		buca			L			cheek	*olnita	
+caepa	F	F	M	onion		ceapă	cepe					L				*lukъ	
+cannabis	F	F	M	canvas, linen, hemp		cânepă	cânepi	cînepă	canepa			L				*poltьno	linen
+capistrum, capistri	N	N	F	halter, muzzle		căpăstru	căpestre	căpestru	capestru			L				*uzda	bridle
+caseus	M	N	M	cheese		caș	cașuri		cáʃiu			L				*syrъ	
+cerasus, cerasi	F	F	F	cherry		cireașă	cireși		ceréʃie			L				*sermъša; *sermuša	ramson, bird-cherry
+cognatus	M	M	M	kinsman, relation (male)		cumnat	cumnați					L			brother in law	*šurь	brother-in-law (wife's brother)
+corvus	M	M	M, M	raven		corb	corbi					L				*krukъ; *vornъ	
+costa	F	F	N	rib		coastă	coaste		coasta			L				*rebro	
+cribrum, cribri	N	N	N	sieve		ciur	ciururi					L				*sito	
+cucurbita	F	F	?	gourd		curcubetă	curcubete					L					
+digitus	M	N	M, M	finger		deget	degete					L				*palьcь; *pьrstъ	
+equa	F	F	F	mare		iapă	iepe		iapa			L					
+faenum	N	N	N	hay		fân	fânuri	fîn	fen			L				*sěno	
+folium, folia	N	F	M	sheet, leaf		foaie	foi					L				*listъ	leaf
+formica	F	F	F	ant		furnică	furnici					L				*morvi	
+fraxinus	F	M	M, M	ash-tree		frasin	frasini					L				*asenь; *asenъ	
+frenum	N	N	F	bridle, harness, rein		frâu	frâie	frîu (frîn)	fren			L				*uzda	bridle
+frons, frondis	F	F	M	leafy branch, foliage, leaves, frond		frunză	frunze	frunze				L				*listъ	leaf
+fulgur	N	N	F	lightning		fulger	fulgere					L				*mъldni	
+fumus	M	N	M; M, F, M	smoke, steam, vapor, fume		fum	fumuri					L				*dymъ; *čadjь; čadja; čadъ	smoke, soot; smoke, soot; smoke, fumes; smoke
+lardum	N	N	M	lard, fat		lard						L				*tukъ	fat
+lupus	M	M	M	wolf		lup	lupi					L				*vьlkъ	
+lutum	N	N	F, F, N, M, M, N	mud, clay		lut	luturi					L				*glina; *brьna; *brьnьje; *glьjь; *jьlъ; *jьlo	mud, clay
+maxilla	F	F	M	jaw		măsea	măsele		masea	DON'T HAVE SLAVIC WORD FOR JAW		L			molar	*černovitъ; jaw?	*černovitъ = molar
+medulla	F	F	M	marrow		măduvă			medua			L				*mozgъ	marrow, brain
+morum, mori	N	F	F	mulberry		mură	mure					L				*mury	
+mucus, muci	M	N	?	mucus, snot		muc	mucuri					L					
+neptis	F	F	F	female descendant, granddaughter		nepoată	nepoate		nepoata			L			niece, granddaughter	*nestera	
+nux, nucis	F	F	M	nut		nucă	nuci		nuca			L				*orěxъ	
+paries, parietis	M	M	M, F	wall		perete	pereți	pârete	pariete			L				*zidъ; *zьdь	wall
+pascuum	N	F	F	pasture	?	pășune	pășuni	pășiune	paʃiune			L				*pažitь	
+passer	M	F	F, M, F	sparrow		pasăre	pasări					L			bird	*pъtica; *pъtakъ; *pъtъka	bird, bird, bird (came to mean duck in SSl.)
+pecten	M	M	M	comb		pieptene	piepteni	pieptine	pepthine			L				*grebenь	
+pediculus	M	M	F	louse		păduche	păduchi					L				*vьšь	
+persicum, persici	N	F	F	peach		piersică	piersici	piersăcă	pérseca			L				*bersky	
+pilus, pili	M	M	M, F, M	hair, has not a hair of a good man about him		pâr	peri	peri				L				*volsъ; *kyka; *kъkъ	
+pons	M	F	M	bridge		punte	punți					L				*mostъ	
+prunum, pruni	N	F	F	plum		prună	prune		pruna			L				*sliva	plum, plum-tree
+pugnus	M	M	F	fist		pumn	pumni					L				*pȩstь	
+pulex	M	M	F	flea		purice	purici					L				*blъxa	
+puteus	M	N	F	well		puț	puțuri	puțû	putiu			L				*krinica; *krьnica	In E and W: spring, well; in SSl.: deep spot in river or lake, vortex, basin
+ripa	F	F	M	bank		râpă	râpe	rîpâ	ripa			L				*bergъ	
+rivus	M	N	F, F, M	river		râu	râuri	rîu				L				*rěka; *struja; *tokъ	tokъ = stream, current, course
+ros	M	F	F	dew		rouă			roao			L				*rosa	
+scintilla	F	F	F	spark		scânteie	scântei	scînteiă	scántéia			L				*jьskra	
+silva	F	F	M	forest		selbă	selbe		sélba			L				*lesъ	
+sinus	M	M	N, F	bosom, lap, hollow		sân	sâni	sîn	sin			L				*ědro; *pazduxa	bosom; bosom, armpit; 
+sorex	M	M	F	mouse		șoarece	șoareci		shoarece			L				*myšь	
+stomachus	M	N	M	stomach		stomac	stomacuri					L				*žel¸odъkъ	
+sudor	M	F	M	sweat		sudoare	sudori					L				*potъ	
+tilia	F	M, N	F	lime-tree, linden-tree		tei	tei, teie		teiu			L				*lipa	
+tonitrus	M	N	M	thunder		tunet	tunete					L				*gromъ	
+truncus, trunci	M	N	M	trunk		trunchi	trunchiuri		trunc			L				*pьnь	
+tussis	F	F	M	cough		tuse		tusă	tusse			L				*kaš(ь)ljь	
+umerus	M	M	N, N, N	shoulder		umăr	umeri		umer			L				*ormo; *ormȩ; *pletje	
+urceolus	M	N	F, F	small jug, pitcher		urcior	urcioare	urceor				L				*krina; *krinica	vessel, jug
+vena	F	F	F	vein		vână	vine					L				*žila	
+venenum	N	N	M, M	venom		venin	veninuri					L				*ědъ; *čemerъ	*čemerъ = hellebore, poison
+vesica	F	F	?	balloon, bladder		bășică	bășici	beșică	beʃica			L					
+vitis	F	F	F	vine		viță	vițe		vitia			L				*loza	

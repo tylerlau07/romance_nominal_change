@@ -1,0 +1,123 @@
+ENDINGS
+
+NOM.SG
+	1
+		M
+			a	4
+		-
+		F
+			a	126
+		-
+		N
+		-
+	2
+		M
+			us	65
+			NULL	8
+		-
+		F
+			a	2
+			us	3
+		-
+		N
+			um	65
+			us	1
+		-
+	3
+		M
+			is	15
+			NULL	62
+		-
+		F
+			ēs	3
+			is	11
+			NULL	51
+		-
+		N
+			NULL	27
+	4
+		-
+		M	
+			us	26
+		-
+		F
+			us	7
+		-
+		N
+			ū	1
+		-
+	5
+		-
+		M
+			ēs	2
+		-
+		F
+			ēs	5
+		-
+NOM.PL
+	1
+		-
+		M
+			ae	4
+		-
+		F
+			ae	120
+			ai	7
+		-
+	2
+		-
+		M
+			ī	73
+
+		-
+		F
+			ai	2
+			ī	3
+		-
+		N
+			a	73
+		-
+	3
+		
+	4
+	5	
+
+ACC.SG
+	1
+		M
+		F
+		N
+	2
+	3
+	4
+	5
+
+ACC.PL
+	1
+		M
+		F
+		N
+	2
+	3
+	4
+	5
+
+GEN.SG
+	1
+		M
+		F
+		N
+	2
+	3
+	4
+	5
+
+GEN.PL
+	1
+		M
+		F
+		N
+	2
+	3
+	4
+	5

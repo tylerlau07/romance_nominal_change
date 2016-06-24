@@ -1,0 +1,564 @@
+Latin	LatGender	LatDec	nomsg	nompl	gensg	genpl	accsg	accpl	English	RomGender	RomSg	RomPl	OldRom	OldestRom	OrigLang	UnsureCog?	ChangedMean	SlWordt	SlavGender	SlNote	NewWord?	PageNo	LatinExist?	NounExist?	MultipleNouns?	Is Second Noun a homophone?	MaxFreq	MaxFreq10k	MinFreq	MinFreq10k
+abellana	f	1	abellana	abellanae	abellanae	abellanārum	abellanam	abellanās	hazelnut	f	alună	alune		alluna	l			*lěska	f	hazel	*	2076136	Yes	Yes	No		?	?	?	?
+absinthium	n	2	absinthium	absinthia	absinthiī	absinthiōrum	absinthium	absinthia	wormwood	n	absint	absinturi			f							1034	Yes	Yes	No		8	0.129	8	0.129
+abyssus	f	2	abyssus	abyssī	abyssī	abyssōrum	abyssum	abyssōs	abyss, pit, sea	n	abis	abisuri			f, l			*bezdъna	f			41359	Yes	Yes	No		58	0.934	58	0.934
+acetum	n	2	acētum	acēta	acētī	acētōrum	acētum	acēta	vinegar	n	oțet  	oțeturi			s			*ocьtъ	m	borrowing		34278	Yes	Yes	No		?	?	?	?
+acus	f	4	acus	acūs	acūs	acuum	acum	acūs	needle	n	ac	ace		ác	l			*jьgъla	f	needle	*	790218	Yes	Yes	No		12	0.193	0	0
+ador	n	3	ador	adora	adoris	adorum	ador	adora	a grain, spelt		-							*pyrъ	m			4579726	No	No	No		17	0.274	6	0.097
+adulter	mh	2	adulter	adulterī	adulterī	adulterōrum	adulterum	adulterōs	adulter		-								m	(natural gender)		511392	Yes	Yes	No		25	0.403	5	0.081
+adulter	fh	2	adultera	adulterai	adulterai	adulterārum	adulteram	adulterās	adulteress										f	(natural gender)		511392	Yes	Yes	No		25	0.403	5	0.081
+adustio	f	3	adustiō	adustiōnēs	adustiōnis	adustiōnum	adustiōnem	adustiōnēs	kindling, burn											(abstract)		2758659	Yes	Yes	No		2	0.032	2	0.032
+advena	f	1	advena	advenae	advenae	advenārum	advenam	advenās	stranger, foreigner, immigrant		-								f	(natural gender)		2616452	Yes	Yes	No		107	1.723	67	1.079
+aer	m	3	āēr	āerēs	āeris	āerum	āera/āerem*	āerēs	air, sky	n	aer	aere			l		air		n			45955	Yes	Yes	No		83	1.337	39	0.628
+aestas	f	3	aestās	aestātēs	aestātis	aestātum	aestātem	aestātēs	summer		-							*lěto	n			47590	Yes	Yes	No		14	0.225	14	0.225
+aestus	m	4	aestus	aestūs	aestūs	aestuum	aestum	aestūs	agitation, glow, heat, rage of fire		-							*žarь	m			1673242	Yes	Yes	No		20	0.322	20	0.322
+aetas	f	3	aetās	aetātēs	aetātis	aetātum	aetātem	aetātēs	age	f	etate	etăți			l			*věkъ	f			195693	Yes	Yes	No		38	0.612	38	0.612
+ager	m	2	ager	agrī	agrī	agrōrum	agrum	agrōs	field, farm	m	acru	acri			l		acre	*niva, *orlja	f, f			38528	Yes	Yes	No		435	7.006	186	2.995
+agnus	m	2	agnus	agnī	agnī	agnūs	agnum	agnōs	lamb		-							*agnę	n			47249	Yes	Yes	No		335	5.395	17	0.274
+agricola	mh	1	agricola	agricolae	agricolae	agricolārum	agricolam	agricolās	farmer, peasant	m	agricultor	agricultori			f, l			*ortajь	m	(natural gender)		38507	Yes	Yes	Yes	No	55	0.886	7	0.113
+alnus	m	2	alnus	alnī	alnī	alnōrum	alnum	alnōs	alder	m	arin	arini			l			*olьxa; *elьxa; *olьša; *elьša	f, f, f, f		*	1487104	Yes	Yes	No		?	?	?	?
+altar	n	3	altar	altaria	altaris	altarium	altar	altaria	altars	n	altar	altare			l							36718	Yes	Yes	No		854	13.753	1	0.016
+amicus	mh	2	amīcus	amīcī	amīcī	amīcōrum	amīcum	amīcōs	friend	m	amic	amici			l, i			*drugъ, *prijateljь	m, m	(natural gender)		46543	Yes	Yes	No		523	8.423	0	0
+amor	m	3	amor	amōrēs	amōris	amōrum	amōrem	amōrēs	affection	n	amor	amoruri			l, i			*ljuby	f	(abstract)		1768565	Yes	Yes	No		22	0.354	16	0.258
+ancilla	fh	1	ancilla	ancillae	ancillae	ancillārum	ancillam	ancillās	handmaid		-								f			91886	Yes	Yes	No		131	2.11	131	2.11
+angelus	mh	2	angelus	angelī	angelī	angelōrum	angelum	angelōs	angel	m	înger  	îngeri			l				m	(natural gender)		46493	Yes	Yes	No		338	5.443	338	5.443
+angulus	m	2	angulus	angulī	angulī	angulōrum	angulum	angulōs	angle	n	unghi	unghiuri			l			*ǫgъlъ	m			1167786	Yes	Yes	No		74	1.192	62	0.998
+anima	f	1	anima	animae	animae	animārum	animam	animās	air, breath, life, soul	f	inimă	inimi			l			*duxъ, *duša	m, f			47430	Yes	Yes	No		1,791	28.844	487	7.843
+animal	n	3	animal	animālia	animālis	animālium	animal	animālia	beast, animal	n	animal	animale			f, l							3958	Yes	Yes	No		62	0.998	28	0.451
+annus	m	2	annus	annī	annī	annōrum	annum	annōs	year	m	an	ani			l			*rokъ, *godъ, *godina	m, m, f			49512	Yes	Yes	No		2,193	35.318	300	4.831
+aqua	f	1	aqua	aquae	aquae	aquārum	aquam	aquās	water	f	apă   	ape			l			*voda	f			35047	Yes	Yes	No		719	11.579	719	11.579
+aquila	f	1	aquila	aquilae	aquilae	aquilārum	aquilam	aquilās	eagle	f	acvilă	acvile			l, i			*orьlъ	m			91	Yes	Yes	No		143	2.303	0	0
+arbor	f	3	arbor	arborēs	arboris	arborum	arborem	arborēs	tree	m	arbore	arbori			l			*dervo	n			27557	Yes	Yes	No		65	1.047	65	1.047
+arca	f	1	arca	arcae	arcae	arcārum	arcam	arcās	chest, box	f	arcă	arce			i, l		ark	*orky, *korbъ, *korba, *korbьji	f, m, f, f			788131	Yes	Yes	No		328	5.282	139	2.239
+area	f	1	ārea	āreae	āreae	āreārum	āream	āreās	area, ground	f	arie	arii			l							29610	Yes	Yes	No		75	1.208	36	0.58
+arena	f	1	arēna	arēnae	arēnae	arēnārum	arēnam	arēnās	sand	f	arină	arine			l			*pěsъkъ	m			72683	Yes	Yes	No		34	0.548	34	0.548
+argentum	n	2	argentum	argenta	argentī	argentōrum	argentum	argenta	silver	n	argint	arginți			l			*sьrebro	n			50369	Yes	Yes	No		275	4.429	275	4.429
+aries	m	3	ariēs	arietēs	arietis	arietum	arietem	arietēs	ram		-							*ovьnъ	m	(natural gender)		39517	Yes	Yes	No		317	5.105	41	0.66
+arma	n	2	-	arma	-	armōrum	-	arma	weapons	f	armă	arme			l			*orǫdьje	n			39237	Yes	Yes	No		226	3.64	8	0.129
+asina	f	1	asina	asinai	asinai	asinā	asinam	asinās	female donkey	f	asină	asine			l							1048134	Yes	No	No		73	1.176	21	0.338
+atrium	n	2	ātrium	ātria	ātriī	ātriōrum	ātrium	ātria	hall, room with hearth	n	atrium	atriumuri			l							59973	Yes	Yes	No		222	3.575	52	0.837
+auricula	f	1	auricula	auriculae	auriculae	auriculārum	auriculam	auriculās	ear	f	ureche	urechi			l			*uxo	n		*	469952	Yes	Yes	No		18	0.29	18	0.29
+aurum	n	2	aurum	aura	aurī	aurōrum	aurum	aura	gold	n	aur	aururi			l			*zolto	n			205988	Yes	Yes	No		1,606	25.864	151	2.432
+baculum	n	2	baculum	bacula	baculī	baculōrum	baculum	bacula	stick, staff		-											56594	Yes	Yes	No		20	0.322	18	0.29
+baptismum	n	2	baptismum	baptisma	baptismī	baptismōrum	baptismum	baptisma	baptism	n	botez	botezuri			l?	*						2225853	Yes	Yes	No		?	?	?	?
+barba	f	1	barba	barbae	barbae	barbārum	barbam	barbās	beard	f	barbă	bărbi			l			*borda	f			217330	Yes	Yes	Yes	No	36	0.58	4	0.064
+basilica	f	1	basilica	basilicae	basilicae	basilicārum	basilicam	basilicās	portico, basilica	f, f	bazilică, biserică	bazilici, biserici			f, l		biserică might be from this? = church			no psl. word		71421	Yes	Yes	No		9	0.145	0	0
+basis	f	3	basis	basēs	basis	basium	basim/basem*	basīs/basēs*	basis, foundation	f	bază	baze			f, r			*osnova	f			7953	Yes	Yes	No		?	?	?	?
+basium	n	2	bāsium	bāsia	bāsiī	bāsiōrum	bāsium	bāsia	kiss													313232	Yes	Yes	No		11	0.177	11	0.177
+bellum	n	2	bellum	bella	bellī	bellōrum	bellum	bella	war	f	-							*bornь, *ortь, *vojьna	f, f, f			50615	Yes	Yes	No		501	8.068	0	0
+bestia	f	1	bēstia	bēstiae	bēstiae	bēstiārum	bēstiam	bēstiās	beast, animal	f	bestie	bestii			i, l			*zvěrь	m			38534	Yes	Yes	Yes	No	255	4.107	71	1.143
+bonum	m	2	bonus	bonī	bonī	bonōrum	bonum	bonōs	good	n	bun	bunuri			l			*dobro	n	(abstract)		46174	Yes	Yes	No		1,807	29.101	0	0
+bos	m	3	bōs	bovēs	bovis	boum	bovem	bovēs	cow	m	bou	boi			l		ox	*bykъ, *korva, *govędo	m, f, n	*korva 'cow', *bykъ 'bull', *govędo 'head of cattle'		40174	Yes	Yes	No		329	5.298	127	2.045
+brachium	n	2	brachium	brachia	brachiī	brachiōrum	brachium	brachia	arm	n	braţ	brațe			l			*rǫka	f			896089	Yes	Yes	No		99	1.594	99	1.594
+bucca	f	1	bucca	buccae	buccae	buccārum	buccam	buccās	cheek, jaw, mouth	f	bucă	buci		buca	l		cheek	*olnita	f		*	691632	Yes	Yes	No		?	?	?	?
+cadaver	n	3	cadāver	cadāvera	cadāveris	cadāverum	cadāver	cadāvera	corpse	n	cadavru	cadavre			f			*navъ, *navь	m, f			41012	Yes	Yes	No		58	0.934	58	0.934
+caelum	n	2	caelum	caela	caelī	caelōrum	caelum	caela	heaven	n	cer	ceruri			l			*nebo	n			49679	Yes	Yes	Yes	Yes (other meaning is chisel, but same definition)	3,029	48.781	1	0.016
+caepa	f	1	caepa	caepae	caepae	caepārum	caepam	caepās	onion	f	ceapă	cepe			l			*lukъ	m		*	1986448	Yes	Yes	No		1	0.016	1	0.016
+caligo	f	3	cālīgō	cālīginēs	cālīginis	cālīginum	cālīginem	cālīginēs	mist, vapor, fog	f	ceaţă	cețuri				*		*mьgla	f			1124365	Yes	Yes	No		50	0.805	26	0.419
+calix	m	3	calix	calicēs	calicis	calicum	calicem	calicēs	cup, goblet	n, f	caliciu, ceașcă	calicii			f, l; r		calyx (part of flower; cuplike structure); cup	*čaša	f			48547	Yes	Yes	No		61	0.982	61	0.982
+camelus	m	2	camēlus	camēlī	camēlī	camēlōrum	camēlum	camēlōs	camel	f	cămilă 	cămile			s					no psl. word		40082	Yes	Yes	No		88	1.417	55	0.886
+campus	m	2	campus	campī	campī	campōrum	campum	campōs	plain, field	f, n	câmpie, câmp	câmpii, câmpuri			?; l		field, plain; field	*polje	n			81853	Yes	Yes	No		153	2.464	0	0
+canis	m	3	canis	canēs	canis	canum	canem	canēs	dog	m	câine	câini			l			*pьsъ, *suka	m, f	(natural gender - male and female dog, respectively) (the lat. word can also be f!)		39096	Yes	Yes	No		187	3.012	0	0
+canistrum	n	2	canistrum	canistra	canistrī	canistrōrum	canistrum	canistra	basket	f, n	canistră, coș	canistre, coșuri			g		canistră means canister	*košь	m			2645228	Yes	Yes	No		13	0.209	13	0.209
+cannabis	f	3	cannabis	cannabēs	cannabis	cannabium	cannabim/cannabem	cannabīs/cannabēs	canvas, linen, hemp	f	cânepă	cânepi	cînepă	canepa	l			*poltьno	m	linen	*	57341	Yes	Yes	No		?	?	?	?
+canticum	n	2	canticum	cantica	canticī	canticōrum	canticum	cantica	song, musical monologue	n	cântec 	cântece			l	from latin canticum		*pěsnь	f			2159039	Yes	Yes	No		178	2.867	0	0
+capillus	m	2	capillus	capillī	capillī	capillōrum	capillum	capillōs	hair		-							*volsъ, *kyka, *kъkъ	m, f, m			474318	Yes	Yes	No		38	0.612	38	0.612
+capistrum	n	2	capistrum	capistra	capistrī	capistrōrum	capistrum	capistra	halter, muzzle	n	căpăstru	căpestre	căpestru	capestru	l			*uzda	f	bridle	*	2110270	Yes	Yes	No		?	?	?	?
+capra	f	1	capra	caprae	caprae	caprārum	capram	caprās	she-goat	f	capră	capre			l			*koza	f			65892	Yes	Yes	No		51	0.821	33	0.531
+caput	n	3	caput	capita	capitis	capitum	caput	capita	head	n, m, n	cap	capete, capi, capuri			l			*golva	f			179688	Yes	Yes	No		1,100	17.715	310	4.992
+carbo	m	3	carbō	carbōnēs	carbōnis	carbōnum	carbōnem	carbōnēs	coal	m	cărbune   	cărbuni			l			*ǫglь	m			1988980	Yes	Yes	No		31	0.499	1	0.016
+carcer	m	3	carcer	carcerēs	carceris	carcerum	carcerem	carcerēs	prison	f	carcera	carcere			l, i							237877	Yes	Yes	No		124	1.997	58	0.934
+carrus	m	2	carrus	carrī	carrī	carrōrum	carrum	carrōs	chariot, wagon	n	car	care			l	latin carrus	wagon	*vozъ	m			242516	Yes	Yes	No		1	0.016	1	0.016
+caseus	m	2	cāseus	cāseī	cāseī	cāseōrum	cāseum	cāseōs	cheese	n	caș	cașuri		cáʃiu	l			*syrъ	m		*	579580	Yes	Yes	No		3	0.048	3	0.048
+castella	n	2	castellum	castella	castellī	castellōrum	castellum	castella	castles	n	castel	castele			l			*gordъ	m			95508	Yes	Yes	No		30	0.483	30	0.483
+castra	n	2	-	castra	-	castrōrum	-	castra	camp	n	castru	castre			l	borrowing?	roman fortification					364413	Yes	Yes	No		995	16.024	0	0
+casus	m	4	cāsus	cāsūs	cāsūs	cāsuum	cāsum	cāsūs	fall	f	caz	cazuri			l		case	*padъ	m	(abstract)		68921	Yes	Yes	No		751	12.095	176	2.834
+causa	f	1	causa	causae	causae	causārum	causam	causās	cause, reason, motive	f	cauză	cauze			l, f			*pričina, *povodъ, *dovodъ	f, m, m			68358	Yes	Yes	No		157	2.528	157	2.528
+cedrus	f	2	cedrus	cedrī	cedrī	cedrōrum	cedrum	cedrōs	cedar, juniper	m	cedru	cedri			f, l			*kedrъ	m	a very, very late loanword, post-psl.		1854953	Yes	Yes	No		68	1.095	45	0.725
+census	m	4	cēnsus	cēnsūs	cēnsūs	cēnsuum	cēnsum	cēnsūs	census	n	recensământ 	recensăminte			f	?				no psl. word		73705	Yes	Yes	No		19	0.306	0	0
+centurio	mh	3	centuriō	centuriōnēs	centuriōnis	centuriōnum	centuriōnem	centuriōnēs	captain	m	centurion	centurioni			l	??	roman centurion		m	(natural gender)		1540456	Yes	Yes	No		60	0.966	36	0.58
+cerasus	f	2	cerasus	cerasī	cerasī	cerasōrum	cerasum	cerasōs	cherry	f	cireașă	cireși		ceréʃie	l			*sermъša; *sermuša	f	ramson, bird-cherry	*	3116810	Yes	Yes	No		?	?	?	?
+chorus	m	2	chorus	chorī	chorī	chorōrum	chorum	chorōs	dance	n	cor	coruri			l		choir, chorus	*likъ	m			53170	Yes	Yes	No		44	0.709	44	0.709
+ciconia	f	1	cicōnia	cicōniae	cicōniae	cicōniārum	cicōniam	cicōniās	stork													173278	Yes	Yes	No		1	0.016	1	0.016
+cinis	m	3	cinis	cinerēs	cineris	cinerum	cinerem	cinerēs	ashes	f	cenuşă	cenușe			l			*pepelъ	m			49858	Yes	Yes	No		78	1.256	48	0.773
+circuitus	m	4	circuitus	circuitūs	circuitūs	circuituum	circuitum	circuitūs	revolution	n	circuit	circuituri			f, l	?	circuit = circuit			(abstract)		2422704	Yes	Yes	No		524	8.439	0	0
+circus	m	2	circus	circī	circī	circōrum	circum	circōs	circle	n, n	cerc, circ	cercuri, circuri			l; f, l	?		*krǫgъ, *kolo	m, n			105333	Yes	Yes	No		28	0.451	0	0
+civitas	f	3	cīvitās	cīvitātēs	cīvitātis	cīvitātum	cīvitātem	cīvitātēs	citizenship, state													210316	Yes	Yes	No		1,161	18.698	1,161	18.698
+clamor	m	3	clāmor	clāmōrēs	clāmōris	clāmōrum	clāmōrem	clāmōrēs	cry		-							*klikъ	m			61414	Yes	Yes	No		111	1.788	45	0.725
+clangor	m	3	clangor	clangōrēs	clangōris	clangōrum	clangōrem	clangōrēs	noise		-							*zvonъ, *šumъ	m, m			269890	Yes	Yes	No		18	0.29	10	0.161
+coetus	m	4	coetus	coetūs	coetūs	coetuum	coetum	coetūs	sexual union		-									(abstract)		1206534	Yes	Yes	No		68	1.095	0	0
+cognatio	f	3	cognātiō	cognātiōnēs	cognātiōnis	cognātiōnum	cognātiōnem	cognātiōnēs	blood-relationship, kindred													2478430	Yes	Yes	No		161	2.593	161	2.593
+cognatus	No info	No info	No info	No info	No info	No info	No info	No info	kinsman, relation (male)	m	cumnat	cumnați			l		brother in law	*šurь	m	brother-in-law (wife's brother)	*	924376	Yes	No	No		82	1.321	0	0
+collis	m	3	collis	collēs	collis	collium	collem	collīs/collēs*	hill	f	colină	coline			f			*xъlmъ, *bergъ	m, m			480232	Yes	Yes	No		126	2.029	63	1.015
+color	m	3	color	colōrēs	colōris	colōrum	colōrem	colōrēs	color	f	culoare	culori			l, f							1520	Yes	Yes	No		65	1.047	14	0.225
+columba	f	1	columba	columbae	columbae	columbārum	columbam	columbās	dove, pigeon		-							*golǫbь	m			265843	Yes	Yes	No		52	0.837	42	0.676
+columna	f	1	columna	columnae	columnae	columnārum	columnam	columnās	column, pillar	f, f	coloană, columnă	coloane, columne			f; l			*stъlръ	m			262531	Yes	Yes	No		141	2.271	103	1.659
+commotio	f	3	commōtiō	commōtiōnēs	commōtiōnis	commōtiōnum	commōtiōnem	commōtiōnēs	rousing, excitement, agitation, commotion		-									(abstract)		2692523	Yes	Yes	No		21	0.338	21	0.338
+concilium	n	2	concilium	concilia	conciliī	conciliōrum	concilium	concilia	council	n	consiliu	consili			l, f			*sъvětъ	m			474076	Yes	Yes	No		49	0.789	23	0.37
+coniuga	fh	1	coniuga	coniugai	coniugai	coniugārum	coniugam	coniugās	wife		-							*žena	f	(natural gender)		602105	Yes	No	No		28	0.451	8	0.129
+conspectus	m	4	cōnspectus	cōnspectūs	cōnspectūs	cōnspectuum	cōnspectum	cōnspectūs	look, sight, view	n	conspect	conspecte			l, g	borrowing?	surveying (notes, land)	*vidъ	m			201492	Yes	Yes	No		865	13.931	1	0.016
+convictus	m	4	convictus	convictūs	convictūs	convictūm	convictum	convictūs	intimacy											(abstract)		2338917	Yes	No	No		4	0.064	0	0
+cor	n	3	cor	corda	cordis	cordium/cordum*	cor	corda	heart	n	cord	corduri			l	borrowing?	not the main word, inimă = heart, heart attack = atac de cord	*sьrdьce	n			27600	Yes	Yes	No		2,817	45.367	43	0.693
+cornu	n	4	cornū	cornua	cornūs	cornuum	cornū	cornua	horn, wing	n	corn	coarne			l		horn	*kridlo	n			39013	Yes	Yes	No		135	2.174	41	0.66
+corona	f	1	corōna	corōnae	corōnae	corōnārum	corōnam	corōnās	garland, wreath	f	coroană   	coroane			l		crown, wreath	*věnьcь	m			60142	Yes	Yes	No		228	3.672	0	0
+corpus	n	3	corpus	corpora	corporis	corporum	corpus	corpora	body	n	corp	corpuri			f, l			*tělo	n			38350	Yes	Yes	No		256	4.123	212	3.414
+cortina	f	1	cortīna	cortīnae	cortīnae	cortīnārum	cortīnam	cortīnās	kettle		-							*kotьlъ	m			214231	Yes	Yes	No		18	0.29	18	0.29
+corvus	m	2	corvus	corvī	corvī	corvōrum	corvum	corvōs	raven	m	corb	corbi			l			*krukъ; *vornъ	m, m		*	48889	Yes	Yes	No		10	0.161	10	0.161
+costa	f	1	costa	costae	costae	costārum	costam	costās	rib	f	coastă	coaste		coasta	l			*rebro	n		*	53389	Yes	Yes	No		4	0.064	2	0.032
+crater	m	3	crātēr	crātērēs	crātēris	crātērum	crātērem	crātērēs	mixing vessel, punch bowl	n	crater	cratere			f		crater	*sǫdъ, *krin(ic)a	m, f			61485	Yes	Yes	No		?	?	?	?
+cribrum	n	2	crībrum	crībra	crībrī	crībrōrum	crībrum	crībra	sieve	n	ciur	ciururi			l			*sito	n		*	2994228	Yes	Yes	No		3	0.048	1	0.016
+crimen	n	3	crīmen	crīmina	crīminis	crīminum	crīmen	crīmina	crime	f	crimă	crime			f		murder, outrage, crime					216209	Yes	Yes	No		15	0.242	13	0.209
+crusta	f	1	crusta	crustae	crustae	crustārum	crustam	crustās	shell	f	crustă	cruste			l		crust of bread	*luska, *luskъ	f, m			1439313	Yes	Yes	No		?	?	?	?
+crux	f	3	crux	crucēs	crucis	crucum	crucem	crucēs	cross	f	cruce	cruci			l			*krьstъ	m			60191	Yes	Yes	No		34	0.548	34	0.548
+cubiculum	n	2	cubiculum	cubicula	cubiculī	cubiculōrum	cubiculum	cubicula	chamber													38178	Yes	Yes	No		40	0.644	40	0.644
+cucumis	m	3	cucumis	cucumerēs	cucumeris	cucumerum	cucumerem	cucumerēs	cucumber											probably no psl. word, all sl. words appear recent		1764461	Yes	Yes	Yes	No	1	0.016	1	0.016
+cucurbita	f	1	cucurbita	cucurbitae	cucurbitae	cucurbitārum	cucurbitam	cucurbitās	gourd	f	curcubetă	curcubete			l				?		*	1319139	Yes	Yes	No		?	?	?	?
+culpa	f	1	culpa	culpae	culpae	culpārum	culpam	culpās	fault	f	culpă	culpe			l		fault	*blędь, *blǫdъ	f, m			246485	Yes	Yes	No		16	0.258	2	0.032
+cultus	m	4	cultus	cultūs	cultūs	cultuum	cultum	cultūs	labor, culture, care, cultivation	f	cultură	culturi			f, l		crop	*gojь	m	?		501880	Yes	Yes	No		77	1.24	2	0.032
+cuneus	m	2	cuneus	cuneī	cuneī	cuneōrum	cuneum	cuneōs	wedge		-							*klinъ	m			270523	Yes	Yes	No		24	0.387	0	0
+cura	f	1	cūra	cūrae	cūrae	cūrārum	cūram	cūrās	care	f	cură	curi			f, l		cure, diet	*gojь	m	?		236034	Yes	Yes	No		73	1.176	23	0.37
+cursus	m	4	cursus	cursūs	cursūs	cursuum	cursum	cursūs	way, journey, voyage	n, f	curs, cursă	cursuri, curse			l; f	?		*pǫtь	m	mainly in the metaphorical sense		474079	Yes	Yes	No		38	0.612	0	0
+custodia	f	1	custōdia	custōdiae	custōdiae	custōdiārum	custōdiam	custōdiās	custody	f	custodie	custodii			l	borrowing?				(abstract)		211696	Yes	Yes	No		155	2.496	31	0.499
+daemonia	n	2	daemonium	daemonia	daemoniī	daemoniōrum	daemonium	daemonia	devils	m	demon	demoni			grk			*běsъ	m	singular		2399816	Yes	Yes	Yes	No	82	1.321	82	1.321
+debitor	mh	3	dēbitor	dēbitōrēs	dēbitōris	dēbitōrum	dēbitōrem	dēbitōrēs	debtor	n	debitor	debitori			f, l	borrowing?			m	(natural gender)		325773	Yes	Yes	No		10	0.161	10	0.161
+decor	m	3	decor	decōrēs	decōris	decōrum	decōrem	decōrēs	elegance, grace, beauty	n	decor	decoruri			f	borrowing?	decor					255143	Yes	Yes	No		205	3.301	6	0.097
+dens	m	3	dēns	dentēs	dentis	dentium	dentem	dentēs*/dentīs	tooth	m	dinte	dinți			l			*zǫbъ	m			46469	Yes	Yes	No		63	1.015	63	1.015
+deserta	n	2	-	dēserta	-	dēsertōrum	-	dēserta	desert	n	deșert	deșerturi			l, f			*pustyni	f	singular		1366752	Yes	No	No		1,049	16.894	0	0
+deus	mh	2	deus	dī	deī	deōrum	deum	deōs	god	m	zeu	zei			l			*bogъ	m			67662	Yes	Yes	No		6,451	103.891	3,491	56.221
+diabolus	m	2	diabolus	diabolī	diabolī	diabolōrum	diabolum	diabolōs	devil	m	diavol	diavoli			s			*dьjavolъ, *vorgь	m	(natural gender) most sl. languages use the loanword from gr. diabolos for this christian concept; some ssl. languages use *vorgъ 'enemy'		47359	Yes	Yes	No		39	0.628	39	0.628
+dies	m	5	diēs	diēs	diēī	diērum	diem	diēs	day	f	zi	zile			l			*dьnь	m			1662	Yes	Yes	No		6,762	108.9	1,662	26.766
+digitus	m	2	digitus	digitī	digitī	digitōrum	digitum	digitōs	finger	n	deget	degete			l			*palьcь; *pьrstъ	m, m		*	71043	Yes	Yes	No		70	1.127	26	0.419
+discipulus	m	2	discipulus	discipulī	discipulī	discipulōrum	discipulum	discipulōs	student	m	discipol	discipoli			l		disciple, follower		m	(natural gender)		66442	Yes	Yes	No		337	5.427	185	2.979
+doctrina	f	1	doctrīna	doctrīnae	doctrīnae	doctrīnārum	doctrīnam	doctrīnās	learning	f	doctrină	doctrine			f, l	borrowing?	doctrine			(abstract)		785498	Yes	Yes	No		113	1.82	113	1.82
+dolor	m	3	dolor	dolōrēs	dolōris	dolōrum	dolōrem	dolōrēs	pain	f	durere	dureri			l			*bolь	f			105038	Yes	Yes	No		164	2.641	96	1.546
+domina	fh	1	domina	dominae	dominae	dominārum	dominam	dominās	lady	f	doamnă	doamne			l			*žena	f	(natural gender)		269769	Yes	Yes	No		47	0.757	14	0.225
+dominus	mh	2	dominus	dominī	dominī	dominōrum	dominum	dominōs	lord, master	m	domn	domni			l		gentleman (also lord, master)	*gospodь, *gospodinъ	m, m	(natural gender)		47431	Yes	Yes	No		10,591	170.565	6,296	101.395
+domus	f	4	domus	domūs	domūs*/domī	domuum*/domōrum	domum	domūs*/domōs	house	n	dom	domuri			f		dome	*domъ	m			204715	Yes	Yes	No		2,615	42.114	1,509	24.302
+draco	m	3	dracō	dracōnēs	dracōnis	dracōnum	dracōnem	dracōnēs	serpent, dragon	m	dragon	dragoni			f			*zmьjь	m			46288	Yes	Yes	No		86	1.385	0	0
+dux	mh	3	dux	ducēs	ducis	ducum	ducem	ducēs	leader, guide	m	duce	duci			f, l				m	(natural gender)		106458	Yes	Yes	No		358	5.765	170	2.738
+ecclesia	f	1	ecclēsia	ecclēsiae	ecclēsiae	ecclēsiārum	ecclēsiam	ecclēsiās	church		-							*cьrky	f			1037359	Yes	Yes	No		164	2.641	164	2.641
+epistola	f	1	epistola	epistolae	epistolae	epistolārum	epistolam	epistolās	letter	f	epistolă   	epistole			l		letters of paul = epistles of paul, used to mean letters	*pisьmo, *pismę	n, n			45920	Yes	Yes	No		?	?	?	?
+equa	f	1	equa	equae	equae	equārum	equam	equās	mare	f	iapă	iepe		iapa	l				f		*	649649	Yes	Yes	No		60	0.966	0	0
+equus	m	2	equus	equī	equī	equōrum	equum	equōs	horse		-							*konjь	m			179686	Yes	Yes	No		235	3.785	113	1.82
+exaltatio	f	3	exaltātiō	exaltātiōnēs	exaltātiōnis	exaltātiōnum	exaltātiōnem	exaltātiōnēs	pride, promotion	f	exaltație	exaltații			?	borrowing?				(abstract)		2625569	Yes	Yes	No		6	0.097	6	0.097
+exemplum	n	2	exemplum	exempla	exemplī	exemplōrum	exemplum	exempla	example	n	exemplu	exemple			f, l			*priměrъ, *prikladъ	m, m			45922	Yes	Yes	No		43	0.693	39	0.628
+exercitus	m	4	exercitus	exercitūs	exercitūs	exercituum	exercitum	exercitūs	army	n	exercițiu	exerciții			f, l		exercise, military routine	*pъlkъ, *ortь	m, f			211702	Yes	Yes	No		1,300	20.936	301	4.848
+fabula	f	1	fābula	fābulae	fābulae	fābulārum	fābulam	fābulās	story	f	fabulă	fabule			l			*basnь	f			270606	Yes	Yes	No		13	0.209	7	0.113
+facies	f	5	faciēs	faciēs	faciēī	faciērum	faciem	faciēs	form, figure, shape	f	față	fețe			l		face	*obrazъ, *obličьje	m, n			462167	Yes	Yes	No		1,154	18.585	694	11.177
+factum	n	2	factum	facta	factī	factōrum	factum	facta	deed, act	f, n	faptă/fapt	fapte, fapte			l; l		faptă = deed, fapt = event, fact	*dělo	n			185802	Yes	Yes	No		2,256	36.332	0	0
+faenum	n	2	faenum	faena	faenī	faenōrum	faenum	faena	hay	n	fân	fânuri	fîn	fen	l			*sěno	n		*	667251	Yes	Yes	No		46	0.741	46	0.741
+fallacia	f	1	fallācia	fallāciae	fallāciae	fallāciārum	fallāciam	fallāciās	fallacy		-							*blędь, *blǫdъ	f, m			497374	Yes	Yes	No		7	0.113	7	0.113
+fama	f	1	fāma	fāmae	fāmae	fāmārum	fāmam	fāmās	report, rumor	f	faimă   	faime			l		fame, renown, repute	*sluxъ	m			224030	Yes	Yes	No		53	0.854	23	0.37
+fames	f	3	famēs	famēs	famis	famum	famem	famēs	famine	f	foame   	-			l		hunger	*goldъ	m			269965	Yes	Yes	No		155	2.496	125	2.013
+familia	f	1	familia	familiae	familiae	familiārum	familiam	familiās	family	f	familie	familii			l, f			*rodъ, *sěmьja	m, f			5140	Yes	Yes	No		254	4.091	254	4.091
+famula	fh	1	famula	famulae	famulae	famulārum	famulam	famulās	maid		-							*děva, *děvica	f, f	(natural gender)		67422	Yes	Yes	No		58	0.934	0	0
+farina	f	1	farīna	farīnae	farīnae	farīnārum	farīnam	farīnās	flour	f	făină	făini			l			*mǫka, *boršьno	f, n			60304	Yes	Yes	No		19	0.306	19	0.306
+femina	fh	1	fēmina	fēminae	fēminae	fēminārum	fēminam	fēminās	woman	f	femeie; femelă 	femeii; femele			l; f, l			*žena	f	(natural gender)		59352	Yes	Yes	No		57	0.918	27	0.435
+ferrum	n	2	ferrum	ferra	ferrī	ferrōrum	ferrum	ferra	iron	n	fier	fieruri			l			*želězo	n			46809	Yes	Yes	No		102	1.643	56	0.902
+festuca	f	1	festūca	festūcae	festūcae	festūcārum	festūcam	festūcās	straw		-							*solma	f			2585329	Yes	Yes	No		6	0.097	6	0.097
+festum	n	2	fēstum	fēsta	fēstī	fēstōrum	fēstum	fēsta	feast	f	festivitate	festivități			f, l	borrowing?	festivities	*porzdьnikъ, *svęto	m, n			564354	Yes	Yes	No		110	1.772	0	0
+ficus	m	2	fīcus	fīcī	fīcī	fīcōrum	fīcum	fīcōs	fig tree		-							*smoky	f	maybe ssl. only; this is a very late loanword from germanic		204946	Yes	Yes	No		50	0.805	50	0.805
+fides	f	5	fidēs	fidēs	fideī	fidērum	fidem	fidēs	faith		-							*věra	f			196089	Yes	Yes	Yes	Yes (second meaning 3rd declension and means "chord")	864	13.914	0	0
+figura	f	1	figūra	figūrae	figūrae	figūrārum	figūram	figūrās	shape	f	figură	figuri			f, l					(abstract)		213822	Yes	Yes	No		23	0.37	5	0.081
+filia	fh	1	fīlia	fīliae	fīliae	fīliārum	fīliam	fīliās	daughter	f	fiică   	fiice			l			*dъkti	f	(natural gender)		50448	Yes	Yes	No		1,844	29.697	544	8.761
+filius	mh	2	fīlïus	fīlïī	fīlïī	fīlïōrum	fīlïum	fīlïōs	son	m	fiu	fii			l			*synъ	m	(natural gender)		47079	Yes	Yes	No		6,382	102.78	4,656	74.983
+finis	m	3	fīnis	fīnēs	fīnis	fīnium	fīnem	fīnīs/fīnēs*	boundary, limit	n	final	finaluri			f, l			*konьcь, *krajь	m, m			101471	Yes	Yes	No		164	2.641	36	0.58
+fiscella	f	1	fiscella	fiscellae	fiscellae	fiscellārum	fiscellam	fiscellās	basket		-							*košь	m			1641651	Yes	Yes	No		2	0.032	2	0.032
+flamma	f	1	flamma	flammae	flammae	flammārum	flammam	flammās	flame	f, n	flacără, foc				l; l	*	flame; fire	*polmy	m			53406	Yes	Yes	No		160	2.577	0	0
+flos	m	3	flōs	flōrēs	flōris	flōrum	flōrem	flōrēs	flower	f	floare	flori			l			*květъ	m			27564	Yes	Yes	No		60	0.966	23	0.37
+flumen	n	3	flūmen	flūmina	flūminis	flūminum	flūmen	flūmina	river		-							*rěka	f			593144	Yes	Yes	No		158	2.545	158	2.545
+fluvius	m	2	fluvïus	fluvïī	fluvïī	fluvïōrum	fluvïum	fluvïōs	river	n	fluviu	fluvii			l		big river, small river = râu	*rěka	f			579629	Yes	Yes	No		78	1.256	78	1.256
+fluxus	m	2	fluxus	fluxī	fluxī	fluxōrum	fluxum	fluxōs	flow, current of air	n	flux	fluxuri			f		high tide (borrowing?)	*tokъ	m	(abstract)		1640631	Yes	Yes	No		34	0.548	0	0
+folium	n	2	folium	folia	foliī	foliōrum	folium	folia	sheet, leaf	f	foaie	foi			l			*listъ	m	leaf	*	49666	Yes	Yes	No		37	0.596	11	0.177
+follis	m	3	follis	follēs	follis	follium	follem	follēs*/follīs	pair of bellows													268314	Yes	Yes	No		?	?	?	?
+fons	m	3	fōns	fontēs	fontis	fontium	fontem	fontēs*/fontīs	fountain	f	fântână	fântâni			l	*		*jьzvorъ, *krinica	m, f			48829	Yes	Yes	No		99	1.594	99	1.594
+foramen	n	3	forāmen	forāmina	forāminis	forāminum	forāmen	forāmina	opening		-											237107	Yes	Yes	No		16	0.258	16	0.258
+fores	f	3	foris	forēs	foris	forium	forem	forēs*/forīs	doors		-							*vorta, *dvьrь	n, f	*vorta is a plurale tantum (neuter plural)		269780	Yes	Yes	Yes	No	662	10.661	0	0
+forma	f	1	fōrma	fōrmae	fōrmae	fōrmārum	fōrmam	fōrmās	form	f	formă	forme			f, l					(abstract)		79292	Yes	Yes	No		58	0.934	0	0
+formica	f	1	formīca	formīcae	formīcae	formīcārum	formīcam	formīcās	ant	f	furnică	furnici			l			*morvi	f		*	39285	Yes	Yes	No		2	0.032	2	0.032
+forum	n	2	forum	fora	forī	forōrum	forum	fora	forum, court, marketplace	n	for	foruri			l, f		body, forum	*dvorъ	m			74780	Yes	Yes	No		546	8.793	0	0
+fragmentum	n	2	fragmentum	fragmenta	fragmentī	fragmentōrum	fragmentum	fragmenta	fragment	n	fragment	fragmente			f, l							1445593	Yes	Yes	No		12	0.193	12	0.193
+frater	mh	3	frāter	frātrēs	frātris	frātrum	frātrem	frātrēs	brother	m	frate	frați			l			*bratrъ	m	(natural gender)		38231	Yes	Yes	No		1,090	17.554	1,090	17.554
+fraxinus	f	2	fraxinus	fraxinī	fraxinī	fraxinōrum	fraxinum	fraxinōs	ash-tree	m	frasin	frasini			l			*asenь; *asenъ	m, m		*	2043983	Yes	Yes	No		?	?	?	?
+fremitus	m	4	fremitus	fremitūs	fremitūs	fremituum	fremitum	fremitūs	murmur	n	freamăt	freamăte			l		murmur of the wind	*šьpъtъ	m			97639	Yes	Yes	No		17	0.274	9	0.145
+frenum	n	2	frēnum	frēna	frēnī	frēnōrum	frēnum	frēna	bridle, harness, rein	n	frâu	frâie	frîu (frîn)	fren	l			*uzda	f	bridle	*	245237	Yes	Yes	No		22	0.354	0	0
+fretum	n	2	fretum	freta	fretī	fretōrum	fretum	freta	strait, sound, channel													1021556	Yes	Yes	No		34	0.548	0	0
+frons	f	3	frons	frondēs	frondis	frondium	frondem	frondēs/frondīs	leafy branch, foliage, leaves, frond		frunză	frunze	frunze		l			*listъ	m	leaf	*	487818	Yes	Yes	Yes	Above	52	0.419	48	0.773
+frons	f	3	frōns	frontēs	frontis	frontium	frontem	frontēs/frontīs	forehead	f	frunte	frunți			l			*čelo	n			487818	Yes	Yes	Yes	Below	52	0.837	48	0.773
+frux	f	3	frūx	frūgēs	frūgis	frūgum	frūgem	frūgēs	fruit	n, f	fruct, fructă	fructe			l			*ovotjь, *ovotje	m, n			2520138	Yes	Yes	No		48	0.773	46	0.741
+fuga	f	1	fuga	fugae	fugae	fugārum	fugam	fugās	flight, running away	f	fugă	fugi			l							39227	Yes	Yes	No		42	0.676	24	0.387
+fulgur	n	3	fulgur	fulgura	fulguris	fulgurum	fulgur	fulgura	lightning	n	fulger	fulgere			l			*mъldni	f		*	472464	Yes	Yes	No		24	0.387	8	0.129
+fumus	m	2	fūmus	fūmī	fūmī	fūmōrum	fūmum	fūmōs	smoke, steam, vapor, fume	n	fum	fumuri			l			*dymъ; *čadjь; čadja; čadъ	m; m, f, m	smoke, soot; smoke, soot; smoke, fumes; smoke	*	48967	Yes	Yes	No		59	0.95	41	0.66
+fundus	m	2	fundus	fundī	fundī	fundōrum	fundum	fundōs	bottom	n	fund	funduri			l			*dъno	n			102803	Yes	Yes	No		16	0.258	3	0.048
+funiculus	m	2	fūniculus	fūniculī	fūniculī	fūniculōrum	fūniculum	fūniculōs	cord	f	funie	funii			l	*	rope, cord	*povorzъ	m			975733	Yes	Yes	No		50	0.805	42	0.676
+funis	m	3	fūnis	fūnēs	fūnis	fūnium	fūnem	fūnēs*/fūnīs	rope	f	funie	funii			l			*povorzъ	m			640160	Yes	Yes	No		28	0.451	28	0.451
+furnus	m	2	furnus	furnī	furnī	furnōrum	furnum	furnōs	oven	n	furnal	furnale			?	*		*pektь	f			2232562	Yes	Yes	No		3	0.048	3	0.048
+furor	m	3	furor	furōrēs	furōris	furōrum	furōrem	furōrēs	fury	f	furoare	furori			f, l	?	anger (furoare = stirring anger)	*gněvъ, *ěrostь	m, f	(abstract)		79497	Yes	Yes	No		334	5.379	136	2.19
+furtum	n	2	fūrtum	fūrta	fūrtī	fūrtōrum	fūrtum	fūrta	theft, robbery	n	furt	furturi			l			*tatьba	f	(abstract)		472714	Yes	Yes	No		30	0.483	14	0.225
+gaudium	n	2	gaudium	gaudia	gaudiī	gaudiōrum	gaudium	gaudia	joy									*radostь	f	(abstract)		270607	Yes	Yes	No		147	2.367	147	2.367
+gens	f	3	gēns	gentēs	gentis	gentium	gentem	gentēs/gentīs	race, clan, house	f	ginte	ginți			?		tribe, clan	*rodъ, *kolěno	m, n			81671	Yes	Yes	No		1,148	18.488	696	11.209
+genus	n	3	genus	genera	generis	generum	genus	genera	race	n	gen	genuri			l		gender, kind	*rodъ, *kolěno	m, n			28437	Yes	Yes	Yes	No	311	5.009	0	0
+gladius	m	2	gladïus	gladïī	gladïī	gladïōrum	gladïum	gladïōs	sword		-							*mečь	m			200863	Yes	Yes	No		875	14.092	89	1.433
+gloria	f	1	glōria	glōriae	glōriae	glōriārum	glōriam	glōriās	glory	f	glorie	glorii			l, i		(slava is used too)	*slava	f			56893	Yes	Yes	No		733	11.805	271	4.364
+gradus	m	4	gradus	gradūs	gradūs	graduum	gradum	gradūs	step, pace, walk	n, n	grad	grade, graduri			f, l, g		degree, military honor	*xodъ, *korkъ	m, m			269797	Yes	Yes	No		53	0.854	53	0.854
+granum	n	2	grānum	grāna	grānī	grānōrum	grānum	grāna	grain, spelt	m	grâu	grâuri			l			*pyrь	m	spelt'		205691	Yes	Yes	No		11	0.177	11	0.177
+gratia	f	1	grātia	grātiae	grātiae	grātiārum	grātiam	grātiās	favor, grace	f	grație	grații			l		(moving with) grace, catholic divine grace			(abstract)		239847	Yes	Yes	No		870	14.011	1	0.016
+grex	m	3	grex	gregēs	gregis	gregum	gregem	gregēs	flock, herd, swarm		-							*stado, *jato	n, n			1399867	Yes	Yes	No		290	4.67	86	1.385
+gula	f	1	gula	gulae	gulae	gulārum	gulam	gulās	throat, neck	n	guler	gulere			hung		collar	*gъrdlo	n	the words for 'neck' are *šija (f), *vyja (f)		74067	Yes	Yes	No		?	?	?	?
+gustus	m	4	gustus	gustūs	gustūs	gustuum	gustum	gustūs	tasting	n	gust	gusturi			l			*vъkusъ	m	(abstract)		65493	Yes	Yes	No		5	0.081	5	0.081
+gyrus	m	2	gȳrus	gȳrī	gȳrī	gȳrōrum	gȳrum	gȳrōs	circle, ring		-							*krǫgъ, *kolo	m, n			486859	Yes	Yes	No		79	1.272	51	0.821
+herba	f	1	herba	herbae	herbae	herbārum	herbam	herbās	plant	f	iarbă	ierburi			l							103338	Yes	Yes	No		50	0.805	50	0.805
+homo	mh	3	homō	hominēs	hominis	hominum	hominem	hominēs	man	m	om	oameni			l			*čelověkъ	m			38541	Yes	Yes	No		1,711	27.555	1,711	27.555
+hora	f	1	hōra	hōrae	hōrae	hōrārum	hōram	hōrās	hour	f	oră 	ore			l, i			*časъ	m	time (ocs time, moment, hour; bulg. hour)		50716	Yes	Yes	No		294	4.735	1	0.016
+horrea	n	2	horreum	horrea	horreī	horreōrum	horreum	horrea	granary, barn, storage house									*evinъ; *evьja; *evьnja	m, f, f	granary, drying shed		2586588	Yes	Yes	No		48	0.773	2	0.032
+hospes	mh	3	hospes	hospitēs	hospitis	hospitum	hospitem	hospitēs	host										m	(natural gender)		269803	Yes	Yes	No		15	0.242	11	0.177
+hospes	fh	3	hospes	hospitēs	hospitis	hospitum	hospitem	hospitēs	host										f	(natural gender)		269803	Yes	Yes	No		15	0.242	11	0.177
+hostis	mh	3	hostis	hostēs	hostis	hostium	hostem	hostēs/hostīs	stranger, foreigner, enemy		-								m	(natural gender)		214047	Yes	Yes	No		?	?	?	?
+hostis	fh	3	hostis	hostēs	hostis	hostium	hostem	hostēs/hostīs	stranger, foreigner, enemy		-								fh	(natural gender)		214047	Yes	Yes	No		?	?	?	?
+humus	f	2	humus	humī	humī	humōrum	humum	humōs	earth, ground, soil		-							*zemlja, *pьrstь	f, f			60438	Yes	Yes	No		57	0.918	33	0.531
+hyacinthus	m	2	hyacinthus	hyacinthī	hyacinthī	hyacinthōrum	hyacinthum	hyacinthōs	hyacinth	m	iacint	iacinți			f					no psl. word		2638114	Yes	Yes	No		36	0.58	36	0.58
+hypocrita	fh	1	hypocrita	hypocritae	hypocritae	hypocritārum	hypocritam	hypocritās	hypocrite	f	ipocrită	ipocrite			f				f	(natural gender)		2586606	Yes	Yes	No		27	0.435	27	0.435
+hypocrita	mh	1	hypocrita	hypocritae	hypocritae	hypocritārum	hypocritam	hypocritās	hypocrite	m	ipocrit	ipocriți			f				m	(natural gender)		2586606	Yes	Yes	No		27	0.435	27	0.435
+ignis	m	3	ignis	ignēs	ignis	ignium	ignem	ignīs/ignēs*	fire		-							*ognjь, *(v)atra	m, f			33565	Yes	Yes	No		908	14.623	208	3.35
+incensum	m	4	incensus	incensūs	incensūs	incensuum	incensum	incensūs	incense, setting fire to		-							*kadidlo	n			2340871	Yes	Yes	No		346	5.572	0	0
+industria	f	1	industria	industriae	industriae	industriārum	industriam	industriās	industry	f	industrie	industrii			f, l							96149	Yes	Yes	No		24	0.387	0	0
+infernum	n	2	infernum	inferna	infernii	infernōrum	infernum	inferna	hell	n	infern	infernuri			l			*pьkъlъ, *pьkъlo	m, n			1737590	Yes	No	No		67	1.079	67	1.079
+inimicus	m	2	inimīcus	inimīcī	inimīcī	inimīcōrum	inimīcum	inimīcōs	hostile	m	inamic	inamici			l		enemy		m	(natural gender)		546529	Yes	Yes	No		415	6.683	389	6.265
+injuria	f	1	injūria	injūriai	injūriai	injūriārum	injūriam	injūriās	injury, in an unjust manner	f	injurie	injurii			l		offense	*ězva	f	wound		181227	Yes	No	No		70	1.127	0	0
+intestina	n	2	-	intestīna	-	intestinōrum	-	intestīna	gut	n	intestin	intestine			f, l		guts	*ǫtroba	f			615342	Yes	Yes	No		27	0.435	0	0
+ira	f	1	īra	īrae	īrae	īrārum	īram	īrās	anger		-							*gněvъ, *ěrostь	m, f	(abstract)		48839	Yes	Yes	No		280	4.509	274	4.413
+jugum	n	2	jugum	juga	jugī	jugōrum	jugum	juga	yoke, a pair	n	jug	juguri			l			*jьgo, *arьmъ, *arьmo	n, m, n			2897993	Yes	Yes	No		200	3.221	0	0
+jumentum	n	2	jūmentum	jūmenta	jūmentī	jūmentōrum	jūmentum	jūmenta	beast (?)													4158040	Yes	Yes	No		134	2.158	134	2.158
+jus	n	3	jūs	jūra	jūris	jūrum	jūs	jūra	right, maintain		-							*zakonъ, *pravo	m, n			50163	Yes	Yes	No		80	1.288	0	0
+justitia	f	1	jūstitia	jūstitiae	jūstitiae	jūstitiārum	jūstitiam	jūstitiās	righteousness, the whole of the laws	f	justiție	justiți			f, l					(abstract)		4167754	Yes	Yes	No		533	8.584	267	4.3
+labium	n	2	labium	labia	labiī	labiōrum	labium	labia	lip		-							*ustьna	f			40227	Yes	Yes	No		272	4.38	38	0.612
+labor	m	3	labor	labōrēs	labōris	labōrum	labōrem	labōrēs	labor		-							*orbota, *trudъ, *dělo	f, m, n	(abstract)		33726	Yes	Yes	No		213	3.43	63	1.015
+lac	n	3	lac	lacta	lactis	lactum	lac	lacta	milk	m	lapte	-			l			*melko	n			60520	Yes	Yes	No		100	1.61	22	0.354
+lacrima	f	1	lacrima	lacrimae	lacrimae	lacrimārum	lacrimam	lacrimās	tear	f	lacrimă 	lacrimi, lacrime			l			*slьza	f	singular (the eng. gloss is plural for some reason, although the lat. is sing.)		53145	Yes	Yes	No		67	1.079	41	0.66
+lacuna	f	1	lacūna	lacūnae	lacūnae	lacūnārum	lacūnam	lacūnās	pond	f	lagună	lagune			i		lagoon	*loky, *luža	f, f			60521	Yes	Yes	No		2	0.032	0	0
+lacus	m	4	lacus	lacūs	lacūs	lacuum	lacum	lacūs	lake, pond	n	lac	lacuri			l			*ezero, *ezerь	n, m			53143	Yes	Yes	No		41	0.66	41	0.66
+laganum	n	2	laganum	lagana	laganī	laganōrum	laganum	lagana	wafer (cake of flour and oil eaten by poor)											no psl. word		2647626	Yes	Yes	No		8	0.129	8	0.129
+lampada	f	1	lampada	lampadae	lampadae	lampadārum	lampadam	lampadās	torch	f	lampă	lămpi			g, r, f		lamp	*lučь	m/f			288154	Yes	Yes	No		30	0.483	12	0.193
+lana	f	1	lāna	lānae	lānae	lānārum	lānam	lānās	wool	f	lână 	lâni			l			*vьlna	f			258259	Yes	Yes	No		15	0.242	11	0.177
+languor	m	3	languor	languōrēs	languōris	languōrum	languōrem	languōrēs	sluggishness	f	langoare	langori			?			*lěnostь	f	(abstract)		236142	Yes	Yes	No		26	0.419	26	0.419
+lapis	m	3	lapis	lapidēs	lapidis	lapidum	lapidem	lapidēs	stone		-							*kamy, *skala	m, f			51652	Yes	Yes	No		70	1.127	0	0
+lardum	n	2	lardum	larda	lardī	lardōrum	lardum	larda	lard, fat	n	lard				l			*tukъ	m	fat	*	474311	Yes	Yes	No		?	?	?	?
+latro	mh	3	latrō	latrōnēs	latrōnis	latrōnum	latrōnem	latrōnēs	robber, mercenary soldier		-							*tatь	m	(natural gender) 'thief'		314223	Yes	Yes	No		50	0.805	29	0.467
+lector	mh	3	lēctor	lēctōrēs	lēctōris	lēctōrum	lēctōrem	lēctōrēs	reader	m	lector	lectori			g, f, l		lecturer		m	(natural gender)		92882	Yes	Yes	No		13	0.209	4	0.064
+lectus	m	2	lectus	lectī	lectī	lectōrum	lectum	lectōs	bed		-							*lože	n			270512	Yes	Yes	No		211	3.398	0	0
+lex	f	3	lēx	lēgēs	lēgis	lēgum	lēgem	lēgēs	law	f	lege	legi			l			*zakonъ, *pravo	m, n			38697	Yes	Yes	No		1,210	19.487	122	1.965
+libellus	m	2	libellus	libellī	libellī	libellōrum	libellum	libellōs	pamphlet, manuscript											no psl. word		66508	Yes	Yes	No		8	0.129	8	0.129
+liber	m	2	liber	librī	librī	librōrum	librum	librōs	book, the official gazette		-							*čędo, *dětę	n, n			38698	Yes	Yes	Yes		388	6.249	84	6.249
+liber	mh	2	līber	līberī	līberī	līberōrum	līberum	līberōs	child													38698	Yes	Yes	Yes		?	?	?	?
+ligatura	f	1	ligātūra	ligātūrai	ligātūrai	ligātūrārum	ligātūram	ligātūrās	band	f	legătură	legături			l		connection, bundle, link, band					903887	Yes	Yes	No		8	0.129	0	0
+lignum	n	2	lignum	ligna	lignī	lignōrum	lignum	ligna	firewood	n	lemn	lemne			l		individual piece of wood	*drъvo	n			313802	Yes	Yes	No		331	5.331	331	5.331
+limes	m	3	līmes	līmitēs	līmitis	līmitum	līmitem	līmitēs	path, passage, road	f	limită	limite			f, l		limit, boundary	*medja, *stьdza	f, f	the lat. word meant 'path (between fields)' as well as 'border, limit'. the sl. for 'border' is *medja, and 'path' is *stьdza		387910	Yes	Yes	No		?	?	?	?
+lingua	f	1	lingua	linguae	linguae	linguārum	linguam	linguās	tongue	f	limbă   	limbi			l		language, tongue	*ęzykъ	m			40225	Yes	Yes	No		220	3.543	220	3.543
+livor	m	3	līvor	līvōrēs	līvōris	līvōrum	līvōrem	līvōrēs	bruise													934797	Yes	Yes	No		9	0.145	9	0.145
+locus	m	2	locus	locī	locī	locōrum	locum	locōs	place, spot	n	loc	locuri			l			*město	n			69529	Yes	Yes	No		1,149	18.504	421	6.78
+lucerna	f	1	lucerna	lucernae	lucernae	lucernārum	lucernam	lucernās	lamp													558221	Yes	Yes	No		67	1.079	67	1.079
+lucusta	f	1	lucusta	lucustae	lucustae	lucustārum	lucustam	lucustās	locust	f	lăcustă	lăcuste			l		grasshopper	*prǫgъ, *kobylica	m, f			1398853	Yes	Yes	No		?	?	?	?
+lumbus	m	2	lumbus	lumbī	lumbī	lumbōrum	lumbum	lumbōs	loin		-							*čerslo, *lędvьje, *lędvьja	n, n, f			2588409	Yes	Yes	No		44	0.709	44	0.709
+lumen	n	3	lūmen	lūmina	lūminis	lūminum	lūmen	lūmina	light	f	lumină	lumini			l			*světъ, *světьlo, *lučь	m, n, m/f			36292	Yes	Yes	No		100	1.61	96	1.546
+luna	f	1	lūna	lūnae	lūnae	lūnārum	lūnam	lūnās	moon	f	lună   	luni			l			*měsęcь, *luna	m, f			40099	Yes	Yes	No		139	2.239	0	0
+lupus	m	2	lupus	lupī	lupī	lupōrum	lupum	lupōs	wolf	m	lup	lupi			l			*vьlkъ	m		*	4914	Yes	Yes	No		28	0.451	3	0.048
+lutum	n	2	lutum	luta	lutī	lutōrum	lutum	luta	mud, clay	n	lut	luturi			l			*glina; *brьna; *brьnьje; *glьjь; *jьlъ; *jьlo	f, f, n, m, m, n	mud, clay	*	1398939	Yes	Yes	Yes		163	2.625	0	0
+lux	f	3	lūx	lūcēs	lūcis	lūcum	lūcem	lūcēs	light		-							*světъ, *světьlo, *lučь	m, m, m/f			36298	Yes	Yes	No		398	6.41	120	1.933
+magister	mh	2	magister	magistrī	magistrī	magistrōrum	magistrum	magistrōs	master, chief, head									*gospodinъ, *gospodъ	m, m	(natural gender)		66440	Yes	Yes	No		93	1.498	81	1.304
+magister	fh	2	magistra	magistrai	magistrai	magistrārum	magistram	magistrās	master, chief, head									*gospodinъ, *gospodъ	f, f	(natural gender)		66440	Yes	Yes	No		93	1.498	81	1.304
+magus	mh	2	magus	magī	magī	magōrum	magum	magōs	magician	m	mag	magi			s		mages	*čarodějь	m	(natural gender)		47336	Yes	Yes	No		13	0.209	0	0
+malitia	f	1	malitia	malitiae	malitiae	malitiārum	malitiam	malitiās	malice	f	maliție	maliții			f, l			*zъloba	f	(abstract)		1452943	Yes	Yes	No		114	1.836	114	1.836
+malum	n	2	malum	mala	malī	malōrum	malum	mala	evil		-							*zъlo	f	(abstract)		213966	Yes	Yes	Yes		4,705	75.773	0	0
+manus	f	4	manus	manūs	manūs	manuum	manum	manūs	hand	f	mână	mâini			l			*rǫka	f			46751	Yes	Yes	Yes		2,411	38.828	1,343	21.629
+mare	n	3	mare	maria	maris	marium	mare	maria	sea	f	mare	mări			l			*morje	n			8864	Yes	Yes	Yes		2,545	40.986	0	0
+margarita	f	1	margarīta	margarītae	margarītae	margarītārum	margarītam	margarītās	pearl	n	mărgăritar	mărgăritare			grk		jewels			no psl. word		76317	Yes	Yes	No		15	0.242	3	0.048
+marmor	n	3	marmor	marmora	marmoris	marmorum	marmor	marmora	marble	f	marmură	marmure			l			*mormorъ	m	fairly late borrowing		472342	Yes	Yes	No		6	0.097	6	0.097
+mater	fh	3	māter	mātrēs	mātris	mātrum	mātrem	mātrēs	mother	f	mamă	mame			l			*mati	f	(natural gender)		38230	Yes	Yes	No		779	12.546	0	0
+materia	f	1	māteria	māteriae	māteriae	māteriārum	māteriam	māteriās	matter	f	materia	materii			l, i, r, g		subject in school, matter					41467	Yes	Yes	No		7	0.113	1	0.016
+maxilla	f	1	maxilla	maxillae	maxillae	maxillārum	maxillam	maxillās	jaw	f	măsea	măsele		masea	l		molar	*černovitъ; jaw?	m	*černovitъ = molar	*	106485	Yes	Yes	No		23	0.37	23	0.37
+medium	n	2	medium	media	mediī	mediōrum	medium	media	middle	n, n, n, n	mediu, mijloc	medii, medie; mijloace, miljocuri			l; l		means, middle, way	*serda	f			38450	Yes	Yes	Yes		3,016	48.572	0	0
+medulla	f	1	medulla	medullae	medullae	medullārum	medullam	medullās	marrow	f	măduvă			medua	l			*mozgъ	m	marrow, brain	*	238165	Yes	Yes	No		9	0.145	5	0.081
+mel	n	3	mel	mella	mellis	mellium/mellum*	mel	mella	honey	f	miere	mieri			l			*medъ	m			49605	Yes	Yes	No		147	2.367	27	0.435
+membrum	n	2	membrum	membra	membrī	membrōrum	membrum	membra	member	n, m	membru	membre, membri			l, f		limb, member of society					203439	Yes	Yes	No		84	1.353	16	0.258
+memoria	f	1	memoria	memoriae	memoriae	memoriārum	memoriam	memoriās	memory	f	memorie	memorii			l, i, f			*pamętь	f			43697	Yes	Yes	No		124	1.997	46	0.741
+mensa	f	1	mēnsa	mēnsae	mēnsae	mēnsārum	mēnsam	mēnsās	table	f	masă	mese			l			*stolъ	m	same as for "throne"		593149	Yes	Yes	No		1,149	18.504	0	0
+mensura	f	1	mēnsūra	mēnsūrae	mēnsūrae	mēnsūrārum	mēnsūram	mēnsūrās	measure	f	măsură	măsuri			l			*měra	f			493538	Yes	Yes	No		130	2.094	4	0.064
+merces	fh	3	mercēs	mercēdēs	mercēdis	mercēdum	mercēdem	mercēdēs	reward		-							*mьzda	f			2475782	Yes	Yes	Yes		115	1.852	115	1.852
+meridies	m	5	merīdiēs	merīdiēs	merīdiēī	merīdiērum	merīdiem	merīdiēs	noon	f	amiază	amiezi			l	*		*polъdьnь, *polъdьnьje	m, n			39317	Yes	Yes	No		126	2.029	24	0.387
+mica	f	1	mīca	mīcae	mīcae	mīcārum	mīcam	mīcās	grain		-											60617	Yes	Yes	No		3	0.048	3	0.048
+milia	n	2	-	mīlia	-	mīliōrum	-	mīlia	thousand	f	mie	mii			l			*tysęti	f			1124583	Yes	No	No		1,124	18.102	182	2.931
+miraculum	n	2	mīrāculum	mīrācula	mīrāculī	mīrāculōrum	mīrāculum	mīrācula	miracle	n	miracol	miracole			l, i, f			*čudo, *divo, *divъ	n, n, m			1547993	Yes	Yes	No		13	0.209	9	0.145
+modus	m	2	modus	modī	modī	modōrum	modum	modōs	measure, way, manner	n	mod	moduri			l, i		mode, way, manner					254633	Yes	Yes	No		231	3.72	45	0.725
+mola	f	1	mola	molae	molae	molārum	molam	molās	mill	f	moară  	mori			l			*mъlinъ, *žьrnovъ, *žьrny	m, m, f	 the word for 'millstone' is *žьrnovъ (m) or *žьrny (f). the word for 'mill' is *mъlinъ, itself a borrowing from late latin / romance. in latin, mola (sg.) is 'millstone' and the plural of this word, molae, denotes a 'mill'		470454	Yes	Yes	No		24	0.387	4	0.064
+mons	m	3	mōns	montēs	montis	montium	montem	montēs*/montīs	mountain	m	munte	munți			l			*gora	f			593150	Yes	Yes	No		669	10.774	669	10.774
+monumentum	n	2	monumentum	monumenta	monumentī	monumentōrum	monumentum	monumenta	memorial, monument	n	monument	monumente			f, l							2360740	Yes	Yes	No		64	1.031	64	1.031
+mora	f	1	mora	morae	morae	morārum	moram	morās	delay											(abstract)		220979	Yes	Yes	No		63	1.015	0	0
+mors	f	3	mors	mortēs	mortis	mortium	mortem	mortēs*/mortīs	death	f	moarte	morți			l			*sъmьrtь	f			59520	Yes	Yes	No		522	8.407	334	5.379
+morum	n	2	mōrum	mōra	mōri	morōrum	mōrum	mōra	mulberry	f	mură	mure			l			*mury	f		*	2372458	Yes	Yes	Yes		312	5.025	0	0
+mucus	m	2	mūcus	mūcī	mūcī	mūcōrum	mūcum	mūcōs	mucus, snot	n	muc	mucuri			l				?		*	43600	Yes	Yes	No		?	?	?	?
+mulier	fh	3	mulier	mulierēs	mulieris	mulierum	mulierem	mulierēs	woman	f	muiere	muieri			l		offensive word nowadays	*žena	f	(natural gender)		66316	Yes	Yes	No		781	12.578	343	5.524
+multitudo	f	3	multitūdō	multitūdinēs	multitūdinis	multitūdinum	multitūdinem	multitūdinēs	population	f	multitudine	multitudini			f							1604134	Yes	Yes	No		426	6.861	426	6.861
+mundus	m	2	mundus	mundī	mundī	mundōrum	mundum	mundōs	universe		-							*mirъ, *světъ	m, m	*mirъ also means 'peace', *světъ also means 'light'		40236	Yes	Yes	No		?	?	?	?
+munus	n	3	mūnus	mūnera	mūneris	mūnerum	mūnus	mūnera	office, service, duty		-							*činъ, *sanъ	m, m			53139	Yes	Yes	No		199	3.205	45	0.725
+murra	f	1	murra	murrae	murrae	murrārum	murram	murrās	myrrh-tree	n	mir	miruri			s					no psl. word		319659	Yes	Yes	No		39	0.628	0	0
+murus	m	2	mūrus	mūrī	mūrī	mūrōrum	mūrum	mūrōs	wall		-							*zidъ	m			216798	Yes	Yes	No		474	7.634	84	1.353
+musca	f	1	musca	muscae	muscae	muscārum	muscam	muscās	fly	f	muscă   	muște			l			*muxa	f			266750	Yes	Yes	No		15	0.242	7	0.113
+nasus	m	2	nāsus	nāsī	nāsī	nāsōrum	nāsum	nāsōs	nose	n	nas	nasuri			l			*nosъ	m			265871	Yes	Yes	No		9	0.145	0	0
+navis	f	3	nāvis	nāvēs	nāvis	nāvium	nāvim/nāvem*	nāvīs/nāvēs*	ship	f	navă	nave			f, l, i			*oldi, *korabь	f, m	boat'; slavs knew no ships		38490	Yes	Yes	No		242	3.897	8	0.129
+negotio	n	2	negōtium	negōtia	negōtiī	negōtiōrum	negōtium	negōtia	business	n	negoț	negoțuri			l		business, commerce					228195	Yes	Yes	No		55	0.886	9	0.145
+nepos	mh	3	nepōs	nepōtēs	nepōtis	nepōtum	nepōtem	nepōtēs	grandson	m	nepot	nepoți			l		nephew, grandson	*vъnukъ	m	(natural gender)		53394	Yes	Yes	No		37	0.596	7	0.113
+neptis	fh	3	neptis	neptēs	neptis	neptium	neptim/neptem	neptīs/neptēs	female descendant, granddaughter	f	nepoată	nepoate		nepoata	l		niece, granddaughter	*nestera	f		*	2795402	Yes	Yes	No		1	0.016	1	0.016
+nives	f	3	nix	nivēs	nivis	nivum	nivem	nivēs	snow		-							*sněgъ	m			38249	Yes	Yes	No		37	0.596	19	0.306
+nomen	n	3	nōmen	nōmina	nōminis	nōminum	nōmen	nōmina	name	n	nume	nume			l			*jьmę	n			46494	Yes	Yes	No		1,893	30.486	423	6.812
+nox	f	3	nox	noctēs	noctis	noctium	noctem	noctēs*/noctīs	night	f	noapte	nopți			l			*noktь	f			46471	Yes	Yes	No		371	5.975	371	5.975
+nubilum	f	3	nūbēs	nūbēs	nūbis	nūbium	nūbem	nūbēs*/nūbīs	cloud, clouds	m	nor	nori			l			*obolkъ	m			270375	Yes	Yes	No		3	0.048	0	0
+numerus	m	2	numerus	numerī	numerī	numerōrum	numerum	numerōs	number	n	număr	numere			l			*čislo, *čismę, *brojь	n, n, m	*brojь is essentially ssl. only (but the other two are found widely in ssl. too). all are deverbatives: the ones based on *či(t)- are derived from the verb *čisti 'to count' and *brojь is from a verb meaning 'to cut' (> 'to mark' > 'to count')		934622	Yes	Yes	No		291	4.686	159	2.561
+nurus	fh	4	nurus	nurūs	nurūs	nuruum	nurum	nurūs	daughter-in-law	f	noră   	nurori			l			*snъxa	f	(natural gender)		1998876	Yes	Yes	No		17	0.274	17	0.274
+nux	f	3	nux	nucēs	nucis	nucum	nucem	nucēs	nut	f	nucă	nuci		nuca	l			*orěxъ	m		*	38492	Yes	Yes	No		?	?	?	?
+obitus	m	4	obitus	obitūs	obitūs	obituum	obitum	obitūs	visit, meet													2738603	Yes	Yes	No		29	0.467	9	0.145
+obolus	m	2	obolus	obolī	obolī	obolōrum	obolum	obolōs	Greek coin	m, n	obol	oboli, oboluri			f, l		borrowings			no psl. word		268380	Yes	Yes	No		5	0.081	5	0.081
+occidens	m	3	occidēns	occidēntēs	occidēntis	occidēntum	occidēntem	occidēntēs	sunset, west	n	occident	occidenturi			f, l		borrowing?	*zapadъ, *zaxodъ	m, m			2410751	Yes	Yes	No		204	3.285	0	0
+oculus	m	2	oculus	oculī	oculī	oculōrum	oculum	oculōs	eye	m	ochi	ochi			l			*oko	n			48962	Yes	Yes	No		731	11.773	683	11
+odor	m	3	odor	odōrēs	odōris	odōrum	odōrem	odōrēs	smell		-							*vonja	f			50766	Yes	Yes	No		152	2.448	16	0.258
+officia	n	2	officium	officia	officiī	officiōrum	officium	officia	services (PL)	n	oficiu	oficii			l, g, f		office, service					214814	Yes	Yes	No		47	0.757	21	0.338
+oleum	n	2	oleum	olea	oleī	oleōrum	oleum	olea	oil	n	ulei	uleiuri			b			*maslo, *olějь	n, m			269082	Yes	Yes	No		285	4.59	121	1.949
+olivetum	n	2	olīvētum	olīvēta	olīvētī	olīvētōrum	olīvētum	olīvēta	olive grove, olive orchard													2797168	Yes	Yes	No		32	0.515	10	0.161
+opera	f	1	opera	operai	operai	operārum	operam	operās	work, labor, service, effort	f	operă	opere			l, i		labor, service, opera	*orbota, *trudъ, *dělo	f, m, n			58174	Yes	Yes	Yes		913	14.704	13	0.209
+opinio	f	3	opīniō	opīniōnēs	opīniōnis	opīniōnum	opīniōnem	opīniōnēs	opinion	f	opinie	opinii			l, f					(abstract)		1454791	Yes	Yes	No		3	0.048	3	0.048
+oppidum	n	2	oppidum	oppida	oppidī	oppidōrum	oppidum	oppida	town		-							*gordъ	m			1028117	Yes	Yes	No		59	0.95	39	0.628
+ora	f	1	ōra	ōrae	ōrae	ōrārum	ōram	ōrās	extremity, end, boundary		-							*konьcь; *krajь	m, m			71534	Yes	Yes	Yes		299	4.815	8	0.129
+orator	m	3	ōrātor	ōrātōrēs	ōrātōris	ōrātōrum	ōrātōrem	ōrātōrēs	speaker	m	orator	oratori			l, f				m	(natural gender)		84339	Yes	Yes	No		1	0.016	1	0.016
+orbis	m	3	orbis	orbēs	orbis	orbium	orbem	orbīs/orbēs	ring, circle, orbit	f	orbită	orbite			f, l			*krǫgъ, *kolo	m, n			265509	Yes	Yes	No		176	2.834	0	0
+ordo	m	3	ōrdō	ōrdinēs	ōrdinis	ōrdinum	ōrdinem	ōrdinēs	row, line	n, f	ordin, ordine	ordine, ordini			l, f; l, i		order, command, decree	*rędъ, *vьrsta	m, f			93790	Yes	Yes	No		137	2.206	37	0.596
+oriens	m	3	oriēns	orientēs	orientis	orientum	orientem	orientēs	east, rising sun	n	orient	orienturi			f, l, g		borrowing?	*vъstok, *vъsxodъ	m, m			2554458	Yes	Yes	No		212	3.414	0	0
+os	n	3	ōs	ōra	ōris	ōrum	ōs	ōra	bone	n	os	oase			l			*kostь	f			1869	Yes	Yes	Yes		491	7.907	23	0.37
+ostium	n	2	ostium	ostia	ostiī	ostiōrum	ostium	ostia	door, entrance	f	ușă	uși			l			*dvьrь; *vorta	f, n	*vorta is a plurale tantum (neuter plural)		209364	Yes	Yes	No		320	5.154	18	0.29
+ovis	f	3	ovis	ovēs	ovis	ovium	ovem	ovīs/ovēs	sheep	f	oaie	oi			l			*ovьca	f			221055	Yes	Yes	No		382	6.152	84	1.353
+pala	f	1	pāla	pālae	pālae	pālārum	pālam	pālās	spade	f	pală	pale			?		amount of hay that can be cut from one swish of a blade	*lopata	f			55968	Yes	Yes	No		104	1.675	0	0
+palea	f	1	palea	paleae	paleae	paleārum	paleam	paleās	chaff	f	pleavă	pleve			s			*pelva	f			414172	Yes	Yes	No		20	0.322	18	0.29
+pallium	n	2	pallium	pallia	palliī	palliōrum	pallium	pallia	cover													240092	Yes	Yes	No		49	0.789	49	0.789
+palma	f	1	palma	palmae	palmae	palmārum	palmam	palmās	palm	m	palmier	palmieri			f			*dolnь	f			215931	Yes	Yes	Yes		127	2.045	0	0
+panis	m	3	pānis	pānēs	pānis	pānum	pānem	pānēs	bread	f	pâine  	pâini			l			*xlěbъ	m			103826	Yes	Yes	No		492	7.924	290	4.67
+par	m	3	pār	pāres	pāris	pārum	pārem	pāres	?													50820	Yes	No	No		82	1.321	3	0.048
+parabola	f	1	parabola	parabolae	parabolae	parabolārum	parabolam	parabolās	parable, comparison	f	parabolă	parabole			f, l			*pritъča	f			72188	Yes	Yes	No		91	1.466	63	1.015
+parens	mh	3	parēns	parentēs	parentis	parentum	parentem	parentēs	parent	m	părinte	părinţi			l				m	(natural gender)		327272	Yes	Yes	No		201	3.237	0	0
+parens	fh	3	parēns	parentēs	parentis	parentum	parentem	parentēs	parent		părinte	părinţi							f	(natural gender)		327272	Yes	Yes	No		201	3.237	0	0
+paries	m	3	pariēs	parietēs	parietis	parietum	parietem	parietēs	wall	m	perete	pereți	pârete	pariete	l			*zidъ; *zьdь	m, f	wall	*	191489	Yes	Yes	No		130	2.094	74	1.192
+pars	f	3	pars	partēs	partis	partium	partim/partem*	partīs/partēs*	part	f	parte	părți			l			*čęstь, *dělъ	f, m			101694	Yes	Yes	No		889	14.317	361	5.814
+pascuum	No info	No info	No info	No info	No info	No info	No info	No info	pasture	f	pășune	pășuni	pășiune	paʃiune	l			*pažitь	f		*	2384050	Yes	No	No		64	1.031	0	0
+passer	m	3	passer	passerēs	passeris	passerum	passerem	passerēs	sparrow	f	pasăre	pasări			l		bird	*pъtica; *pъtakъ; *pъtъka	f, m, f	bird, bird, bird (came to mean duck in ssl.)	*	39020	Yes	Yes	No		26	0.419	16	0.258
+passus	m	4	passus	passūs	passūs	passuum	passum	passūs	step, pace	m	pas	pași			l			*xodъ, *korkъ	m, m			217152	Yes	Yes	No		42	0.676	1	0.016
+pastor	mh	3	pastor	pastōrēs	pastōris	pastōrum	pastōrem	pastōrēs	shepherd	m	păstor	păstori			l			*pastyrjь, *pastuxъ	m, m	(natural gender)		57541	Yes	Yes	No		136	2.19	94	1.514
+pater	mh	3	pater	patrēs	patris	patrum	patrem	patrēs	father	m	papă	papi			l		pope	*otьcь	m	(natural gender)		38228	Yes	Yes	No		4,151	66.851	0	0
+patria	f	1	patria	patriae	patriae	patriārum	patriam	patriās	country	f	patrie	patrii			l, f		home, homeland	*otьčina	f	the lat. word means 'native country', so i chose a sl. cognate for this		215243	Yes	Yes	No		99	1.594	0	0
+pauper	mh	3	pauper	pauperēs	pauperis	pauperum	pauperem	pauperēs	poor person		-								m	(natural gender)		36413	Yes	No	No		320	5.154	146	2.351
+pauper	fh	3	pauper	pauperēs	pauperis	pauperum	pauperem	pauperēs	poor person		-								m	(natural gender)		36413	Yes	No	No		320	5.154	146	2.351
+pax	f	3	pāx	pācēs	pācis	pācum	pācem	pācēs	peace	f	pace	păci			l			*mirъ, *pokojь	m, m			45926	Yes	Yes	No		825	13.286	0	0
+peccatum	n	2	peccātum	peccāta	peccātī	peccātōrum	peccātum	peccāta	sin	n	păcat	păcate			l			*grěxъ	m			1989320	Yes	Yes	No		1,558	25.091	0	0
+pecten	m	3	pecten	pectinēs	pectinis	pectinum	pectinem	pectinēs	comb	m	pieptene	piepteni	pieptine	pepthine	l			*grebenь	m		*	270573	Yes	Yes	No		?	?	?	?
+pectora	n	3	-	pectora	-	pectorum	-	pectora	breasts (PL)		-							*grǫdь, *pьrsь	f, f			2378753	Yes	Yes	No		17	0.274	17	0.274
+pectus	n	3	pectus	pectora	pectoris	pectorum	pectus	pectora	breast	n	piept	piepturi			l		chests, piept = breast	*ědro, *grǫdь, *pьrsь	n, f, f			74776	Yes	Yes	No		17	0.274	17	0.274
+pecunia	f	1	pecūnia	pecūniae	pecūniae	pecūniārum	pecūniam	pecūniās	money		-							*bolgo	n	(abstract)		210370	Yes	Yes	No		131	2.11	131	2.11
+pecus	f	3	pecus	pecudēs	pecudis	pecudum	pecudem	pecudēs	cattle		-							*skotъ, *bydlo, *nuta	m, n, f			505412	Yes	Yes	Yes		345	5.556	0	0
+pediculus	m	2	pedīculus	pedīculī	pedīculī	pedīculōrum	pedīculum	pedīculōs	louse	m	păduche	păduchi			l			*vьšь	f		*	1464124	Yes	Yes	Yes		?	?	?	?
+pellicula	f	1	pellicula	pelliculae	pelliculae	pelliculārum	pelliculam	pelliculās	small skin, little hide		-							*koža	f			2902398	Yes	Yes	No		2	0.032	0	0
+pellis	f	3	pellis	pellēs	pellis	pellium	pellem	pellēs/pellīs	skin, with a showy outside	f	piele	piei			l			*koža	f			269839	Yes	Yes	No		94	1.514	19	0.306
+pelvis	f	3	pelvis	pelvēs	pelvis	pelvium	pelvim/pelvem	pelvīs/pelvēs	basin, laver	n	pelvis	pelvisuri			l							106517	Yes	Yes	No		2	0.032	2	0.032
+pepon	m	3	pepō	peponēs	peponis	peponum	peponem	peponēs	pumpkin	m	pepene (verde)	pepeni			l		green melon = pumpkin	*tyky	f			279719	Yes	Yes	No		?	?	?	?
+percussor	mh	3	percussor	percussōrēs	percussōris	percussōrum	percussōrem	percussōrēs	murderer, assassin		-								m	(natural gender)		1378048	Yes	Yes	No		9	0.145	9	0.145
+peregrinus	mh	2	peregrīnus	peregrīnī	peregrīnī	peregrīnōrum	peregrīnum	peregrīnōs	foreign, alien	m	pelerin	pelerini			f		pilgrim		m	(natural gender)		259713	Yes	Yes	No		50	0.805	50	0.805
+persicum	n	2	persicum	persica	persicī	persicōrum	persicum	persica	peach	f	piersică	piersici	piersăcă	pérseca	l			*bersky	f		*	1141879	Yes	Yes	No		?	?	?	?
+persona	fh	1	persōna	persōnae	persōnae	persōnārum	persōnam	persōnās	mask	f	persoană	persoane			l, g, f		person					69798	Yes	Yes	No		85	1.369	0	0
+pes	m	3	pēs	pedēs	pedis	pedum	pedem	pedēs	foot	n	picior	picioare			l		leg, foot	*stopa, *noga, *korkъ, *korka, 	f, f, m, f	*noga, *korkъ, *korka are 'leg', *stopa is 'foot'		52044	Yes	Yes	No		1,190	19.165	29	0.467
+pestis	f	3	pestis	pestēs	pestis	pestium	pestem	pestēs*/pestīs	pest													40810	Yes	Yes	No		23	0.37	23	0.37
+petra	f	1	petra	petrae	petrae	petrārum	petram	petrās	rock	f	piatră 	pietre			l			*kamy, *skala	m, f			54320	Yes	Yes	No		292	4.703	19	0.306
+pilus	m	2	pilus	pilī	pilī	pilōrum	pilum	pilōs	hair, has not a hair of a good man about him	m	pâr	peri	peri		l			*volsъ; *kyka; *kъkъ	m, f, m		*	503046	Yes	Yes	Yes		87	1.401	0	0
+pinea	f	1	pīnea	pīneai	pīneai	pīneārum	pīneam	pīneās	pine		-							*borъ	m			2800410	Yes	Yes	No		2	0.032	0	0
+pinnaculum	n	2	pinnāculum	pinnācula	pinnāculī	pinnāculōrum	pinnāculum	pinnācula	pinnacle, peak		-							*vьrxъ	m			1454338	Yes	Yes	No		6	0.097	6	0.097
+pinus	f	4	pīnus	pīnūs	pīnūs	pīnuum	pīnum	pīnūs	pine tree	m	pin	pini			l		pine tree	*borъ	m			270392	Yes	Yes	No		2	0.032	2	0.032
+piscator	mh	3	piscātor	piscātōrēs	piscātōris	piscātōrum	piscātōrem	piscātōrēs	fisher	m	pescar	pescari			l				m	(natural gender)		2564598	Yes	Yes	No		8	0.129	8	0.129
+piscis	m	3	piscis	piscēs	piscis	piscium	piscem	piscēs/piscīs	fish	m	pește	pești			l			*ryba	f			39523	Yes	Yes	No		72	1.16	72	1.16
+plaga	f	1	plāga	plāgae	plāgae	plāgārum	plāgam	plāgās	blow, stroke, wound	f	plagă	plăgi			l			*razъ	m			783833	Yes	Yes	Yes		964	15.525	0	0
+platea	f	1	platēa	platēae	platēae	platēārum	platēam	platēās	street	f	piaţă	piațe			i		market	*cěsta, *dorga, *ulica	f, f, f			712336	Yes	Yes	No		179	2.883	0	0
+plaustra	n	2	plaustrum	plaustra	plaustrī	plaustrōrum	plaustrum	plaustra	wagons (PL)	n	plug	pluguri			s		plough	*vozъ	m	singular		2701559	Yes	Yes	No		?	?	?	?
+plebs	f	3	plēbs	plēbēs	plēbis	plēbum	plēbem	plēbēs	people	m	plebeu	plebei			l		plebeian	*ljudъ	m			214394	Yes	Yes	No		110	1.772	68	1.095
+plenitudo	f	3	plēnitūdō	plēnitūdinēs	plēnitūdinis	plēnitūdinum	plēnitūdinem	plēnitūdinēs	fullness	f	plenitudine	plenitudini			f, l			*pьlnostь, *obilьje	f, n	(abstract)		2590787	Yes	Yes	No		41	0.66	41	0.66
+pluvia	f	1	pluvia	pluviae	pluviae	pluviārum	pluviam	pluviās	rain	f	ploaie	ploi			l			*dъzdjь	m			2876	Yes	Yes	No		144	2.319	0	0
+poena	f	1	poena	poenae	poenae	poenārum	poenam	poenās	penalty		-							*kaznь	f	(abstract)		270383	Yes	Yes	No		48	0.773	2	0.032
+pomum	n	2	pōmum	pōma	pōmī	pōmōrum	pōmum	pōma	apple, fruit	m	pom	pomi			l		fruit tree	*ablo, *ablъ, *ablъko, *ablъka, *ablъkъ	n, m, n, f, m			456046	Yes	Yes	No		35	0.564	9	0.145
+pondus	n	3	pondus	pondera	ponderis	ponderum	pondus	pondera	weight	f	pondere	ponderi			l		weighted average, importance (not literal weight)	*bermę, *tȩgъ, *tȩga	n, m, f			55251	Yes	Yes	No		96	1.546	78	1.256
+pons	m	3	pōns	pontēs	pontis	pontium	pontem	pontēs/pontīs	bridge	f	punte	punți			l			*mostъ	m		*	38489	Yes	Yes	No		21	0.338	0	0
+pontus	m	2	pontus	pontī	pontī	pontōrum	pontum	pontōs	sea		-							*morje	n			1439720	Yes	Yes	No		19	0.306	0	0
+populus	m	2	populus	populī	populī	populōrum	populum	populōs	people	n	popor	popoare			(l, i)			*narodъ	m			46909	Yes	Yes	Yes		5,693	91.684	0	0
+porcus	m	2	porcus	porcī	porcī	porcōrum	porcum	porcōs	pig	m	porc	porci			l		pork, pig	*svinьja	f			50617	Yes	Yes	No		15	0.242	10	0.161
+porta	f	1	porta	portae	portae	portārum	portam	portās	gate	f	poartă	porți			l			*dvьrь, *vorta	f, n	*vorta is a plurale tantum (neuter plural)		49413	Yes	Yes	Yes		608	9.792	226	3.64
+porticus	f	4	porticus	porticūs	porticūs	porticuum	porticum	porticūs	colonnade, gallery, porch	n	portic	porticuri			f, l	?				no psl. word		2415041	Yes	Yes	No		24	0.387	24	0.387
+possessio	f	3	possessiō	possessiōnēs	possessiōnis	possessiōnum	possessiōnem	possessiōnēs	possession, seizing	f	posesiune	posesiuni			f, l		thing you own			(abstract)		2211459	Yes	Yes	No		194	3.124	194	3.124
+potestas	f	3	potestas	potestātēs	potestātis	potestātum	potestātem	potestātēs	power	f	putere	puteri						*moktь	f, f	(abstract)		55395	Yes	Yes	No		196	3.157	196	3.157
+praeceptor	mh	3	praeceptor	praeceptōrēs	praeceptōris	praeceptōrum	praeceptōrem	praeceptōrēs	teacher, instructor	m	preceptor	preceptori			f, l				m	(natural gender)		2609521	Yes	Yes	No		23	0.37	3	0.048
+praeda	f	1	praeda	praedae	praedae	praedārum	praedam	praedās	booty	f	pradă	prăzi			l		booty					457191	Yes	Yes	No		109	1.755	61	0.982
+pretium	n	2	pretium	pretia	pretiī	pretiōrum	pretium	pretia	price	n	preț	prețuri			l			*cěna	f			1382437	Yes	Yes	No		102	1.643	52	0.837
+primitia	f	1	prīmitia	prīmitiae	prīmitiae	prīmitiārum	prīmitiam	prīmitiās	first fruits													2621367	Yes	Yes	No		?	?	?	?
+princeps	mh	3	prīnceps	prīncipēs	prīncipis	prīncipum	prīncipem	prīncipēs	foremost		-								m	(natural gender)		499452	Yes	Yes	No		1,767	28.457	0	0
+processus	m	4	prōcessus	prōcessūs	prōcessūs	prōcessuum	prōcessum	prōcessūs	advance	n	proces	procese			i, f, l		trial, process			(abstract)		567712	Yes	Yes	No		115	1.852	113	1.82
+propheta	mh	1	prophēta	prophētae	prophētae	prophētārum	prophētam	prophētās	prophet	m	profet	profeți			f				m	(natural gender)		842905	Yes	Yes	No		552	8.89	460	7.408
+providens	mh	3	prōvidens	prōvidentēs	prōvidentis	prōvidentum	prōvidentem	prōvidentēs	foreseeing	f	providență	providențe			l, f		divine providence		m	(natural gender)		2615692	Yes	No	No		?	?	?	?
+prunum	n	2	prūnum	prūna	prūnī	prūnōrum	prūnum	prūna	plum	f	prună	prune		pruna	l			*sliva	f	plum, plum-tree	*	327714	Yes	Yes	No		12	0.193	0	0
+psalmus	m	2	psalmus	psalmī	psalmī	psalmōrum	psalmum	psalmōs	psalm	m	psalm	psalmi			s		borrowing?	*p(ъ)salъmъ	m	very late loanword		2474803	Yes	Yes	No		92	1.482	92	1.482
+puella	fh	1	puella	puellae	puellae	puellārum	puellam	puellās	girl	f	fată	fete			l	*		*děva, *děvica	f, f	(natural gender)		39017	Yes	Yes	No		80	1.288	64	1.031
+puer	mh	2	puer	puerī	puerī	puerōrum	puerum	puerōs	child		-									(natural gender) *čędo, *dětę are the words for 'child', both (n), but they don't correspond to puer 'male child, boy'		35888	Yes	Yes	No		377	6.071	295	4.751
+pugna	f	1	pugna	pugnae	pugnae	pugnārum	pugnam	pugnās	fight		-							*bojь, *bornь, *kotora	m, f, f			39018	Yes	Yes	No		67	1.079	39	0.628
+pugnus	m	2	pugnus	pugnī	pugnī	pugnōrum	pugnum	pugnōs	fist	m	pumn	pumni			l			*pȩstь	f		*	41212	Yes	Yes	No		8	0.129	0	0
+pulex	m	3	pūlex	pūlicēs	pūlicis	pūlicum	pūlicem	pūlicēs	flea	m	purice	purici			l			*blъxa	f		*	271720	Yes	Yes	No		4	0.064	0	0
+pullus	m	2	pullus	pullī	pullī	pullōrum	pullum	pullōs	young animal, offspring	m	pui	pui			l		chicken, chick, baby	*ščenȩ	n			269843	Yes	Yes	No		132	2.126	0	0
+pulvis	m	3	pulvis	pulverēs	pulveris	pulverum	pulverem	pulverēs	dust, powder	f	pulbere	pulberi			l			*porxъ	m			1124362	Yes	Yes	No		148	2.383	50	0.805
+pusillus	m	2	pusillus	pusillī	pusillī	pusillōrum	pusillum	pusillōs	very little													1394609	Yes	No	No		32	0.515	32	0.515
+puteus	m	2	puteus	puteī	puteī	puteōrum	puteum	puteōs	well	n	puț	puțuri	puțû	putiu	l			*krinica; *krьnica	f	in e and w: spring, well; in ssl.: deep spot in river or lake, vortex, basin	*	269491	Yes	Yes	No		53	0.854	45	0.725
+radix	f	3	rādīx	rādīcēs	rādīcis	rādīcum	rādīcem	rādīcēs	root	f	rădăcină  	rădăcini			l			*korę	m			60804	Yes	Yes	No		124	1.997	38	0.612
+ramex	m	3	rāmex	rāmicēs	rāmicis	rāmicum	rāmicem	rāmicēs	rupture, hernia		-							*kyla	f			-1	No	No	No		?	?	?	?
+ramus	m	2	rāmus	rāmī	rāmī	rāmōrum	rāmum	rāmōs	branch, twig	f	ramură 	ramuri			l			*věja, *větvь, *orslь	f			310820	Yes	Yes	No		45	0.725	45	0.725
+ratio	f	3	ratiō	ratiōnēs	ratiōnis	ratiōnum	ratiōnem	ratiōnēs	reason	f	rațiune	rațiuni			l					(abstract)		69139	Yes	Yes	No		43	0.693	43	0.693
+regio	f	3	regiō	regiōnēs	regiōnis	regiōnum	regiōnem	regiōnēs	direction, line, district, region	f	regiune	regiuni			f, l							603811	Yes	Yes	No		333	5.363	270	4.348
+religio	f	3	religiō	religiōnēs	religiōnis	religiōnum	religiōnem	religiōnēs	religion	f	religie	religii			f, l, g							1200372	Yes	Yes	No		13	0.209	13	0.209
+res	f	5	rēs	rēs	reī	rērum	rem	rēs	thing		-							*věktь	f			56222	Yes	Yes	No		632	10.178	0	0
+rete	n	3	rēte	rētia	rētis	rētium	rēte	rētia	net	f	reţea  	rețele			l		network	*merža, *sětь, *teneto	f, f, n			91533	Yes	Yes	No		78	1.256	9	0.145
+rex	mh	3	rēx	rēgēs	rēgis	rēgum	rēgem	rēgēs	king	m	rege	regi			l			*korljь	m	(natural gender)		38227	Yes	Yes	No		8,448	136.052	0	0
+ripa	f	1	rīpa	rīpae	rīpae	rīpārum	rīpam	rīpās	bank	f	râpă	râpe	rîpâ	ripa	l			*bergъ	m		*	269946	Yes	Yes	No		19	0.306	19	0.306
+ritus	m	4	rītus	rītūs	rītūs	rītuum	rītum	rītūs	rite	n	rit	rituri			grk, l, f							270325	Yes	Yes	No		38	0.612	38	0.612
+rivus	m	2	rīvus	rīvī	rīvī	rīvōrum	rīvum	rīvōs	river	n	râu	râuri	rîu		l			*rěka; *struja; *tokъ	f, f, m	tokъ = stream, current, course	*	1555182	Yes	Yes	No		30	0.483	26	0.419
+ros	m	3	rōs	rōrēs	rōris	rōrum	rōrem	rōrēs	dew	f	rouă			roao	l			*rosa	f		*	38240	Yes	Yes	No		?	?	?	?
+rosa	f	1	rosa	rosae	rosae	rosārum	rosam	rosās	rose	f	roză	roze			f, i, l, g		no longer used (literary)					38241	Yes	Yes	No		10	0.161	0	0
+ruina	f	1	ruīna	ruīnae	ruīnae	ruīnārum	ruīnam	ruīnās	ruin	f	ruină	ruine			f, l							270828	Yes	Yes	No		65	1.047	65	1.047
+rusticus	mh	2	rusticus	rusticī	rusticī	rusticōrum	rusticum	rusticōs	rural		-								m	(natural gender - adjective)		309162	Yes	No	No		2	0.032	2	0.032
+sacerdos	m	3	sacerdōs	sacerdōtēs	sacerdōtis	sacerdōtum	sacerdōtem	sacerdōtēs	priest	m	sacerdot	sacerdoți			i, l			*žьrьcь, *popъ, *svętjenikъ	m	*žьrьcь is 'pagan priest', the other two are 'christian priest'		53140	Yes	Yes	No		1,626	26.186	206	3.318
+saeculum	n	2	saeculum	saecula	saeculī	saeculōrum	saeculum	saecula	race, generation, age	n	secol	secole			l, i		century	*věkъ, *rodъ, *kolěno	m, m, n	*věkъ 'age, century', *rodъ, *kolěno 'generation'		282317	Yes	Yes	No		347	5.588	347	5.588
+sanctor	mh	3	sanctor	sanctores	sanctoris	sanctorum	sanctorem	sanctores	ordainer		-								m	(natural gender)		-1	No	No	No		351	5.653	0	0
+sanguis	m	3	sanguis	sanguinēs	sanguinis	sanguinum	sanguinem	sanguinēs	blood	n	sânge	-			l			*kry	f			47419	Yes	Yes	No		680	10.951	284	4.574
+sapientia	f	1	sapientia	sapientiae	sapientiae	sapientiārum	sapientiam	sapientiās	wisdom, intelligence		-							*mǫdrostь	f	(abstract)		934621	Yes	Yes	No		515	8.294	189	3.044
+scandalum	n	2	scandalum	scandala	scandalī	scandalōrum	scandalum	scandala	scandal	n	scandal	scandaluri			f, l		row, affray, brawl, scandal (borrowing?)	*sъblaznъ, *sъblaznь	m, f			2592622	Yes	Yes	No		35	0.564	35	0.564
+scientia	f	1	scientia	scientiae	scientiae	scientiārum	scientiam	scientiās	knowledge	f	știință	științe					knowledge, science	*věd(j)a, *znanьje	f, n	(abstract)		214890	Yes	Yes	No		182	2.931	94	1.514
+scintilla	f	1	scintilla	scintillae	scintillae	scintillārum	scintillam	scintillās	spark	f	scânteie	scântei	scînteiă	scántéia	l			*jьskra	f		*	89995	Yes	Yes	No		13	0.209	5	0.081
+scopa	f	1	scōpa	scōpae	scōpae	scōpārum	scōpam	scōpās	broom, swept		-							*metьla	f			184548	Yes	Yes	No		16	0.258	0	0
+scopulus	m	2	scopulus	scopulī	scopulī	scopulōrum	scopulum	scopulōs	cliff, crag		-											2703254	Yes	Yes	No		3	0.048	3	0.048
+secretum	n	2	-	secretem	-	secretōrum	-	secreta	secret, mystery (PL)	n	secret	secrete			f, l			*tajьnьstvo, *tajьna	n, f	(abstract)		2924907	Yes	No	No		63	1.015	0	0
+semen	n	3	sēmen	sēmina	sēminis	sēminum	sēmen	sēmina	seed	f	sămânță	semințe			l			*sěmę	n			58501	Yes	Yes	No		372	5.991	228	3.672
+semis	m	3	sēmis	sēmissēs	sēmissis	sēmissum	sēmissem	sēmissēs	one half		-							*polъ	m			268354	Yes	Yes	No		18	0.29	6	0.097
+semita	f	1	sēmita	sēmitae	sēmitae	sēmitārum	sēmitam	sēmitās	path, side-way		-							*stьdza	f			270837	Yes	Yes	No		95	1.53	95	1.53
+senior	mh	3	senior	seniōrēs	seniōris	seniōrum	seniōrem	seniōrēs	senior, old		-								m	(natural gender)		47152	Yes	No	No		483	7.779	53	0.854
+sensus	m	4	sēnsus	sēnsūs	sēnsūs	sēnsuum	sēnsum	sēnsūs	observation	n	simț   	simțuri			l		sense	*čudlo, *čuvьstvo	n, n	both in the meaning 'sense'		215902	Yes	Yes	No		203	3.269	4	0.064
+sententia	f	1	sententia	sententiae	sententiae	sententiārum	sententiam	sententiās	sentence	f	sentință	sentințe			f, l							933916	Yes	Yes	No		38	0.612	38	0.612
+series	f	5	seriēs	seriēs	seriēī	seriērum	seriem	seriēs	series, row, chain	f	serie	serii			f, l		batch, series	*rędъ, *vьrsta	m, f			38454	Yes	Yes	No		?	?	?	?
+sermo	m	3	sermō	sermōnēs	sermōnis	sermōnum	sermōnem	sermōnēs	discourse, talk		-							*govorъ, *besěda, *golgolъ	m, f, m			1100120	Yes	Yes	No		641	10.323	641	10.323
+serpens	f	3	serpēns	serpentēs	serpentis	serpentum	serpentem	serpentēs	serpent	m	şarpe 	șerpi			l			*zmьjь, *zmьja, *gadъ, *ǫžь	m, f, m, m			261739	Yes	Yes	No		88	1.417	0	0
+servus	mh	2	servus	servī	servī	servōrum	servum	servōs	slave	n	serv	servi			l			*orbъ	m	(natural gender)		6184	Yes	Yes	No		2,583	41.598	0	0
+sexus	m	4	sexus	sexūs	sexūs	sexuum	sexum	sexūs	sex	n	sex	sexuri			f, l		gender	*polъ	m	literally 'half'		266198	Yes	Yes	No		17	0.274	17	0.274
+siclus	m	2	siclus	siclī	siclī	siclōrum	siclum	siclōs	shekel	m, m	siclu, șechel	sicli, șecheli			f, l; f					no psl. word		2644972	Yes	Yes	No		?	?	?	?
+signum	n	2	signum	signa	signī	signōrum	signum	signa	signal	n	semnal	semnale			f			*znakъ, *znamę	m, n			223545	Yes	Yes	No		321	5.17	147	2.367
+silva	f	1	silva	silvae	silvae	silvārum	silvam	silvās	forest	f	selbă	selbe		sélba	l			*lesъ	m		*	48843	Yes	Yes	No		50	0.805	48	0.773
+sinus	m	4	sinus	sinūs	sinūs	sinuum	sinum	sinūs	bosom, lap, hollow	m	sân	sâni	sîn	sin	l			*ědro; *pazduxa	n, f	bosom; bosom, armpit; 	*	187217	Yes	Yes	Yes		1,607	25.88	35	0.564
+societas	f	3	societās	societātēs	societātis	societātum	societātem	societātēs	society	f	societate	societăți			f, l			*družina	f			1993824	Yes	Yes	No		23	0.37	23	0.37
+socrus	fh	4	socrus	socrūs	socrūs	socruum	socrum	socrūs	mother-in-law	f	soacră	soacre			l			*svekry	f	(natural gender)		53402	Yes	Yes	No		29	0.467	11	0.177
+sol	m	3	sōl	sōlēs	sōlis	sōlum	sōlem	sōlēs	sun	m	soare	sori			l			*sъlnьce	n			3902	Yes	Yes	No		1,516	24.415	79	1.272
+solitudo	f	3	sōlitūdō	sōlitūdinēs	sōlitūdinis	sōlitūdinum	sōlitūdinem	sōlitūdinēs	loneliness	f	solitudine	solutidini			f, l					(abstract)		1604567	Yes	Yes	No		149	2.4	149	2.4
+somnus	m	2	somnus	somnī	somnī	somnōrum	somnum	somnōs	sleep	n	somn	somnuri			s			*sъnъ	m			269980	Yes	Yes	No		61	0.982	35	0.564
+sorex	m	3	sorex	sorices	soricis	soricum	soricem	sorices	mouse	m	șoarece	șoareci		shoarece	l			*myšь	f		*	2001162	Yes	Yes	No		?	?	?	?
+soror	fh	3	soror	sorōrēs	sorōris	sorōrum	sorōrem	sorōrēs	sister	f	soră	surori			l			*sestra	f	(natural gender)		67781	Yes	Yes	No		131	2.11	121	1.949
+species	f	5	speciēs	speciēs	speciēī	speciērum	speciem	speciēs	appearance	f	specie	specii			l		species	*vidъ	m			4327	Yes	Yes	No		102	1.643	40	0.644
+speculum	n	2	speculum	specula	speculī	speculōrum	speculum	specula	mirror		-							*zьrkadlo	n	late word, probably calqued on the lat.		214396	Yes	Yes	No		15	0.242	3	0.048
+specus	m	4	specus	specūs	specūs	specuum	specum	specūs	cave		-							*ama, *pektera	f, f			2690810	Yes	Yes	No		3	0.048	3	0.048
+spina	f	1	spīna	spīnae	spīnae	spīnārum	spīnam	spīnās	thorn	m	spin	spini			l			*tьrnъ	m			276560	Yes	Yes	No		63	1.015	39	0.628
+spiritus	m	4	spīritus	spīritūs	spīritūs	spīrituum	spīritum	spīritūs	breath	n	spirit	spirite			l, i		spirit	*dъxъ, *duxъ	m, m			327262	Yes	Yes	No		720	11.595	720	11.595
+sporta	f	1	sporta	sportae	sportae	sportārum	sportam	sportās	basket		-							*košь	m			695826	Yes	Yes	No		6	0.097	6	0.097
+stella	f	1	stēlla	stēllae	stēllae	stēllārum	stēllam	stēllās	star	f	stea	stele			l			*gvězda	f			47339	Yes	Yes	No		92	1.482	40	0.644
+stomachus	m	2	stomachus	stomachī	stomachī	stomachōrum	stomachum	stomachōs	stomach	n	stomac	stomacuri			l			*žel¸odъkъ	m		*	2414399	Yes	Yes	No		4	0.064	4	0.064
+substantia	f	1	substantia	substantiae	substantiae	substantiārum	substantiam	substantiās	resources	f	substanță	substanțe			f		substance			(abstract)		2122056	Yes	Yes	No		146	2.351	56	0.902
+subula	f	1	sūbula	sūbulae	sūbulae	sūbulārum	sūbulam	sūbulās	awl		-							*šidlo	n			2067207	Yes	Yes	No		2	0.032	2	0.032
+sucus	m	2	sūcus	sūcī	sūcī	sūcōrum	sūcum	sūcōs	juice	n	suc	sucuri			f, l			*sokъ	m			269989	Yes	Yes	No		?	?	?	?
+sudor	m	3	sūdor	sūdōrēs	sūdōris	sūdōrum	sūdōrem	sūdōrēs	sweat	f	sudoare	sudori			l			*potъ	m		*	190351	Yes	Yes	No		8	0.129	2	0.032
+summa	f	1	summa	summae	summae	summārum	summam	summās	top, summit	f	sumă	sume			l, p		amount, sum	*vьrxъ	m			74696	Yes	Yes	Yes		127	2.045	0	0
+sycomorus	m	2	sycomorus	sycomorī	sycomorī	sycomorōrum	sycomorum	sycomorōs	sycamore	m	sicomore	sicomori			f			*(j)avorъ	m			2611198	Yes	Yes	No		?	?	?	?
+talenta	n	2	-	talenta	-	talentōrum	-	talenta	talents (PL)	n	talent	talente			f, l							1914029	Yes	Yes	No		83	1.337	83	1.337
+tectum	n	2	tēctum	tēcta	tēctī	tēctōrum	tēctum	tēcta	roof		-							*krovъ, *strěxa	m, f			223782	Yes	Yes	No		121	1.949	0	0
+templum	n	2	templum	templa	templī	templōrum	templum	templa	temple	n	templu	temple			l, f					no word for 'temple' that could be considered psl.; churches were the first temples slavs had		47642	Yes	Yes	No		458	7.376	458	7.376
+temptatio	f	3	temptatiō	temptatiōnēs	temptatiōnis	temptatiōnum	temptatiōnem	temptatiōnēs	attack		-							*napadъ	m	(abstract)		2593834	Yes	Yes	No		43	0.693	43	0.693
+tempus	n	3	tempus	tempora	temporis	temporum	tempus	tempora	time	n	timp	timpuri			l			*vermę, *časъ, *pora, *rokъ, *doba	f, m, n, m, f	*časъ and *vermę are 'time' in general; *rokъ is 'specified time'; *pora is 'season'; *doba is roughly 'timespan'		59658	Yes	Yes	Yes		1,666	26.83	0	0
+tenebrae	f	1	-	tenebrae	-	tenebrārum	-	tenebrās	darkness	f	tenebră	tenebre			f, l			*morkъ, *tьma	m, f			91437	Yes	Yes	No		202	3.253	130	2.094
+tergum	n	2	tergum	terga	tergī	tergōrum	tergum	terga	the back		-							*tylъ, *zadъ, *zadja, *gъrbъ, *gъrba, *xrьbьtъ	m, m, f, m, m, m	the first three mean the 'back/rear' of anything, while *gъrbъ, *gъrba, *xrьbьtъ denote the 'back' of a human		542429	Yes	Yes	No		49	0.789	43	0.693
+terminus	m	2	terminus	terminī	terminī	terminōrum	terminum	terminōs	a bounding, fixing of limits, establishing lines	f	terminație	terminații			l	*		*konьcь, *krajь	m, m			-1	No	No	No		?	?	?	?
+terra	f	1	terra	terrae	terrae	terrārum	terram	terrās	earth	f	ţară	țări			l		country, land	*zemlja	f			47595	Yes	Yes	No		3,219	51.841	3,219	51.841
+testa	f	1	testa	testae	testae	testārum	testam	testās	brick, tile													35142	Yes	Yes	No		131	2.11	11	0.177
+thronus	m	2	thronus	thronī	thronī	thronōrum	thronum	thronōs	throne	n	tron	tronuri			f			*stolъ	m	table (ocs 'throne')		41365	Yes	Yes	No		92	1.482	92	1.482
+tilia	f	1	tilia	tiliae	tiliae	tiliārum	tiliam	tiliās	lime-tree, linden-tree	m, n	tei	tei, teie		teiu	l			*lipa	f		*	547050	Yes	Yes	No		?	?	?	?
+tinctus	m	2	tinctus	tinctī	tinctī	tinctōrum	tinctum	tinctōs	dipping, saffron-sauce	f	tinctură	tincturi			l		tincture					2657153	Yes	No	No		15	0.242	0	0
+tonitrus	m	4	tonitrus	tonitrūs	tonitrūs	tonitruum	tonitrum	tonitrūs	thunder	n	tunet	tunete			l			*gromъ	m		*	2525893	Yes	Yes	No		14	0.225	14	0.225
+torrens	f	3	torrēns	torrentēs	torrentis	torrentium	torrentim/torrentem*	torrentīs/torrentēs*	burning													2614306	Yes	Yes	No		244	3.93	0	0
+torta	f	1	torta	tortai	tortai	tortārum	tortam	tortās	twisted, cord											(adjective?)		6262	Yes	No	No		20	0.322	0	0
+trabs	f	3	trabs	trabēs	trabis	trabum	trabem	trabēs	beam, rafter	f	traversă	traverse			f			*gręda, *bolzina	f, f			2576081	Yes	Yes	No		12	0.193	12	0.193
+tribunus	mh	2	tribūnus	tribūnī	tribūnī	tribūnōrum	tribūnum	tribūnōs	head of tribe	m	tribun	tribuni			l		roman times		m	(natural gender)		2414409	Yes	Yes	No		44	0.709	44	0.709
+tribus	f	4	tribus	tribūs	tribūs	tribuum	tribum	tribūs	a third part of the people	n	trib	triburi			l		tribe	*plemę, *rodъ	n, m	both in the meaning 'tribe'		1002622	Yes	Yes	No		728	11.724	244	3.93
+truncus	m	2	truncus	truncī	truncī	truncōrum	truncum	truncōs	trunk	n	trunchi	trunchiuri		trunc	l			*pьnь	m		*	2067548	Yes	Yes	No		13	0.209	0	0
+tuba	f	1	tuba	tubae	tubae	tubārum	tubam	tubās	trumpet	f	trompetă	trompete			f		unsure if this is directly related to tuba?	*trǫba	f			3673	Yes	Yes	No		150	2.416	74	1.192
+turba	f	1	turba	turbae	turbae	turbārum	turbam	turbās	crowd, tumult, turmoil		-											450638	Yes	Yes	No		333	5.363	87	1.401
+turma	f	1	turma	turmae	turmae	turmārum	turmam	turmās	company, troop, crowd	f	turmă	turme			l		flock, herd (of sheep)	*pъlkъ, *ortь	m			1130233	Yes	Yes	No		57	0.918	57	0.918
+turris	f	3	turris	turrēs	turris	turrium	turrim/turrem*	turrīs/turrēs*	tower	n	turn	turnuri			g							567921	Yes	Yes	No		77	1.24	77	1.24
+turtur	m	3	turtur	turturēs	turturis	turturum	turturem	turturēs	turtle-dove	f	turturică 	turturici				*		*golǫbь	m			1120801	Yes	Yes	No		16	0.258	16	0.258
+tussis	f	3	tussis	tussēs	tussis	tussium	tussim/tussem	tussīs/tussēs*	cough	f	tuse		tusă	tusse	l			*kaš(ь)ljь	m		*	1808358	Yes	Yes	No		?	?	?	?
+tutela	f	1	tūtēla	tūtēlae	tūtēlae	tūtēlārum	tūtēlam	tūtēlās	protection	f	tutelă	tutele			f, l					(abstract)		570704	Yes	Yes	No		2	0.032	2	0.032
+tyrannus	mh	2	tyrannus	tyrannī	tyrannī	tyrannōrum	tyrannum	tyrannōs	monarch, absolute ruler	m	tiran	tirani			grk, f		autocrat, oppressor, tyrant		m	(natural gender)		217140	Yes	Yes	No		19	0.306	16	0.258
+umbra	f	1	umbra	umbrae	umbrae	umbrārum	umbram	umbrās	shadow	f	umbră 	umbre			l			*sěnь	f			61061	Yes	Yes	No		115	1.852	23	0.37
+umerus	m	2	umerus	umerī	umerī	umerōrum	umerum	umerōs	shoulder	m	umăr	umeri		umer	l			*ormo; *ormȩ; *pletje	n, n, n		*	1360129	Yes	Yes	No		63	1.015	33	0.531
+unctus	mh	2	unctus	unctī	unctī	unctōrus	unctum	unctōs	anointed, oiled	f	ungere	ungeri			?		unction	*mastь	f			2338820	Yes	No	No		47	0.757	0	0
+unguis	m	3	unguis	unguēs	unguis	unguium	unguem	unguēs*/unguīs	nail	f	unghie	unghii			l			*nogъtь, *kopyto, *paznegъtь	m, ?, n	*nogъtь is a human nail, *kopyto and *paznegъtь are an animal's hoof (the original entry you had here, *gvozdъ, denotes a nail for hammering)		1123946	Yes	Yes	No		16	0.258	16	0.258
+ungula	f	1	ungula	ungulae	ungulae	ungulārum	ungulam	ungulās	hoof, claw, talon	f	unghie	unghii			l	*	nail, claw, hoof	*kopyto, *paznegъtь, *nogъtь	m, f, m	*kopyto and *paznegъtь are 'hoof', *nogъtь is mostly human nail, but also claw		1515526	Yes	Yes	No		25	0.403	21	0.338
+universum	n	2	ūniversum	ūniversa	ūniversī	ūniversōrum	ūniversum	ūniversa	universe	n	univers	universuri			f, l			*světъ, *mirъ	m, m	as in 'world' (i don't think there would have been a difference)		1557881	Yes	No	No		922	14.849	922	14.849
+urbs	f	3	urbs	urbēs	urbis	urbium	urbem	urbēs*/urbīs	city	f	urbe	urbe?			l			*gordъ	m			38475	Yes	Yes	No		460	7.408	278	4.477
+urceolus	m	2	urceolus	urceoli	urceoli	urceolōrum	urceolum	urceolos	small jug, pitcher	n	urcior	urcioare	urceor		l			*krina; *krinica	f, f	vessel, jug	*	2183066	Yes	Yes	No		?	?	?	?
+uterus	m	2	uterus	uterī	uterī	uterōrum	uterum	uterōs	womb	n	uter	utere			l		uterus	*ložesno, *matъka, *mat(er)ica	n, f, f			42392	Yes	Yes	No		84	1.353	66	1.063
+uva	f	1	ūva	ūvae	ūvae	ūvārum	ūvam	ūvās	grape		-							*grozdъ, *grozdьje	m, n	*grozdъ (m) 'grape', *grozdьje (n) collective sg. 'grapes'		28918	Yes	Yes	Yes		74	1.192	0	0
+uxor	fh	3	uxor	uxōrēs	uxōris	uxōrum	uxōrem	uxōrēs	wife		-							*žena	f	(natural gender)		38512	Yes	Yes	No		545	8.777	507	8.165
+vacca	f	1	vacca	vaccae	vaccae	vaccārum	vaccam	vaccās	cow	f	vacă	vaci			l			*korva	f			38502	Yes	Yes	No		38	0.612	11	0.177
+vallis	f	3	vallis	vallēs	vallis	vallium	vallem	vallēs*/vallīs	valley	f	vale	văi			l			*dolina, *dъbrь	f, f			266254	Yes	Yes	Yes		192	3.092	14	0.225
+vas	n	3	vās	vāsa	vāsis	vāsum	vās	vāsa	vessel, dish	n	vas	vase, vasuri			l		vessel, dish	*sǫdъ, *krin(ic)a	m, f			95443	Yes	Yes	Yes		342	5.508	248	3.994
+vectis	m	3	vectis	vectēs	vectis	vectium	vectem	vectēs/vectīs	bar, lever		-							*drǫgъ	m			1376956	Yes	Yes	No		126	2.029	7	0.113
+vector	m	3	vector	vectōrēs	vectōris	vectōrum	vectōrem	vectōrēs	passenger (?)											(abstract)		2916579	Yes	No	No		?	?	?	?
+velum	n	2	vēlum	vēla	vēlī	vēlōrum	vēlum	vēla	sail	f	velă	vele			i			*ědro	n	meaning 'sail' not widespread, mostly ssl. early slavs did not use sails, so there was no psl. term. most sl. languages have loanwords here.		251362	Yes	Yes	No		48	0.773	30	0.483
+vena	f	1	vēna	vēnae	vēnae	vēnārum	vēnam	vēnās	vein	f	vână	vine			l			*žila	f		*	215945	Yes	Yes	No		18	0.29	10	0.161
+venenum	n	2	venēnum	venēna	venēnī	venēnōrum	venēnum	venēna	venom	n	venin	veninuri			l			*ědъ; *čemerъ	m, m	*čemerъ = hellebore, poison	*	40815	Yes	Yes	No		10	0.161	4	0.064
+venter	m	3	venter	ventrēs	ventris	ventrium	ventrem	ventrēs	belly	n	vintru?	vintre			l		groin	*brjuxo, *brjuxъ, *tьrbuxъ	n, m, m			790223	Yes	Yes	No		103	1.659	59	0.95
+ventus	m	2	ventus	ventī	ventī	ventōrum	ventum	ventōs	wind	n	vânt	vânturi			l			*větrъ	m			28929	Yes	Yes	No		?	?	?	?
+verbum	n	2	verbum	verba	verbī	verbōrum	verbum	verba	word	n, f	verb; vorbă	verbe, vorbe			f, l; s?		verb; speech	*rěčь, *slovo, *golgolъ	f, n, m			38600	Yes	Yes	No		1,204	19.39	1,204	19.39
+vermis	m	3	vermis	vermēs	vermis	vermium	vermem	vermēs*/vermīs	worm	m	vierme	viermi			l			*čьrvь	m			38646	Yes	Yes	No		23	0.37	23	0.37
+verna	m	1	verna	vernae	vernae	vernārum	vernam	vernās	house servant, family slave		-											1662440	Yes	Yes	No		?	?	?	?
+versus	m	4	versus	versūs	versūs	versuum	versum	versūs	line, row	n	vers	versuri			f, l		line in a poem	*rędъ, *vьrsta	m, f			73725	Yes	Yes	No		68	1.095	2	0.032
+verum	n	2	vērum	vēra	vērī	vērōrum	vērum	vēra	true											(abstract / adjective??)		563648	Yes	Yes	Yes		117	1.884	0	0
+vesica	f	1	vēsīca	vēsīcae	vēsīcae	vēsīcārum	vēsīcam	vēsīcās	balloon, bladder	f	bășică	bășici	beșică	beʃica	l				?		*	181308	Yes	Yes	No		2	0.032	2	0.032
+vesper	m	2	vesper	vesperī	vesperī	vesperōrum	vesperum	vesperōs	evening-star	n	vest				g		west	*veče(rъ)	m/n			385045	Yes	Yes	No		?	?	?	?
+vestimentum	n	2	vestīmentum	vestīmenta	vestīmentī	vestīmentōrum	vestīmentum	vestīmenta	clothing	n	veșmânt	veșminte			l		garment	*drabъ, *odědja	m, f			2073872	Yes	Yes	No		231	3.72	231	3.72
+vestis	f	3	vestis	vestēs	vestis	vestium	vestem	vestēs	clothing	n	veșmânt	veșminte					garment	*drabъ, *odědja	m, f			1231004	Yes	Yes	No		129	2.078	127	2.045
+vexillum	n	2	vexillum	vexilla	vexillī	vexillōrum	vexillum	vexilla	standard, banner, flag		-							*znamę, *xorǫgy	m, f			210553	Yes	Yes	No		2	0.032	2	0.032
+via	f	1	via	viae	viae	viārum	viam	viās	highway, road, path, street		-							*cěsta, *dorga, *ulica	f, f, f			38602	Yes	Yes	No		900	14.494	900	14.494
+vicinia	f	1	vīcīnia	vīcīniae	vīcīniae	vīcīniārum	vīcīniam	vīcīniās	neighborhood	f	vecinătate	vecinătăți			l							2919406	Yes	Yes	No		?	?	?	?
+vicinus	mh	2	vīcīnus	vīcīnī	vīcīnī	vīcīnōrum	vīcīnum	vīcīnōs	neighbor	m	vecin	vecini			l				m	(natural gender)		934572	Yes	Yes	No		41	0.66	41	0.66
+victor	mh	3	victor	victōrēs	victōris	victōrum	victōrem	victōrēs	victor, conqueror		-								m	(natural gender)		69126	Yes	Yes	No		12	0.193	0	0
+victoria	f	1	victōria	victōriae	victōriae	victōriārum	victōriam	victōriās	victory	f	victorie	victorii			l					(abstract)		175446	Yes	Yes	No		27	0.435	27	0.435
+villa	f	1	vīlla	vīllae	vīllae	vīllārum	vīllam	vīllās	town		-							*gordъ	m			72488	Yes	Yes	No		64	1.031	43	0.693
+vinea	f	1	vīnea	vīneae	vīneae	vīneārum	vīneam	vīneās	vineyard	f	vie	vii			l			*vinogordъ	m			924458	Yes	Yes	No		326	5.25	0	0
+vinum	n	2	vīnum	vīna	vīnī	vīnōrum	vīnum	vīna	wine	n	vin	vinuri			l			*vino	n			38604	Yes	Yes	No		239	3.849	239	3.849
+vipera	f	1	vīpera	vīperae	vīperae	vīperārum	vīperam	vīperās	viper	f	viperă	vipere			l							43133	Yes	Yes	No		7	0.113	7	0.113
+vir	mh	2	vir	virī	virī	virōrum	virum	virōs	man		-							*mǫžь	m	(natural gender)		38605	Yes	Yes	No		?	?	?	?
+virga	f	1	virga	virgae	virgae	virgārum	virgam	virgās	twig, sprout	f	vargă	vergi			l			*věja, *větvь, *orslь	f, f, f			292130	Yes	Yes	Yes		116	1.868	116	1.868
+virgo	fh	3	virgō	virginēs	virginis	virginum	virginem	virginēs	virgin	f	virgină	virgine			l		virgin	*děva, *děvica	f, f	(natural gender)		38606	Yes	Yes	No		81	1.304	81	1.304
+vis	f	3	vīs	vīrēs	vīs	vīrium	vim	vīrēs	force, strength		-							*sila	f			61080	Yes	Yes	No		219	3.527	53	0.854
+visio	f	3	vīsiō	vīsiōnēs	vīsiōnis	vīsiōnum	vīsiōnem	vīsiōnēs	vision, act of seeing	f	viziune	viziuni			f			*mьčьtъ, *zorkъ	m, m			69166	Yes	Yes	No		98	1.578	54	0.87
+vita	f	1	vīta	vītae	vītae	vītārum	vītam	vītās	life	f	viaţă  	vieți			l			*životъ	m			38461	Yes	Yes	No		?	?	?	?
+vitis	f	3	vītis	vītēs	vītis	vītium	vītem	vītēs/vītīs	vine	f	viță	vițe		vitia	l			*loza	f		*	1395847	Yes	Yes	Yes		25	0.403	17	0.274
+voluntas	f	3	voluntās	voluntātēs	voluntātis	voluntātum	voluntātem	voluntātēs	will	f	vointă   	vointe					voliiton, will	*volja	f			1221489	Yes	Yes	No		175	2.818	175	2.818
+volutus	m	4	volutus	volutus	volutus	volutūm	volutum	volutus	whirlpool, vortex, rolling; summit, top	f	vâltoare	vâltori			l		whirlpool, vortex	*virъ, *vьrxъ	m, m	*virъ 'whirlpool', *vьrxъ 'top, upper part'		3330467	Yes	No	No		?	?	?	?
+vota	n	2	-	vota	-	votōrum	-	vota	vow	n	vot	voturi			f		vote	*obětъ, *prisęga, *klętva, *sъljubъ	m, f, f, m	all singular		453629	Yes	Yes	No		171	2.754	0	0
+vox	f	3	vōx	vōcēs	vōcis	vōcum	vōcem	vōcēs	voice	f	voce	voci			l			*golsъ	m			179690	Yes	Yes	No		999	16.089	309	4.976
+vulgus	n	2	vulgus	-	vulgī	-	vulgus	-	people		-							*narodъ	m			472467	Yes	Yes	No		?	?	?	?
+vulnus	n	3	vulnus	vulnera	vulneris	vulnerum	vulnus	vulnera	wound		-							*ězva, *rana	f, f			38500	Yes	Yes	No		48	0.773	26	0.419
+vulpes	f	3	vulpēs	vulpēs	vulpis	vulpium	vulpem	vulpēs*/vulpīs	fox	f	vulpe	vulpi			l			*lisa, *lisъ	f, m			38226	Yes	Yes	No		?	?	?	?
+vultus	m	4	vultus	vultūs	vultūs	vultuum	vultum	vultūs	face		-							*lice	n			1010764	Yes	Yes	No		105	1.691	105	1.691
+vulva	f	1	vulva	vulvae	vulvae	vulvārum	vulvam	vulvās	womb	f	vulvă	vulve			f, l		vulva					87886	Yes	Yes	Yes		?	?	?	?
+zona	f	1	zōna	zōnae	zōnae	zōnārum	zōnam	zōnās	zone	f	zonă	zone			f							38772	Yes	Yes	No		20	0.322	6	0.097
