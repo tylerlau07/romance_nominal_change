@@ -1,0 +1,501 @@
+Latin	English	Declension	Gender	Total	Prose	Poetry
+res	thing, matter, issue	5	f	2735	2519	216
+animus	mind, soul, courage, will	2	m	2407	2025	382
+rex	king	3	mh	1544	1281	263
+locus	place, spot	2	m	1516	1259	257
+deus	god	2	mh	1507	905	602
+dies	day	5	m	1458	1086	372
+manus	hand	4	f	1369	781	588
+homo	human	3	mh	1273	1151	122
+hostis	enemy, stranger	3	mh, fh	1230	1122	108
+vita	life	1	f	1174	979	195
+corpus	body	3	n	1174	907	267
+bellum	war	2	n	1167	962	205
+urbs	city	3	f	1116	841	275
+tempus	time	3	n	1113	907	206
+virtus	manliness, courage, virtue, character	3	f	1057	956	101
+pater	father	3	mh	1053	668	385
+vir	man	2	mh	1030	737	293
+domus	house, home	4	f	946	533	413
+vis	force, power	3	f	929	769	160
+mors	death	3	f	921	675	246
+bonum	good	2	n	919	873	46
+malum	evil	2	n	908	635	273
+terra	earth	1	f	905	435	470
+fortuna	fortune, luck, destiny	1	f	886	784	102
+arma	defensive arms, war, soldiers, defense, tools	2	n	864	596	268
+miles	soldier	3	m	842	781	61
+populus	the people	2	m	822	639	183
+natura	nature	1	f	769	711	58
+nomen	name	3	n	756	572	184
+mare	sea	3	n	660	399	261
+concilium	plan, council, judgment, advice	2	n	657	608	49
+imperium	empire, state, realm, right, power	2	n	652	559	93
+annus	year	2	m	650	485	165
+castra	camp, military service	2	n	635	586	49
+mos	custom, usage, rule	3	m	635	502	133
+modus	measure, manner	2	m	634	523	111
+nox	night	3	f	622	316	306
+genus	birth, origin, kind, type	3	n	613	430	183
+caput	head	3	n	607	307	300
+regnum	royal power, kingdom, royalty	2	n	607	298	309
+ratio	reason, explanation, calculation	3	f	594	563	31
+ira	anger	1	f	585	434	151
+fides	faith	5	f	581	423	158
+gens	tribe, people, family	3	f	577	429	148
+vox	voice	3	f	568	358	210
+caelum	sky	2	n	565	202	363
+amicus	friend	2	m	564	470	94
+amica	friend	1	f	564	470	94
+periculum	trial, risk, ruin	2	n	559	517	42
+spes	hope	5	f	557	475	82
+verbum	word	2	n	549	378	171
+metus	fear, dread	4	m	548	430	118
+mater	mother	3	fh	544	220	324
+dolor	pain	3	m	540	371	169
+amor	love	3	m	539	158	381
+mens	mind	3	f	538	324	214
+iter	route, journey	3	n	532	433	99
+scelus	crime, criminal, villain	3	n	531	281	250
+finis	end, limit, border	3	m	529	436	93
+eques	horseman, rider, knight	3	mh	526	500	26
+princeps	leader, head, chief	3	mh	516	503	13
+ignis	fire	3	m	505	233	272
+oculus	eye	2	m	496	327	169
+cura	care, concern	1	f	492	287	205
+consul	consul	3	mh	480	452	28
+dux	leader, commander	3	mh	480	362	118
+os	mouth	3	n	478	172	306
+labor	work, labour	3	m	475	281	194
+lex	law	3	f	472	380	92
+copia	supply, abundance	1	f	469	444	25
+pes	foot	3	m	447	233	214
+filius	son	2	m	446	415	31
+ars	art, skill, craft	3	f	446	332	114
+signum	mark, sign, emblem	2	n	441	328	113
+via	road, street, way	1	f	439	216	223
+parens	parent, founder	3	mh	439	207	232
+vitium	crime, vice	2	n	438	391	47
+honor	honor	3	m	429	342	87
+poena	penalty, punishment	1	f	428	260	168
+frater	brother	3	mh	426	258	168
+iniuria	injury, insult, injustice	1	f	425	410	15
+fama	fame	1	f	425	320	105
+fatum	destiny, fate	2	n	424	117	307
+gratia	grace, thanks	1	f	418	399	19
+aetas	age	3	f	418	343	75
+voluptas	pleasure	3	f	415	394	21
+sanguis	blood	3	m	414	218	196
+equus	horse	2	m	411	262	149
+vultus	expression, face, appearance	4	m	402	185	217
+proelium	battle, warrior	2	n	401	349	52
+opus	work	3	n	393	325	68
+mons	mountain	3	m	391	224	167
+numerus	number	2	m	390	327	63
+ius	law, right, duty	3	n	388	300	88
+pectus	chest, breast	3	n	387	116	271
+telum	dart, spear, weapon	2	n	386	232	154
+puer	child, boy	2	m	385	124	261
+aqua	water	1	f	383	247	136
+flumen	river	3	n	380	258	122
+ingenium	natural character, disposition, intelligence, talent	2	n	377	338	39
+ops	power to help, resources	3	f	376	284	92
+gloria	glory, fame	1	f	373	314	59
+agmen	multitude, army, stream	3	n	360	292	68
+ferrum	iron, sword	2	n	352	150	202
+coniux	spouse	3	mh, fh	351	128	223
+navis	ship	3	f	349	270	79
+silva	wood, forest	1	f	341	137	204
+impetus	attack	4	m	339	296	43
+ager	field, farm	2	m	337	230	107
+studium	study	2	n	335	302	33
+acies	sharp edge, battle line	5	f	328	286	42
+vulnus	wound, injury	3	n	324	212	112
+fuga	flight, escape, exile	1	f	323	238	85
+pecunia	money, wealth	1	f	322	311	11
+munus	service, buden, duty, gift	3	n	322	157	165
+libertas	liberty, freedom	3	f	321	297	24
+pax	peace	3	f	318	245	73
+civis	citizen	3	mh, fh	315	279	36
+lux	light	3	f	314	174	140
+ordo	order, class, rank	3	m	313	252	61
+sol	sun	3	m	312	185	127
+iuvenis	youth	3	mh, fh	311	140	171
+spatium	space, room	2	n	310	252	58
+unda	wave	1	f	308	31	277
+animal	animal	3	n	307	293	14
+litus	beach, shore	3	n	303	89	214
+patria	country, homeland	1	f	301	189	112
+servus	servant, slave	2	m	300	264	36
+aurum	gold	2	n	300	155	145
+turba	stir, disturbance, mob	1	f	296	163	133
+carmen	song	3	n	296	90	206
+victor	conqueror, victor	3	mh	295	178	117
+cursus	race, course, journey	4	m	293	181	112
+exemplum	sample, example	2	n	286	251	35
+sententia	opinion, thought, purpose	1	f	285	270	15
+praesidium	defence, protection, guard	2	n	284	268	16
+saxum	stone	2	n	281	127	154
+salus	safety, security	3	f	280	251	29
+mundus	world, universe	2	m	280	160	120
+auxilium	help, aid	2	n	278	245	33
+ventus	wind	2	m	278	77	201
+species	spectacle, sight	5	f	276	259	17
+auris	ear	3	f	275	165	110
+umbra	shadow	1	f	275	62	213
+caedes	cutting, striking	3	f	274	191	83
+dominus	owner, lord	2	mh	269	164	105
+regio	direction, line	3	f	266	240	26
+votum	promise, vow, prayer	2	n	265	124	141
+orbis	circle, ring	3	m	262	109	153
+puella	girl	1	f	262	12	250
+oppidum	town	2	n	257	239	18
+sermo	conversation, discussion	3	m	256	223	33
+latus	side, flank	3	n	254	142	112
+lacrima	tear	1	f	254	121	133
+iugum	yoke	2	n	254	110	144
+officium	duty, service, office	2	n	252	223	29
+odium	hate	2	n	250	195	55
+murus	wall	2	m	250	192	58
+forma	shape, form	1	f	249	155	94
+auctor	seller, author	3	mh	248	200	48
+amnis	stream, torrent, river, ocean	3	m	244	166	78
+vestis	garment, robe, clothing	3	f	241	138	103
+femina	woman, wife	1	fh	238	170	68
+laus	praise, glory	3	f	238	147	91
+flamma	flame, fire	1	f	237	48	189
+campus	plain, field	2	m	233	114	119
+sedes	seat, chair	3	f	231	116	115
+mora	delay	1	f	230	112	118
+crimen	verdict, judgment	3	n	229	144	85
+uxor	wife, spouse	3	fh	228	172	56
+sidus	constellation, star	3	n	226	81	145
+cohors	court, farmyard, crowd	3	f	223	195	28
+tectum	roof, ceiling	2	n	221	92	129
+timor	fear, dread	3	m	219	150	69
+tergum	back, rear, surface	2	n	218	126	92
+fera	wild animal, beast	1	f	218	94	124
+pugna	fight, battle	1	f	215	178	37
+supplicium	kneeling, supplication, punishment, suffering	2	n	212	181	31
+classis	armed forces, fleet	3	f	210	127	83
+divitiae	riches, wealth	1	f	209	185	24
+invidia	envy, jealousy, prejudice	1	f	209	183	26
+morbus	disease, sickness	2	m	209	171	38
+templum	temple, shrine	2	n	205	111	94
+facies	shape, figure, face	5	f	202	104	98
+arbor	tree	3	f	202	100	102
+otium	leisure	2	n	201	173	28
+lumen	light	3	n	201	56	145
+verum	reality, fact	2	n	200	149	51
+somnus	sleep	2	m	200	84	116
+ara	altar, sanctuary	1	f	199	52	147
+clamor	shout	3	m	198	137	61
+pretium	worth, price, value	2	n	197	142	55
+praeda	plunder, spoils, booty, prey	1	f	196	139	57
+donum	gift, present	2	n	195	91	104
+facinus	deed, action	3	n	191	139	52
+prex	prayer, request	3	f	190	100	90
+factum	fact, deed, act	2	n	188	124	64
+affectus	affection, mood, emotion	4	m	185	172	13
+libido	pleasure, inclination, fancy	3	f	185	159	26
+praemium	prize, reward, bribe	2	n	185	138	47
+comes	companion, comrade, partner, attendant, servant	3	mh, fh	185	66	119
+membrum	limb, member	2	n	184	76	108
+vulgus	the common people	2	n	183	133	50
+decus	honor, distinction, glory, pride	3	n	183	98	85
+anima	soul, spirit, air	1	f	182	78	104
+furor	frenzy, rage	3	m	182	68	114
+virgo	maid, maiden, virgin	3	fh	182	47	135
+spiritus	breath, spirit	4	m	181	138	43
+sinus	hollow, curve, gulf, bosom	4	m	181	69	112
+frons	forehead	3	f	180	98	82
+motus	movement	4	m	178	143	35
+senex	old person	3	mh, fh	178	94	84
+currus	chariot, wagon	4	m	177	70	107
+vinculum	bond, chain, cord	2	n	176	101	75
+funus	funeral, death	3	n	176	79	97
+tempestas	storm, tempest, weather	3	f	175	142	33
+numen	nod, divinity	3	n	173	48	125
+pudor	shamefacedness, shyness, disgrace, modesty	3	m	172	100	72
+gradus	step, degree	4	m	172	91	81
+forum	market-/public place, forum	2	n	171	151	20
+vinum	wine	2	n	170	103	67
+moenia	city walls, fortifications	3	n	170	91	79
+ripa	bank (of a river), shore (of the sea)	1	f	169	109	60
+gaudium	joy, delight	2	n	168	124	44
+cornu	horn	4	n	168	88	80
+soror	sister	3	fh	168	57	111
+fluctus	wave, billow	4	m	167	57	110
+nemus	grove, glade, pasture	3	n	166	40	126
+exsilium	exile, banishment	2	n	165	137	28
+custos	guard, protector, guardian	3	m	165	90	75
+solum	bottom, ground, floor	2	n	165	80	85
+praeceptum	teaching, lesson, precept	2	n	164	143	21
+pondus	weight, load, burden	3	n	164	93	71
+pecus	cattle, herd	3	n	164	75	89
+sensus	feeling, sentiment	4	m	163	133	30
+hora	hour, time	1	f	163	100	63
+coma	hair of head, foliage	1	f	163	11	152
+quies	rest, quiet, dream	3	f	162	112	50
+sors	lot, fate, oracular response	3	f	160	87	73
+sacrum	holy or sacred object, vessel	2	n	160	66	94
+aura	air, breeze	1	f	159	13	146
+certamen	contest, struggle, strife	3	n	156	124	32
+gladius	sword	2	m	152	134	18
+imago	image, imitation, ghost	3	f	152	106	46
+vestigium	footprint, track, trace, vestige	2	n	151	94	57
+insidia	ambush, artifice, plot	1	f	149	120	29
+limen	threshold, doorstep	3	n	149	35	114
+praetor	leader, head, chief, president	3	mh	148	131	17
+habitus	habit, disposition	4	m	148	126	22
+arx	citadel, stronghold, fortress	3	f	147	67	80
+fax	torch, firebrand	3	f	147	31	116
+exitus	departure, going out	4	m	146	121	25
+onus	burden, load	3	n	146	119	27
+porta	gate, entrance	1	f	146	97	49
+maritus	husband	2	m	146	70	76
+cultus	tilling, cultivating, cult	4	m	145	115	30
+paupertas	poverty	3	f	144	133	11
+testis	witness	3	mh, fh	142	86	56
+aes	money, pay, copper	3	n	141	86	55
+saeculum	race, breed, generation, century	2	n	139	91	48
+cibus	food, fodder	2	m	138	113	25
+dea	goddess	1	fh	138	32	106
+lingua	tongue, language	1	f	137	77	60
+grex	flock, herd	3	m	137	44	93
+insula	island	1	f	136	124	12
+iudex	judge, juror	3	mh	136	103	33
+venenum	potion, poison	2	n	134	91	43
+clades	a breaking, destruction	3	f	134	90	44
+robur	kind of hard oak, hardness, strength	3	n	134	90	44
+sanctus	saint	2	mh	134	53	81
+portus	harbor, port	4	m	132	70	62
+cervix	neck	3	f	132	56	76
+ratis	raft	3	f	132	23	109
+argentum	silver	2	n	131	97	34
+ictus	blow, stroke, stab	4	m	130	88	42
+dolus	trickery, deception	2	m	130	58	72
+luxuria	luxury, extravagance	1	f	129	117	12
+filia	daughter	1	f	129	114	15
+discrimen	distinction, difference, division	3	n	129	105	24
+moles	mass, rock, boulder, pile	3	f	129	84	45
+senectus	old age	3	f	128	102	26
+humus	ground, earth, soil	2	f	128	64	64
+color	color, shade	3	m	128	61	67
+error	wandering, wavering, uncertainty	3	m	127	87	40
+fames	hunger	3	f	127	85	42
+fons	fountain, spring	3	m	127	54	73
+luctus	grief, sorrow, mourning	4	m	126	72	54
+dictum	word, saying, proverb	2	n	126	65	61
+silentium	silence, quiet	2	n	125	133	12
+tenebrae	darkness	1	f	125	68	57
+pietas	sense of duty, piety	3	f	125	66	59
+liber	book	2	m	124	104	20
+hiems	winter	3	f	124	74	50
+exiguus	a poor man	2	mh	124	69	55
+herba	grass, herb	1	f	123	23	100
+frumentum	corn, grain	2	n	122	111	11
+exitium	destruction, ruin, beginner	2	n	122	93	29
+collum	neck, throat	2	n	122	11	111
+nuntius	messenger, reporter, envoy	2	mh	121	103	18
+culpa	fault, defect, crime	1	f	121	60	61
+nubes	cloud	3	f	121	24	97
+fraus	cheating, fraud	3	f	120	67	53
+rota	wheel	1	f	120	57	63
+ora	border, rim, frontier, edge	1	f	120	45	75
+canis	dog	3	m, f	118	36	82
+vertex	whirlpool, top, summit	3	m	118	29	89
+militia	military	1	f	117	101	16
+mensa	table	1	f	117	49	68
+vates	seer, prophet, poet	3	mh	117	33	84
+fructus	enjoyment, delight, fruit	4	m	116	98	18
+convivium	banquet, feast	2	n	116	96	20
+cupido	desire, longing, lust	3	f	116	92	24
+nepos	grandson	3	mh, fh	116	62	54
+turris	tower	3	f	115	86	29
+tumultus	uproar, bustle	4	m	114	83	31
+collis	hill	3	m	114	81	33
+ruina	collapse, ruin	1	f	114	64	50
+vicis	change, alternation, turn	3	f	114	59	55
+arvum	field, dry land	2	n	113	13	100
+adventus	arrival	4	m	112	100	12
+velum	sail, cloth	2	n	111	34	77
+monstrum	evil omen, monster	2	n	111	12	99
+terror	dread, terror	3	m	110	92	18
+os	bone	3	n	110	25	85
+damnum	damage, injury	2	n	109	87	22
+incendium	fire, inferno, conflagration	2	n	108	93	15
+aditus	approach, attack	4	m	107	87	20
+lapis	stone	3	m	107	57	50
+fretum	strait, sound, estuary, channel	2	n	107	29	78
+artus	joint, sinew	4	m	106	25	81
+aestus	heat, fire	4	m	105	53	52
+frigus	cold	3	n	105	51	54
+dens	tooth	3	m	105	45	60
+minae	battlements, parapets, threats, menaces	1	f	105	45	60
+sagitta	arrow, bolt	1	f	105	42	63
+custodia	protection, safekeeping, custody	1	f	104	92	12
+principium	beginning, origin	2	n	103	85	18
+medium	middle, center	2	n	103	74	29
+arena	sand	1	f	103	31	72
+humerus	shoulder	2	m	103	25	78
+cruor	blood, gore, murder	3	m	103	22	81
+taurus	bull	2	m	103	16	87
+astrum	star	2	n	103	12	91
+rupes	cliff, rock	3	f	102	39	63
+summa	top, summit	1	f	101	87	14
+ramus	branch	2	m	101	39	62
+tumulus	heap of earth, mound, hill	2	m	101	39	62
+ludus	school, game, sport, play	2	m	100	64	36
+brachium	arm, forearm	2	n	100	27	73
+status	state, status, condition, position	4	m	99	83	16
+arbitrium	decision, judgment	2	n	98	81	17
+fulmen	lightning, thunderbolt	3	n	98	20	78
+torus	swelling, bulge	2	m	98	11	87
+pons	bridge	3	m	97	85	12
+sonus	sound, noise, pitch	2	m	97	52	45
+leo	lion	3	m	97	41	56
+carcer	prison, jail	3	m	96	64	32
+corona	garland, crown	1	f	96	58	38
+nota	mark, sign	1	f	96	52	44
+altum	the deep, the sea	2	n	96	51	45
+regia	royal palace, castle	1	f	95	69	26
+avis	bird	3	f	94	40	54
+foris	door, gate, opening	3	f	94	33	61
+cor	heart	3	n	94	26	68
+domina	lady, mistress	1	fh	94	16	78
+fastigium	peak, summit, top, slope	2	n	93	79	14
+epulae	feast, banquet, dishes, meat	1	f	93	68	25
+venia	indulgence, kindness, mercy, grace	1	f	93	63	30
+palus	swamp, marsh	3	f	93	60	33
+crinis	hair of the head, lock of hair, plume	3	m	93	13	80
+rumor	rumor, rustle, murmuring	3	m	92	77	15
+saltus	leap, jump (le défilé)	4	m	92	55	37
+versus	furrow, verse, line	4	m	92	45	47
+meritum	merit, service, value	2	n	91	69	22
+tyrannus	ruler, monarch	2	mh	91	54	37
+avus	grandfather, ancestor	2	mh	91	48	43
+aevum	time, eternity, lifetime	2	n	91	41	50
+flos	flower	3	m	91	27	64
+cinis	cold ashes	3	m	91	17	74
+vena	vein, blood vessel, artery	1	f	90	52	38
+triumphus	triumph, celebration	2	m	90	44	46
+lacus	lake, pond	4	m	90	40	50
+bos	cow, full, ox	3	m, f	90	23	67
+aestas	summer	3	f	89	60	29
+poeta	poet	1	mh	89	52	37
+nex	murder, slaughter, killing	3	f	89	45	44
+spolium	skin or hide of an animal, booty, prey, spoil	2	n	89	36	53
+lectus	bed	2	m	89	30	59
+cantus	song, chant, singing	4	m	89	29	60
+iuventus	youth	3	f	88	58	30
+verber	lash, whip	3	n	88	49	39
+vadum	shallow, ford, shoal, sea, stream	2	n	88	37	51
+hospes	host, guest, visitor, stranger	3	mh	88	36	52
+imber	rain, storm, stormcloud	3	m	88	34	54
+luna	moon	1	f	87	46	41
+gemitus	groan, sigh, pain, sorrow	4	m	87	41	46
+mensis	month	3	m	86	60	26
+arcus	arc, bow, rainbow	4	m	86	20	66
+servitium	slavery, servitude	2	n	85	65	20
+viscus	internal organ, entrails, viscera	3	n	85	36	49
+minister	attendant, servant, waiter	2	mh	84	60	24
+stirps	rootstock, plant, shrub, lineage, stock	3	f	84	47	37
+digitus	finger, toe, digit	2	m	84	38	46
+tympanum	drum	2	n	83	68	15
+tabula	tablet, board or plank	1	f	83	58	25
+venter	belly, body, trunk, stomach	3	m	83	57	26
+nix	snow	3	f	83	37	46
+fletus	weeping, tears	4	m	83	19	64
+formido	fear, alarm, fright, terror	3	f	82	66	16
+foedus	treaty, agreement, contract, league	3	n	82	47	35
+exsul	person who is exiled, exile, wanderer	3	mh, fh	81	45	36
+ortus	sunrise	4	m	81	31	50
+laetitia	great joy, gladness, pleasure, delight	1	f	80	63	17
+merces	pay, wages, reward	3	f	80	52	28
+capillus	hair (a single hair), head of hair	2	m	80	26	54
+lucus	a grove sacred to a deity, a wood	2	m	80	24	56
+origo	beginning, origin	3	f	78	57	21
+aer	air	3	m, f	78	13	65
+pestis	disease, plague, pest	3	f	77	31	46
+aspectus	act of seeing or looking at something, look, sight, vision	4	m	76	59	17
+agger	rampart, bulwark, dam	3	m	76	54	22
+sacerdos	priest, priestess, cleric	3	mh, fh	76	40	36
+stella	star, planet	1	f	76	38	38
+poculum	a drinking cup	2	n	76	20	56
+palma	palm of the hand, blade of an oar, palm tree, date	1	f	76	11	65
+hasta	spear, lance, pike	1	f	75	54	21
+sitis	thirst	3	f	75	44	31
+penas	home, hearth	3	m	75	36	39
+frons	leaves, foliage	3	f	75	15	60
+puppis	stern, poop of a ship	3	f	75	11	64
+vallis	valley, vale	3	f	74	30	44
+remus	oar	2	m	74	24	50
+rus	countryside, country, farm, village	3	n	74	15	59
+ala	wing, armpit	1	f	73	26	47
+regina	queen, princess	1	fh	73	22	51
+axis	wagon, the North Pole, board, plank	3	m	72	31	41
+vitis	vine	3	f	72	17	55
+semen	seed	3	n	71	36	35
+serpens	serpent, snake	3	f	71	22	49
+merum	wine unmixed with water, neat wine	2	n	71	21	50
+nauta	sailor	1	mh	71	11	60
+artifex	artist, actor, craftsman	3	mh, fh	70	50	20
+mulier	woman, female, wife	3	fh	70	47	23
+genu	knee	4	n	70	42	28
+effigies	copy, imitation, likeness	5	f	69	52	17
+calor	heat, warmth	3	m	68	48	20
+aedes	temple, shrine, tomb	3	f	68	47	21
+iuventa	youth	1	f	68	46	22
+catena	chain	1	f	68	34	34
+frux	produce, crop, fruit	3	f	68	28	40
+pavor	act of trembling, quaking, fear, alarm, terror	3	m	67	52	15
+querela	complaint, grievance, illness, lament	1	f	67	33	34
+magister	teacher, master	2	mh	67	24	43
+cliens	customer, client	3	mh, fh	66	50	16
+simulacrum	image, likeness	2	n	66	47	19
+rector	guide, leader, director	3	mh	66	38	28
+humor	liquid, fluid, humour	3	m	66	35	31
+cena	dinner	1	f	65	37	28
+seges	cornfield	3	f	65	15	50
+focus	hearth, fireplace	2	m	65	12	53
+villa	villa, estate, farm	1	f	64	49	15
+infans	infant	3	mh, fh	64	43	21
+fabula	discourse, narrative, fable, tale, story	1	f	64	42	22
+patruus	paternal uncle, father's brother	2	mh	64	37	27
+theatrum	theatre, theater, playhouse, stage	2	n	63	45	18
+radix	root, radish	3	f	63	44	19
+coetus	union, meeting	4	m	63	43	20
+frenum	bridle, harness, curb	2	n	62	21	41
+pulvis	dust, powder	3	m	62	21	41
+bellua	beast	1	f	61	45	16
+funis	rope, cord, line	3	m	61	39	22
+hortus	garden	2	m	61	37	24
+omen	omen	3	n	61	27	34
+sepulcrum	grave, burial place, tomb, sepulchre	2	n	61	19	42
+osculum	kiss	2	n	61	16	45
+rogus	funeral pile, grave	2	m	61	15	46
+ver	spring (season)	3	n	61	13	48
+monumentum	reminder, memorial, monument	2	n	59	40	19
+specus	cave, chasm, abyss	4	m	59	32	27
+odor	smell, perfume, stench	3	m	59	30	29
+spons	free will, accord, impulse	3	f	58	41	17
+furtum	theft	2	n	58	28	30
+trabs	timber, beam, trunk	3	f	57	19	38
+fetus	bearing, birth, offspring, young, fruit	4	m	57	12	45
+favor	good will, inclination, favor	3	m	56	45	11
+pellex	concubine, mistress	3	fh	56	26	30
+cubile	bed, couch	3	n	56	25	31
+armentum	herd of cattle, head of cattle, cattle	2	n	56	17	39
+nequitia	bad moral quality, idleness, negligence	1	f	55	42	13
+strepitus	wild din, noise, crash	4	m	55	35	20
+pignus	pledge, mortgage, hostage, wager	3	n	55	32	23
+adulter	adulterer, adulteress	2	mh	55	31	24
+fremitus	angry murmur, humming	4	m	54	38	16
+arbiter	witness, spectator, judge, arbitrator	2	mh	54	36	18
+delicia	delight, pet	1	f	54	36	18
+radius	ray (of light), staff, rod, spoke (of a wheel)	2	m	54	29	25
+latebra	hiding place, retreat, lair	1	f	54	27	27
+gemma	bud or eye of a plant, jewel	1	f	54	23	31
+sonitus	sound	4	m	54	16	38
+heres	heir, heiress	3	mh, fh	53	29	24

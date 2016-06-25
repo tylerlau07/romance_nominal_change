@@ -1,5 +1,5 @@
 Tyler Lau
-2016.06.21
+2016.05.21
 
 This is the revised implementation of Lau (2016)
 
