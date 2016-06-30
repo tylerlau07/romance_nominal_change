@@ -1,0 +1,49 @@
+Form	Root	Suffix	Case	Gender	Declension	Parent	English	Total	Prose	Poetry
+rēs	r	ēs	nomsg	f	5	res	thing, matter, issue	2735	2519	216
+rēs	r	ēs	nompl	f	5	res	thing, matter, issue	2735	2519	216
+reī	re	ī	gensg	f	5	res	thing, matter, issue	2735	2519	216
+rērum	r	ērum	genpl	f	5	res	thing, matter, issue	2735	2519	216
+reī	re	ī	datsg	f	5	res	thing, matter, issue	2735	2519	216
+rēbus	r	ēbus	datpl	f	5	res	thing, matter, issue	2735	2519	216
+rem	r	em	accsg	f	5	res	thing, matter, issue	2735	2519	216
+rēs	r	ēs	accpl	f	5	res	thing, matter, issue	2735	2519	216
+rē	r	ē	ablsg	f	5	res	thing, matter, issue	2735	2519	216
+rēbus	r	ēbus	ablpl	f	5	res	thing, matter, issue	2735	2519	216
+rēs	r	ēs	vocsg	f	5	res	thing, matter, issue	2735	2519	216
+rēs	r	ēs	vocpl	f	5	res	thing, matter, issue	2735	2519	216
+animus	anim	us	nomsg	m	2	animus	mind, soul, courage, will	2407	2025	382
+animī	anim	ī	nompl	m	2	animus	mind, soul, courage, will	2407	2025	382
+animī	anim	ī	gensg	m	2	animus	mind, soul, courage, will	2407	2025	382
+animōrum	anim	ōrum	genpl	m	2	animus	mind, soul, courage, will	2407	2025	382
+animō	anim	ō	datsg	m	2	animus	mind, soul, courage, will	2407	2025	382
+animīs	anim	īs	datpl	m	2	animus	mind, soul, courage, will	2407	2025	382
+animum	anim	um	accsg	m	2	animus	mind, soul, courage, will	2407	2025	382
+animōs	anim	ōs	accpl	m	2	animus	mind, soul, courage, will	2407	2025	382
+animō	anim	ō	ablsg	m	2	animus	mind, soul, courage, will	2407	2025	382
+animīs	anim	īs	ablpl	m	2	animus	mind, soul, courage, will	2407	2025	382
+anime	anim	e	vocsg	m	2	animus	mind, soul, courage, will	2407	2025	382
+animī	anim	ī	vocpl	m	2	animus	mind, soul, courage, will	2407	2025	382
+rēx	rēx	NULL	nomsg	mh	3	rex	king	1544	1281	263
+rēgēs	rēg	ēs	nompl	mh	3	rex	king	1544	1281	263
+rēgis	rēg	is	gensg	mh	3	rex	king	1544	1281	263
+rēgum	rēg	um	genpl	mh	3	rex	king	1544	1281	263
+rēgī	rēg	ī	datsg	mh	3	rex	king	1544	1281	263
+rēgibus	rēg	ibus	datpl	mh	3	rex	king	1544	1281	263
+rēgem	rēg	em	accsg	mh	3	rex	king	1544	1281	263
+rēgēs	rēg	ēs	accpl	mh	3	rex	king	1544	1281	263
+rēge	rēg	e	ablsg	mh	3	rex	king	1544	1281	263
+rēgibus	rēg	ibus	ablpl	mh	3	rex	king	1544	1281	263
+rēx	rēx	NULL	vocsg	mh	3	rex	king	1544	1281	263
+rēgēs	rēg	ēs	vocpl	mh	3	rex	king	1544	1281	263
+locus	loc	us	nomsg	m	2	locus	place, spot	1516	1259	257
+locī	loc	ī	nompl	m	2	locus	place, spot	1516	1259	257
+locī	loc	ī	gensg	m	2	locus	place, spot	1516	1259	257
+locōrum	loc	ōrum	genpl	m	2	locus	place, spot	1516	1259	257
+locō	loc	ō	datsg	m	2	locus	place, spot	1516	1259	257
+locīs	loc	īs	datpl	m	2	locus	place, spot	1516	1259	257
+locum	loc	um	accsg	m	2	locus	place, spot	1516	1259	257
+locōs	loc	ōs	accpl	m	2	locus	place, spot	1516	1259	257
+locō	loc	ō	ablsg	m	2	locus	place, spot	1516	1259	257
+locīs	loc	īs	ablpl	m	2	locus	place, spot	1516	1259	257
+loce	loc	e	vocsg	m	2	locus	place, spot	1516	1259	257
+locī	loc	ī	vocpl	m	2	locus	place, spot	1516	1259	257
