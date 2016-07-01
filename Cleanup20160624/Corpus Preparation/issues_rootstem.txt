@@ -1,0 +1,34 @@
+ISSUES WITH ROOT AND STEM
+
+Consonant ending changes:
+rex, reges
+senectus, senectutes
+
+Vowel ending changes:
+mare, maria, maris
+cubile, cubilia
+animal, animalia
+moenia
+
+Vowel change inside root:
+nomen, nomina
+eques, equites
+
+Extended stems:
+nemus, nemora
+corpus, corpora
+iter, itinera (is ending era?)
+genus, genera (is ending era?)
+litus, litora
+latus, latera
+pecus, pecora
+viscus, viscera
+foedus, foedera
+rūs, rūra
+
+What about:
+cornū, cornua, cornūs
+genū, genua
+
+hiems, hiemēs
+liber, librī

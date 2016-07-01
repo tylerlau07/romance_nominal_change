@@ -15,7 +15,7 @@ urbs	city	3	f	1116	841	275	urbs	urbēs	urbis	urbium	urbī	urbibus	urbem	urbēs	u
 tempus	time	3	n	1113	907	206	tempus	tempora	temporis	temporum	temporī	temporibus	tempus	tempora	tempore	temporibus	tempus	tempora		
 virtus	manliness, courage, virtue, character	3	f	1057	956	101	virtūs	virtūtēs	virtūtis	virtūtum	virtūtī	virtūtibus	virtūtem	virtūtēs	virtūte	virtūtibus	virtūs	virtūtēs		
 pater	father	3	mh	1053	668	385	pater	patrēs	patris	patrum	patrī	patribus	patrem	patrēs	patre	patribus	pater	patrēs		
-vir	man	2	mh	1030	737	293	vir	virī	virī	virōrum	virō	virīs	virum	virōs	virō	virīs	vir1	virī		
+vir	man	2	mh	1030	737	293	vir	virī	virī	virōrum	virō	virīs	virum	virōs	virō	virīs	vir/vire	virī		
 domus	house, home	4	f	946	533	413	domus	domūs	domūs/domī	domuum/domōrum	domuī/domō/domū	domibus	domum	domūs/domōs	domū/domō	domibus	domus	domūs	domī	-
 vis	force, power	3	f	929	769	160	vīs	vīrēs	vīs	vīrium	vī	vīribus	vim	vīrēs/vīrīs	vī	vīribus	vīs	vīrēs		
 mors	death	3	f	921	675	246	mors	mortēs	mortis	mortium	mortī	mortibus	mortem	mortēs	morte	mortibus	mors	mortēs		
@@ -95,7 +95,7 @@ numerus	number	2	m	390	327	63	numerus	numerī	numerī	numerōrum	numerō	numerī
 ius	law, right, duty	3	n	388	300	88	iūs	iūra	iūris	iūrum	iūrī	iūribus	iūs	iūra	iūre	iūribus	iūs	iūra		
 pectus	chest, breast	3	n	387	116	271	pectus	pectora	pectoris	pectorum	pectorī	pectoribus	pectus	pectora	pectore	pectoribus	pectus	pectora		
 telum	dart, spear, weapon	2	n	386	232	154	tēlum	tēla	tēlī	tēlōrum	tēlō	tēlīs	tēlum	tēla	tēlō	tēlīs	tēlum	tēla		
-puer	child, boy	2	m	385	124	261	puer	puerī	puerī	puerōrum	puerō	puerīs	puerum	puerōs	puerō	puerīs	puer1	puerī		
+puer	child, boy	2	m	385	124	261	puer	puerī	puerī	puerōrum	puerō	puerīs	puerum	puerōs	puerō	puerīs	puer/puere	puerī		
 aqua	water	1	f	383	247	136	aqua	aquae	aquae	aquārum	aquae	aquīs	aquam	aquās	aquā	aquīs	aqua	aquae		
 flumen	river	3	n	380	258	122	flūmen	flūmina	flūminis	flūminum	flūminī	flūminibus	flūmen	flūmina	flūmine	flūminibus	flūmen	flūmina		
 ingenium	natural character, disposition, intelligence, talent	2	n	377	338	39	ingenium	ingenia	ingeniī	ingeniōrum	ingeniō	ingeniīs	ingenium	ingenia	ingeniō	ingeniīs	ingenium	ingenia		
@@ -107,7 +107,7 @@ coniux	spouse	3	mh, fh	351	128	223	coniūx	coniugēs	coniugis	coniugum	coniugī	
 navis	ship	3	f	349	270	79	nāvis	nāvēs	nāvis	nāvium	nāvī	nāvibus	nāvem/nāvim	nāvēs/nāvīs	nāve/nāvī	nāvibus	nāvis	nāvēs		
 silva	wood, forest	1	f	341	137	204	silva	silvae	silvae	silvārum	silvae	silvīs	silvam	silvās	silvā	silvīs	silva	silvae		
 impetus	attack	4	m	339	296	43	impetus	impetūs	impetūs	impetuum	impetuī	impetibus	impetum	impetūs	impetū	impetibus	impetus	impetūs		
-ager	field, farm	2	m	337	230	107	ager	agrī	agrī	agrōrum	agrō	agrīs	agrum	agrōs	agrō	agrīs	ager1	agrī		
+ager	field, farm	2	m	337	230	107	ager	agrī	agrī	agrōrum	agrō	agrīs	agrum	agrōs	agrō	agrīs	ager	agrī		
 studium	study	2	n	335	302	33	studium	studia	studiī	studiōrum	studiō	studiīs	studium	studia	studiō	studiīs	studium	studia		
 acies	sharp edge, battle line	5	f	328	286	42	aciēs	aciēs	aciēī	aciērum	aciēī	aciēbus	aciem	aciēs	aciē	aciēbus	aciēs	aciēs		
 vulnus	wound, injury	3	n	324	212	112	vulnus	vulnera	vulneris	vulnerum	vulnerī	vulneribus	vulnus	vulnera	vulnere	vulneribus	vulnus	vulnera		
@@ -130,7 +130,7 @@ servus	servant, slave	2	m	300	264	36	servus	servī	servī	servōrum	servō	serv�
 aurum	gold	2	n	300	155	145	aurum	aura	aurī	aurōrum	aurō	aurīs	aurum	aura	aurō	aurīs	aurum	aura		
 turba	stir, disturbance, mob	1	f	296	163	133	turba	turbae	turbae	turbārum	turbae	turbīs	turbam	turbās	turbā	turbīs	turba	turbae		
 carmen	song	3	n	296	90	206	carmen	carmina	carminis	carminum	carminī	carminibus	carmen	carmina	carmine	carminibus	carmen	carmina		
-victor	conqueror, victor	3	mh	295	178	117	victor	victōrēs	victōris	victōrum	victōrī	victōriubus	victōrem	victōrēs	victōre	vicōribus	victor	victōrēs		
+victor	conqueror, victor	3	mh	295	178	117	victor	victōrēs	victōris	victōrum	victōrī	victōribus	victōrem	victōrēs	victōre	victōribus	victor	victōrēs		
 cursus	race, course, journey	4	m	293	181	112	cursus	cursūs	cursūs	cursuum	cursuī	cursibus	cursum	cursūs	cursū	cursibus	cursus	cursūs		
 exemplum	sample, example	2	n	286	251	35	exemplum	exempla	exemplī	exemplōrum	exemplō	exemplīs	exemplum	exempla	exemplō	exemplīs	exemplum	exempla		
 sententia	opinion, thought, purpose	1	f	285	270	15	sententia	sententiae	sententiae	sententiārum	sententiae	sententiīs	sententiam	sententiās	sententiā	sententiīs	sententia	sententiae		
@@ -367,7 +367,7 @@ domina	lady, mistress	1	fh	94	16	78	domina	dominae	dominae	dominārum	dominae	do
 fastigium	peak, summit, top, slope	2	n	93	79	14	fastīgium	fastīgia	fastīgiī	fastīgiōrum	fastīgiō	fastīgiīs	fastīgium	fastīgia	fastīgiō	fastīgiīs	fastīgium	fastīgia		
 epulae	feast, banquet, dishes, meat	1	f	93	68	25	-	epulae	-	epulārum	-	epulīs	-	epulās	-	epulīs	-	epulae		
 venia	indulgence, kindness, mercy, grace	1	f	93	63	30	venia	veniae	veniae	veniārum	veniae	veniīs	veniam	veniās	veniā	veniīs	venia	veniae		
-palus	swamp, marsh	3	f	93	60	33	palūs	palūdēs	palūdis	palūdum	palūdī	palūdibus	palūdem	palūdēs	palūdē	palūdibus	palūs	palūdēs		
+palus	swamp, marsh	3	f	93	60	33	palūs	palūdēs	palūdis	palūdum	palūdī	palūdibus	palūdem	palūdēs	palūde	palūdibus	palūs	palūdēs		
 crinis	hair of the head, lock of hair, plume	3	m	93	13	80	crīnis	crīnēs	crīnis	crīnium	crīnī	crīnibus	crīnem	crīnēs	crīne	crīnibus	crīnis	crīnēs		
 rumor	rumor, rustle, murmuring	3	m	92	77	15	rūmor	rūmōrēs	rūmōris	rūmōrum	rūmōrī	rūmōribus	rūmōrem	rūmōrēs	rūmōre	rūmōribus	rūmor	rūmōrēs		
 saltus	leap, jump (le défilé)	4	m	92	55	37	saltus	saltūs	saltūs	saltuum	saltuī	saltibus	saltum	saltūs	saltū	saltibus	saltus	saltūs		
@@ -399,7 +399,7 @@ mensis	month	3	m	86	60	26	mēnsis	mēnsēs	mēnsis	mēnsium	mēnsī	mēnsibus	m�
 arcus	arc, bow, rainbow	4	m	86	20	66	arcus	arcūs	arcūs	arcuum	arcuī	arcubus	arcum	arcūs	arcū	arcubus	arcus	arcūs		
 servitium	slavery, servitude	2	n	85	65	20	servitium	servitia	servitiī	servitiōrum	servitiō	servitiīs	servitium	servitia	servitiō	servitiīs	servitium	servitia		
 viscus	internal organ, entrails, viscera	3	n	85	36	49	viscus	viscera	visceris	viscerum	viscerī	visceribus	viscus	viscera	viscere	visceribus	viscus	viscera		
-minister	attendant, servant, waiter	2	mh	84	60	24	minister	ministrī	ministrī	ministrōrum	ministrō	ministrīs	ministrum	ministrōs	ministrō	ministrīs	minister1	ministrī		
+minister	attendant, servant, waiter	2	mh	84	60	24	minister	ministrī	ministrī	ministrōrum	ministrō	ministrīs	ministrum	ministrōs	ministrō	ministrīs	minister/ministre	ministrī		
 stirps	rootstock, plant, shrub, lineage, stock	3	f	84	47	37	stirps	stirpēs	stirpis	stirpium	stirpī	stirpibus	stirpem	stirpēs	stirpe	stirpibus	stirps	stirpēs		
 digitus	finger, toe, digit	2	m	84	38	46	digitus	digitī	digitī	digitōrum	digitō	digitīs	digitum	digitōs	digitō	digitīs	digite	digitī		
 tympanum	drum	2	n	83	68	15	tympanum	tympana	tympanī	tympanōrum	tympanō	tympanīs	tympanum	tympana	tympanō	tympanīs	tympanum	tympana		
@@ -431,7 +431,7 @@ frons	leaves, foliage	3	f	75	15	60	frons	frondēs	fondis	fondium	frondī	frondib
 puppis	stern, poop of a ship	3	f	75	11	64	puppis	puppēs	puppis	puppium	puppī	puppibus	puppem/puppim	puppēs/puppīs	puppe/puppī	puppibus	puppis	puppēs		
 vallis	valley, vale	3	f	74	30	44	vallis	vallēs	vallis	vallium	vallī	vallibus	vallem	vallēs	valle	vallibus	vallis	vallēs		
 remus	oar	2	m	74	24	50	rēmus	rēmī	rēmī	rēmōrum	rēmō	rēmīs	rēmum	rēmōs	rēmō	rēmīs	rēme	rēmī		
-rus	countryside, country, farm, village	3	n	74	15	59	rūs	rūra	rūris	rūrum	rūrī	rūribus	rūs	rūra	rūre	rūribus	rūrī	rūribus	rūrī	rūribus
+rus	countryside, country, farm, village	3	n	74	15	59	rūs	rūra	rūris	rūrum	rūrī	rūribus	rūs	rūra	rūre	rūribus	rūs	rūra	rūrī	rūribus
 ala	wing, armpit	1	f	73	26	47	āla	ālae	ālae	ālārum	ālae	ālīs	ālam	ālās	ālā	ālīs	āla	ālae		
 regina	queen, princess	1	fh	73	22	51	rēgīna	rēgīnae	rēgīnae	rēgīnārum	rēgīnae	rēgīnīs	rēgīnam	rēgīnās	rēgīnā	rēgīnīs	rēgīna	rēgīnae		
 axis	wagon, the North Pole, board, plank	3	m	72	31	41	axis	axēs	axis	axium	axī	axibus	axem	axēs	axe	axibus	axis	axēs		
@@ -451,7 +451,7 @@ catena	chain	1	f	68	34	34	catēna	catēnae	catēnae	catēnārum	catēnae	catēn�
 frux	produce, crop, fruit	3	f	68	28	40	frūx	frūgēs	frūgis	frūgum	frūgī	frūgibus	frūgem	frūgēs	frūge	frūgibus	frūx	frūgēs		
 pavor	act of trembling, quaking, fear, alarm, terror	3	m	67	52	15	pavor	pavōrēs	pavōris	pavōrum	pavōrī	pavōribus	pavōrem	pavōrēs	pavōre	pavōribus	pavor	pavōrēs		
 querela	complaint, grievance, illness, lament	1	f	67	33	34	querēla	querēlae	querēlae	querēlārum	querēlae	querēlīs	querēlam	querēlās	querēlā	querēlīs	querēla	querēlae		
-magister	teacher, master	2	mh	67	24	43	magister	magistrī	magistrī	magistrōrum	magistrō	magistrīs	magistrum	magistrōs	magistrō	magistrīs	magister1	magistrī		
+magister	teacher, master	2	mh	67	24	43	magister	magistrī	magistrī	magistrōrum	magistrō	magistrīs	magistrum	magistrōs	magistrō	magistrīs	magister/magistre	magistrī		
 cliens	customer, client	3	mh, fh	66	50	16	cliēns	clientēs	clientis	clientium	clientī	clientibus	clientem	clientēs	cliente	clientibus	cliēns	clientēs		
 simulacrum	image, likeness	2	n	66	47	19	simulācrum	simulācra	simulācrī	simulācrōrum	simulācrō	simulācrīs	simulācrum	simulācra	simulācrō	simulācrīs	simulācrum	simulācra		
 rector	guide, leader, director	3	mh	66	38	28	rector	rectōrēs	rectōris	rectōrum	rectōrī	rectōribus	rectōrem	rectōrēs	rectōre	rectōribus	rector	rectōrēs		
@@ -492,7 +492,7 @@ strepitus	wild din, noise, crash	4	m	55	35	20	strepitus	strepitūs	strepitūs	st
 pignus	pledge, mortgage, hostage, wager	3	n	55	32	23	pignus	pignora	pignoris	pignorum	pignorī	pignoribus	pignus	pignora	pignore	pignoribus	pignus	pignora		
 adulter	adulterer, adulteress	2	mh	55	31	24	adulter	adulterī	adulterī	adulterōrum	adulterō	adulterīs	adulterum	adulterōs	adulterō	adulterīs	adulter/adultere	adulterī		
 fremitus	angry murmur, humming	4	m	54	38	16	fremitus	fremitūs	fremitūs	fremituum	fremituī	fremitibus	fremitum	fremitūs	fremitū	fremitibus	fremitus	fremitūs		
-arbiter	witness, spectator, judge, arbitrator	2	mh	54	36	18	arbiter	arbitrī	arbitrī	arbitrōrum	arbitrō	arbitrīs	arbitrum	arbitrōs	arbitrō	arbitrīs	arbiter1	arbitrī		
+arbiter	witness, spectator, judge, arbitrator	2	mh	54	36	18	arbiter	arbitrī	arbitrī	arbitrōrum	arbitrō	arbitrīs	arbitrum	arbitrōs	arbitrō	arbitrīs	arbiter/arbitre	arbitrī		
 delicia	delight, pet	1	f	54	36	18	dēlicia	dēliciae	dēliciae	dēliciārum	dēliciae	dēliciīs	dēliciam	dēliciās	dēliciā	dēliciīs	dēlicia	dēliciae		
 radius	ray (of light), staff, rod, spoke (of a wheel)	2	m	54	29	25	radius	radiī	radiī	radiōrum	radiō	radiīs	radium	radiōs	radiō	radiīs	radie	radiī		
 latebra	hiding place, retreat, lair	1	f	54	27	27	latēbra	latēbrae	latēbrae	latēbrārum	latēbrae	latēbrīs	latēbram	latēbrās	latēbrā	latēbrīs	latēbra	latēbrae		

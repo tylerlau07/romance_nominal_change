@@ -1,123 +1,252 @@
 ENDINGS
 
-NOM.SG
-	1
-		M
-			a	4
-		-
-		F
-			a	126
-		-
-		N
-		-
-	2
-		M
-			us	65
-			NULL	8
-		-
-		F
-			a	2
-			us	3
-		-
-		N
-			um	65
+NOM.SG	1	M	a	2	poēta, nauta
+		F	a	82	
+	-
+	2	M	us	46
+			NULL	8	vir, puer, ager, liber, minister, magister, adulter, arbiter
+		F	us	1	humus
+		N	um	86
+			us	1	vulgus
+	-
+	3	M	NULL	68
+			ēs	1	vātēs (vātis)
+			is	15	fīnis (fīnis)
+		F	NULL	60
+			is	13	
+			ēs	7	caedēs, sēdēs, mōlēs, famēs, nūbēs, rūpēs, aedēs
+			es	1	clādes
+		N	NULL	47
+			e	2	mare, cubīle
+	-
+	4	M	us	40
+		F	us	2
+		N	ū	2	cornū, genū
+	-
+	5	M	ēs	2
+		F	ēs	7
+	-
+NOM.PL	1	M	ae	2	poētae, nautae
+		F	ae	86
+	-
+	2	M	ī	54
+		F	ī	1
+		N	a	88
+	-
+	3	M	ēs	67
+		F	ēs	80
+		N	ia	4	maria, animālia, moenia, cubīlia
+	-
+	4	M	ūs	40
+		F	ūs	2
+		N	ua	2
+	-
+	5	M	ēs	1
+		F	ēs	7
+	-
+ACC.SG	1	M	am	2
+		F	am	82
+	-
+	2	M	um	54
+		F	um	1
+		N	um	86
 			us	1
-		-
-	3
-		M
-			is	15
-			NULL	62
-		-
-		F
-			ēs	3
-			is	11
-			NULL	51
-		-
-		N
-			NULL	27
-	4
-		-
-		M	
-			us	26
-		-
-		F
-			us	7
-		-
-		N
-			ū	1
-		-
-	5
-		-
-		M
-			ēs	2
-		-
-		F
-			ēs	5
-		-
-NOM.PL
-	1
-		-
-		M
-			ae	4
-		-
-		F
-			ae	120
-			ai	7
-		-
-	2
-		-
-		M
-			ī	73
-
-		-
-		F
-			ai	2
-			ī	3
-		-
-		N
-			a	73
-		-
-	3
-		
-	4
-	5	
-
-ACC.SG
-	1
-		M
-		F
-		N
-	2
-	3
-	4
-	5
-
-ACC.PL
-	1
-		M
-		F
-		N
-	2
-	3
-	4
-	5
-
-GEN.SG
-	1
-		M
-		F
-		N
-	2
-	3
-	4
-	5
-
-GEN.PL
-	1
-		M
-		F
-		N
-	2
-	3
-	4
-	5
+	-
+	3	M	em	67
+		F	em	81
+		N	NULL	47
+			e	2	mare, cubīle
+	-
+	4	M	um	40
+		F	um	2
+		N	ū	2
+	-
+	5	M	em	1
+		F	em	7
+	-
+ACC.PL	1	M	ās	2
+		F	ās	86
+	-
+	2	M	ōs	54
+		F	ōs	1
+		N	a	88
+	-	
+	3	M	ēs	67
+		F	ēs	80
+		N	a	46
+			ia	4	maria, animālia, moenia, cubīlia
+	-
+	4	M	ūs	40
+		F	ūs	2
+		N	ua	2
+	-
+	5	M	ēs	1
+		F	ēs	7
+	-
+GEN.SG	1	M	ae	2
+		F	ae	82
+	-
+	2	M	ī	54
+		F	ī	1
+		N	ī	87
+	-
+	3	M	is	67
+		F	is	81
+			NULL	1
+		N	is	49
+	-
+	4	M	ūs	40
+		F	ūs	2
+		N	ūs	2
+	-
+	5	M	ēī	1
+		F	ēī	4
+			eī	3	fideī, speī
+	-
+GEN.PL	1	M	ārum	2
+		F	ārum	86
+	-
+	2	M	ōrum	54
+		F	ōrum	1
+		N	ōrum	88
+	-
+	3	M	um	51
+			ium	16
+		F	um	51
+			ium	29
+		N	um	44
+			ium	6
+	-
+	4	M	uum	40
+		F	uum	2
+		N	uum	2
+	-
+	5	M	ērum	1
+		F	ērum	7
+	-
+DAT.SG	1	M	ae	2
+		F	ae	82
+	-
+	2	M	ō	54
+		F	ō	1
+		N	ō	87
+	-
+	3	M	ī	67
+		F	ī	81
+		N	ī	81
+			NULL	1	vī
+	-
+	4	M	uī	40
+		F	uī	2
+		N	ū	2
+	-
+	5	M	ēī	1
+		F	ēī	4
+			eī	3
+	-
+DAT.PL	1	M	īs	2
+		F	īs	85
+			ābus	1	deābus
+	-
+	2	M	īs	54
+		F	īs	1
+		N	īs	88
+	-
+	3	M	ibus	67
+		F	ibus	80
+		N	ibus	50
+	-
+	4	M	ibus	36
+			ubus	4	artubus, lacubus, arcubus, specubus
+		F	ibus	2
+		N	ibus	2
+	-
+	5	M	ēbus	1
+		F	ēbus	7
+	-
+ABL.SG	1	M	ā	2
+		F	ā	82
+	-
+	2	M	ō	54
+		F	ō	1
+		N	ō	87
+	-
+	3	M	e	67
+		F	e	81
+			1	NULL	vī
+		N	e	46
+			ī	3	marī, animālī, cubīlī
+	-
+	4	M	ū	40
+		F	ū	2
+		N	ū	2
+	-
+	5	M	ē	1
+		F	ē	7
+	-
+ABL.PL	1	M	īs	2
+		F	īs	85
+			ābus	1	deābus
+	-
+	2	M	īs	54
+		F	īs	1
+		N	īs	88
+	-
+	3	M	ibus	67
+		F	ibus	80
+		N	ibus	50
+	-
+	4	M	ibus	36
+			ubus	4	artubus, lacubus, arcubus, specubus
+		F	ibus	2
+		N	ibus	2
+	-
+	5	M	ēbus	1
+		F	ēbus	7
+	-
+VOC.SG	1	M	a	2
+		F	a	82
+	-
+	2	M	e	42
+			NULL	8	vir, puer, ager, liber, minister, magister, adulter, arbiter —> vire, puere, agre, libre, ministre, magistre, adultere, arbitre
+			ī	3	fīlī, gladī, nūntī
+			us	1	deus
+		F	e	1
+		N	um	86
+			us	1	vulgus
+	-
+	3	M	NULL	56	
+			is	10
+			ēs	1	vātēs
+		F	NULL	60
+			is	13
+			ēs	7
+			es	1	clādes
+		N	NULL	47
+			e	2	mare, cubīle
+	-
+	4	M	us	40
+		F	us	2
+		N	ū	2
+	-
+	5	M	ēs	1
+		F	ēs	7
+	-
+VOC.PL	1	M	ae	2
+		F	ae	86
+	-
+	2	M	ī	54
+		F	ī	1
+		N	a	88
+	-
+	3	M	ēs	67
+		F	ēs	80
+		N	a	46
+			ia	4	maria, animālia, moenia, cubīlia
+	-
+	4	M	ūs	40
+		F	ūs	2
+		N	ua	2
+	-
+	5	M	ēs	1
+		F	ēs	7

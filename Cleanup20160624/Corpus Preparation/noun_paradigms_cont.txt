@@ -1,0 +1,48 @@
+Latin	English	Declension	Gender	Total	Prose	Poetry	NomSg	NomPl	GenSg	GenPl	DatSg	DatPl	AccSg	AccPl	AblSg	AblPl	VocSg	VocPl
+cliens	customer, client	3	mh, fh	66	50	16	cliēns	clientēs	clientis	clientium	clientī	clientibus	clientem	clientēs	cliente	clientibus	cliēns	clientēs
+simulacrum	image, likeness	2	n	66	47	19	simulācrum	simulācra	simulācrī	simulācrōrum	simulācrō	simulācrīs	simulācrum	simulācra	simulācrō	simulācrīs	simulācrum	simulācra
+rector	guide, leader, director	3	mh	66	38	28	rector	rectōrēs	rectōris	rectōrum	rectōrī	rectōribus	rectōrem	rectōrēs	rectōre	rectōribus	rector	rectōrēs
+humor	liquid, fluid, humour	3	m	66	35	31	hūmor	hūmōrēs	hūmōris	hūmōrum	hūmōrī	hūmōribus	hūmōrem	hūmōrēs	hūmōre	hūmōribus	hūmor	hūmōrēs
+cena	dinner	1	f	65	37	28	cēna	cēnae	cēnae	cēnārum	cēnae	cēnīs	cēnam	cēnās	cēnā	cēnīs	cēna	cēnae
+seges	cornfield	3	f	65	15	50	seges	segetēs	segetis	segetum	segetī	segetibus	segetem	segetēs	segete	segetibus	seges	segetēs
+focus	hearth, fireplace	2	m	65	12	53	focus	focī	focī	focōrum	focō	focīs	focum	focōs	focō	focīs	foce	focī
+villa	villa, estate, farm	1	f	64	49	15	vīlla	vīllae	vīllae	vīllārum	vīllae	vīllīs	vīllam	vīllās	vīllā	vīllīs	vīlla	vīllae
+infans	infant	3	mh, fh	64	43	21	īnfāns	īnfantēs	īnfantis	īnfantium	īnfantī	īnfantibus	īnfantem	īnfantēs	īnfante	īnfantibus	īnfāns	īnfantēs
+fabula	discourse, narrative, fable, tale, story	1	f	64	42	22	fābula	fābulae	fābulae	fābulārum	fābulae	fābulīs	fābulam	fābulās	fābulā	fābulīs	fābula	fābulae
+patruus	paternal uncle, father's brother	2	mh	64	37	27	patruus	patruī	patruī	patruōrum	patruō	patruīs	patruum	patruōs	patruō	patruīs	patrue	patruī
+theatrum	theatre, theater, playhouse, stage	2	n	63	45	18	theātrum	theātra	theātrī	theātrōrum	theātrō	theātrīs	theātrum	theātra	theātrō	theātrīs	theātrum	theātra
+radix	root, radish	3	f	63	44	19	rādīx	rādīcēs	rādīcis	rādīcum	rādīcī	rādīcibus	rādīcem	rādīcēs	rādīce	rādīcibus	rādīx	rādīcēs
+coetus	union, meeting	4	m	63	43	20	coetus	coetūs	coetūs	coetuum	coetuī	coetibus	coetum	coetūs	coetū	coetibus	coetus	coetūs
+frenum	bridle, harness, curb	2	n	62	21	41	frēnum	frēna	frēnī	frēnōrum	frēnō	frēnīs	frēnum	frēna	frēnō	frēnīs	frēnum	frēna
+pulvis	dust, powder	3	m	62	21	41	pulvis	pulverēs	pulveris	pulverum	pulverī	pulveribus	pulverem	pulverēs	pulvere	pulveribus	pulvis	pulverēs
+bellua	beast	1	f	61	45	16	bellua	belluae	belluae	belluārum	belluae	belluīs	belluam	belluās	belluā	belluīs	bellua	belluae
+funis	rope, cord, line	3	m	61	39	22	fūnis	fūnēs	fūnis	fūnium	fūnī	fūnibus	fūnem	fūnēs	fūne	fūnibus	fūnis	fūnēs
+hortus	garden	2	m	61	37	24	hortus	hortī	hortī	hortōrum	hortō	hortīs	hortum	hortōs	hortō	hortīs	horte	hortī
+omen	omen	3	n	61	27	34	ōmen	ōmina	ōminis	ōminum	ōminī	ōminibus	ōmen	ōmina	ōmine	ōminibus	ōmen	ōmina
+sepulcrum	grave, burial place, tomb, sepulchre	2	n	61	19	42	sepulcrum	sepulcra	sepulcrī	sepulcrōrum	sepulcrō	sepulcrīs	sepulcrum	sepulcra	sepulcrō	sepulcrīs	sepulcrum	sepulcra
+osculum	kiss	2	n	61	16	45	osculum	oscula	osculī	osculōrum	osculō	osculīs	osculum	oscula	osculō	osculīs	osculum	oscula
+rogus	funeral pile, grave	2	m	61	15	46	rogus	rogī	rogī	rogōrum	rogō	rogīs	rogum	rogōs	rogō	rogīs	roge	rogī
+ver	spring (season)	3	n	61	13	48	vēr	vēra	vēris	vērum	vērī	vēribus	vēr	vēra	vēre	vēribus	vēr	vēra
+monumentum	reminder, memorial, monument	2	n	59	40	19	monumentum	monumenta	monumentī	monumentōrum	monumentō	monumentīs	monumentum	monumenta	monumentō	monumentīs	monumentum	monumenta
+specus	cave, chasm, abyss	4	m	59	32	27	specus	specūs	specūs	specuum	specuī	specubus	specum	specūs	specū	specubus	specus	specūs
+odor	smell, perfume, stench	3	m	59	30	29	odor	odōrēs	odōris	odōrum	odōrī	odōribus	odōrem	odōrēs	odōre	odōribus	odor	odōrēs
+spons	free will, accord, impulse	3	f	58	41	17	spōns	-	spontis	-	spontī	-	spontem	-	sponte	-	spōns	-
+furtum	theft	2	n	58	28	30	fūrtum	fūrta	fūrtī	fūrtōrum	fūrtō	fūrtīs	fūrtum	fūrta	fūrtō	fūrtīs	fūrtum	fūrta
+trabs	timber, beam, trunk	3	f	57	19	38	trabs	trabēs	trabis	trabum	trabī	trabibus	trabem	trabēs	trabe	trabibus	trabs	trabēs
+fetus	bearing, birth, offspring, young, fruit	4	m	57	12	45	fētus	fētūs	fētūs	fētuum	fētuī	fētibus	fētum	fētūs	fētū	fētibus	fētus	fētūs
+favor	good will, inclination, favor	3	m	56	45	11	favor	favōrēs	favōris	favōrum	favōrī	favōribus	favōrem	favōrēs	favōre	favōribus	favor	favōrēs
+pellex	concubine, mistress	3	fh	56	26	30	pellex	pellicēs	pellicis	pellicum	pellicī	pellicibus	pellicem	pellicēs	pellice	pellicibus	pellex	pellicēs
+cubile	bed, couch	3	n	56	25	31	cubīle	cubīlia	cubīlis	cubīlium	cubīlī	cubīlibus	cubīle	cubīlia	cubīlī	cubīlibus	cubīle	cubīlia
+armentum	herd of cattle, head of cattle, cattle	2	n	56	17	39	armentum	armenta	armentī	armentōrum	armentō	armentīs	armentum	armenta	armentō	armentīs	armentum	armenta
+nequitia	bad moral quality, idleness, negligence	1	f	55	42	13	nēquitia	nēquitiae	nēquitiae	nēquitiārum	nēquitiae	nēquitiīs	nēquitiam	nēquitiās	nēquitiā	nēquitiīs	nēquitia	nēquitiae
+strepitus	wild din, noise, crash	4	m	55	35	20	strepitus	strepitūs	strepitūs	strepituum	strepituī	strepitibus	strepitum	strepitūs	strepitū	strepitibus	strepitus	strepitūs
+pignus	pledge, mortgage, hostage, wager	3	n	55	32	23	pignus	pignora	pignoris	pignorum	pignorī	pignoribus	pignus	pignora	pignore	pignoribus	pignus	pignora
+adulter	adulterer, adulteress	2	mh	55	31	24	adulter	adulterī	adulterī	adulterōrum	adulterō	adulterīs	adulterum	adulterōs	adulterō	adulterīs	adulter/adultere	adulterī
+fremitus	angry murmur, humming	4	m	54	38	16	fremitus	fremitūs	fremitūs	fremituum	fremituī	fremitibus	fremitum	fremitūs	fremitū	fremitibus	fremitus	fremitūs
+arbiter	witness, spectator, judge, arbitrator	2	mh	54	36	18	arbiter	arbitrī	arbitrī	arbitrōrum	arbitrō	arbitrīs	arbitrum	arbitrōs	arbitrō	arbitrīs	arbiter1	arbitrī
+delicia	delight, pet	1	f	54	36	18	dēlicia	dēliciae	dēliciae	dēliciārum	dēliciae	dēliciīs	dēliciam	dēliciās	dēliciā	dēliciīs	dēlicia	dēliciae
+radius	ray (of light), staff, rod, spoke (of a wheel)	2	m	54	29	25	radius	radiī	radiī	radiōrum	radiō	radiīs	radium	radiōs	radiō	radiīs	radie	radiī
+latebra	hiding place, retreat, lair	1	f	54	27	27	latēbra	latēbrae	latēbrae	latēbrārum	latēbrae	latēbrīs	latēbram	latēbrās	latēbrā	latēbrīs	latēbra	latēbrae
+gemma	bud or eye of a plant, jewel	1	f	54	23	31	gemma	gemmae	gemmae	gemmārum	gemmae	gemmīs	gemmam	gemmās	gemmā	gemmīs	gemma	gemmae
+sonitus	sound	4	m	54	16	38	sonitus	sonitūs	sonitūs	sonituum	sonituī	sonitibus	sonitum	sonitūs	sonitū	sonitibus	sonitus	sonitūs
+heres	heir, heiress	3	mh, fh	53	29	24	hērēs	hērēdēs	hērēdis	hērēdum	hērēdī	hērēdibus	hērēdem	hērēdēs	hērēde	hērēdibus	hērēs	hērēdēs
