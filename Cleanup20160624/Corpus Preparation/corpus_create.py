@@ -47,8 +47,6 @@ to_replace = {}
 to_replace.update(spec_seq)
 to_replace.update(diphthongs)
 
-print to_replace
-
 cases = ['NomSg', 'NomPl', 'AccSg', 'AccPl', 'GenSg', 'GenPl',
 		'DatSg', 'DatPl', 'AblSg', 'AblPl', 'VocSg', 'VocPl']
 
@@ -83,12 +81,55 @@ def syllabify(word):
 			new_word += letter
 	return new_word
 
-def build(word):
+def realign(word):
 	'''
-	Builds the word by adding -
+	Realign codas to onsets
 	'''
 	word = word.strip('.').split('.')
+
+	# If monosyllabic ignore
+	if len(word) == 1:
+		return word
+
+	# Leave first one alone
+	for i in range(1, len(word)):
+		syllable = word[i]
+		# If more complicated than CV
+		while len(word[i]) > 2:
+			# Ex. 'ees', 'stra', 'tra'
+			if syllable[0:3] not in triple_clusters and syllable[0:2] not in consonant_clusters:
+				# Move onset to coda of previous
+				if syllable[0] not in vowels and syllable[1] not in vowels:
+					word[i-1] = word[i-1] + syllable[0]
+					word[i] = syllable[1:]
+			# Ex. 'taa'
+			if len(syllable) == 3 and syllable[1:] in lv.values(): break
+			else: break
+
+	# If last syllable is one or two consonants, realign
+	if len(word[-1]) == 1 and word[-1] not in vowels:
+		word[-2] = word[-2] + word[-1]
+		del(word[-1])
+	elif len(word[-1]) == 2 and word[-1][0] not in vowels and word[-1][1] not in vowels:
+		word[-2] = word[-2] + word[-1]
+		del(word[-1])
 	return word
+
+def addDashes(word):
+	'''
+	Add dashes in appropriate places
+	'''
+	for syllable in word:
+		# New syllable
+		new_syll = syllable
+		
+		# First get rid of codas
+		if syllable[-1] not in vowels:
+			
+
+		# Possibility of str
+		# if len(syllable) >= 4:
+
 
 ########
 # Main #
@@ -111,19 +152,15 @@ for row in reader.readlines():
 		for i in range(1, len(row)):
 			corpus[row[0]+'2'][row_order[i]] = row[i]
 
-lengths = []
-
 for word in corpus.keys():
 	for case in cases:
-		mod_word = replace(corpus[word][case])
-		# If alternate forms, only use first one
-		if '/' in mod_word:
-			mod_word = mod_word[:mod_word.index('/')]
-		syll_word = syllabify(mod_word)
-		lengths.append(len(build(syll_word)))
-		if len(build(syll_word)) == 6: print build(syll_word)
-
-print max(lengths)
+		if corpus[word][case] != '-':
+			mod_word = replace(corpus[word][case])
+			# If alternate forms, only use first one
+			if '/' in mod_word:
+				mod_word = mod_word[:mod_word.index('/')]
+			syll_word = syllabify(mod_word)
+			print realign(syll_word)
 
 # with open('latin_corpus.txt', mode = 'wb') as f:
 # 	out = csv.writer(f, delimiter = '\t')
