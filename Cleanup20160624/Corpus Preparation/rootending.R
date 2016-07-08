@@ -32,4 +32,4 @@ m4nomsg
 
 df[df$Suffix == "ēs" & df$Gender == "m" & df$Declension == 3 & df$Case == "nomsg", ]
 
-table(df$Gender)
+table(df$)/nrow(df)

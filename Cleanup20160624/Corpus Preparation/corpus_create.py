@@ -50,6 +50,42 @@ to_replace.update(diphthongs)
 cases = ['NomSg', 'NomPl', 'AccSg', 'AccPl', 'GenSg', 'GenPl',
 		'DatSg', 'DatPl', 'AblSg', 'AblPl', 'VocSg', 'VocPl']
 
+###########
+# Objects #
+###########
+
+class Lemma:
+	'''Takes in dictionary containing information for each word form'''
+	def __init__(self, *args, **kwargs):
+		for key, value in kwargs.iteritems():
+			setattr(self, key, value)
+
+		# Initialize dictionary to store info for each case
+		self.cases = {}
+
+	def addCase(self, case, case_info):
+		'''Adds the case information'''
+		self.cases[case] = case_info
+
+	def realign(self):
+		for case in self.cases:
+			# Determine the case with most syllables
+			self.cases[case].dashed
+
+class Case:
+    def __init__(self, parent_lemma, case, phonology):
+		self.parent_lemma = parent_lemma
+		if '/' in phonology:
+			self.mod_phon = phonology[:phonology.index('/')]
+		else:
+			self.mod_phon = phonology
+
+		self.phonetic = replace(self.mod_phon)
+		self.syllabified = syllabify(self.phonetic)
+		self.coda_moved = codaToOnset(self.syllabified)
+		self.dashed = addDashes(self.coda_moved)
+
+
 #############
 # Functions #
 #############
@@ -81,7 +117,7 @@ def syllabify(word):
 			new_word += letter
 	return new_word
 
-def realign(word):
+def codaToOnset(word):
 	'''
 	Realign codas to onsets
 	'''
@@ -118,18 +154,81 @@ def realign(word):
 def addDashes(word):
 	'''
 	Add dashes in appropriate places
+	Max of six syllables, max of 7 spots CCCVVCC
 	'''
-	for syllable in word:
-		# New syllable
-		new_syll = syllable
+	fixed_word = []
+
+	for i in range(0, len(word)):
+		syllable = word[i]
+		syll_len = len(syllable)
 		
-		# First get rid of codas
-		if syllable[-1] not in vowels:
-			
+		# If only one letter in syllable it is a vowel
+		if syll_len == 1:
+			new_syll = '-'*3 + syllable + '-'*4
 
-		# Possibility of str
-		# if len(syllable) >= 4:
+		# Could be VV, CV, or VC
+		elif syll_len == 2:
+			# If VV
+			if syllable[0] in vowels and syllable[1] in vowels:
+				new_syll = '-'*3 + syllable + '-'*3
+			# If CV
+			elif syllable[0] not in vowels:
+				new_syll = '-' + syllable[0] + '-' + syllable[1] + '-'*4
+			# If VC
+			else:
+				new_syll = '-'*3 + syllable[0] + '-'*2 + syllable[1] + '-'
 
+		# If 3 or more
+		else:
+			# FIRST DEAL WITH ONSETS	
+			# No onset ---V
+			if syllable[0] in vowels:
+				onset_done = '-'*3 + syllable
+			# One onset -C-
+			elif syllable[0] not in vowels and syllable[1] in vowels:
+				onset_done = '-' + syllable[0] + '-' + syllable[1:]
+			# Two onsets -CC
+			elif syllable[0] not in vowels and syllable[1] not in vowels:
+				onset_done = '-' + syllable
+			# Three onsets CCC
+			else:
+				onset_done = syllable 
+
+			# NOW DEAL WITH NUCLEUS
+			# Minimum is CCCV
+			if len(onset_done) == 4:
+				new_syll = onset_done + '-'*4
+			else:
+				# If CCCVV
+				if onset_done[4] in vowels:
+					nuc_done = onset_done
+				# If CCCVC
+				else:
+					nuc_done = onset_done[:4] + '-' + onset_done[4:]
+
+				# NOW DEAL WITH CODA(S)
+				# No coda
+				if len(nuc_done) == 5:
+					new_syll = nuc_done + '-'*3
+				# One coda
+				elif len(nuc_done) == 6:
+					new_syll = nuc_done[:-1] + '-' + nuc_done[-1] + '-'
+				# Two codas
+				elif len(nuc_done) == 7:
+					new_syll = nuc_done[:-2] + '-' + nuc_done[-2:]
+				# Three codas
+				else:
+					new_syll = nuc_done
+
+		# SANITY CHECK
+		if len(new_syll) != 8:
+			print "You screwed up the size of the syllable"
+			print word, len(new_syll), new_syll
+			raise SystemExit
+		else:
+			fixed_word.append(new_syll)
+
+	return fixed_word
 
 ########
 # Main #
@@ -139,29 +238,41 @@ reader = codecs.open('noun_paradigms_rev.txt', encoding='utf-8', mode='rU')
 
 row_order = reader.readline().strip('\r\n').split('\t')
 
-corpus = defaultdict(dict)
+corpus = []
 
 for row in reader.readlines():
 	row = row.strip("\r\n").split("\t")
+
 	# There are some homophones
-	if row[0] not in corpus.keys():
-		for i in range(1, len(row)):
-			corpus[row[0]][row_order[i]] = row[i]
-	# Dictionary mapping word to each of its features
-	else:
-		for i in range(1, len(row)):
-			corpus[row[0]+'2'][row_order[i]] = row[i]
+	# if lemma not in corpus.keys():
+	row_dict = {row_order[i]: value for i, value in enumerate(row)}
+	lemma = Lemma(**row_dict)
+	corpus.append(lemma)
 
-for word in corpus.keys():
 	for case in cases:
-		if corpus[word][case] != '-':
-			mod_word = replace(corpus[word][case])
-			# If alternate forms, only use first one
-			if '/' in mod_word:
-				mod_word = mod_word[:mod_word.index('/')]
-			syll_word = syllabify(mod_word)
-			print realign(syll_word)
+		declined = Case(lemma, case, getattr(lemma, case))
+		lemma.addCase(case, declined)
+		print declined.dashed
 
+
+	# lemma.alignPhon
+	# print lemma.phonetic
+	# # Dictionary mapping word to each of its features
+	# else:
+	# 	for i in range(1, len(row)):
+	# 		corpus[row[0]+'2'][row_order[i]] = row[i]
+
+# for word in corpus.keys():
+# 	for case in cases:
+# 		if corpus[word][case] != '-':
+# 			mod_word = replace(corpus[word][case])
+# 			# If alternate forms, only use first one
+# 			if '/' in mod_word:
+# 				mod_word = mod_word[:mod_word.index('/')]
+# 			syll_word = syllabify(mod_word)
+# 			realigned_word = realign(syll_word)
+# 			dashed_word = addDashes(realigned_word)
+# 			print dashed_word
 # with open('latin_corpus.txt', mode = 'wb') as f:
 # 	out = csv.writer(f, delimiter = '\t')
 
