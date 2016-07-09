@@ -1,22 +1,11 @@
-import numpy
+from math import log
+from math import ceil
 
 ##########
 # Corpus #
 ##########
 
-corpus_file = "latin_corpus.txt"
-
-# The ordering of data in the input. Will then be set of properties of Lemma objects
-row_order = [
-    "word", 
-    "latin_gender", 
-    "max_freq", 
-    "max10k", 
-    "log_max", 
-    "slavic_gender", 
-    "romanian_gender", 
-    "declension"
-]
+corpus_file = "../Corpus Preparation/latin_corpus.txt"
 
 ##############
 # Parameters #
@@ -37,58 +26,87 @@ hierarchy = False
 # Make false to test with no token frequency
 token_freq = False
 
-# Indexes where each part output info begins
-(gen_b, dec_b, case_b, num_b) = (0, 3, 8, 11)
-
 # Number of times to introduce training set: P&VE uses 3, HareEllman uses 10
 epochs = 3
+
+#############
+# Functions #
+#############
+
+def binaryDict(category):
+    '''Create dictionary of each item to binary'''
+    # Pad with 0's up to size (log base 2 of number of items)
+    fill_size = int(ceil(log(len(category), 2)))
+    bin_list = [tuple(bin(num)[2:].zfill(fill_size)) for num in range(0, len(category))]
+    return dict(zip(category, bin_list))
+
+def invert(d):
+    '''
+    Invert a dictionary
+    '''
+    return dict((value, key) for key, value in d.iteritems())
 
 #####################
 # Layer Information #
 #####################
 
-# Compute expected size of input layer
+#########
+# INPUT #
+#########
 
-# 6 syllables with 6 potential phonemes each
-# Each phoneme can be represented by a maximum of 11 features (Chomsky & Halle 1968)-see below
-stem_length = 36                                
-phon_length = 11
+# Input layer will contain:
+#   1) Unique identifier of root (9 bits)
+#   2) Human identifier (male, female, non-human) (2 bits)
+#   3) Declension, Gender?, Case, Number (3 bits, 2 bits, 3 bits, 1 bit)
+# TOTAL input bits = 20
 
-# 8 nodes to represent human male/female or nonhuman
-human_length = 8
+# We know the corpus size beforehand
+corpus_size = 500
 
-# Determine the length of the input
-input_nodes = (stem_length * phon_length) + human_length
+# Take log base 2 to figure out how many bits we need (9)
+root_size = int(ceil(log(corpus_size, 2)))
+
+human = ['nh', 'mh', 'fh']
+declensions = [str(i) for i in range(1, 6)]
+genders = ['m', 'f', 'n']
+cases = ['Nom', 'Acc', 'Gen', 'Dat', 'Abl', 'Voc']
+numbers = ['Sg', 'Pl']
+
+# Total size of input layer
+input_nodes = sum([root_size, len(human), len(declensions), len(genders), len(cases), len(numbers)])
+
+# Now make two way dictionary with bit vectors
+human_dict = binaryDict(human)
+dec_dict = binaryDict(declensions)
+dec_dict.update(invert(dec_dict))
+gen_dict = binaryDict(genders)
+gen_dict.update(invert(gen_dict))
+case_dict = binaryDict(cases)
+case_dict.update(invert(case_dict))
+num_dict = binaryDict(numbers)
+num_dict.update(invert(num_dict))
+
+##########
+# HIDDEN #
+##########
 
 # Number of hidden layers: P&VE uses 30, HareEllman uses 10 for the first layer
-hidden_nodes = 30                                                                        
+# P&VE suggest 60
+hidden_nodes = 30
 
-# Gender (3), Declension (5), Case (3), Number (2)
-gender_dimension = 3
-declension_dimension = 5
-case_dimension = 3
-number_dimension = 1
+##########
+# OUTPUT #
+##########
 
-# Gender variables (unit vectors in three dimensions)
-[m, f, n] = map(tuple, numpy.identity(gender_dimension, int))
+# Output layer will be phonological form
+#   Compute by multiplying syllables (6) by max phonemes per syllable (8) by features (12) 
+#   Features from (Chomsky & Halle 1968): see below
+n_syll = 6
+n_phon = 8
+n_feat = 12
 
-# Declension variables (unit vectors in 5 dimensions)
-[d1, d2, d3, d4, d5] = map(tuple, numpy.identity(declension_dimension, int))
-
-# Manually change cases to reflect semantics
-if hierarchy == True:
-    nom = (1, 0, 0)
-    acc = (1, 1, 0)
-    gen = (1, 1, 1)
-else:
-    [nom, acc, gen] = map(tuple, numpy.identity(case_dimension, int))
-
-# Indicator of singular or plural (unit vectors in two dimensions)
-sg = (0,)
-pl = (1,)
-
-# Total number of output nodes (should be 12)
-output_nodes = sum([gender_dimension, declension_dimension, case_dimension, number_dimension])                                                       
+# Determine the length of the input
+output_nodes = n_syll * n_phon * n_feat
 
 ##########################
 # Coding the output file #
@@ -98,95 +116,13 @@ output_nodes = sum([gender_dimension, declension_dimension, case_dimension, numb
 out_file = 'stats_Gens%s' % str(total_generations)
 
 # Do we drop the genitive or not?
-if hierarchy == True:
-    out_file += '_HierT'
 if token_freq == False:
     out_file += '_TokFreqF'
 if gnvdrop_generation <= total_generations:
     out_file += '_GnvT%s' % str(gnvdrop_generation)
 
 # Number of epochs, number of hidden nodes, trial number
-out_file += '_Trial%s.txt' % str(trial)
-
-#################################
-# Dictionaries of output values #
-#################################
-
-# Invert dictionary
-def invert(d):
-    '''
-    Invert a dictionary
-    '''
-    return dict((value, key) for key, value in d.iteritems())
-
-# Map genders to tuples
-genders = {
-    'm': m,
-    'f': f,
-    'n': n
-}
-
-# Map tuples back to genders
-tup_to_gen = invert(genders)
-
-# Map declensions to tuples
-declensions = {
-    '1': d1,
-    '2': d2,
-    '3': d3,
-    '4': d4,
-    '5': d5,
-}
-
-# map tuples back to declensions
-tup_to_dec = invert(declensions)
-
-# Map case to tuples
-cases = {
-    'nom': nom,
-    'acc': acc,
-    'gen': gen
-}
-
-# Map tuples back to case
-tup_to_case = invert(cases)
-
-# Map tuples back to number
-num = {
-    'sg': sg,
-    'pl': pl
-}
-
-# Map number back to tuple
-tup_to_num = invert(num)
-
-# Human dictionary for assigning input values
-input_human = {
-    "mh": (1,) * (human_length / 2) + (0,) * (human_length / 2),
-    "fh": (0,) * (human_length / 2) + (1,) * (human_length / 2),
-    "m": (0,) * human_length,
-    "f": (0,) * human_length,
-    "n": (0,) * human_length
-}
-
-### INSTEAD OF THIS DICTIONARY, LET'S JUST KEEP THE HUMAN AS PART OF THE OBJECT
-
-# # Dictionary for predicting outcome values
-# outputs = {
-#     # Instead of just adding the gender dictionary, we modify them here 
-#     "m": m,                            
-#     "mh": m,
-#     "f": f,
-#     "fh": f,
-#     "n": n,
-# }
-
-# Insert the rest of the computed dictionaries
-outputs = {}
-outputs.update(genders)
-outputs.update(cases)
-outputs.update(declensions)
-outputs.update(num)                            
+out_file += '_Trial%s.txt' % str(trial)                   
 
 ########################
 # Frequency Adjustment #
@@ -194,66 +130,46 @@ outputs.update(num)
 
 # Adjust type frequencies depending on case and human/nonhuman
 
-# Original case frequencies that P&VE implemented
-human_case_freq = {
-    "nomsg": 8, 
-    "nompl": 3, 
-    "accsg": 4.5, 
-    "accpl": 2.5, 
-    "gensg": 4, 
-    "genpl": 2 
-}
-
-nhuman_case_freq = {
-    "nomsg": 4,
-    "nompl": 2,
-    "accsg": 7,
-    "accpl": 2,
-    "gensg": 2,
-    "genpl": 1
+# New case frequencies using Delatte et al 1981
+case_freqs = {
+    'NomSg': 129.23, 'NomPl': 41.94,
+    'AccSg': 159.68, 'AccPl': 85.27,
+    'GenSg': 75.41, 'GenPl': 41.96,
+    'DatSg': 28.96, 'DatPl': 16.41,
+    'AblSg': 135.64, 'AblPl': 49.74,
+    'VocSg': 1.88, 'VocPl': 1
 }
 
 #############################################
 # Organize data to make it easier to handle #
 #############################################
 
-# The output dictionary should map (404) = 6 (features) * 6 (phonemes) * 11 (features) + 8 (human) tuples to (12) tuples
-
-# Corpus contains every word mapped to its Latin gender
-corpus = {}
-
-# Human contains every word mapped to its animacy
-human = {}
-
-# Frequencies contains every word mapped to its frequency
-frequencies = {}
-
 # Map phonemes to Chomsky and Halle values (1968) --> need to update 
 phonemes = {
-    "p": (-1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0),
-    "t": (-1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0),
-    "k": (-1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0),
-    "b": (-1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, ),
-    "d": (-1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0),
-    "g": (-1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0),
-    "f": (-1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0),
-    "v": (-1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0),
-    "s": (-1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0),
-    "z": (-1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0),
-    "h": (-1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0),
-    "m": (1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0),
-    "n": (1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0),
-    "N": (1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, -1.0, 1.0),    # engma
-    "r": (1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0),
-    "l": (1.0, -1.0, 1.0, 1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0, 1.0),
-    "w": (1.0, -1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0),
-    "j": (1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0), # y
-    "i": (1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0),   
-    "u": (1.0, 1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0),  
-    "e": (1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, 1.0),  
-    "o": (1.0, 1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0),  
-    "a": (1.0, 1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, -1.0, -1.0, 1.0, 1.0), 
-    "-": (0,) * 12
+    "p": (0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0),
+    "t": (0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0),
+    "k": (0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0),
+    "b": (0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0),
+    "d": (0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0),
+    "g": (0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0),
+    "f": (0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0),
+    "v": (0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0),
+    "s": (0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0),
+    "z": (0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0),
+    "h": (0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0),
+    "m": (1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0),
+    "n": (1.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0),
+    "N": (1.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 0.0, 1.0),    # engma
+    "r": (1.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0),
+    "l": (1.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0),
+    "w": (1.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0),
+    "j": (1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0), # y
+    "i": (1.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0),   
+    "u": (1.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0),  
+    "e": (1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0),  
+    "o": (1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0),  
+    "a": (1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 1.0), 
+    "-": (0.5,) * 12
 }
 
 # Turn a syllable into its featural representation

@@ -5,7 +5,9 @@
 
 from collections import defaultdict
 from collections import OrderedDict
+from math import log
 import codecs
+import unicodecsv as csv
 
 #############
 # Constants #
@@ -68,13 +70,41 @@ class Lemma:
 		self.cases[case] = case_info
 
 	def realign(self):
-		for case in self.cases:
-			# Determine the case with most syllables
-			self.cases[case].dashed
+		'''Realigns word such that roots line up'''
+		lengths = []
+
+		# List of lengths and max
+		len_list = map(len, [case.dashed for case in self.cases.values()])
+		max_len = max(len_list)
+		# Check if all elements equal. If they are, build one forward
+		len_equal = checkEqual(len_list)
+
+		for form in self.cases.values():
+			# Determine form length 
+			form_len = len(form.dashed)
+			# Length difference tells us how many to build forward
+			len_diff = max_len - form_len
+			# Difference from 6 tells us how many to build back
+			diff_from_six = 6 - max_len
+
+			# Now build
+			if len_equal:
+				final_form = ['-'*8]*(diff_from_six-1) + form.dashed + ['-'*8]
+			else:
+				final_form = ['-'*8]*diff_from_six + form.dashed + ['-'*8]*len_diff
+
+			# Sanity check
+			if len(final_form) != 6:
+				print 'The word is misaligned'
+				raise SystemExit
+			else:
+				form.final = final_form
 
 class Case:
     def __init__(self, parent_lemma, case, phonology):
 		self.parent_lemma = parent_lemma
+		self.case = case
+
 		if '/' in phonology:
 			self.mod_phon = phonology[:phonology.index('/')]
 		else:
@@ -89,6 +119,15 @@ class Case:
 #############
 # Functions #
 #############
+
+def checkEqual(iterator):
+	'''Checks if all elements in a list are equal'''
+	try:
+		iterator = iter(iterator)
+		first = next(iterator)
+		return all(first == rest for rest in iterator)
+	except StopIteration:
+		return True
 
 def replace(word):
 	'''
@@ -234,46 +273,57 @@ def addDashes(word):
 # Main #
 ########
 
+# First get the information from the paradigm list
 reader = codecs.open('noun_paradigms_rev.txt', encoding='utf-8', mode='rU')
 
 row_order = reader.readline().strip('\r\n').split('\t')
 
-corpus = []
+corpus = {}
 
 for row in reader.readlines():
 	row = row.strip("\r\n").split("\t")
-
-	# There are some homophones
-	# if lemma not in corpus.keys():
 	row_dict = {row_order[i]: value for i, value in enumerate(row)}
 	lemma = Lemma(**row_dict)
-	corpus.append(lemma)
 
+	# Add each case to lemmas
 	for case in cases:
 		declined = Case(lemma, case, getattr(lemma, case))
 		lemma.addCase(case, declined)
-		print declined.dashed
-
-
-	# lemma.alignPhon
-	# print lemma.phonetic
-	# # Dictionary mapping word to each of its features
-	# else:
-	# 	for i in range(1, len(row)):
-	# 		corpus[row[0]+'2'][row_order[i]] = row[i]
-
-# for word in corpus.keys():
-# 	for case in cases:
-# 		if corpus[word][case] != '-':
-# 			mod_word = replace(corpus[word][case])
-# 			# If alternate forms, only use first one
-# 			if '/' in mod_word:
-# 				mod_word = mod_word[:mod_word.index('/')]
-# 			syll_word = syllabify(mod_word)
-# 			realigned_word = realign(syll_word)
-# 			dashed_word = addDashes(realigned_word)
-# 			print dashed_word
-# with open('latin_corpus.txt', mode = 'wb') as f:
-# 	out = csv.writer(f, delimiter = '\t')
-
 	
+	# Realign
+	lemma.realign()
+
+	# Then add to corpus by name and English meaning (for unique identifier)
+	corpus[(lemma.Latin, lemma.English)] = lemma
+
+reader.close()
+
+# Get root and suffixes from rootending text
+rootsuffix = codecs.open('rootending.txt', encoding='utf-8', mode='rU')
+
+row_order2 = rootsuffix.readline().strip('\r\n').split('\t')
+
+for row in rootsuffix.readlines():
+	row = row.strip("\r\n").split("\t")
+	row_dict = {row_order2[i]: value for i, value in enumerate(row)}
+	# Get root and suffix for each case
+	info = corpus[row_dict['Parent'], row_dict['English']]
+	for form in info.cases.values():
+		form.root, form.suffix = row_dict['Root'], row_dict['Suffix']
+
+rootsuffix.close()
+
+# Now write the corpus
+with open('latin_corpus.txt', mode='wb') as f:
+	out = csv.writer(f, delimiter = '\t')
+	out.writerow(['Form', 'Latin', 'English', 'Declension', 'Gender', 
+		'TotFreq', 'ProseFreq', 'PoetFreq'])
+	# Sort corpus alphabetically
+	for key in sorted(corpus.keys()):
+		lemma = corpus[key]
+		header = ['_', lemma.Latin, lemma.English, lemma.Declension, lemma.Gender, 
+			lemma.Total, lemma.Prose, lemma.Poetry]
+		out.writerow(header)
+		for case in cases:
+			form = lemma.cases[case]
+			out.writerow([' '.join(form.final), form.case, form.root, form.suffix])

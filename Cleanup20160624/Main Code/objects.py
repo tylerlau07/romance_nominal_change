@@ -1,6 +1,6 @@
-from __future__ import division
 from math import log
 from decimal import *
+import re
 import random
 import constants
 
@@ -8,33 +8,42 @@ import constants
 # Class for each Latin lemma.
 # - Initialized with information from the Latin corpus
 # - Contains a list of Case objects, one for each of its cases
-# - Contains frequency, taken from the logged max frequency (or log 2 if frequency = 0 or 1), as well as Latin, Slavic, and Romanian genders
+# - Contains frequency, taken from the log of the total frequency
 ###
+
 class Lemma:
     def __init__(self, *args, **kwargs):
         for key, value in kwargs.iteritems():
             setattr(self, key, value)
 
+        # Some nouns have more than one gender
+        if ',' in self.gender:
+            self.gender = self.gender[:self.gender.index(',')]
+
         # Modify humanness, gender, and frequency
-        if self.latin_gender[-1] == "h":
-            self.human = "h"
+        if self.gender[-1] == "h":
+            self.human = self.gender
         else: 
-            self.human = ""
+            self.human = "nh"
 
-        self.latin_gender = self.latin_gender[0]
+        # Now simplify gender
+        self.gender = self.gender[0]
 
-        if self.log_max not in ["?", "1"]:
-            self.freq = Decimal(self.log_max)
-        else:
-            self.freq = Decimal(log(2))
+        # Get rid of human part
+        self.latin = self.latin[0]
+
+        # Log frequency to account for Weber's Rule
+        self.logfreq = Decimal(log(float(self.totfreq)))
 
         # Initialize dictionary to store info for each case
         self.cases = {}
 
     def addCase(self, case, case_info):
-        '''Adds the case information'''
+        '''
+        Adds the case information
+        Case info should be a Case object
+        '''
         self.cases[case] = case_info
-
 
 ###
 # Class for each case of a token
@@ -45,36 +54,63 @@ class Lemma:
 # - Will ideally implement sanity checks
 ###
 class Case:
-    def __init__(self, parent_lemma, syllables, case):
-        self.parent_lemma = parent_lemma
-        self.syllables = syllables
-        self.phonology = ''.join(syllables).replace('-', '')
-        self.case = case[0:3]
-        self.num = case[3:]
-        self.lemmacase = self.parent_lemma.word + ':' + self.case + self.num
+    def __init__(self, parent_lemma, **kwargs):
+        self.parent = parent_lemma
 
-        # Keep track of input and expected outputs for each generation
-        self.input_change = {}      # Should have generation mapping to case, num, and syllables
-        self.output_change = {}     # Should have generation mapping to gender, declension, case, and number
+        for key, value in kwargs.iteritems():
+            setattr(self, key, value)
 
-    def createInputTuple(self, syllables):
-        self.input_tuple = tuple([syllable for word in map(constants.convertToFeatures, syllables) for syllable in word])
+        self.syllables = self.form.split(' ')
+        self.phonology = ''.join(self.syllables).replace('-', '')
 
-        # Add tuple for animacy
-        self.input_tuple += constants.input_human[self.parent_lemma.latin_gender + self.parent_lemma.human]
+        # Split case and number
+        splitpoint = re.search('[SP]', self.casenum).start()
+        self.case = self.casenum[:splitpoint]
+        self.num = self.casenum[splitpoint:]
 
-        self.sanityCheck(self.input_tuple)
+        # Unique identifying form
+        self.lemmacase = self.parent.latin + ':' + self.case + self.num
 
-    def sanityCheck(self, input_tuple):
+        # Keep track of output change for each generation (phonology)
+        self.output_change = {}
+
+    def createInputTuple(self):
+        '''Create the input tuple off the root identifier, human value, declension, gender, case, number'''
+        
+        # Turn identifier into binary
+        self.rootbin = tuple(bin(self.parent.rootid)[2:].zfill(constants.root_size))
+        self.humanbin = constants.human_dict[self.parent.human]
+        self.decbin = constants.dec_dict[self.parent.declension]
+        self.genbin = constants.gen_dict[self.parent.gender]
+        self.casebin = constants.case_dict[self.case]
+        self.numbin = constants.num_dict[self.num]
+
+        self.input_tuple = self.phonology, self.rootbin + self.humanbin + self.decbin + self.genbin + self.casebin + self.numbin
+
+        # Sanity check
         if len(self.input_tuple) != constants.input_nodes:
             print "You screwed up the size of the input"
             print len(self.input_tuple), constants.input_nodes
             raise SystemExit
 
+    # def createInputTuple(self, syllables):
+    #     self.input_tuple = tuple([syllable for word in map(constants.convertToFeatures, syllables) for syllable in word])
+
+    #     # Add tuple for animacy
+    #     self.input_tuple += constants.input_human[self.parent_lemma.latin_gender + self.parent_lemma.human]
+
+    #     self.sanityCheck(self.input_tuple)
+
+    # def sanityCheck(self, input_tuple):
+    #     if len(self.input_tuple) != constants.input_nodes:
+    #         print "You screwed up the size of the input"
+    #         print len(self.input_tuple), constants.input_nodes
+    #         raise SystemExit
+
 ###
 # Class to preprocess data for the neural network
 # - Contains a training set ("corpus", entries appear by frequency) and a test set (unique entries)
-# - Passes- words (Case instances) and their current gender, adds them to the sets in appropriate proportion.
+# - Passes words (Case instances) and their current gender, adds them to the sets in appropriate proportion.
 ###
 class Corpus:
     def __init__(self, training_set):
@@ -84,20 +120,17 @@ class Corpus:
 
     def addByFreq(self, token_freq, token, expected_output):
         '''Adds the current token to the list training set a number of times based off frequency.'''
+        
+        # Multiply token frequency (or 1) by type frequency and then floor
         if token_freq == True:
-            frequency = float(token.parent_lemma.freq)
-            frequency *= constants.nhuman_case_freq[token.case+token.num]
+            frequency = float(token.parent.totfreq)
         else:
             frequency = 1
-            # Multiply by non-human constants. If token frequency turned off, multiply by human constants
-            if token.parent_lemma.human == "h":
-                frequency *= constants.human_case_freq[token.case+token.num]
-            else:
-                frequency *= constants.nhuman_case_freq[token.case+token.num]
-
+        
+        frequency *= constants.case_freqs[token.case + token.num]
         frequency = int(frequency)
 
-        # Add one of each form to the test set and add by frequency to the training set
+        # Add one of each form to test set and add by frequency to training set
         self.test.append((token, token.input_tuple, expected_output))                        
         for x in xrange(frequency):
             self.train.append((token, token.input_tuple, expected_output))
@@ -113,32 +146,55 @@ class Corpus:
         return self.training_set
 
 def readCorpus(f = constants.corpus_file):
-        ''' Reads the corpus file and creates the Lemma and Case objects. '''
+        '''Reads the corpus file and creates the Lemma and Case objects'''
         corpus = []
 
         reader = open(f, 'rU')
+
+        # Headings: Latin, English, Declension, Gender, TotFreq, ProseFreq, PoetFreq
+        heading = reader.readline().strip('\n').lower().split("\t")[1:]
+
+        # For each specific case form
+        form_info = ['form', 'casenum', 'root', 'suffix']
+
+        # Create counter to assign each lemma a unique identifying number
+        root_counter = 0
 
         for row in reader.readlines():
                 # If this is the start of a new word
                 if row[0] == "_":
 
-                        # Ignore "_"
-                        row_arr = row.strip('\n').split("\t")[1:]
+                    # Ignore "_"
+                    row_arr = row.strip('\n').split('\t')[1:]
 
-                        # Create dictionary of labels to values
-                        row_dict = {constants.row_order[i]: value for i, value in enumerate(row_arr)}
+                    # Create dictionary of labels to values
+                    row_dict = {heading[i]: value for i, value in enumerate(row_arr)}
 
-                        # Create Lemma object and add it as a word in the corpus
-                        current_lemma = Lemma(**row_dict)
+                    # Create Lemma object and add it as a word in the corpus
+                    lemma = Lemma(**row_dict)
 
-                        # REMOVE THIS LINE ONCE WE MAKE THE CORPUS ONLY WORDS WITH LATIN GENDER
-                        if current_lemma.latin_gender != "N":        
-                                corpus.append(current_lemma)
+                    # Add counter identifier to attributes and then increase counter
+                    lemma.rootid = root_counter
+
+                    root_counter += 1
+
+                    # Corpus with each lemma and their case form information
+                    corpus.append(lemma)
 
                 # Else, it is information for the word, and we can create a Case object pointing to the parent Lemma
                 else:
-                        [s1, s2, s3, s4, s5, s6, case, suf, dem, adj] = row.split("\t")
-                        syllables = (s1, s2, s3, s4, s5, s6)
-                        current_lemma.addCase(case, Case(current_lemma, syllables, case))
+
+                    # Set up the keys
+                    case_row = row.strip('\n').split('\t')
+
+                    # Key and attributes to feed into Case object
+                    case_dict = {form_info[i]: value for i, value in enumerate(case_row)}
+
+                    # Create Case object and add
+                    case_info = Case(lemma, **case_dict)
+                    lemma.addCase(case_dict['casenum'], case_info)
 
         return corpus
+
+print readCorpus()[10].cases['NomSg'].createInputTuple()
+print constants.input_nodes
