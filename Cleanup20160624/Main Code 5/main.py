@@ -3,6 +3,7 @@ from math import ceil
 from math import log
 import time
 import unicodecsv as csv
+from random import seed
 
 # Our files
 import constants
@@ -26,6 +27,8 @@ start = time.time()
 # Initialize generation counter
 generation = 1
 
+seed(0)
+
 def conductGeneration(generation, corpus, previous_output):
         '''
         Conducts a generation of learning and testing on the input data
@@ -38,7 +41,7 @@ def conductGeneration(generation, corpus, previous_output):
         '''
 
         # Determine how long the root vector should be based on the length of the corpus
-        root_size = int(ceil(log(len(corpus), 2)))
+        root_size = len(root_to_tuple)
 
         # Total size of input layer determined here
         input_nodes = sum([root_size, constants.human_size, constants.dec_size, constants.gen_size, constants.case_size, constants.num_size])
@@ -59,7 +62,7 @@ def conductGeneration(generation, corpus, previous_output):
                 for case, form in lemma.cases.iteritems():
 
                         # Create the input tuple
-                        form.createInputTuple(input_nodes, root_size)
+                        form.createInputTuple(input_nodes, root_to_tuple)
 
                         # Add words according to their frequencies
                         training_corpus.addByFreq(constants.token_freq, form, expected_outputs[form.lemmacase])
@@ -130,7 +133,7 @@ print '''Training on %d Epochs
                 )
 
 # Read in corpus
-corpus = objects.readCorpus(constants.corpus_file)
+(corpus, root_to_tuple) = objects.readCorpus(constants.corpus_file)
 # Determine corpus size from this
 corpus_size = len(corpus)
 

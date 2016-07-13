@@ -49,8 +49,8 @@ to_replace = {}
 to_replace.update(spec_seq)
 to_replace.update(diphthongs)
 
-cases = ['NomSg', 'NomPl', 'AccSg', 'AccPl', 'GenSg', 'GenPl',
-		'DatSg', 'DatPl', 'AblSg', 'AblPl', 'VocSg', 'VocPl']
+cases = ['Nom.Sg', 'Nom.Pl', 'Acc.Sg', 'Acc.Pl', 'Gen.Sg', 'Gen.Pl',
+		'Dat.Sg', 'Dat.Pl', 'Abl.Sg', 'Abl.Pl', 'Voc.Sg', 'Voc.Pl']
 
 ###########
 # Objects #
@@ -100,6 +100,19 @@ class Lemma:
 			else:
 				form.final = final_form
 
+			# Get last two syllables
+			form.last_two = form.final[-2:]
+
+	def phonSuffixes(self):
+		'''Phonemicize and realign suffixes'''
+		for form in self.cases.values():
+			if form.suffix in ['NULL', 'N/A']:
+				form.phonsuf = ['-'*8]*2
+			else:
+				form.phonsuf = addDashes(codaToOnset(syllabify(replace(form.suffix))))
+				if len(form.phonsuf) == 1:
+					form.phonsuf.append('-'*8)
+
 class Case:
     def __init__(self, parent_lemma, case, phonology):
 		self.parent_lemma = parent_lemma
@@ -114,7 +127,6 @@ class Case:
 		self.syllabified = syllabify(self.phonetic)
 		self.coda_moved = codaToOnset(self.syllabified)
 		self.dashed = addDashes(self.coda_moved)
-
 
 #############
 # Functions #
@@ -308,10 +320,13 @@ for row in rootsuffix.readlines():
 	row_dict = {row_order2[i]: value for i, value in enumerate(row)}
 	# Get root and suffix for each case
 	info = corpus[row_dict['Parent'], row_dict['English']]
-	for form in info.cases.values():
-		form.root, form.suffix = row_dict['Root'], row_dict['Suffix']
+	info.cases[row_dict['Case']].root, info.cases[row_dict['Case']].suffix = row_dict['Root'], row_dict['Suffix']
 
 rootsuffix.close()
+
+# Now phonemicize suffixes
+for lemma in corpus.values():
+	lemma.phonSuffixes()
 
 # Now write the corpus
 with open('latin_corpus.txt', mode='wb') as f:
@@ -326,4 +341,4 @@ with open('latin_corpus.txt', mode='wb') as f:
 		out.writerow(header)
 		for case in cases:
 			form = lemma.cases[case]
-			out.writerow([' '.join(form.final), form.case, form.root, form.suffix])
+			out.writerow([' '.join(form.final), form.case, form.root, form.suffix, ' '.join(form.phonsuf), ' '.join(form.last_two)])

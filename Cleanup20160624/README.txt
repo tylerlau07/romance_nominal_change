@@ -3,6 +3,8 @@ Tyler Lau
 
 This is the revised implementation of Lau (2016)
 
+Main Code 2 guesses only ending
+
 ~*~
 
 INPUT LAYER
@@ -116,6 +118,51 @@ Acc	159.68		85.27		22.89			30.98
 Gen	75.41		41.96		14.47			4.13
 Dat	28.96		16.41		5.34			4.01
 Abl	135.64		49.74		27.08			9.96
+
+~*~
+		TOTAL		
+	Sg		Pl		
+Nom	41617		12738					
+Voc	2243		611					
+Acc	42709		30327					
+Gen	21639		10467					
+Dat	8222		5056					
+Abl	39345		14440	
+
+		230252
+
+~*~
+By percentage:		
+
+		TOTAL		
+	Sg		Pl		
+Nom	18.07		5.53					
+Voc	0.97		0.27					
+Acc	18.55		13.17					
+Gen	9.40		4.55					
+Dat	3.57		2.20					
+Abl	17.09		6.27			
+
+~*~
+By ratio:
+		TOTAL		
+	Sg		Pl		
+Nom	68.11		20.85					
+Voc	3.67		1					
+Acc	69.90		49.63					
+Gen	35.42		17.13					
+Dat	13.46		8.27					
+Abl	64.39		23.63
+
+~*~
+By ratio without vocative:
+		TOTAL		
+	Sg		Pl		
+Nom	8.23		2.52					
+Acc	8.45		6.00					
+Gen	4.28		2.07					
+Dat	1.63		1					
+Abl	7.78		2.86
 
 ***
 

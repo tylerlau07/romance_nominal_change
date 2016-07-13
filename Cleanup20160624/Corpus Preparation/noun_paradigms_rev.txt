@@ -1,4 +1,4 @@
-Latin	English	Declension	Gender	Total	Prose	Poetry	NomSg	NomPl	GenSg	GenPl	DatSg	DatPl	AccSg	AccPl	AblSg	AblPl	VocSg	VocPl	LocSg	LocPl
+Latin	English	Declension	Gender	Total	Prose	Poetry	Nom.Sg	Nom.Pl	Gen.Sg	Gen.Pl	Dat.Sg	Dat.Pl	Acc.Sg	Acc.Pl	Abl.Sg	Abl.Pl	Voc.Sg	Voc.Pl	Loc.Sg	Loc.Pl
 res	thing, matter, issue	5	f	2735	2519	216	rēs	rēs	reī	rērum	reī	rēbus	rem	rēs	rē	rēbus	rēs	rēs		
 animus	mind, soul, courage, will	2	m	2407	2025	382	animus	animī	animī	animōrum	animō	animīs	animum	animōs	animō	animīs	anime	animī		
 rex	king	3	mh	1544	1281	263	rēx	rēgēs	rēgis	rēgum	rēgī	rēgibus	rēgem	rēgēs	rēge	rēgibus	rēx	rēgēs		

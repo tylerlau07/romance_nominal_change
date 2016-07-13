@@ -1,5 +1,6 @@
 from math import log
 from math import ceil
+from numpy import identity
 
 ##########
 # Corpus #
@@ -27,7 +28,7 @@ hierarchy = False
 token_freq = True
 
 # Number of times to introduce training set: P&VE uses 3, HareEllman uses 10
-epochs = 10
+epochs = 3
 
 #############
 # Functions #
@@ -37,7 +38,7 @@ def binaryDict(category):
     '''Create dictionary of each item to binary'''
     # Pad with 0's up to size (log base 2 of number of items)
     fill_size = int(ceil(log(len(category), 2)))
-    bin_list = [tuple(map(int, bin(num)[2:].zfill(fill_size))) for num in range(len(category))]
+    bin_list = [tuple(bin(num)[2:].zfill(fill_size)) for num in range(len(category))]
     return dict(zip(category, bin_list))
 
 def invert(d):
@@ -55,35 +56,37 @@ def invert(d):
 #########
 
 # Input layer will contain:
-#   1) Unique identifier of root (9 bits IF 500)
+#   1) Phonological form
+#       Compute by multiplying syllables (6) by max phonemes per syllable (8) by features (12) = 576
+#       Features from (Chomsky & Halle 1968): see below
 #   2) Human identifier (male, female, non-human) (2 bits)
 #   3) Declension, Gender?, Case, Number (3 bits, 2 bits, 3 bits, 1 bit)
-# TOTAL input bits = 20
 
-human = ['nh', 'mh', 'fh']
+n_insyll = 6
+n_phon = 8
+n_feat = 12
+
+human = ['mh', 'fh', 'nh']
 declensions = [str(i) for i in range(1, 6)]
 genders = ['m', 'f', 'n']
 # cases = ['Nom', 'Acc', 'Gen', 'Dat', 'Abl', 'Voc']
 cases = ['Nom', 'Acc', 'Gen', 'Dat', 'Abl']
 numbers = ['Sg', 'Pl']
 
-# Take log base 2 to figure out how many bits we need for each
-human_size = int(ceil(log(len(human), 2))) # 2
-dec_size = int(ceil(log(len(declensions), 2))) # 3
-gen_size = int(ceil(log(len(genders), 2))) # 2
-case_size = int(ceil(log(len(cases), 2))) # 3
-num_size = int(ceil(log(len(numbers), 2))) # 1
+human_size = len(human)
+dec_size = len(declensions)
+gen_size = len(genders)
+case_size = len(cases)
+num_size = len(numbers)
 
-# Now make two way dictionary with bit vectors
-human_dict = binaryDict(human)
-dec_dict = binaryDict(declensions)
-dec_dict.update(invert(dec_dict))
-gen_dict = binaryDict(genders)
-gen_dict.update(invert(gen_dict))
-case_dict = binaryDict(cases)
-case_dict.update(invert(case_dict))
-num_dict = binaryDict(numbers)
-num_dict.update(invert(num_dict))
+human_dict = dict(zip(human, map(tuple, identity(human_size))))
+dec_dict = dict(zip(declensions, map(tuple, identity(dec_size))))
+gen_dict = dict(zip(genders, map(tuple, identity(gen_size))))
+case_dict = dict(zip(cases, map(tuple, identity(case_size))))
+num_dict = dict(zip(numbers, map(tuple, identity(num_size))))
+
+# TOTAL input bits = 587
+input_nodes = sum([n_insyll*n_phon*n_feat, human_size, dec_size, gen_size, case_size, num_size])
 
 ##########
 # HIDDEN #
@@ -91,21 +94,21 @@ num_dict.update(invert(num_dict))
 
 # Number of hidden layers: P&VE uses 30, HareEllman uses 10 for the first layer
 # P&VE suggest 60
-hidden_nodes = 295
+# Mean between inputs (587) and outputs (192) is 390
+hidden_nodes = 60
 
 ##########
 # OUTPUT #
 ##########
 
-# Output layer will be phonological form
-#   Compute by multiplying syllables (6) by max phonemes per syllable (8) by features (12) 
+# Output layer will be phonological form of ending
+#   Compute by multiplying syllables (2) by max phonemes per syllable (8) by features (12) 
 #   Features from (Chomsky & Halle 1968): see below
-n_syll = 6
-n_phon = 8
-n_feat = 12
 
-# Determine the length of the input
-output_nodes = n_syll * n_phon * n_feat
+n_outsyll = 2
+
+# Determine the length of the output (192)
+output_nodes = n_outsyll * n_phon * n_feat
 
 ##########################
 # Coding the output file #

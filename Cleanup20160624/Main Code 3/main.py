@@ -1,6 +1,7 @@
 # Standard Library Imports
 from math import ceil
 from math import log
+from numpy import identity
 import time
 import unicodecsv as csv
 
@@ -37,17 +38,11 @@ def conductGeneration(generation, corpus, previous_output):
         Returns the output of the current generation--the expected outputs for the following generation
         '''
 
-        # Determine how long the root vector should be based on the length of the corpus
-        root_size = int(ceil(log(len(corpus), 2)))
-
-        # Total size of input layer determined here
-        input_nodes = sum([root_size, constants.human_size, constants.dec_size, constants.gen_size, constants.case_size, constants.num_size])
-
         # Build the right size network
-        net = buildNetwork(input_nodes, constants.hidden_nodes, constants.output_nodes)
+        net = buildNetwork(constants.input_nodes, constants.hidden_nodes, output_nodes)
 
         # Build the right size training set
-        emptytraining_set = SupervisedDataSet(input_nodes, constants.output_nodes)
+        emptytraining_set = SupervisedDataSet(constants.input_nodes, output_nodes)
 
         # Initialize corpus object and expected output dictionary
         training_corpus = objects.Corpus(emptytraining_set)
@@ -59,10 +54,10 @@ def conductGeneration(generation, corpus, previous_output):
                 for case, form in lemma.cases.iteritems():
 
                         # Create the input tuple
-                        form.createInputTuple(input_nodes, root_size)
+                        form.createInputTuple(constants.input_nodes)
 
                         # Add words according to their frequencies
-                        training_corpus.addByFreq(constants.token_freq, form, expected_outputs[form.lemmacase])
+                        training_corpus.addByFreq(constants.token_freq, form, previous_output[form.lemmacase])
 
         # Print information
         print "--------Generation %s--------" % generation
@@ -82,36 +77,40 @@ def conductGeneration(generation, corpus, previous_output):
         error = trainer.trainEpochs(constants.epochs)
         
         print "Number of Tokens in Training Set: %s" % len(training_set)
-        print "Training Error: %s" % error
 
         results = {}
 
         # For each word in the test set, calculate output tuple
         print "Running the test set"
+
+        # Counter to count correct
+        ncorrect = 0
+
         for (form, input_tuple, expected_output) in training_corpus.test:             
 
                 # # Determine if we should drop the genitive
                 drop_gen = generation >= constants.gnvdrop_generation
 
                 # Activate the net, and smooth the output
-                result = smooth(tuple(net.activate(input_tuple)), gendrop=drop_gen, hierarchy=constants.hierarchy)  
+                result = smooth(tuple(net.activate(input_tuple)), inv_suffix, gendrop=drop_gen, hierarchy=constants.hierarchy)  
 
                 # Append output tuple to result
                 results[form.lemmacase] = result
 
-                # Hash the output tuple to get the phonological form result
-                new_phonology = ''
-                # Divide tuple into chunks (each 12 units, representing one phoneme)
-                chunked_list = list(chunks(list(result), 12))
-                for phoneme in chunked_list:
-                        new_phonology += constants.feat_to_phon[tuple(phoneme)]
+                # Add to ncorrect if matches previous
+                if result == previous_output[form.lemmacase]: ncorrect += 1
 
-                print form.parent.rootid, form.lemmacase, new_phonology
+                # Hash the output tuple to get the suffix result
+                new_suffix = suffix_dict[result]
+
+                print form.lemmacase, form.phonology, new_suffix
 
                 # Set input change once we figure out how to deal with the phonology
-                form.output_change[generation] = new_phonology.replace('-', '')
+                form.output_change[generation] = new_suffix
 
         print "Results have been determined"
+
+        print "Percentage correct in test run: %f" % round(float(ncorrect)/float(len(previous_output))*100, 2)
 
         return results
 
@@ -119,20 +118,45 @@ def conductGeneration(generation, corpus, previous_output):
 # MAIN #
 ########
 
+# Read in corpus
+(corpus, suffixes) = objects.readCorpus(constants.corpus_file)
+# Determine corpus size from this
+corpus_size = len(corpus)
+
+# Create suffix dictionary
+if constants.vectors == 'binary':
+        suffix_size = int(ceil(log(len(suffixes), 2)))          # 6
+        suffix_dict = constants.binaryDict(suffixes)
+else:
+        suffix_size = len(suffixes)
+        suffix_dict = dict(zip(suffixes, map(tuple, identity(suffix_size))))
+
+inv_suffix = constants.invert(suffix_dict)
+suffix_dict.update(constants.invert(suffix_dict))
+
+##########
+# OUTPUT #
+##########
+
+# Output layer will be list of potential suffixes, gathered from corpus
+output_nodes = suffix_size
+
+# Print information
 print '''Training on %d Epochs
+        Number of Input Nodes: %d
+        Number of Hidden Nodes: %d
+        Number of Output Nodes: %d
         Token Frequency taken into account: %s
         Case Hierarchy taken into account: %s
         Genitive Case to be dropped: %s \n''' % ( 
                 constants.epochs, 
+                constants.input_nodes,
+                constants.hidden_nodes,
+                output_nodes,
                 constants.token_freq, 
                 constants.hierarchy, 
                 constants.gnvdrop_generation < constants.total_generations
                 )
-
-# Read in corpus
-corpus = objects.readCorpus(constants.corpus_file)
-# Determine corpus size from this
-corpus_size = len(corpus)
 
 # Initialize dictionary mapping from forms to Latin noun info, to be updated each generation
 expected_outputs = {}
@@ -141,16 +165,13 @@ expected_outputs = {}
 for lemma in corpus:
         # Iterate over cases
         for case, form in lemma.cases.iteritems():
-                # Take Latin phonology as first set of expected outputs
-                word = ''.join(form.syllables)
-                
-                expected_output = ()
-                for phoneme in word:
-                        expected_output += objects.convertToFeatures(phoneme)
-                expected_outputs[form.lemmacase] = expected_output
+
+                # Take suffix as first set of expected outputs
+                expected_outputs[form.lemmacase] = suffix_dict[form.suffix]
+                # print form.lemmacase, form.suffix, expected_outputs[form.lemmacase]
 
                 # Keep track of output change per generation
-                form.output_change[0] = word.replace('-', '')
+                form.output_change[0] = form.suffix
 
 # For each generation to conduct
 while generation <= constants.total_generations:
@@ -158,18 +179,21 @@ while generation <= constants.total_generations:
         expected_outputs = conductGeneration(generation, corpus, expected_outputs)
         # Increment the generation counter
         generation += 1
+        # Print time it took for generation to finish
+        print 'Time so far: %s' % constants.getTime(time.time() - start) 
 
 # Write output to stats
 with open(constants.out_file, mode = 'wb') as f:
         stats = csv.writer(f, delimiter = '\t')
-        stats.writerow(['Declined Noun'] + range(0, constants.total_generations))
-
-        # for generation in range(0, constants.total_generations+1):
-        #         stats.write('\t' + str(generation))
+        stats.writerow(['Word', 'Declined'] + range(0, constants.total_generations+1))
 
         for lemma in corpus:
                 for case, form in lemma.cases.iteritems():
-                        to_write = []
+                        to_write = [form.lemmacase]
+                        if form.suffix == 'NULL':
+                                to_write.append(form.root)
+                        else:
+                                to_write.append(form.root + form.suffix)
                         for generation in sorted(form.output_change.keys()):
                                 to_write.append(form.output_change[generation])
  
@@ -177,4 +201,4 @@ with open(constants.out_file, mode = 'wb') as f:
 
 # End time count
 end = time.time()
-print '\nTime taken to run simulation: %f' % (end - start)
+print '\nTime taken to run simulation: %s' % constants.getTime(end - start)

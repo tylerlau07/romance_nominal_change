@@ -1,5 +1,6 @@
 from math import log
 from decimal import *
+from numpy import identity
 import re
 import random
 import constants
@@ -69,11 +70,11 @@ class Case:
         # Keep track of output change for each generation (phonology)
         self.output_change = {}
 
-    def createInputTuple(self, input_nodes, root_size):
+    def createInputTuple(self, input_nodes, root_to_tuple):
         '''Create the input tuple off the root identifier, human value, declension, gender, case, number'''
         
         # Turn identifier into binary
-        self.rootbin = tuple(map(int, bin(self.parent.rootid)[2:].zfill(root_size)))
+        self.rootbin = root_to_tuple[self.parent.rootid]
         self.humanbin = constants.human_dict[self.parent.human]
         self.decbin = constants.dec_dict[self.parent.declension]
         self.genbin = constants.gen_dict[self.parent.gender]
@@ -187,7 +188,9 @@ def readCorpus(f = constants.corpus_file):
                     case_info = Case(lemma, **case_dict)
                     lemma.addCase(case_dict['casenum'], case_info)
 
-        return corpus
+        root_to_tuple = dict(zip(range(root_counter), map(tuple, identity(root_counter))))
+
+        return corpus, root_to_tuple
 
 #
 def convertToFeatures(phoneme):

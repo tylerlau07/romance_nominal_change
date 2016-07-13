@@ -1,4 +1,4 @@
-Latin	English	Declension	Gender	Total	Prose	Poetry	NomSg	NomPl	GenSg	GenPl	DatSg	DatPl	AccSg	AccPl	AblSg	AblPl	VocSg	VocPl
+Latin	English	Declension	Gender	Total	Prose	Poetry	Nom.Sg	Nom.Pl	Gen.Sg	Gen.Pl	Dat.Sg	Dat.Pl	Acc.Sg	Acc.Pl	Abl.Sg	Abl.Pl	Voc.Sg	Voc.Pl
 cliens	customer, client	3	mh, fh	66	50	16	cliēns	clientēs	clientis	clientium	clientī	clientibus	clientem	clientēs	cliente	clientibus	cliēns	clientēs
 simulacrum	image, likeness	2	n	66	47	19	simulācrum	simulācra	simulācrī	simulācrōrum	simulācrō	simulācrīs	simulācrum	simulācra	simulācrō	simulācrīs	simulācrum	simulācra
 rector	guide, leader, director	3	mh	66	38	28	rector	rectōrēs	rectōris	rectōrum	rectōrī	rectōribus	rectōrem	rectōrēs	rectōre	rectōribus	rector	rectōrēs

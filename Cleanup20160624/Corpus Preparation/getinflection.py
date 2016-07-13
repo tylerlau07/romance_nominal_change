@@ -12,41 +12,6 @@ import codecs
 # Functions #
 #############
 
-# def findLatinSec(word):
-# 	# create a Wiki object
-# 	site = wiki.Wiki("http://en.wiktionary.org/w/api.php") 
-# 	# define the params for the query
-# 	params = {'action':'parse', 'page':word, 'format':'json', 'prop':'sections'}
-# 	# create the request object
-# 	request = api.APIRequest(site, params)
-# 	# query the API
-# 	result = request.query()['parse']['sections']
-# 	# get the section number that says "Latin"
-# 	for i, j in enumerate(result):
-# 		if "Latin" in j["line"]:
-# 			return i + 1
-
-# def getInfl(word, sec):
-# 	# create a Wiki object
-# 	site = wiki.Wiki("http://en.wiktionary.org/w/api.php") 
-# 	# define the params for the query
-# 	params = {'action':'parse', 'page':word, 'format':'json', 'section':sec}
-# 	# create the request object
-# 	request = api.APIRequest(site, params)
-# 	# query the API
-# 	result = request.query()['parse']
-
-# 	parsed_html = BeautifulSoup(result)
-
-# 	print parsed_html
-
-	# request = urllib2.Request('http://en.wiktionary.org/w/api.php', urllib.urlencode({'action':'parse', 'page':word, 'format':'json', 'prop':'sections'}))
-	# request = urllib2.urlopen(request)
-
-	# json_string = "https://en.wiktionary.org/w/api.php?action=parse&page=%s&format=json&prop=sections" % word
-	# parsed_json = json.loads(json_string)
-	# print parsed_json
-
 def InflTable(word):
 	'''
 	Takes in a word and returns the inflection table,
@@ -139,7 +104,7 @@ reader = codecs.open('latin_nouns.txt', encoding='utf-8', mode='rU')
 with open('noun_paradigms2.txt', mode = 'wb') as f:
 	out = csv.writer(f, delimiter = '\t')
 	out.writerow(["Latin", "English", "Declension", "Gender", "Total", "Prose", "Poetry",
-		"NomSg", "NomPl", "GenSg", "GenPl", "DatSg", "DatPl", "AccSg", "AccPl", "AblSg", "AblPl", "VocSg", "VocPl"])
+		"Nom.Sg", "Nom.Pl", "Gen.Sg", "Gen.Pl", "Dat.Sg", "Dat.Pl", "Acc.Sg", "Acc.Pl", "Abl.Sg", "Abl.Pl", "Voc.Sg", "Voc.Pl"])
 
 	for row in reader.readlines()[1:]:
 		row = row.strip("\r\n").split("\t")

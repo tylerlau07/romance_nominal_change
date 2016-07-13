@@ -1,5 +1,6 @@
 from math import log
 from math import ceil
+from numpy import identity
 
 ##########
 # Corpus #
@@ -24,10 +25,10 @@ gnvdrop_generation = 16
 hierarchy = False                             
 
 # Make false to test with no token frequency
-token_freq = True
+token_freq = False
 
 # Number of times to introduce training set: P&VE uses 3, HareEllman uses 10
-epochs = 10
+epochs = 3
 
 #############
 # Functions #
@@ -37,7 +38,7 @@ def binaryDict(category):
     '''Create dictionary of each item to binary'''
     # Pad with 0's up to size (log base 2 of number of items)
     fill_size = int(ceil(log(len(category), 2)))
-    bin_list = [tuple(map(int, bin(num)[2:].zfill(fill_size))) for num in range(len(category))]
+    bin_list = [tuple(bin(num)[2:].zfill(fill_size)) for num in range(len(category))]
     return dict(zip(category, bin_list))
 
 def invert(d):
@@ -67,23 +68,17 @@ genders = ['m', 'f', 'n']
 cases = ['Nom', 'Acc', 'Gen', 'Dat', 'Abl']
 numbers = ['Sg', 'Pl']
 
-# Take log base 2 to figure out how many bits we need for each
-human_size = int(ceil(log(len(human), 2))) # 2
-dec_size = int(ceil(log(len(declensions), 2))) # 3
-gen_size = int(ceil(log(len(genders), 2))) # 2
-case_size = int(ceil(log(len(cases), 2))) # 3
-num_size = int(ceil(log(len(numbers), 2))) # 1
+human_size = len(human)
+dec_size = len(declensions)
+gen_size = len(genders)
+case_size = len(cases)
+num_size = len(numbers)
 
-# Now make two way dictionary with bit vectors
-human_dict = binaryDict(human)
-dec_dict = binaryDict(declensions)
-dec_dict.update(invert(dec_dict))
-gen_dict = binaryDict(genders)
-gen_dict.update(invert(gen_dict))
-case_dict = binaryDict(cases)
-case_dict.update(invert(case_dict))
-num_dict = binaryDict(numbers)
-num_dict.update(invert(num_dict))
+human_dict = dict(zip(human, map(tuple, identity(human_size))))
+dec_dict = dict(zip(declensions, map(tuple, identity(dec_size))))
+gen_dict = dict(zip(genders, map(tuple, identity(gen_size))))
+case_dict = dict(zip(cases, map(tuple, identity(case_size))))
+num_dict = dict(zip(numbers, map(tuple, identity(num_size))))
 
 ##########
 # HIDDEN #
@@ -91,7 +86,7 @@ num_dict.update(invert(num_dict))
 
 # Number of hidden layers: P&VE uses 30, HareEllman uses 10 for the first layer
 # P&VE suggest 60
-hidden_nodes = 295
+hidden_nodes = 60
 
 ##########
 # OUTPUT #
@@ -141,12 +136,20 @@ out_file += '_Trial%s.txt' % str(trial)
 # }
 
 # WITHOUT VOCATIVE
+# case_freqs = {
+#     'Nom.Sg': 8.23, 'Nom.Pl': 2.52,
+#     'Acc.Sg': 8.45, 'Acc.Pl': 6.00,
+#     'Gen.Sg': 4.28, 'Gen.Pl': 2.07,
+#     'Dat.Sg': 1.63, 'Dat.Pl': 1,
+#     'Abl.Sg': 7.78, 'Abl.Pl': 2.86
+# }
+
 case_freqs = {
-    'Nom.Sg': 8.23, 'Nom.Pl': 2.52,
-    'Acc.Sg': 8.45, 'Acc.Pl': 6.00,
-    'Gen.Sg': 4.28, 'Gen.Pl': 2.07,
-    'Dat.Sg': 1.63, 'Dat.Pl': 1,
-    'Abl.Sg': 7.78, 'Abl.Pl': 2.86
+    'Nom.Sg': 1, 'Nom.Pl': 1,
+    'Acc.Sg': 1, 'Acc.Pl': 1,
+    'Gen.Sg': 1, 'Gen.Pl': 10,
+    'Dat.Sg': 1, 'Dat.Pl': 1,
+    'Abl.Sg': 1, 'Abl.Pl': 1
 }
 
 #############################################

@@ -15,7 +15,7 @@ corpus_file = "../Corpus Preparation/latin_toy.txt"
 trial = 1
 
 # Generations to run simulation
-total_generations = 2
+total_generations = 15
 
 # Generation to drop the genitive: set above total_generations if no genitive drop
 gnvdrop_generation = 16  
@@ -27,7 +27,7 @@ hierarchy = False
 token_freq = True
 
 # Number of times to introduce training set: P&VE uses 3, HareEllman uses 10
-epochs = 10
+epochs = 3
 
 #############
 # Functions #
@@ -41,10 +41,16 @@ def binaryDict(category):
     return dict(zip(category, bin_list))
 
 def invert(d):
-    '''
-    Invert a dictionary
-    '''
+    '''Invert a dictionary'''
     return dict((value, key) for key, value in d.iteritems())
+
+def getTime(seconds):
+    '''Convert seconds into hours, minutes, and days'''
+    hrs = seconds/3600
+    mins_remaining = seconds % 3600
+    mins = mins_remaining/60
+    secs = mins_remaining % 60
+    return '%d hours, %d minutes, %d seconds' % (hrs, mins, secs)
 
 #####################
 # Layer Information #
@@ -55,10 +61,15 @@ def invert(d):
 #########
 
 # Input layer will contain:
-#   1) Unique identifier of root (9 bits IF 500)
+#   1) Phonological form
+#       Compute by multiplying syllables (6) by max phonemes per syllable (8) by features (12) = 576
+#       Features from (Chomsky & Halle 1968): see below
 #   2) Human identifier (male, female, non-human) (2 bits)
 #   3) Declension, Gender?, Case, Number (3 bits, 2 bits, 3 bits, 1 bit)
-# TOTAL input bits = 20
+
+n_insyll = 6
+n_phon = 8
+n_feat = 12
 
 human = ['nh', 'mh', 'fh']
 declensions = [str(i) for i in range(1, 6)]
@@ -73,6 +84,9 @@ dec_size = int(ceil(log(len(declensions), 2))) # 3
 gen_size = int(ceil(log(len(genders), 2))) # 2
 case_size = int(ceil(log(len(cases), 2))) # 3
 num_size = int(ceil(log(len(numbers), 2))) # 1
+
+# TOTAL input bits = 587
+input_nodes = sum([n_insyll*n_phon*n_feat, human_size, dec_size, gen_size, case_size, num_size])
 
 # Now make two way dictionary with bit vectors
 human_dict = binaryDict(human)
@@ -91,21 +105,21 @@ num_dict.update(invert(num_dict))
 
 # Number of hidden layers: P&VE uses 30, HareEllman uses 10 for the first layer
 # P&VE suggest 60
-hidden_nodes = 295
+# Mean between inputs (587) and outputs (192) is 390
+hidden_nodes = 100
 
 ##########
 # OUTPUT #
 ##########
 
-# Output layer will be phonological form
-#   Compute by multiplying syllables (6) by max phonemes per syllable (8) by features (12) 
+# Output layer will be phonological form of ending
+#   Compute by multiplying syllables (2) by max phonemes per syllable (8) by features (12) 
 #   Features from (Chomsky & Halle 1968): see below
-n_syll = 6
-n_phon = 8
-n_feat = 12
 
-# Determine the length of the input
-output_nodes = n_syll * n_phon * n_feat
+n_outsyll = 2
+
+# Determine the length of the output (192)
+output_nodes = n_outsyll * n_phon * n_feat
 
 ##########################
 # Coding the output file #

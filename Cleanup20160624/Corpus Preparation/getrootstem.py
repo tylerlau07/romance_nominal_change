@@ -15,12 +15,12 @@ import codecs
 start = time.time()
 
 cases = [
-		'nomsg', 'nompl', 
-		'gensg', 'genpl', 
-		'datsg', 'datpl',
-		'accsg', 'accpl',
-		'ablsg', 'ablpl',
-		'vocsg', 'vocpl'
+		'Nom.Sg', 'Nom.Pl', 
+		'Gen.Sg', 'Gen.Pl', 
+		'Dat.Sg', 'Dat.Pl',
+		'Acc.Sg', 'Acc.Pl',
+		'Abl.Sg', 'Abl.Pl',
+		'Voc.Sg', 'Voc.Pl'
 		]
 
 LV = {u'ā':'a',u'ē':'e',u'ī':'i',u'ō':'o',u'ū':'u',u'ȳ':'y'}

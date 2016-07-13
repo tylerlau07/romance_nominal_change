@@ -2,6 +2,7 @@
 from math import ceil
 from math import log
 import time
+from random import seed
 import unicodecsv as csv
 
 # Our files
@@ -26,6 +27,8 @@ start = time.time()
 # Initialize generation counter
 generation = 1
 
+seed(0)
+
 def conductGeneration(generation, corpus, previous_output):
         '''
         Conducts a generation of learning and testing on the input data
@@ -37,17 +40,11 @@ def conductGeneration(generation, corpus, previous_output):
         Returns the output of the current generation--the expected outputs for the following generation
         '''
 
-        # Determine how long the root vector should be based on the length of the corpus
-        root_size = int(ceil(log(len(corpus), 2)))
-
-        # Total size of input layer determined here
-        input_nodes = sum([root_size, constants.human_size, constants.dec_size, constants.gen_size, constants.case_size, constants.num_size])
-
         # Build the right size network
-        net = buildNetwork(input_nodes, constants.hidden_nodes, constants.output_nodes)
+        net = buildNetwork(constants.input_nodes, constants.hidden_nodes, constants.output_nodes)
 
         # Build the right size training set
-        emptytraining_set = SupervisedDataSet(input_nodes, constants.output_nodes)
+        emptytraining_set = SupervisedDataSet(constants.input_nodes, constants.output_nodes)
 
         # Initialize corpus object and expected output dictionary
         training_corpus = objects.Corpus(emptytraining_set)
@@ -59,7 +56,7 @@ def conductGeneration(generation, corpus, previous_output):
                 for case, form in lemma.cases.iteritems():
 
                         # Create the input tuple
-                        form.createInputTuple(input_nodes, root_size)
+                        form.createInputTuple(constants.input_nodes)
 
                         # Add words according to their frequencies
                         training_corpus.addByFreq(constants.token_freq, form, expected_outputs[form.lemmacase])
@@ -106,7 +103,7 @@ def conductGeneration(generation, corpus, previous_output):
                 for phoneme in chunked_list:
                         new_phonology += constants.feat_to_phon[tuple(phoneme)]
 
-                print form.parent.rootid, form.lemmacase, new_phonology
+                print form.lemmacase, new_phonology
 
                 # Set input change once we figure out how to deal with the phonology
                 form.output_change[generation] = new_phonology.replace('-', '')
@@ -141,16 +138,16 @@ expected_outputs = {}
 for lemma in corpus:
         # Iterate over cases
         for case, form in lemma.cases.iteritems():
-                # Take Latin phonology as first set of expected outputs
-                word = ''.join(form.syllables)
+                # Take Latin phonology of suffix as first set of expected outputs
+                ending = ''.join(form.lasttwo)
                 
                 expected_output = ()
-                for phoneme in word:
+                for phoneme in ending:
                         expected_output += objects.convertToFeatures(phoneme)
                 expected_outputs[form.lemmacase] = expected_output
 
                 # Keep track of output change per generation
-                form.output_change[0] = word.replace('-', '')
+                form.output_change[0] = ending.replace('-', '')
 
 # For each generation to conduct
 while generation <= constants.total_generations:
@@ -162,14 +159,17 @@ while generation <= constants.total_generations:
 # Write output to stats
 with open(constants.out_file, mode = 'wb') as f:
         stats = csv.writer(f, delimiter = '\t')
-        stats.writerow(['Declined Noun'] + range(0, constants.total_generations))
+        stats.writerow(['Declined Noun'] + range(0, constants.total_generations+1))
 
         # for generation in range(0, constants.total_generations+1):
         #         stats.write('\t' + str(generation))
 
         for lemma in corpus:
                 for case, form in lemma.cases.iteritems():
-                        to_write = []
+                        if form.suffix == 'NULL':
+                                to_write = [form.root]
+                        else: 
+                                to_write = [form.root + form.suffix]
                         for generation in sorted(form.output_change.keys()):
                                 to_write.append(form.output_change[generation])
  

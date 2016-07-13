@@ -56,6 +56,7 @@ class Case:
             setattr(self, key, value)
 
         self.syllables = self.form.split(' ')
+        self.lasttwo = self.lasttwo.split(' ')
         self.phonology = ''.join(self.syllables).replace('-', '')
 
         # Split case and number
@@ -69,18 +70,21 @@ class Case:
         # Keep track of output change for each generation (phonology)
         self.output_change = {}
 
-    def createInputTuple(self, input_nodes, root_size):
-        '''Create the input tuple off the root identifier, human value, declension, gender, case, number'''
+    def createInputTuple(self, input_nodes):
+        '''Create the input tuple off the phonology, human value, declension, gender, case, number'''
         
-        # Turn identifier into binary
-        self.rootbin = tuple(map(int, bin(self.parent.rootid)[2:].zfill(root_size)))
+        # Convert phonemes into binary features
+        self.phon_tuple = ()
+        for phoneme in ''.join(self.syllables):
+            self.phon_tuple += convertToFeatures(phoneme)
+
         self.humanbin = constants.human_dict[self.parent.human]
         self.decbin = constants.dec_dict[self.parent.declension]
         self.genbin = constants.gen_dict[self.parent.gender]
         self.casebin = constants.case_dict[self.case]
         self.numbin = constants.num_dict[self.num]
 
-        self.input_tuple = self.rootbin + self.humanbin + self.decbin + self.genbin + self.casebin + self.numbin
+        self.input_tuple = self.phon_tuple + self.humanbin + self.decbin + self.genbin + self.casebin + self.numbin
 
         # Sanity check
         if len(self.input_tuple) != input_nodes:
@@ -116,6 +120,8 @@ class Corpus:
         frequency *= constants.case_freqs[token.case + '.' + token.num]
         frequency = int(frequency)
 
+        # print token.lemmacase, frequency, token.syllables, token.input_tuple, token.lasttwo, expected_output
+
         # Add one of each form to test set and add by frequency to training set
         self.test.append((token, token.input_tuple, expected_output))                        
         for x in xrange(frequency):
@@ -145,10 +151,7 @@ def readCorpus(f = constants.corpus_file):
         heading = reader.readline().strip('\n').lower().split("\t")[1:]
 
         # For each specific case form
-        form_info = ['form', 'casenum', 'root', 'suffix', 'phonsuffix', 'lasttwo']
-
-        # Create counter to assign each lemma a unique identifying number
-        root_counter = 0
+        form_info = ['form', 'casenum', 'root', 'suffix', 'phonsuf', 'lasttwo']
 
         for row in reader.readlines():
                 # If this is the start of a new word
@@ -162,11 +165,6 @@ def readCorpus(f = constants.corpus_file):
 
                     # Create Lemma object and add it as a word in the corpus
                     lemma = Lemma(**row_dict)
-
-                    # Add counter identifier to attributes and then increase counter
-                    lemma.rootid = root_counter
-
-                    root_counter += 1
 
                     # Corpus with each lemma and their case form information
                     corpus.append(lemma)
