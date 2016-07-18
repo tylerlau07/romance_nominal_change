@@ -1,3 +1,5 @@
+# Main Code 2
+
 # Standard Library Imports
 from math import ceil
 from math import log
@@ -82,6 +84,11 @@ def conductGeneration(generation, corpus, previous_output):
 
         # For each word in the test set, calculate output tuple
         print "Running the test set"
+
+        # Counter to count correct. Exclude -'s from total phonemes
+        ncorrect = 0
+        tot_phon = 0
+
         for (form, input_tuple, expected_output) in training_corpus.test:             
 
                 # # Determine if we should drop the genitive
@@ -95,17 +102,31 @@ def conductGeneration(generation, corpus, previous_output):
 
                 # Hash the output tuple to get the phonological form result
                 new_phonology = ''
+
                 # Divide tuple into chunks (each 12 units, representing one phoneme)
                 chunked_list = list(chunks(list(result), 12))
-                for phoneme in chunked_list:
-                        new_phonology += constants.feat_to_phon[tuple(phoneme)]
+                # Divide previous output tuple into chunks
+                chunked_prev = list(chunks(list(previous_output[form.lemmacase]), 12))
 
-                print form.lemmacase, new_phonology
+                for phon_index in range(len(chunked_list)):
+                        phoneme = chunked_list[phon_index]
+                        prev_phoneme = chunked_prev[phon_index]
+
+                        new_phonology += constants.feat_to_phon[tuple(phoneme)]
+                        # If phoneme matches, add to number correct
+                        if prev_phoneme != [0.5]*12:
+                                tot_phon += 1
+                                if phoneme == prev_phoneme: 
+                                        ncorrect += 1
+
+                print form.lemmacase, form.parent.declension, form.parent.gender, form.parent.totfreq, new_phonology
 
                 # Set input change once we figure out how to deal with the phonology
                 form.output_change[generation] = new_phonology.replace('-', '')
 
         print "Results have been determined"
+
+        print "Percentage correct in test run: {:.2f}".format(float(ncorrect)/float(tot_phon)*100)
 
         return results
 
@@ -143,8 +164,6 @@ for lemma in corpus:
         for case, form in lemma.cases.iteritems():
                 # Take Latin phonology of suffix as first set of expected outputs
                 ending = ''.join(form.phonsuf)
-                
-                print ending
 
                 expected_output = ()
                 for phoneme in ending:
@@ -166,17 +185,15 @@ while generation <= constants.total_generations:
 # Write output to stats
 with open(constants.out_file, mode = 'wb') as f:
         stats = csv.writer(f, delimiter = '\t')
-        stats.writerow(['Declined Noun'] + range(0, constants.total_generations+1))
-
-        # for generation in range(0, constants.total_generations+1):
-        #         stats.write('\t' + str(generation))
+        stats.writerow(['Word', 'Declension', 'Gender', 'TotFreq', 'Declined'] + range(0, constants.total_generations+1))
 
         for lemma in corpus:
                 for case, form in lemma.cases.iteritems():
+                        to_write = [form.lemmacase, form.parent.declension, form.parent.gender, form.parent.totfreq]
                         if form.suffix == 'NULL':
-                                to_write = [form.root]
-                        else: 
-                                to_write = [form.root + form.suffix]
+                                to_write.append(form.root)
+                        else:
+                                to_write.append(form.root + form.suffix)
                         for generation in sorted(form.output_change.keys()):
                                 to_write.append(form.output_change[generation])
  
@@ -184,4 +201,4 @@ with open(constants.out_file, mode = 'wb') as f:
 
 # End time count
 end = time.time()
-print '\nTime taken to run simulation: %f' % constants.getTime(end - start)
+print '\nTime taken to run simulation: %s' % constants.getTime(end - start)

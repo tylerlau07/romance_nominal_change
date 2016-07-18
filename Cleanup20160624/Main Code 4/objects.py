@@ -1,8 +1,14 @@
+# -*- coding: utf-8 -*-
+# Author: Tyler Lau
+
 from math import log
 from decimal import *
-import re
-import random
+from random import shuffle
+
+import codecs
+
 import constants
+import functions
 
 class Lemma:
     '''
@@ -41,6 +47,49 @@ class Lemma:
         '''
         self.cases[case] = case_info
 
+    def realign(self, case_dict):
+        '''
+        Take the case dictionary, which has the string form of the word
+        Phonemicize and realign the word such that roots line up
+        '''
+        replaced = map(functions.replace, case_dict.values())
+        syllabified = map(functions.syllabify, replaced)
+        CtoO = map(functions.codaToOnset, syllabified)
+        dashes = map(functions.addDashes, CtoO)
+
+        final_forms = []
+
+        # List of lengths and max
+        lengths = []
+        len_list = map(len, dashes)
+
+        max_len = max(len_list)
+        # Check if all elements equal. If they are, build one forward
+        len_equal = functions.checkEqual(len_list)
+
+        for form in dashes:
+            # Determine form length 
+            form_len = len(form)
+            # Length difference tells us how many to build forward
+            len_diff = max_len - form_len
+            # Difference from 6 tells us how many to build back
+            diff_from_six = 6 - max_len
+
+            # Now build
+            if len_equal:
+                final_form = ['-'*8]*(diff_from_six-1) + form + ['-'*8]
+            else:
+                final_form = ['-'*8]*diff_from_six + form + ['-'*8]*len_diff
+
+            # Sanity check
+            if len(final_form) != 6:
+                print 'The word is misaligned'
+                raise SystemExit
+            else:
+                final_forms.append(final_form)
+
+        return dict(zip(case_dict.keys(), final_forms))
+
 class Case:
     '''
     Class for each case of a token
@@ -55,9 +104,12 @@ class Case:
         for key, value in kwargs.iteritems():
             setattr(self, key, value)
 
-        self.syllables = self.form.split(' ')
-        self.lasttwo = self.lasttwo.split(' ')
-        self.phonology = ''.join(self.syllables).replace('-', '')
+        # Convert N/A and NULL into nothing
+        if self.root == 'N/A': self.root = u''
+        else: self.root = self.root
+
+        if self.suffix in ['N/A', 'NULL']: self.suffix = u''
+        else: self.suffix = self.suffix
 
         # Split case and number
         splitpoint = self.casenum.index('.')
@@ -67,16 +119,17 @@ class Case:
         # Unique identifying form
         self.lemmacase = self.parent.latin + ':' + self.case + '.' + self.num
 
-        # Keep track of output change for each generation (phonology)
+        # Keep track of output change (suffix) and input change (phonology) for each generation
         self.output_change = {}
+        self.input_phon = {}
 
-    def createInputTuple(self, input_nodes):
+    def createInputTuple(self, phonology, input_nodes):
         '''Create the input tuple off the phonology, human value, declension, gender, case, number'''
         
         # Convert phonemes into binary features
-        self.phon_tuple = ()
-        for phoneme in ''.join(self.syllables):
-            self.phon_tuple += convertToFeatures(phoneme)
+        phon_tuple = ()
+        for phoneme in ''.join(phonology):
+            phon_tuple += functions.convertToFeatures(phoneme)
 
         self.humanbin = constants.human_dict[self.parent.human]
         self.decbin = constants.dec_dict[self.parent.declension]
@@ -84,17 +137,71 @@ class Case:
         self.casebin = constants.case_dict[self.case]
         self.numbin = constants.num_dict[self.num]
 
-        self.input_tuple = self.phon_tuple + self.humanbin + self.decbin + self.genbin + self.casebin + self.numbin
+        input_tuple = phon_tuple + self.humanbin + self.decbin + self.genbin + self.casebin + self.numbin
 
         # Sanity check
-        if len(self.input_tuple) != input_nodes:
+        if len(input_tuple) != input_nodes:
             print "You screwed up the size of the input"
-            print len(self.input_tuple), input_nodes
+            print len(input_tuple), input_nodes
             raise SystemExit
 
-        else: return self.input_tuple
+        else: self.input_tuple = input_tuple
 
 ###
+
+def readCorpus(f):
+    '''Reads the corpus file and creates the Lemma and Case objects'''
+    corpus = []
+    suffixes = []
+
+    reader = codecs.open(f, encoding = 'utf-8', mode = 'rU')
+
+    # Headings: Latin, English, Declension, Gender, TotFreq, ProseFreq, PoetFreq
+    heading = reader.readline().strip('\n').lower().split("\t")[1:]
+
+    # For each specific case form
+    form_info = ['form', 'casenum', 'root', 'suffix', 'phonsuf', 'lasttwo']
+
+    for row in reader.readlines():
+            # If this is the start of a new word
+            if row[0] == "_":
+
+                # Ignore "_"
+                row_arr = row.strip('\n').split('\t')[1:]
+
+                # Create dictionary of labels to values
+                row_dict = {heading[i]: value for i, value in enumerate(row_arr)}
+
+                # Create Lemma object and add it as a word in the corpus
+                lemma = Lemma(**row_dict)
+
+                # Corpus with each lemma and their case form information
+                corpus.append(lemma)
+
+            # Else, it is information for the word, and we can create a Case object pointing to the parent Lemma
+            else:
+
+                # Set up the keys
+                case_row = row.strip('\n').split('\t')
+
+                # Key and attributes to feed into Case object
+                case_dict = {form_info[i]: value for i, value in enumerate(case_row)}
+
+                # Gather suffixes into list of suffixes
+                suffix = case_dict['suffix']
+                if suffix in ['N/A', 'NULL']: suffix = ''
+                if suffix not in suffixes:
+                    suffixes.append(suffix)
+
+                # Vocative too rare
+                if 'Voc' in case_dict['casenum']:
+                    continue
+
+                # Create Case object and add
+                case_info = Case(lemma, **case_dict)
+                lemma.addCase(case_dict['casenum'], case_info)
+
+    return corpus, suffixes
 
 ###
 class Corpus:
@@ -111,16 +218,14 @@ class Corpus:
     def addByFreq(self, token_freq, token, expected_output):
         '''Adds the current token object to the list training set a number of times based off frequency.'''
 
-        # Multiply log of token frequency (or 1) by type frequency and then floor
+        # Multiply log of token frequency by type frequency and then floor
         if token_freq == True:
-            frequency = log(float(token.parent.totfreq))
+            frequency = log(float(token.parent.totfreq), 10)
         else:
             frequency = 1
 
         frequency *= constants.case_freqs[token.case + '.' + token.num]
         frequency = int(frequency)
-
-        # print token.lemmacase, frequency, token.syllables, token.input_tuple, token.lasttwo, expected_output
 
         # Add one of each form to test set and add by frequency to training set
         self.test.append((token, token.input_tuple, expected_output))                        
@@ -129,66 +234,10 @@ class Corpus:
 
     def constructTrainingSet(self):
         '''Add each token to the actual training set in a random order to be passed to the neural net.'''
-        random.shuffle(self.train)
+        shuffle(self.train)
 
         for token in self.train:
             (form, form.input_tuple, expected_output) = token
             self.training_set.addSample(form.input_tuple, expected_output)
 
         return self.training_set
-
-###########################
-# Miscellaneous Functions #
-###########################
-
-def readCorpus(f = constants.corpus_file):
-        '''Reads the corpus file and creates the Lemma and Case objects'''
-        corpus = []
-
-        reader = open(f, 'rU')
-
-        # Headings: Latin, English, Declension, Gender, TotFreq, ProseFreq, PoetFreq
-        heading = reader.readline().strip('\n').lower().split("\t")[1:]
-
-        # For each specific case form
-        form_info = ['form', 'casenum', 'root', 'suffix', 'phonsuf', 'lasttwo']
-
-        for row in reader.readlines():
-                # If this is the start of a new word
-                if row[0] == "_":
-
-                    # Ignore "_"
-                    row_arr = row.strip('\n').split('\t')[1:]
-
-                    # Create dictionary of labels to values
-                    row_dict = {heading[i]: value for i, value in enumerate(row_arr)}
-
-                    # Create Lemma object and add it as a word in the corpus
-                    lemma = Lemma(**row_dict)
-
-                    # Corpus with each lemma and their case form information
-                    corpus.append(lemma)
-
-                # Else, it is information for the word, and we can create a Case object pointing to the parent Lemma
-                else:
-
-                    # Set up the keys
-                    case_row = row.strip('\n').split('\t')
-
-                    # Key and attributes to feed into Case object
-                    case_dict = {form_info[i]: value for i, value in enumerate(case_row)}
-
-                    if 'Voc' in case_dict['casenum']:
-                        continue
-
-                    # Create Case object and add
-                    case_info = Case(lemma, **case_dict)
-                    lemma.addCase(case_dict['casenum'], case_info)
-
-        return corpus
-
-#
-def convertToFeatures(phoneme):
-    '''Turn a phoneme into its featural representation.'''
-    feature_matrix = constants.phon_to_feat[phoneme]
-    return feature_matrix

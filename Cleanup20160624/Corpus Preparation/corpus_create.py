@@ -2,10 +2,6 @@
 
 # Author: Tyler Lau
 # This program prepares the corpus in the necessary format for the simulation
-
-from collections import defaultdict
-from collections import OrderedDict
-from math import log
 import codecs
 import unicodecsv as csv
 

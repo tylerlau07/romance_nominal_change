@@ -1,5 +1,8 @@
+# Main Code 2
+
 from math import log
 from math import ceil
+from numpy import identity
 
 ##########
 # Corpus #
@@ -15,7 +18,7 @@ corpus_file = "../Corpus Preparation/latin_toy.txt"
 trial = 1
 
 # Generations to run simulation
-total_generations = 15
+total_generations = 1
 
 # Generation to drop the genitive: set above total_generations if no genitive drop
 gnvdrop_generation = 16  
@@ -27,7 +30,10 @@ hierarchy = False
 token_freq = True
 
 # Number of times to introduce training set: P&VE uses 3, HareEllman uses 10
-epochs = 3
+epochs = 10
+
+# Binary or identity vectors
+vectors = 'identity'
 
 #############
 # Functions #
@@ -67,7 +73,7 @@ def getTime(seconds):
 #   2) Human identifier (male, female, non-human) (2 bits)
 #   3) Declension, Gender?, Case, Number (3 bits, 2 bits, 3 bits, 1 bit)
 
-n_insyll = 6
+n_insyll = 4
 n_phon = 8
 n_feat = 12
 
@@ -78,26 +84,40 @@ genders = ['m', 'f', 'n']
 cases = ['Nom', 'Acc', 'Gen', 'Dat', 'Abl']
 numbers = ['Sg', 'Pl']
 
-# Take log base 2 to figure out how many bits we need for each
-human_size = int(ceil(log(len(human), 2))) # 2
-dec_size = int(ceil(log(len(declensions), 2))) # 3
-gen_size = int(ceil(log(len(genders), 2))) # 2
-case_size = int(ceil(log(len(cases), 2))) # 3
-num_size = int(ceil(log(len(numbers), 2))) # 1
+if vectors == 'binary':
+    # Take log base 2 to figure out how many bits we need for each
+    human_size = int(ceil(log(len(human), 2))) # 2
+    dec_size = int(ceil(log(len(declensions), 2))) # 3
+    gen_size = int(ceil(log(len(genders), 2))) # 2
+    case_size = int(ceil(log(len(cases), 2))) # 3
+    num_size = int(ceil(log(len(numbers), 2))) # 1
 
-# TOTAL input bits = 587
+    # Now make two way dictionary with bit vectors
+    human_dict = binaryDict(human)
+    dec_dict = binaryDict(declensions)
+    dec_dict.update(invert(dec_dict))
+    gen_dict = binaryDict(genders)
+    gen_dict.update(invert(gen_dict))
+    case_dict = binaryDict(cases)
+    case_dict.update(invert(case_dict))
+    num_dict = binaryDict(numbers)
+    num_dict.update(invert(num_dict))
+# Identity vectors
+else:
+    human_size = len(human)
+    dec_size = len(declensions)
+    gen_size = len(genders)
+    case_size = len(cases)
+    num_size = len(numbers)
+
+    human_dict = dict(zip(human, map(tuple, identity(human_size))))
+    dec_dict = dict(zip(declensions, map(tuple, identity(dec_size))))
+    gen_dict = dict(zip(genders, map(tuple, identity(gen_size))))
+    case_dict = dict(zip(cases, map(tuple, identity(case_size))))
+    num_dict = dict(zip(numbers, map(tuple, identity(num_size))))
+
+# TOTAL input bits = 395/402
 input_nodes = sum([n_insyll*n_phon*n_feat, human_size, dec_size, gen_size, case_size, num_size])
-
-# Now make two way dictionary with bit vectors
-human_dict = binaryDict(human)
-dec_dict = binaryDict(declensions)
-dec_dict.update(invert(dec_dict))
-gen_dict = binaryDict(genders)
-gen_dict.update(invert(gen_dict))
-case_dict = binaryDict(cases)
-case_dict.update(invert(case_dict))
-num_dict = binaryDict(numbers)
-num_dict.update(invert(num_dict))
 
 ##########
 # HIDDEN #
@@ -105,8 +125,9 @@ num_dict.update(invert(num_dict))
 
 # Number of hidden layers: P&VE uses 30, HareEllman uses 10 for the first layer
 # P&VE suggest 60
-# Mean between inputs (587) and outputs (192) is 390
-hidden_nodes = 100
+# Mean between inputs (402) and outputs (192) is 288
+# Geometric mean is 271.53
+hidden_nodes = 300
 
 ##########
 # OUTPUT #
@@ -115,7 +136,6 @@ hidden_nodes = 100
 # Output layer will be phonological form of ending
 #   Compute by multiplying syllables (2) by max phonemes per syllable (8) by features (12) 
 #   Features from (Chomsky & Halle 1968): see below
-
 n_outsyll = 2
 
 # Determine the length of the output (192)
@@ -126,7 +146,7 @@ output_nodes = n_outsyll * n_phon * n_feat
 ##########################
 
 # Number of generations
-out_file = 'stats_Gens%s' % str(total_generations)
+out_file = 'stats_Epochs%s_Gens%s' % (str(epochs), str(total_generations))
 
 # Do we drop the genitive or not?
 if token_freq == False:

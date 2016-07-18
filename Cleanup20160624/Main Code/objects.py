@@ -109,7 +109,7 @@ class Corpus:
 
         # Multiply log of token frequency (or 1) by type frequency and then floor
         if token_freq == True:
-            frequency = log(float(token.parent.totfreq))
+            frequency = log(float(token.parent.totfreq), 10)
         else:
             frequency = 1
 

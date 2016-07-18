@@ -16,8 +16,8 @@ freq_table <- table(endings)
 
 genders <- c('m', 'f', 'n')
 declensions <- seq(1, 5)
-cases <- c('nomsg', 'nompl', 'accsg', 'accpl', 'gensg', 'genpl', 
-           'datsg', 'datpl', 'ablsg', 'ablpl', 'vocsg', 'vocpl')
+cases <- c('Nom.Sg', 'Nom.Pl', 'Acc.Sg', 'Acc.Pl', 'Gen.Sg', 'Gen.Pl', 
+           'Dat.Sg', 'Dat.Pl', 'Abl.Sg', 'Abl.Pl', 'Voc.Sg', 'Voc.Pl')
 
 for (gender in genders) {
   for (dec in declensions) {
@@ -28,8 +28,10 @@ for (gender in genders) {
   }
 }
 
-m4nomsg
+freq_table[ , 'Nom.Sg', 'm', '1']
 
-df[df$Suffix == "ēs" & df$Gender == "m" & df$Declension == 3 & df$Case == "nomsg", ]
+m4Nom.Sg
 
-table(df$)/nrow(df)
+df[df$Suffix == "ibus", ]
+     
+# df$Gender == "m" & df$Declension == 3 & df$Case == "nomsg", ]

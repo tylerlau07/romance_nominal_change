@@ -13,10 +13,10 @@ corpus_file = "../Corpus Preparation/latin_corpus.txt"
 ##############
 
 # Trial number
-trial = 1
+trial = 5
 
 # Generations to run simulation
-total_generations = 1
+total_generations = 10
 
 # Generation to drop the genitive: set above total_generations if no genitive drop
 gnvdrop_generation = 16  
@@ -28,7 +28,7 @@ hierarchy = False
 token_freq = True
 
 # Number of times to introduce training set: P&VE uses 3, HareEllman uses 10
-epochs = 15
+epochs = 8
 
 # Binary or identity vectors
 vectors = 'binary'
@@ -137,8 +137,6 @@ hidden_nodes = 60
 out_file = 'stats_Gens%s' % str(total_generations)
 
 # Do we drop the genitive or not?
-if vectors == 'binary':
-    out_file += '_BinaryVec'
 if token_freq == False:
     out_file += '_TokFreqF'
 if gnvdrop_generation <= total_generations:

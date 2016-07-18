@@ -76,7 +76,7 @@ class Case:
         
         # Convert phonemes into binary features
         self.phon_tuple = ()
-        for phoneme in ''.join(self.syllables):
+        for phoneme in ''.join(self.syllables[:4]):
             self.phon_tuple += convertToFeatures(phoneme)
 
         self.humanbin = constants.human_dict[self.parent.human]

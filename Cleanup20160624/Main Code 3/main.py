@@ -103,13 +103,12 @@ def conductGeneration(generation, corpus, previous_output):
                 # Hash the output tuple to get the suffix result
                 new_suffix = suffix_dict[result]
 
-                print form.lemmacase, form.phonology, new_suffix
+                print form.lemmacase, form.parent.declension, form.parent.gender, form.phonology, new_suffix
 
                 # Set input change once we figure out how to deal with the phonology
                 form.output_change[generation] = new_suffix
 
         print "Results have been determined"
-
         print "Percentage correct in test run: %f" % round(float(ncorrect)/float(len(previous_output))*100, 2)
 
         return results
@@ -185,11 +184,11 @@ while generation <= constants.total_generations:
 # Write output to stats
 with open(constants.out_file, mode = 'wb') as f:
         stats = csv.writer(f, delimiter = '\t')
-        stats.writerow(['Word', 'Declined'] + range(0, constants.total_generations+1))
+        stats.writerow(['Word', 'Declension', 'Gender', 'TotFreq', 'Declined'] + range(0, constants.total_generations+1))
 
         for lemma in corpus:
                 for case, form in lemma.cases.iteritems():
-                        to_write = [form.lemmacase]
+                        to_write = [form.lemmacase, form.parent.declension, form.parent.gender, form.parent.totfreq]
                         if form.suffix == 'NULL':
                                 to_write.append(form.root)
                         else:

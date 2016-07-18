@@ -1,6 +1,11 @@
+# -*- coding: utf-8 -*-
+# Author: Tyler Lau
+
 from math import log
 from math import ceil
 from numpy import identity
+
+import functions
 
 ##########
 # Corpus #
@@ -16,36 +21,16 @@ corpus_file = "../Corpus Preparation/latin_toy.txt"
 trial = 1
 
 # Generations to run simulation
-total_generations = 2
-
-# Generation to drop the genitive: set above total_generations if no genitive drop
-gnvdrop_generation = 16  
-
-# Are cases equidistant or is distance determined by semantics?
-hierarchy = False                             
+total_generations = 1
 
 # Make false to test with no token frequency
-token_freq = False
+token_freq = True
 
 # Number of times to introduce training set: P&VE uses 3, HareEllman uses 10
-epochs = 3
+epochs = 8
 
-#############
-# Functions #
-#############
-
-def binaryDict(category):
-    '''Create dictionary of each item to binary'''
-    # Pad with 0's up to size (log base 2 of number of items)
-    fill_size = int(ceil(log(len(category), 2)))
-    bin_list = [tuple(bin(num)[2:].zfill(fill_size)) for num in range(len(category))]
-    return dict(zip(category, bin_list))
-
-def invert(d):
-    '''
-    Invert a dictionary
-    '''
-    return dict((value, key) for key, value in d.iteritems())
+# Binary or identity vectors
+vectors = 'binary'
 
 #####################
 # Layer Information #
@@ -56,10 +41,15 @@ def invert(d):
 #########
 
 # Input layer will contain:
-#   1) Unique identifier of root (9 bits IF 500)
+#   1) Phonological form
+#       Compute by multiplying syllables (6) by max phonemes per syllable (8) by features (12) = 576
+#       Features from (Chomsky & Halle 1968): see below
 #   2) Human identifier (male, female, non-human) (2 bits)
 #   3) Declension, Gender?, Case, Number (3 bits, 2 bits, 3 bits, 1 bit)
-# TOTAL input bits = 20
+
+n_insyll = 6
+n_phon = 8
+n_feat = 12
 
 human = ['nh', 'mh', 'fh']
 declensions = [str(i) for i in range(1, 6)]
@@ -68,17 +58,40 @@ genders = ['m', 'f', 'n']
 cases = ['Nom', 'Acc', 'Gen', 'Dat', 'Abl']
 numbers = ['Sg', 'Pl']
 
-human_size = len(human)
-dec_size = len(declensions)
-gen_size = len(genders)
-case_size = len(cases)
-num_size = len(numbers)
+if vectors == 'binary':
+    # Take log base 2 to figure out how many bits we need for each
+    human_size = int(ceil(log(len(human), 2))) # 2
+    dec_size = int(ceil(log(len(declensions), 2))) # 3
+    gen_size = int(ceil(log(len(genders), 2))) # 2
+    case_size = int(ceil(log(len(cases), 2))) # 3
+    num_size = int(ceil(log(len(numbers), 2))) # 1
 
-human_dict = dict(zip(human, map(tuple, identity(human_size))))
-dec_dict = dict(zip(declensions, map(tuple, identity(dec_size))))
-gen_dict = dict(zip(genders, map(tuple, identity(gen_size))))
-case_dict = dict(zip(cases, map(tuple, identity(case_size))))
-num_dict = dict(zip(numbers, map(tuple, identity(num_size))))
+    # Now make two way dictionary with bit vectors
+    human_dict = functions.binaryDict(human)
+    dec_dict = functions.binaryDict(declensions)
+    dec_dict.update(functions.invert(dec_dict))
+    gen_dict = functions.binaryDict(genders)
+    gen_dict.update(functions.invert(gen_dict))
+    case_dict = functions.binaryDict(cases)
+    case_dict.update(functions.invert(case_dict))
+    num_dict = functions.binaryDict(numbers)
+    num_dict.update(functions.invert(num_dict))
+# Identity vectors
+else:
+    human_size = len(human)
+    dec_size = len(declensions)
+    gen_size = len(genders)
+    case_size = len(cases)
+    num_size = len(numbers)
+
+    human_dict = dict(zip(human, map(tuple, identity(human_size))))
+    dec_dict = dict(zip(declensions, map(tuple, identity(dec_size))))
+    gen_dict = dict(zip(genders, map(tuple, identity(gen_size))))
+    case_dict = dict(zip(cases, map(tuple, identity(case_size))))
+    num_dict = dict(zip(numbers, map(tuple, identity(num_size))))
+
+# TOTAL input bits = 587
+input_nodes = sum([n_insyll*n_phon*n_feat, human_size, dec_size, gen_size, case_size, num_size])
 
 ##########
 # HIDDEN #
@@ -86,21 +99,9 @@ num_dict = dict(zip(numbers, map(tuple, identity(num_size))))
 
 # Number of hidden layers: P&VE uses 30, HareEllman uses 10 for the first layer
 # P&VE suggest 60
+# Mean between inputs (587) and outputs (6) is 296.5
+# Geometric mean: sqrt(587*6) = 59.3
 hidden_nodes = 60
-
-##########
-# OUTPUT #
-##########
-
-# Output layer will be phonological form
-#   Compute by multiplying syllables (6) by max phonemes per syllable (8) by features (12) 
-#   Features from (Chomsky & Halle 1968): see below
-n_syll = 6
-n_phon = 8
-n_feat = 12
-
-# Determine the length of the input
-output_nodes = n_syll * n_phon * n_feat
 
 ##########################
 # Coding the output file #
@@ -112,8 +113,6 @@ out_file = 'stats_Gens%s' % str(total_generations)
 # Do we drop the genitive or not?
 if token_freq == False:
     out_file += '_TokFreqF'
-if gnvdrop_generation <= total_generations:
-    out_file += '_GnvT%s' % str(gnvdrop_generation)
 
 # Number of epochs, number of hidden nodes, trial number
 out_file += '_Trial%s.txt' % str(trial)                   
@@ -136,20 +135,12 @@ out_file += '_Trial%s.txt' % str(trial)
 # }
 
 # WITHOUT VOCATIVE
-# case_freqs = {
-#     'Nom.Sg': 8.23, 'Nom.Pl': 2.52,
-#     'Acc.Sg': 8.45, 'Acc.Pl': 6.00,
-#     'Gen.Sg': 4.28, 'Gen.Pl': 2.07,
-#     'Dat.Sg': 1.63, 'Dat.Pl': 1,
-#     'Abl.Sg': 7.78, 'Abl.Pl': 2.86
-# }
-
 case_freqs = {
-    'Nom.Sg': 1, 'Nom.Pl': 1,
-    'Acc.Sg': 1, 'Acc.Pl': 1,
-    'Gen.Sg': 1, 'Gen.Pl': 10,
-    'Dat.Sg': 1, 'Dat.Pl': 1,
-    'Abl.Sg': 1, 'Abl.Pl': 1
+    'Nom.Sg': 8.23, 'Nom.Pl': 2.52,
+    'Acc.Sg': 8.45, 'Acc.Pl': 6.00,
+    'Gen.Sg': 4.28, 'Gen.Pl': 2.07,
+    'Dat.Sg': 1.63, 'Dat.Pl': 1,
+    'Abl.Sg': 7.78, 'Abl.Pl': 2.86
 }
 
 #############################################
@@ -171,7 +162,7 @@ phon_to_feat = {
     "h": (0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0),
     "m": (1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0),
     "n": (1.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0),
-    "N": (1.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 0.0, 1.0),    # engma
+    "N": (1.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 0.0, 1.0), # engma
     "r": (1.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0),
     "l": (1.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0),
     "w": (1.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0),
@@ -184,4 +175,4 @@ phon_to_feat = {
     "-": (0.5,) * 12
 }
 
-feat_to_phon = invert(phon_to_feat)
+feat_to_phon = functions.invert(phon_to_feat)

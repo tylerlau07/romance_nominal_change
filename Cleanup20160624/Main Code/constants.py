@@ -1,5 +1,6 @@
 from math import log
 from math import ceil
+from numpy import identity
 
 ##########
 # Corpus #
@@ -15,7 +16,7 @@ corpus_file = "../Corpus Preparation/latin_toy.txt"
 trial = 1
 
 # Generations to run simulation
-total_generations = 2
+total_generations = 1
 
 # Generation to drop the genitive: set above total_generations if no genitive drop
 gnvdrop_generation = 16  
@@ -27,7 +28,10 @@ hierarchy = False
 token_freq = True
 
 # Number of times to introduce training set: P&VE uses 3, HareEllman uses 10
-epochs = 10
+epochs = 50
+
+# Binary or identity vectors
+vectors = 'binary'
 
 #############
 # Functions #
@@ -45,6 +49,14 @@ def invert(d):
     Invert a dictionary
     '''
     return dict((value, key) for key, value in d.iteritems())
+
+def getTime(seconds):
+    '''Convert seconds into hours, minutes, and days'''
+    hrs = seconds/3600
+    mins_remaining = seconds % 3600
+    mins = mins_remaining/60
+    secs = mins_remaining % 60
+    return '%d hours, %d minutes, %d seconds' % (hrs, mins, secs)
 
 #####################
 # Layer Information #
@@ -67,23 +79,37 @@ genders = ['m', 'f', 'n']
 cases = ['Nom', 'Acc', 'Gen', 'Dat', 'Abl']
 numbers = ['Sg', 'Pl']
 
-# Take log base 2 to figure out how many bits we need for each
-human_size = int(ceil(log(len(human), 2))) # 2
-dec_size = int(ceil(log(len(declensions), 2))) # 3
-gen_size = int(ceil(log(len(genders), 2))) # 2
-case_size = int(ceil(log(len(cases), 2))) # 3
-num_size = int(ceil(log(len(numbers), 2))) # 1
+if vectors == 'binary':
+    # Take log base 2 to figure out how many bits we need for each
+    human_size = int(ceil(log(len(human), 2))) # 2
+    dec_size = int(ceil(log(len(declensions), 2))) # 3
+    gen_size = int(ceil(log(len(genders), 2))) # 2
+    case_size = int(ceil(log(len(cases), 2))) # 3
+    num_size = int(ceil(log(len(numbers), 2))) # 1
 
-# Now make two way dictionary with bit vectors
-human_dict = binaryDict(human)
-dec_dict = binaryDict(declensions)
-dec_dict.update(invert(dec_dict))
-gen_dict = binaryDict(genders)
-gen_dict.update(invert(gen_dict))
-case_dict = binaryDict(cases)
-case_dict.update(invert(case_dict))
-num_dict = binaryDict(numbers)
-num_dict.update(invert(num_dict))
+    # Now make two way dictionary with bit vectors
+    human_dict = binaryDict(human)
+    dec_dict = binaryDict(declensions)
+    dec_dict.update(invert(dec_dict))
+    gen_dict = binaryDict(genders)
+    gen_dict.update(invert(gen_dict))
+    case_dict = binaryDict(cases)
+    case_dict.update(invert(case_dict))
+    num_dict = binaryDict(numbers)
+    num_dict.update(invert(num_dict))
+# Identity vectors
+else:
+    human_size = len(human)
+    dec_size = len(declensions)
+    gen_size = len(genders)
+    case_size = len(cases)
+    num_size = len(numbers)
+
+    human_dict = dict(zip(human, map(tuple, identity(human_size))))
+    dec_dict = dict(zip(declensions, map(tuple, identity(dec_size))))
+    gen_dict = dict(zip(genders, map(tuple, identity(gen_size))))
+    case_dict = dict(zip(cases, map(tuple, identity(case_size))))
+    num_dict = dict(zip(numbers, map(tuple, identity(num_size))))
 
 ##########
 # HIDDEN #
@@ -91,7 +117,9 @@ num_dict.update(invert(num_dict))
 
 # Number of hidden layers: P&VE uses 30, HareEllman uses 10 for the first layer
 # P&VE suggest 60
-hidden_nodes = 295
+# Geometric mean of inputs (20) and outputs (576) = 107.33
+# Arithmetic mean is 298
+hidden_nodes = 100
 
 ##########
 # OUTPUT #

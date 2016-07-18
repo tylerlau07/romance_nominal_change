@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*- 
+# Author: Tyler Lau
+
 import numpy
 from constants import phon_to_feat
 
@@ -14,25 +17,19 @@ def chunks(l, n):
     for i in range(0, len(l), n):
         yield l[i:i+n]
 
-def smooth(p, gendrop=False, hierarchy=False):
+def smooth(p, suf_to_tup):
     '''
     Error smoothing function
     Takes the vector output by the neural network
-    Partitions it into vectors each representing a potential phoneme
+    Takes dictionary that converts suffix to relevant tuple
     Converts those partitions to the closest phoneme vectors
     '''
-    # Partition the input vector into individual phonemes
-    chunked_list = list(chunks(p, 12))
+    # Compare to suffix vectors and choose closest one
+    dist_from_suffix = {dist(p, suf_to_tup.keys()[i]): suf_to_tup.keys()[i] for i in range(len(suf_to_tup))}
 
-    # Get list of phoneme tuples
-    phoneme_tuples = phon_to_feat.values()
+    smoothed_vector = min(dist_from_suffix.keys())
+    output_tuple = dist_from_suffix[smoothed_vector]
 
-    output_tuple = ()
-
-    # For potential phoneme in tuple, find closest phoneme to it using dictionary keying distance to phoneme
-    for phoneme in chunked_list:
-        dist_from_realphon = {dist(phoneme, phoneme_tuples[i]): phoneme_tuples[i] for i in range(len(phoneme_tuples))}
-        smoothed_vector = min(dist_from_realphon.keys())
-        output_tuple += dist_from_realphon[smoothed_vector]
+    print output_tuple
 
     return output_tuple
