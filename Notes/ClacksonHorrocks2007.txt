@@ -1,0 +1,30 @@
+Clackson, James and Geoffrey Horrocks 2007
+
+The Blackwell History of the Latin Language
+
+'Old' Latin and its Varieties c. 400-150BC
+- Monophthongization (94):
+1)	/au/ and /ai/ persist in Roman Latin, but /ai̞/ > more open articulation (bc of change of spelling to ae after 187BC, ai gone by 120BC)
+	/au/ and /ai/ > /ɔ:/ and /ɛ:/ quite early in some non-urban dialects (perhaps under influence of Umbrian Italic languages)
+	Monophthongization later general in later vulgar Latin of imperial period--Augustus 27BC after collapse of Roman Republic
+	Evidence of many Romance varieties shows it was never completed for /au/
+	In non-final syllables, /ai/ > /ei/ by weakening
+
+2)	/oi/ > /u:/ in initial syllables (oinos > unus = one)
+	poena 'penalty' besides punire 'punish' and cf. French peine vs. punir confirm that surviving examples of /oi/ > /ɛ/ in vulgar Latin
+	Elsewhere, /oi/ > /ei/ by weakening, then same development as for original /ei/ (> i)
+
+3)	Both original and weakened /ei/ > close /e̝:/ during third century and then raised > /i:/ in Roman Latin by  midmdle of second century (intermediate stage in many non-urban varieties)
+	Close mid-vowel from monphthongization must have been distinct from original /e:/ in Roman Latin (latter does not raise to /i:/
+	/eu/ merged with /ou/ at early date and then /ou/ > close /o̝:/ > /u:/, probably by end of 3rd century
+	Dialectically arrested at intermediate stage
+
+Consonants (96)
+- Final /s/ weakly articulated in Old Latin, at least preconsonantally after a short vowel—sometimes not written in Roman inscriptions of 3rd century and regional Latin documents more generally (also failed to make position pre-consonantally in poetry pre-200BC)
+- Quickly restored graphically and also phonetically in elite Roman Latin, may also have had some limited impact in certain popular varieties (Fr. fils < filius)
+- Final -m regularly omitted in early inscriptions and well known that final vowel + /m/ regularly elided prevocalically in classical poetry
+	—> possibly led to nasalization and concomitant lengthening of preceding vowel
+
+Dialectal Varieties: Praenestine (126)
+- Many innovatory reatures “rustic” but impact continued to later—doubles such as faenus/fenus ‘interest, profit’, saepes/sepes ‘hedge, fence’, lautus/lotus ‘clean, sumptuous’, etc.
+- Urbanization process culminated in second and first centuries

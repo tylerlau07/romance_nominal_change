@@ -3,6 +3,7 @@
 
 import numpy
 from constants import phon_to_feat
+from constants import n_feat
 
 # Using numpy, determine the Euclidean distance between the vectors, float
 def dist(p, q):
@@ -25,7 +26,7 @@ def smooth(p):
     Converts those partitions to the closest phoneme vectors
     '''
     # Partition the input vector into individual phonemes
-    chunked_list = list(chunks(p, 12))
+    chunked_list = list(chunks(p, n_feat))
 
     # Get list of phoneme tuples
     phoneme_tuples = phon_to_feat.values()

@@ -19,16 +19,16 @@ corpus_file = "../Corpus Preparation/latin_corpus.txt"
 ##############
 
 # Trial number
-trial = 5
+trial = 1
 
 # Generations to run simulation
 total_generations = 10
 
 # Make false to test with no token frequency
-token_freq = True
+token_freq = False
 
 # Number of times to introduce training set: P&VE uses 3, HareEllman uses 10
-epochs = 10
+epochs = 3
 
 # Case and number treated separately or together?
 casenum_sep = True
@@ -48,10 +48,6 @@ vectors = 'binary'
 #   1) Root identifier (9 bits = log_2(500))
 #   2) Human identifier (male, female, non-human) (2 bits)
 #   3) Declension, Gender?, Case, Number (3 bits, 2 bits, 3 bits, 1 bit)
-
-# n_insyll = 4
-# n_phon = 8
-# n_feat = 12
 
 human = ['nh', 'mh', 'fh']
 declensions = [str(i) for i in range(1, 6)]
@@ -105,48 +101,38 @@ else:
 
 # Number of hidden layers: P&VE uses 30, HareEllman uses 10 for the first layer
 # P&VE suggest 60
-# Arithmetic mean between inputs (20) and outputs (84) is 52
-# Geometric mean is 41
+# Arithmetic mean between inputs (20) and outputs (77) is 48.5
+# Geometric mean is 39.24
 # IF IDENTITY
-#   Arithmetic mean between 30 and 84 is 57
+#   Arithmetic mean between 30 and 77 is 57
 #   Geometric mean is 50
-if vectors == 'binary':
-    hidden_nodes = 40
-else:
-    hidden_nodes = 50
-
-##########
-# OUTPUT #
-##########
-
-# Max suffix VVC CVVC
-n_sufphon = 7
-n_feat = 12
-
-output_nodes = n_sufphon*n_feat
+# MINIMAL FEATURES
+#   Arithmetic mean between 20 and 42 is 31
+#   Geometric mean between 20 and 42 is 28.98
+hidden_nodes = 30
 
 ##########################
 # Coding the output file #
 ##########################
 
 # Number of generations
-out_file = 'stats_ Epochs%s_Gens%s' % (str(epochs), str(total_generations))
+out_file = 'stats_WOVFeat_Epochs%s_Gens%s' % (str(epochs), str(total_generations))
 
 # Token Frequency?
 if token_freq == False:
     out_file += '_TokFreqF'
 else:
     out_file += '_TokFreqT'
-# Case and number separate or together?
-if casenum_sep == True:
-    out_file += '_CaseNumSepT'
-else:
-    out_file += '_CaseNumSepF'
-# Binary or Identity Vectors?
-if vectors == 'binary':
-    out_file += '_BinVec'
-else:
-    out_file += '_IdVec'
+# # Case and number separate or together?
+# if casenum_sep == True:
+#     out_file += '_CaseNumSepT'
+# else:
+#     out_file += '_CaseNumSepF'
+# # Binary or Identity Vectors?
+# if vectors == 'binary':
+#     out_file += '_BinVec'
+# else:
+#     out_file += '_IdVec'
 
 
 # Number of epochs, number of hidden nodes, trial number
@@ -182,32 +168,76 @@ case_freqs = {
 # Organize data to make it easier to handle #
 #############################################
 
-# Map phonemes to Chomsky and Halle values (1968):
+# Map phonemes to Chomsky and Halle values (1968) --> Hayes 2009:
+cns = son = cor = nas = cnt = voi = vow = hgh = low = frt = bck = (0.0, 1.0, -1.0)
+
+# phon_to_feat = {
+#     # "p": (cns[1],  son[-1], cor[-1], nas[-1], cnt[-1], voi[-1], vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]), 
+#     # "t": (cns[1],  son[-1], cor[1],  nas[-1], cnt[-1], voi[-1], vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
+#     # "k": (cns[1],  son[-1], cor[-1], nas[-1], cnt[-1], voi[-1], vow[-1], hgh[1],  low[-1], frt[0],  bck[0]), # rnd[-1]),
+#     "b": (cns[1],  son[-1], cor[-1], nas[-1], cnt[-1], voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]), # RELEVANT
+#     # "d": (cns[1],  son[-1], cor[1],  nas[-1], cnt[-1], voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
+#     # "g": (cns[1],  son[-1], cor[-1], nas[-1], cnt[-1], voi[1],  vow[-1], hgh[1],  low[-1], frt[0],  bck[0]), # rnd[-1]),
+#     # "f": (cns[1],  son[-1], cor[-1], nas[-1], cnt[1],  voi[-1], vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]), 
+#     # "v": (cns[1],  son[-1], cor[-1], nas[-1], cnt[1],  voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
+#     "s": (cns[1],  son[-1], cor[1],  nas[-1], cnt[1],  voi[-1], vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]), # RELEVANT
+#     # "z": (cns[1],  son[-1], cor[1],  nas[-1], cnt[1],  voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
+#     # "h": (cns[1],  son[-1], cor[-1], nas[-1], cnt[1],  voi[-1], vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
+#     "m": (cns[1],  son[1],  cor[-1], nas[1],  cnt[-1], voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]), # RELEVANT
+#     # "n": (cns[1],  son[1],  cor[1],  nas[1],  cnt[-1], voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
+#     # "N": (cns[1],  son[1],  cor[-1], nas[1],  cnt[-1], voi[1],  vow[-1], hgh[1],  low[-1], frt[0],  bck[0]), # rnd[-1]), # engma
+#     "r": (cns[1],  son[1],  cor[1],  nas[-1], cnt[1],  voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]), # RELEVANT
+#     # "l": (cns[1],  son[1],  cor[1],  nas[-1], cnt[1],  voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
+#     # "w": (cns[-1], son[1],  cor[-1], nas[-1], cnt[1],  voi[1],  vow[-1], hgh[1],  low[-1], frt[-1], bck[1]), # rnd[1]),
+#     # "j": (cns[-1], son[1],  cor[-1], nas[-1], cnt[1],  voi[1],  vow[-1], hgh[1],  low[-1], frt[1], bck[-1]), # rnd[-1]), # y
+#     "i": (cns[-1], son[1],  cor[-1], nas[-1], cnt[1],  voi[1],  vow[1],  hgh[1],  low[-1], frt[1], bck[-1]), # rnd[-1]), # RELEVANT
+#     "u": (cns[-1], son[1],  cor[-1], nas[-1], cnt[1],  voi[1],  vow[1],  hgh[1],  low[-1], frt[-1], bck[1]), # rnd[1]),  # RELEVANT
+#     "e": (cns[-1], son[1],  cor[-1], nas[-1], cnt[1],  voi[1],  vow[1],  hgh[-1], low[-1], frt[1], bck[-1]), # rnd[-1]), # RELEVANT
+#     "o": (cns[-1], son[1],  cor[-1], nas[-1], cnt[1],  voi[1],  vow[1],  hgh[-1], low[-1], frt[-1], bck[1]), # rnd[1]),  # RELEVANT
+#     "a": (cns[-1], son[1],  cor[-1], nas[-1], cnt[1],  voi[1],  vow[1],  hgh[-1], low[1],  frt[-1], bck[-1]), # rnd[-1]), # RELEVANT
+#     "-": (0.0,) * n_feat
+# }
+
+# MINIMALLY DISTINGUISHING FEATURES
 phon_to_feat = {
-    "p": (0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0),
-    "t": (0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0),
-    "k": (0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0),
-    "b": (0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0),
-    "d": (0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0),
-    "g": (0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0),
-    "f": (0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0),
-    "v": (0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0),
-    "s": (0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0),
-    "z": (0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0),
-    "h": (0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0),
-    "m": (1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0),
-    "n": (1.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0),
-    "N": (1.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 0.0, 1.0), # engma
-    "r": (1.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0),
-    "l": (1.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0),
-    "w": (1.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0),
-    "j": (1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0), # y
-    "i": (1.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0),   
-    "u": (1.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0),  
-    "e": (1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0),  
-    "o": (1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0),  
-    "a": (1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 1.0), 
-    "-": (0.5,) * 12
+    # "p": (cns[1],  son[-1], cor[-1], nas[-1], cnt[-1], voi[-1], vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]), 
+    # "t": (cns[1],  son[-1], cor[1],  nas[-1], cnt[-1], voi[-1], vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
+    # "k": (cns[1],  son[-1], cor[-1], nas[-1], cnt[-1], voi[-1], vow[-1], hgh[1],  low[-1], frt[0],  bck[0]), # rnd[-1]),
+    "b": (cns[1], son[-1], cnt[-1], hgh[0],  frt[0], low[0],  bck[0]), # rnd[-1]), # RELEVANT
+    # "d": (cns[1],  son[-1], cor[1],  nas[-1], cnt[-1], voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
+    # "g": (cns[1],  son[-1], cor[-1], nas[-1], cnt[-1], voi[1],  vow[-1], hgh[1],  low[-1], frt[0],  bck[0]), # rnd[-1]),
+    # "f": (cns[1],  son[-1], cor[-1], nas[-1], cnt[1],  voi[-1], vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]), 
+    # "v": (cns[1],  son[-1], cor[-1], nas[-1], cnt[1],  voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
+    "s": (cns[1], son[-1], cnt[1],  hgh[0],  frt[0], low[0],  bck[0]), # rnd[-1]), # RELEVANT
+    # "z": (cns[1],  son[-1], cor[1],  nas[-1], cnt[1],  voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
+    # "h": (cns[1],  son[-1], cor[-1], nas[-1], cnt[1],  voi[-1], vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
+    "m": (cns[1], son[1],  cnt[-1], hgh[0],  frt[0], low[0],  bck[0]), # rnd[-1]), # RELEVANT
+    # "n": (cns[1],  son[1],  cor[1],  nas[1],  cnt[-1], voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
+    # "N": (cns[1],  son[1],  cor[-1], nas[1],  cnt[-1], voi[1],  vow[-1], hgh[1],  low[-1], frt[0],  bck[0]), # rnd[-1]), # engma
+    "r": (cns[1], son[1],  cnt[1],  hgh[0],  frt[0], low[0],  bck[0]), # rnd[-1]), # RELEVANT
+    # "l": (cns[1],  son[1],  cor[1],  nas[-1], cnt[1],  voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
+    # "w": (cns[-1], son[1],  cor[-1], nas[-1], cnt[1],  voi[1],  vow[-1], hgh[1],  low[-1], frt[-1], bck[1]), # rnd[1]),
+    # "j": (cns[-1], son[1],  cor[-1], nas[-1], cnt[1],  voi[1],  vow[-1], hgh[1],  low[-1], frt[1], bck[-1]), # rnd[-1]), # y
+    "i": (cns[0], son[0],  cnt[0],  hgh[1],  frt[1],  low[-1], bck[-1]), # rnd[-1]), # RELEVANT
+    "u": (cns[0], son[0],  cnt[0],  hgh[1],  frt[-1], low[-1], bck[1]), # rnd[1]),  # RELEVANT
+    "e": (cns[0], son[0],  cnt[0],  hgh[-1], frt[1],  low[-1], bck[-1]), # rnd[-1]), # RELEVANT
+    "o": (cns[0], son[0],  cnt[0],  hgh[-1], frt[-1], low[-1], bck[1]), # rnd[1]),  # RELEVANT
+    "a": (cns[0], son[0],  cnt[0],  hgh[-1], frt[-1], low[1],  bck[-1]), # rnd[-1]), # RELEVANT
 }
 
+##########
+# OUTPUT #
+##########
+
+# Max suffix VVC CVVC
+n_sufphon = 7
+# Arbitrarily take length of first feature matrix (all equal) to determine number of features
+n_feat = len(phon_to_feat.values()[0])
+# Tuple of 0 length of features for "-"
+phon_to_feat["-"] = (0.0,) * n_feat
+
+# Get number of output nodes
+output_nodes = n_sufphon*n_feat
+
+# Invert dictionary
 feat_to_phon = functions.invert(phon_to_feat)

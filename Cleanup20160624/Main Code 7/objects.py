@@ -32,6 +32,7 @@ class Lemma:
             self.human = "nh"
 
         # Now simplify gender by ridding of human part
+        self.orig_gender = self.gender
         self.gender = self.gender[0]
 
         # Log frequency to account for Weber's Rule

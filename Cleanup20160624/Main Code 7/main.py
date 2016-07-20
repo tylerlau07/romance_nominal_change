@@ -98,10 +98,10 @@ def conductGeneration(generation, corpus, previous_output):
                 # Hash the output tuple to get the phonological form result
                 new_phonology = ''
 
-                # Divide tuple into chunks (each 12 units, representing one phoneme)
-                chunked_list = list(chunks(list(result), 12))
+                # Divide tuple into chunks (each 11 units, representing one phoneme)
+                chunked_list = list(chunks(list(result), constants.n_feat))
                 # Divide previous output tuple into chunks
-                chunked_prev = list(chunks(list(previous_output[form.lemmacase]), 12))
+                chunked_prev = list(chunks(list(previous_output[form.lemmacase]), constants.n_feat))
 
                 for phon_index in range(len(chunked_list)):
                         phoneme = chunked_list[phon_index]
@@ -109,7 +109,7 @@ def conductGeneration(generation, corpus, previous_output):
 
                         new_phonology += constants.feat_to_phon[tuple(phoneme)]
                         # If phoneme matches, add to number correct
-                        if prev_phoneme != [0.5]*12:
+                        if prev_phoneme != [0.5]*constants.n_feat:
                                 tot_phon += 1
                                 if phoneme == prev_phoneme:
                                         ncorrect += 1
@@ -222,11 +222,11 @@ while generation <= constants.total_generations:
 # Write output to stats
 with open(constants.out_file, mode = 'wb') as f:
         stats = csv.writer(f, delimiter = '\t')
-        stats.writerow(['Word', 'Declension', 'Gender', 'TotFreq', 'Declined'] + range(0, constants.total_generations+1))
+        stats.writerow(['Word', 'Declension', 'Gender', 'Case', 'TotFreq', 'Declined'] + range(0, constants.total_generations+1))
 
         for lemma in corpus:
                 for case, form in lemma.cases.iteritems():
-                        to_write = [form.lemmacase, form.parent.declension, form.parent.gender, form.parent.totfreq]
+                        to_write = [form.lemmacase, form.parent.declension, form.parent.orig_gender, form.casenum, form.parent.totfreq]
                         if form.suffix == 'NULL':
                                 to_write.append(form.root)
                         else:

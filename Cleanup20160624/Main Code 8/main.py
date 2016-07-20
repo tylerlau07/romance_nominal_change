@@ -7,6 +7,7 @@ from math import ceil
 from math import log
 from numpy import identity
 
+import sys
 import time
 import unicodecsv as csv
 
@@ -85,7 +86,6 @@ def conductGeneration(generation, corpus, previous_output):
 
         # Counter to count correct
         ncorrect = 0
-        tot_phon = 0
 
         for (form, input_tuple, expected_output) in training_corpus.test:
 
@@ -95,38 +95,18 @@ def conductGeneration(generation, corpus, previous_output):
                 # Append output tuple to result
                 results[form.lemmacase] = result
 
-                # Hash the output tuple to get the phonological form result
-                new_phonology = ''
+                # Add to ncorrect if matches previous
+                if result == previous_output[form.lemmacase]: ncorrect += 1
 
-                # Divide tuple into chunks (each 12 units, representing one phoneme)
-                chunked_list = list(chunks(list(result), 12))
-                # Divide previous output tuple into chunks
-                chunked_prev = list(chunks(list(previous_output[form.lemmacase]), 12))
-
-                for phon_index in range(len(chunked_list)):
-                        phoneme = chunked_list[phon_index]
-                        prev_phoneme = chunked_prev[phon_index]
-
-                        new_phonology += constants.feat_to_phon[tuple(phoneme)]
-                        # If phoneme matches, add to number correct
-                        if prev_phoneme != [0.5]*12:
-                                tot_phon += 1
-                                if phoneme == prev_phoneme:
-                                        ncorrect += 1
-
-                # Output for this generation is new suffix
-                new_suf = ''.join(new_phonology)
-                for seq in functions.to_revert.keys():
-                        if seq in new_suf:
-                            new_suf = new_suf.replace(seq, functions.to_revert[seq])
-                new_suf = new_suf.replace('-', '')
+                # Hash the output tuple to get the suffix result
+                new_suf = inv_suf[result]
 
                 form.output_change[generation] = new_suf
 
                 print form.lemmacase, form.root+form.suffix, form.parent.declension, form.parent.gender, form.parent.totfreq, form.root+new_suf, new_suf
 
         print "Results have been determined"
-        print "Percentage correct in test run: %f" % round(float(ncorrect)/float(tot_phon)*100, 2)
+        print "Percentage correct in test run: %f" % round(float(ncorrect)/float(len(previous_output))*100, 2)
 
         return results
 
@@ -150,6 +130,8 @@ for suffix in suffixes:
     for phoneme in ''.join(phon_suf):
         feat_suf += constants.phon_to_feat[phoneme]
     suf_dict[suffix] = feat_suf
+
+inv_suf = functions.invert(suf_dict)
 
 # TOTAL input bits
 #       If binary and casenum separate: 9 + 2 + 3 + 2 + 3 + 1 = 20
@@ -220,11 +202,11 @@ while generation <= constants.total_generations:
 # Write output to stats
 with open(constants.out_file, mode = 'wb') as f:
         stats = csv.writer(f, delimiter = '\t')
-        stats.writerow(['Word', 'Declension', 'Gender', 'TotFreq', 'Declined'] + range(0, constants.total_generations+1))
+        stats.writerow(['Word', 'Declension', 'Gender', 'Case', 'TotFreq', 'Declined'] + range(0, constants.total_generations+1))
 
         for lemma in corpus:
                 for case, form in lemma.cases.iteritems():
-                        to_write = [form.lemmacase, form.parent.declension, form.parent.gender, form.parent.totfreq]
+                        to_write = [form.lemmacase, form.parent.declension, form.parent.orig_gender, form.casenum, form.parent.totfreq]
                         if form.suffix == 'NULL':
                                 to_write.append(form.root)
                         else:
@@ -237,3 +219,7 @@ with open(constants.out_file, mode = 'wb') as f:
 # End time count
 end = time.time()
 print '\nTime taken to run simulation: %s' % functions.getTime(end - start)
+
+# Play sound
+sys.stdout.write('\a')
+sys.stdout.flush()

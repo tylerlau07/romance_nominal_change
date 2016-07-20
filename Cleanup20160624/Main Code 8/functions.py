@@ -4,8 +4,6 @@
 from math import ceil
 from math import log
 
-import constants
-
 #############
 # Functions #
 #############
@@ -30,11 +28,6 @@ def getTime(seconds):
     mins = mins_remaining/60
     secs = mins_remaining % 60
     return '%d hours, %d minutes, %d seconds' % (hrs, mins, secs)
-
-def convertToFeatures(phoneme):
-    '''Turn a phoneme into its featural representation.'''
-    feature_matrix = constants.phon_to_feat[phoneme]
-    return feature_matrix
 
 #################################
 # Constants for Phonemicization #
