@@ -1,0 +1,90 @@
+Alkire, Ti and Rosen, Carol (2006)
+
+Romance Languages: A Historical Intro
+
+Extremes of vowel triangle (12)
+- ī > i in It, Sp, Fr
+- ū > u in It. Sp.
+	In French, > y
+- a > a in It. Sp.
+	In French, > a in blocked syllable (grande > grand)
+		   > e in open syllable (clave > clef)
+
+Development of vowels (13)
+- The high mid vowels (13)
+	Italian and Spanish show no change for high mid 
+		i, ē > e > e
+		u, ō > o > o
+	French depends on if syllable is closed or open
+		If closed, blocks change (littera, tērnu, cavērna > lettre, terne, caverne)
+		/o/ > /u/ in closed syllables (currit, cōrte > court, cour)
+		Free syllables
+			e > ej > oj > oɛ > wɛ > wa
+			o > ow > ew > ø
+- The low mid vowels (15)
+		ɛ				ɔ
+	Blocked: Sp. > je			Sp. > we
+  		 It., Fr. > ɛ 			It., Fr. > ɔ
+	Free: 	Sp, It. > je			Sp. > we
+		Fr. > jɛ			It. > wɔ
+						Fr. > wɔ > wɛ > ø
+
+Diphthongs from Indo-European (23)
+- Ones surviving in Latin are /aw/ (AU) /aj/ (AE) /oj/ (OE)
+	/oj/ > /ū/ by Classical Latin, remaining instances become /e/
+	/aw/ > /ɔ/ AFTER /ɔ/ had produced primary diphthong
+	/aj/ > /ɛ/ generally, but sometimes /e/ (saeta 'silk', praeda 'prey')
+
+/b/ and /w/ merge intervocalically to /β/ (33)
+
+Loss of word final -m amply documented from 298 BCE on (36)
+
+Declension IV > II, except for humans (nurus, socrus) and manus (hand) (186)
+Declension V > I, some become III (fidēs, rem)
+
+Loss of oblique cases (187)
+- Instead of genitive, DE + noun as early as 2nd century BCE 
+- Dative begins to be replaced with AD + noun also 2nd century BCE
+- Popular Latin prefers ablative to accusative, "wrong" accusatives become typical (Hermann 2000: 53)
+
+The Popular Latin Two-Case System (188)
+
+		1		2		3
+sg.	Nom	capra		mūrus		panis
+	Non-Nom	capra		mūru		pane
+pl.	Nom	caprae/capras	mūri		panes
+	Non-Nom	capras		mūros		panes	
+
+First dec already caseless, -as spread to subjects early (late antiquity--300AD on?)
+Italian, Spanish first attested from 900--no case already
+French attested from 800s, two-case system, crumbles by 1200s
+
+Italian --> for 1 and 3, neutralized by changes; for 2, mūros > muroi > muro leads to neutralization with singular, so nominative is preferred (189)
+Spanish collapses in favor of accusative
+French --> 3rd declension goes to 2nd or 1st, according to gender
+
+	sg	Nom	chevre	murs	pains		
+		Non-Nom	chevre	mur	pain
+	pl	Nom	chevres	mur	pain
+		Non-nom	chevres	murs	pains
+
+Minor noun declensions in Old French
+	
+	sg	Nom	fins	livre
+		Non-Nom	fin	livre
+	pl	Nom	fins	livre
+		Non-Nom	fins	livres
+
+- fins type develops like other feminines (chevre), but retains nom.sg -s of Latin Dec III (finis)
+- livre type develops like other masculines (murs, pains) but no nom.sg. -s (just as in Latin liber)
+- cas régime, unlike cas sujet regular (-s always in plural), so it replaces by 1200s and goes way of Spanish
+
+Romanian (252)
+- ɛ > e (jɛ > je)
+
+Emergence of the Romance Vernaculars (317)
+- Mid 700s, Western Europe materializing as cultural zone
+- Mediterranean unity broken by dissolution of Western Roman Empire and with Arab conquest of North Africa and, starting in 711, most of Spain
+- Former Gaul, illiterachy norm, new Frankish dynasty Carolingians
+- Charlemagne (768-814)'s court scholars deplored low standards of accuracy in Latin, worried that important writings might be so corrupted as to be unintelligible
+- Charlemagne 787: ordinary people could no longer understand spoken Latin

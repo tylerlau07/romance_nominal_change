@@ -26,5 +26,83 @@ Consonants (96)
 	—> possibly led to nasalization and concomitant lengthening of preceding vowel
 
 Dialectal Varieties: Praenestine (126)
-- Many innovatory reatures “rustic” but impact continued to later—doubles such as faenus/fenus ‘interest, profit’, saepes/sepes ‘hedge, fence’, lautus/lotus ‘clean, sumptuous’, etc.
+- Many innovatory features “rustic” but impact continued to later—doubles such as faenus/fenus ‘interest, profit’, saepes/sepes ‘hedge, fence’, lautus/lotus ‘clean, sumptuous’, etc.
 - Urbanization process culminated in second and first centuries
+
+Bilingualism (232)
+- Switch between Gaulish (written in Greek script) to Latin from beginning of 1st century AD, Gaulish continued to be spoken alongside Latin
+
+Gaius Nouius Eunus and changes in the phonology of Latin (238)
+
+- September 15, 39AD—Eunus, Murecine near Pompeii after eruption of Vesuvius
+	- Prone to omit nasals, both at word end and internally before following stop
+	- Consistent in writing -ae as -e (ɛ)
+	- Some features observed in non-standard registers but not here—stigmatized as speech of underclass:
+		- Omission of final -s after rounded back vowel common in early Republican inscriptions, in Plautus and other Early Latin poets before Catullus, but only omitted in two words (de for dies and nummo for nummos). Cicero (Orator 161) comments that dropping of final -s once was acceptable in refined Latin but now rural
+		- Dropping of aspirate h- from beginning of words and overcompensation of inserting where it was not present
+		- Monophthongization of au to o in some Early Latin inscriptions from outside Rome (urban poor within Rome 1st century BC and on)
+	- Perhaps first two were not stigmatized as speech of underclass
+- Claudius Terentianus—ilingual with Greek (shortly after 100AD) (249)
+	- ī > /i/, /i, ē/ > /e/, /e, ae/ > /ɛ/
+	- Final -m loss leads to equivalence of 1st declension cases in singular
+	- Erodes distinction between accusative and ablative, but keeps nominative apart
+- Iasucthan (256) ~200AD
+	- Ablative case seems to have been in retreat in spoken language, but Iasucthan uses ablative often
+
+Latin in Late Antiquity and Beyond (265)
+- Roughly 3rd century AD to end of first millennium
+- “francisca” frankish could mean French, first mention of it 999 Pope Gregory V epitaph on tomb
+- Continuum between spoken and written languages seems to have lasted longer in Italy than in France—150 years after Gregory v epiatph, gap between speech adn written Latin in northern France too wide to bridge
+	- French Strasbourg oaths 842—first conscious attempt to write down spoke register distinct from Latin
+- Latin at end of 1st millennium is “living fossil”
+- Proto-Romance—speakers in whole area able to communicaet with each otherr
+	- 953, John, later Abbot of Gorze (near Metz in northeastern France), acted as envoy for German King Otto I to court of Abd al-Rahman III, caliph of Cordoba in southern Spain. Life of John records that he had no difficulty in conversing with Christians from Cordoba (perhaps modify regional differences to communicate), standard also still influenced spoken language
+
+From Latin to Romance (272)
+- Developments that took place to a greater or lesser degree across whole speech area in period 
+- Phonology (272)
+	- Classical Latin—distinguished by feature of length, prosodic accent was one of stress
+	- Combination of vowel length and stress accent typologically uncommon, prone to replacement
+	- Loss of length as distinctive feature, accented vowels came to be pronounced long, unaccented short
+	
+			ī > i				ū > u
+			ē, i > e			ō, u > o
+			e > ɛ				o > ɔ
+					a > a
+
+	ae > ɛ
+	au in most of Romance area until latter half of first millennium
+
+	/i/, /e/ > /j/ before /o, u, a/ (-ia for -ea, -iolus for -eolus)
+	Combinations of like vowels prone to contraction (tuus > tus ‘your’)
+
+	Sporadic lowering of vowels before following /-r/, sometimes motivated by low vowel earlier in word —> ansar < anser ‘goose’, passar < passer ‘sparrow’
+	Syncope of short vowels in syllables immediately before or after accented syllable (calidus > caldus, frigidus > frigdus)
+
+	Final consonants generally lost except final -s (retained in Iberian Romance and Gaul)
+	Loss of final -s in Italy as far back as 3rd century BC
+	Nonhomorganic clusters —> assimilation
+		—> /ks/ > /ss/ or /s/
+		—> /gd/ to /dd/
+
+- Nominal Case Morphology (276)
+	- Only Romanian preserves nom/acc and gen/dat in feminine nouns—Romanian from Latin varieties spoken in Pannonia (modern Bosnia and Serbia) and Moesia (modern Bulgaria)
+	- Early merger of nom and acc from third century (Pannonia)-could be -as for FNOMPL from levelling of -ae and -as on analogy of 3rd declension -es and -es
+	- Rest of Romance, Old French and Old Pronvençal only ones to mark subject case (nom) against oblique
+	- Banniard (1992; 518) successive stages: reckons stage III only reached in mid-8th century (but likely speakers lost command of ablative earlier)—argues that ablative eventually syncretized w/ genitive and dative rather than earlier with accusative (some ablative forms used w/ instrumental function in late post-classical texts)
+	- Evidence for confusion between genitive and dative in 5th and 6th centuries—rise of prepositional phrases
+
+Stage I			Stage II		Stage III		Stage IV
+Classical Latin	
+
+Nom			Nom			Nom			Subject
+Gen
+		>	Syncretic
+Dat					>	Syncretic
+Abl			Abl					>	Oblique
+Acc			Acc			Acc
+
+- Nominal Gender (278)
+	- 4th > 2nd (share -us and -um)
+	- Polysyllabic 5th > 1st
+	- All nouns in 2nd declension only masculine started w/ speech of some individuals in high Empire—one character in Pretronius’ novel Satyricon uses uinus and balneus for neuters uinum and balneum, Claudius Terentianus has pretius in place of pretium

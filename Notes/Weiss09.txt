@@ -1,0 +1,39 @@
+Weiss, Michael 2009
+
+Outline of the Historical and Comparative Grammar of Latin
+
+- Comparative Reconstruction of the Romance Languages (505)
+
+					   Proto-Romance
+				/						|		\
+			West	 Romance				East Romance		Sardinian
+		/	|		\	\			/	|	\
+	Gallo-Romance	Ibero-Romance	NItal.	Rhaeto-Romance	SItal.	    Dalmatian	Romanian
+	/     |   \         /        \		/     |    \
+ French Occitan Catalan Spanish Portuguese  Friulian Ladin Rumantsch
+
+North Italian dialects: Lombard, Piedmontese, Ligurian, Emilia-Romagnese, Venetian, Istrian
+South Italian dialects: Tuscan (with Corsican), Marchese, Roman, Umbrian, Abruzzese, Campanian, Lucanian, Calabrian, Sicilian
+
+(509)
+Latin		PRom.		Ital.		Sp.		Fr.		Sard.		Rom.
+ī		*i		i		i		i		i		i
+i		*e		e		e		ei > oi > wa	i		e
+ē		*e		e		e		ei > oi > wa	e		e
+e.C		*ɛ		iɛ		ie		ie		e		ie
+eC.		*ɛ		ɛ		ie		e		e		ie
+o.C		*ɔ		uɔ		ue		ue		o		o
+oC.		*ɔ		ɔ		ue		ɔ		o		o
+ō		*o		o		o		ou		o		o
+u		*o		o		o		ou		u		u
+ū		*u		u		u		u		u		u
+
+* Diphthongs (510)
+	ae > ɛ (but sometimes e)
+	oe > e
+	au remains in SItal., Rhaeto-Romance, Old Occitan, Vegliote, and Romanian
+	au becomes ou in Port.
+* Final Consonants (514)
+	-s# became i in Italian and Romanian under certain conditions
+		nōs > noi; minus > meno; cantāi > canti
+	-m# > nothing except in monosyllables
