@@ -32,6 +32,6 @@ freq_table[ , 'Nom.Sg', 'm', '1']
 
 m4Nom.Sg
 
-df[df$Suffix == "ium", ]
+df[df$Suffix == "m", ]
    
    #, df$Gender == "m" & df$Declension == 3 & df$Case == "nomsg", ]

@@ -1,5 +1,12 @@
 This code implements sound changes.
 
+The parameters are:
+1) Language: Common Romance (Sp, Fr, Po), Italian, Romanian
+2) Second sound change implemented?: 
+	Monophthongization = 1
+	Only applies to Spanish and Italian
+3) TokFreq
+
 Changes:
 
 All:

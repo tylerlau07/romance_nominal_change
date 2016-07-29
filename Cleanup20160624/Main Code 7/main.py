@@ -64,7 +64,22 @@ def conductGeneration(generation, corpus, previous_output):
                         training_corpus.addByFreq(constants.token_freq, form, previous_output[form.lemmacase])
 
         # Construct the training set
-        print "--------Generation %s--------" % generation
+        print '''--------Generation %s--------
+        Trial %d:
+        Training on %d Epochs
+        Number of Input Nodes: %d
+        Number of Hidden Nodes: %d
+        Number of Output Nodes: %d
+        Token Frequency taken into account: %s\n''' % ( 
+                generation,
+                constants.trial,
+                constants.epochs, 
+                input_nodes,
+                constants.hidden_nodes,
+                constants.output_nodes,
+                constants.token_freq
+                )
+
         print "Constructing the training set"
         training_set = training_corpus.constructTrainingSet()
 
@@ -166,22 +181,6 @@ if constants.casenum_sep == True:
 # OUTPUT #
 ##########
 
-# # Output layer will be list of potential suffixes, gathered from corpus
-# output_nodes = suffix_size
-
-# Print information
-print '''Training on %d Epochs
-        Number of Input Nodes: %d
-        Number of Hidden Nodes: %d
-        Number of Output Nodes: %d
-        Token Frequency taken into account: %s\n''' % ( 
-                constants.epochs, 
-                input_nodes,
-                constants.hidden_nodes,
-                constants.output_nodes,
-                constants.token_freq,
-                )
-
 # Initialize dictionary mapping from forms to Latin noun info, to be updated each generation
 expected_outputs = {}
 
@@ -222,11 +221,13 @@ while generation <= constants.total_generations:
 # Write output to stats
 with open(constants.out_file, mode = 'wb') as f:
         stats = csv.writer(f, delimiter = '\t')
-        stats.writerow(['Word', 'Declension', 'Gender', 'Case', 'TotFreq', 'Declined'] + range(0, constants.total_generations+1))
+        stats.writerow(['Word', 'Declension', 'Gender', 'CaseNum', 'Case', 'Num', 
+                        'TotFreq', 'LatSuf', 'Declined'] + range(0, constants.total_generations+1))
 
         for lemma in corpus:
                 for case, form in lemma.cases.iteritems():
-                        to_write = [form.lemmacase, form.parent.declension, form.parent.orig_gender, form.casenum, form.parent.totfreq]
+                        to_write = [form.lemmacase, form.parent.declension, form.parent.orig_gender, 
+                                    form.casenum, form.case, form.num, form.parent.totfreq, form.suffix]
                         if form.suffix == 'NULL':
                                 to_write.append(form.root)
                         else:

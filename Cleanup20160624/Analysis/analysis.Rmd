@@ -1,5 +1,5 @@
 ---
-title: "analysis"
+title: "NoSoundChangeTokFreqT"
 author: "Tyler Lau"
 header-includes:
   - \DeclareUnicodeCharacter{012B}{\=\i}
@@ -9,39 +9,93 @@ date: "July 18, 2016"
 output: pdf_document
 ---
 
-This program analyzes the output of program
 
-```{r}
-file <- '../Main Code 7/V_NotSonCont/stats_Epochs3_Gens10_TokFreqT_Trial10.txt'
+```{r echo = FALSE, comment = NA}
 
-df <- read.delim(file)
+# for (number in seq(1, 5)) {
+#   fileframe <- 'stats_DiffFeat_Epochs3_Gens10_TokFreqF_Trial'
+#   file <- paste0('../Main Code 7/', fileframe, number, '.txt')
+#   
+#   df <- read.delim(file)
+#   
+#   df$CaseNum <- df$Case
+#   df$Num <- substring(df$Case, 5, 6)
+#   df$Case <- substring(df$Case, 1, 3)
+#   View(df)
+#   df <- df[ , c(seq(1,3), 18, 4, 19, seq(5, 17))]
+#   colnames(df)[seq(9, 19)] <- seq(0, 10)
+#   }
 
-df[df == 'mh'] <- 'm'
-df[df == 'fh'] <- 'f'
-df[df == 'mh, fh'] <- 'm'
-df[df == 'm, f'] <- 'm'
+setwd('../Main Code 7/TokenFreqOn/V_NotSonCont')
+files = list.files(pattern = '\\.txt')
 
-get_endings <- function(df) {
-  endings <- subset(df, select = c('X10', 'Case', 'Gender', 'Declension'))
-  freq_table = table(endings)
+genders <- c('m', 'f', 'n')
+declensions <- 1:5
+cases <- c('Nom', 'Acc', 'Gen', 'Dat', 'Abl')
+nums <- c('Sg', 'Pl')
+
+# fileframe <- 'stats_Common0_Epochs3_Gens10_TokFreqT_Trial'
+
+for (i in 1:length(files)) {
+  file = files[i]
+  # '../Main Code 9/CommonTokFreqT/', 
   
-  genders <- c('m', 'f', 'n')
-  declensions <- seq(1, 5)
-  cases <- c('Nom.Sg', 'Nom.Pl', 'Acc.Sg', 'Acc.Pl', 'Gen.Sg', 
-             'Gen.Pl', 'Dat.Sg', 'Dat.Pl', 'Abl.Sg', 'Abl.Pl')
+  # file <- paste0(fileframe, number, '.txt')
   
-  for (gender in genders) {
-    for (dec in declensions) {
-      for (case in cases) {
-        pre_table <- freq_table[ , case, gender, dec]
-        print(paste0(gender, dec, case))
-        print(assign(paste0(gender, dec, case), pre_table[pre_table != 0]))
-      }
+  df <- read.delim(file, stringsAsFactors = FALSE)
+
+  df[df == 'mh'] <- 'm'
+  df[df == 'fh'] <- 'f'
+  df[df == 'mh, fh'] <- 'm'
+  df[df == 'm, f'] <- 'm'
+  df[df == ''] <- '-'
+
+  levels(df$Gender)
+  
+  df$CaseNum <- df$Case
+  df$Case <- substring(df$CaseNum, 1, 3)
+  df$Num <- substring(df$CaseNum, 5, 6)
+  
+  gencaseendings <- subset(df, select = c('X10', 'Gender', 'Num', 'Case'))
+  
+  for (num in nums) {
+    for (case in cases) {
+      print(paste('Trial', i, ':', case, num))
+  
+      table(gencaseendings)[, , 'Sg', 'Nom']
+      
+      current_table <- table(gencaseendings)[ , 'f', 'Sg', 'Nom']
+ 
+      # suffixes = names(current_table)
+      
+      # as.vector(current_table['a']) + as.vector(current_table['e'])
+#       
+#       for (suffix in suffixes) {
+#         print(current_table[suffix])
+#       }
+        
+      
+      
+      freq_table <- table(gencaseendings)[ , , num, case]
+      
+      # Remove 0 values
+      new_table <- freq_table[apply(freq_table[ , -1], 1, function(x) !all(x==0)), ]
+      
+      print(new_table)
     }
   }
 }
 
+# df[df$Num == "Sg" & df$Case == "Nom" & df$X10 == "es", ]
 
+# Now we want to count up the different systems that exist-disregarding those endings that are rare (let's say < 10). We can do this as a percentage, ex. 12% of systems have F Nom Sg as a, etc.
+# 
+# # Create array with gender/case/num combo as columns
+# for (i in 1:length(files)) {
+#   file = files[i]
+#   df <- read.delim(file)
+#   
+#   
+# }
 
-get_endings(df)
 ```

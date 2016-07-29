@@ -19,13 +19,13 @@ corpus_file = "../Corpus Preparation/latin_corpus.txt"
 ##############
 
 # Trial number
-trial = 1
+trial = 5
 
 # Generations to run simulation
 total_generations = 10
 
 # Make false to test with no token frequency
-token_freq = False
+token_freq = True
 
 # Number of times to introduce training set: P&VE uses 3, HareEllman uses 10
 epochs = 3
@@ -116,7 +116,7 @@ hidden_nodes = 30
 ##########################
 
 # Number of generations
-out_file = 'stats_WOVFeat_Epochs%s_Gens%s' % (str(epochs), str(total_generations))
+out_file = 'stats_NoSoundChange_Epochs%s_Gens%s' % (str(epochs), str(total_generations))
 
 # Token Frequency?
 if token_freq == False:
@@ -203,26 +203,26 @@ phon_to_feat = {
     # "p": (cns[1],  son[-1], cor[-1], nas[-1], cnt[-1], voi[-1], vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]), 
     # "t": (cns[1],  son[-1], cor[1],  nas[-1], cnt[-1], voi[-1], vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
     # "k": (cns[1],  son[-1], cor[-1], nas[-1], cnt[-1], voi[-1], vow[-1], hgh[1],  low[-1], frt[0],  bck[0]), # rnd[-1]),
-    "b": (cns[1], son[-1], cnt[-1], hgh[0],  frt[0], low[0],  bck[0]), # rnd[-1]), # RELEVANT
+    "b": (son[-1], cnt[-1], hgh[0],  frt[0], low[0],  bck[0]), # rnd[-1]), # RELEVANT
     # "d": (cns[1],  son[-1], cor[1],  nas[-1], cnt[-1], voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
     # "g": (cns[1],  son[-1], cor[-1], nas[-1], cnt[-1], voi[1],  vow[-1], hgh[1],  low[-1], frt[0],  bck[0]), # rnd[-1]),
     # "f": (cns[1],  son[-1], cor[-1], nas[-1], cnt[1],  voi[-1], vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]), 
     # "v": (cns[1],  son[-1], cor[-1], nas[-1], cnt[1],  voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
-    "s": (cns[1], son[-1], cnt[1],  hgh[0],  frt[0], low[0],  bck[0]), # rnd[-1]), # RELEVANT
+    "s": (son[-1], cnt[1],  hgh[0],  frt[0], low[0],  bck[0]), # rnd[-1]), # RELEVANT
     # "z": (cns[1],  son[-1], cor[1],  nas[-1], cnt[1],  voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
     # "h": (cns[1],  son[-1], cor[-1], nas[-1], cnt[1],  voi[-1], vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
-    "m": (cns[1], son[1],  cnt[-1], hgh[0],  frt[0], low[0],  bck[0]), # rnd[-1]), # RELEVANT
+    "m": (son[1],  cnt[-1], hgh[0],  frt[0], low[0],  bck[0]), # rnd[-1]), # RELEVANT
     # "n": (cns[1],  son[1],  cor[1],  nas[1],  cnt[-1], voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
     # "N": (cns[1],  son[1],  cor[-1], nas[1],  cnt[-1], voi[1],  vow[-1], hgh[1],  low[-1], frt[0],  bck[0]), # rnd[-1]), # engma
-    "r": (cns[1], son[1],  cnt[1],  hgh[0],  frt[0], low[0],  bck[0]), # rnd[-1]), # RELEVANT
+    "r": (son[1],  cnt[1],  hgh[0],  frt[0], low[0],  bck[0]), # rnd[-1]), # RELEVANT
     # "l": (cns[1],  son[1],  cor[1],  nas[-1], cnt[1],  voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
     # "w": (cns[-1], son[1],  cor[-1], nas[-1], cnt[1],  voi[1],  vow[-1], hgh[1],  low[-1], frt[-1], bck[1]), # rnd[1]),
     # "j": (cns[-1], son[1],  cor[-1], nas[-1], cnt[1],  voi[1],  vow[-1], hgh[1],  low[-1], frt[1], bck[-1]), # rnd[-1]), # y
-    "i": (cns[0], son[0],  cnt[0],  hgh[1],  frt[1],  low[-1], bck[-1]), # rnd[-1]), # RELEVANT
-    "u": (cns[0], son[0],  cnt[0],  hgh[1],  frt[-1], low[-1], bck[1]), # rnd[1]),  # RELEVANT
-    "e": (cns[0], son[0],  cnt[0],  hgh[-1], frt[1],  low[-1], bck[-1]), # rnd[-1]), # RELEVANT
-    "o": (cns[0], son[0],  cnt[0],  hgh[-1], frt[-1], low[-1], bck[1]), # rnd[1]),  # RELEVANT
-    "a": (cns[0], son[0],  cnt[0],  hgh[-1], frt[-1], low[1],  bck[-1]), # rnd[-1]), # RELEVANT
+    "i": (son[0],  cnt[0],  hgh[1],  frt[1],  low[-1], bck[-1]), # rnd[-1]), # RELEVANT
+    "u": (son[0],  cnt[0],  hgh[1],  frt[-1], low[-1], bck[1]), # rnd[1]),  # RELEVANT
+    "e": (son[0],  cnt[0],  hgh[-1], frt[1],  low[-1], bck[-1]), # rnd[-1]), # RELEVANT
+    "o": (son[0],  cnt[0],  hgh[-1], frt[-1], low[-1], bck[1]), # rnd[1]),  # RELEVANT
+    "a": (son[0],  cnt[0],  hgh[-1], frt[-1], low[1],  bck[-1]), # rnd[-1]), # RELEVANT
 }
 
 ##########

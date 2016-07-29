@@ -237,7 +237,7 @@ def reworkSuffix(suffix, language, secondsoundchange):
     '''
 
     # Short vowel changes
-    sv_changes = {'m':'', 'i':'e', 'ae':'e', 'o':'o', 'uu':u'ū'} # Change to e?
+    sv_changes = {'m':'', 'i':'e', 'ae':'e', 'uu':u'ū'}
     # Non-Romanian changes
     nonrom_sv = {'u':'o'}
     # All lv_changes
