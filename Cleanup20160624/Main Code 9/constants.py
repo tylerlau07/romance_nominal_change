@@ -19,7 +19,7 @@ corpus_file = "../Corpus Preparation/latin_corpus.txt"
 ##############
 
 # Trial number
-trial = 10
+trial = 21
 
 # Generations to run simulation
 total_generations = 10
@@ -37,10 +37,10 @@ casenum_sep = True
 vectors = 'binary'
 
 # Apply sound changes--Common Romance, Italian, or Romanian
-language = 'Romanian'
+language = 'Common'
 
 # Implement second sound change (only for Italian or Romanian)?
-secondsoundchange = 1
+secondsoundchange = 0
 
 #####################
 # Layer Information #
@@ -63,7 +63,8 @@ if casenum_sep == True:
     cases = ['Nom', 'Acc', 'Gen', 'Dat', 'Abl', 'Voc']
     numbers = ['Sg', 'Pl']
 else:
-    cases = ['Nom.Sg', 'Acc.Sg', 'Gen.Sg', 'Dat.Sg', 'Abl.Sg', 'Nom.Pl', 'Acc.Pl', 'Gen.Pl', 'Dat.Pl', 'Abl.Pl']
+    cases = ['Nom.Sg', 'Acc.Sg', 'Gen.Sg', 'Dat.Sg', 'Abl.Sg', 
+            'Nom.Pl', 'Acc.Pl', 'Gen.Pl', 'Dat.Pl', 'Abl.Pl']
 
 if vectors == 'binary':
     # Take log base 2 to figure out how many bits we need for each
@@ -175,7 +176,7 @@ case_freqs = {
 #############################################
 
 # Map phonemes to Chomsky and Halle values (1968) --> Hayes 2009:
-son=lab=hgh=low=frt=bck (0.0, 1.0, -1.0)
+son=lab=hgh=low=frt=bck = (0.0, 1.0, -1.0)
 
 # MINIMALLY DISTINGUISHING FEATURES
 phon_to_feat = {

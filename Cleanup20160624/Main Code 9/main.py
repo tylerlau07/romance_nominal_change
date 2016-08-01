@@ -63,16 +63,15 @@ def conductGeneration(generation, corpus, previous_output):
                         training_corpus.addByFreq(constants.token_freq, form, previous_output[form.lemmacase])
 
         # Construct the training set
-        print '''--------Generation %s--------
-        Trial %d:
+        print '''--------Generation %s--------''' % generation
+        print '''----------Trial %d-----------
         Training on %d Epochs
         Number of Input Nodes: %d
         Number of Hidden Nodes: %d
         Number of Output Nodes: %d
         Token Frequency taken into account: %s
         Language to Model: %s
-        Secondary Sound Change (for Italian and Romanian) Implemented: %s\n''' % ( 
-                generation,
+        Secondary Sound Change (for Italian and Romanian) Implemented: %s\n''' % (
                 constants.trial,
                 constants.epochs, 
                 input_nodes,

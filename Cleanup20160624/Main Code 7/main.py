@@ -2,20 +2,19 @@
 # Author: Tyler Lau
 # Main Code 7
 
+print '''Beginning simulation'''
+
 # Standard Library Imports
 from math import ceil
 from math import log
 from numpy import identity
 
+import sys
 import time
 import unicodecsv as csv
 
 # Our files
 import constants
-
-print '''-----------------------------
-Trial %d:
-''' % constants.trial
 
 import objects
 import functions
@@ -64,14 +63,13 @@ def conductGeneration(generation, corpus, previous_output):
                         training_corpus.addByFreq(constants.token_freq, form, previous_output[form.lemmacase])
 
         # Construct the training set
-        print '''--------Generation %s--------
-        Trial %d:
+        print '''--------Generation %s--------''' % generation
+        print '''-----------Trial %d----------
         Training on %d Epochs
         Number of Input Nodes: %d
         Number of Hidden Nodes: %d
         Number of Output Nodes: %d
-        Token Frequency taken into account: %s\n''' % ( 
-                generation,
+        Token Frequency taken into account: %s\n''' % (
                 constants.trial,
                 constants.epochs, 
                 input_nodes,
@@ -240,3 +238,7 @@ with open(constants.out_file, mode = 'wb') as f:
 # End time count
 end = time.time()
 print '\nTime taken to run simulation: %s' % functions.getTime(end - start)
+
+# Play sound
+sys.stdout.write('\a')
+sys.stdout.flush()

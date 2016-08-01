@@ -1,5 +1,5 @@
 ---
-title: "NoSoundChangeTokFreqT"
+title: "Romanian1TokFreqT"
 author: "Tyler Lau"
 header-includes:
   - \DeclareUnicodeCharacter{012B}{\=\i}
@@ -12,21 +12,24 @@ output: pdf_document
 
 ```{r echo = FALSE, comment = NA}
 
-# for (number in seq(1, 5)) {
-#   fileframe <- 'stats_DiffFeat_Epochs3_Gens10_TokFreqF_Trial'
-#   file <- paste0('../Main Code 7/', fileframe, number, '.txt')
+# for (number in seq(1, 10)) {
+#   fileframe <- 'stats_NoSoundChange_Epochs3_Gens10_TokFreqT_Trial'
+#   file <- paste0('../Main Code 7/TokenFreqOn/', fileframe, number, '.txt')
 #   
 #   df <- read.delim(file)
 #   
-#   df$CaseNum <- df$Case
-#   df$Num <- substring(df$Case, 5, 6)
-#   df$Case <- substring(df$Case, 1, 3)
-#   View(df)
-#   df <- df[ , c(seq(1,3), 18, 4, 19, seq(5, 17))]
+# #   df$CaseNum <- df$Case
+# #   df$Case <- substring(df$CaseNum, 1, 3)
+# #   df$Num <- substring(df$CaseNum, 5, 6)
+#   
+# #   df <- df[ , c(seq(1,3), 18, 4, 19, seq(5, 17))]
 #   colnames(df)[seq(9, 19)] <- seq(0, 10)
-#   }
+#   
+#   write.table(df, sep = "\t", quote = FALSE, file = paste0(fileframe, number, '.txt'))
+# }
 
-setwd('../Main Code 7/TokenFreqOn/V_NotSonCont')
+setwd('../Main Code 9/Romanian1TokFreqT')
+# setwd('../Main Code 7/TokenFreqOn')
 files = list.files(pattern = '\\.txt')
 
 genders <- c('m', 'f', 'n')
@@ -34,13 +37,41 @@ declensions <- 1:5
 cases <- c('Nom', 'Acc', 'Gen', 'Dat', 'Abl')
 nums <- c('Sg', 'Pl')
 
-# fileframe <- 'stats_Common0_Epochs3_Gens10_TokFreqT_Trial'
+# Initialize variables to count proportion of trials in which relevant mergers happen
+nomaccsg <- 0
+accablsg <- 0
+nomaccablsg <- 0
+
+nomaccpl <- 0
+accablpl <- 0
+nomaccablpl <- 0
+
+gendatsg <- 0
+gendatpl <- 0
+
+sg <- 0
+pl <- 0
+
+sg_same <- 0
+pl_same <- 0
+
+all_same <- 0
 
 for (i in 1:length(files)) {
   file = files[i]
-  # '../Main Code 9/CommonTokFreqT/', 
   
-  # file <- paste0(fileframe, number, '.txt')
+  nomaccsg_same <- FALSE
+  accablsg_same <- FALSE
+  nomaccablsg_same <- FALSE
+  
+  nomaccpl_same <- FALSE
+  accablpl_same <- FALSE
+  nomaccablpl_same <- FALSE
+  
+  gendatsg_same <- FALSE
+  gendatpl_same <- FALSE
+
+  # Count human as same as nonhuman
   
   df <- read.delim(file, stringsAsFactors = FALSE)
 
@@ -49,22 +80,16 @@ for (i in 1:length(files)) {
   df[df == 'mh, fh'] <- 'm'
   df[df == 'm, f'] <- 'm'
   df[df == ''] <- '-'
-
-  levels(df$Gender)
-  
-  df$CaseNum <- df$Case
-  df$Case <- substring(df$CaseNum, 1, 3)
-  df$Num <- substring(df$CaseNum, 5, 6)
   
   gencaseendings <- subset(df, select = c('X10', 'Gender', 'Num', 'Case'))
-  
+
   for (num in nums) {
     for (case in cases) {
       print(paste('Trial', i, ':', case, num))
-  
-      table(gencaseendings)[, , 'Sg', 'Nom']
       
-      current_table <- table(gencaseendings)[ , 'f', 'Sg', 'Nom']
+      table(gencaseendings)[ , 'f', 'Sg', 'Nom']
+      
+      # current_table <- table(gencaseendings)[ , 'f', 'Sg', 'Nom']
  
       # suffixes = names(current_table)
       
@@ -74,17 +99,82 @@ for (i in 1:length(files)) {
 #         print(current_table[suffix])
 #       }
         
-      
-      
       freq_table <- table(gencaseendings)[ , , num, case]
-      
+
       # Remove 0 values
       new_table <- freq_table[apply(freq_table[ , -1], 1, function(x) !all(x==0)), ]
       
       print(new_table)
     }
   }
+
+  # We want to count the trials in which the relevant mergers happen: first relationship between nom, acc, and abl
+  if (all(table(gencaseendings)[, , 'Sg', 'Nom'] == table(gencaseendings)[, , 'Sg', 'Acc'])) {
+    nomaccsg <- nomaccsg + 1
+    nomaccsg_same <- TRUE
+  }
+  if (all(table(gencaseendings)[, , 'Sg', 'Acc'] == table(gencaseendings)[, , 'Sg', 'Abl'])) {
+    accablsg <- accablsg + 1
+    accablsg_same <- TRUE
+  }
+  if (nomaccsg_same & accablsg_same) {
+    nomaccablsg <- nomaccablsg + 1
+    nomaccablsg_same <- TRUE
+  }
+  
+  if (all(table(gencaseendings)[, , 'Pl', 'Nom'] == table(gencaseendings)[, , 'Pl', 'Acc'])) {
+    nomaccpl <- nomaccpl + 1
+    nomaccpl_same <- TRUE
+  }
+  if (all(table(gencaseendings)[, , 'Pl', 'Acc'] == table(gencaseendings)[, , 'Pl', 'Abl'])) {
+    accablpl <- accablpl + 1
+    accablpl_same <- TRUE
+  }
+  if (nomaccpl_same & accablpl_same) {
+    nomaccablpl <- nomaccablpl + 1
+    nomaccablpl_same <- TRUE
+  }
+  
+  if (all(table(gencaseendings)[, , 'Sg', 'Gen'] == table(gencaseendings)[, , 'Sg', 'Dat'])) {
+    gendatsg <- gendatsg + 1
+    gendatsg_same <- TRUE
+  }
+  if (all(table(gencaseendings)[, , 'Pl', 'Gen'] == table(gencaseendings)[, , 'Pl', 'Dat'])) {
+    gendatpl <- gendatpl + 1
+    gendatpl_same <- TRUE
+  }
+  
+  if (all(table(gencaseendings)[, , 'Sg', ])) {
+    sg <- sg + 1
+  }
+  if (all(table(gencaseendings)[, , 'Pl', ])) {
+    pl <- pl + 1
+  }
+  
+  if (all(table(gencaseendings))) {
+    all_same <- all_same + 1
+  }
 }
+
+
+
+tot_trials <- length(files)
+
+print(paste("Percentage of trials where Nom.Sg and Acc.Sg end up the same", nomaccsg/tot_trials))
+print(paste("Percentage of trials where Abl.Sg and Acc.Sg end up the same", accablsg/tot_trials))
+print(paste("Percentage of trials where Nom.Sg, Acc.Sg, and Abl.Sg end up the same", nomaccablsg/tot_trials))
+
+print(paste("Percentage of trials where Nom.Pl and Acc.Pl end up the same", nomaccpl/tot_trials))
+print(paste("Percentage of trials where Abl.Pl and Acc.Pl end up the same", accablpl/tot_trials))
+print(paste("Percentage of trials where Nom.Pl, Acc.Pl, and Abl.Pl end up the same", nomaccablpl/tot_trials))
+
+print(paste("Percentage of trials where Gen.Sg and Dat.Sg end up the same", gendatsg/tot_trials))
+print(paste("Percentage of trials where Gen.Pl and Dat.Pl end up the same", gendatpl/tot_trials))
+
+print(paste("Percentage of trials where all singulars end up the same", sg/tot_trials))
+print(paste("Percentage of trials where all plurals end up the same", pl/tot_trials))
+
+print(paste("Percentage of trials where all forms end up the same", all_same/tot_trials))
 
 # df[df$Num == "Sg" & df$Case == "Nom" & df$X10 == "es", ]
 

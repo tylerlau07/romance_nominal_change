@@ -19,7 +19,7 @@ corpus_file = "../Corpus Preparation/latin_corpus.txt"
 ##############
 
 # Trial number
-trial = 5
+trial = 29
 
 # Generations to run simulation
 total_generations = 10
