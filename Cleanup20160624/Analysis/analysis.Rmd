@@ -1,41 +1,48 @@
 ---
-title: "Romanian1TokFreqT"
+title: "NoSoundChange"
 author: "Tyler Lau"
 header-includes:
+  - \DeclareUnicodeCharacter{0101}{\=a}
   - \DeclareUnicodeCharacter{012B}{\=\i}
   - \DeclareUnicodeCharacter{0113}{\=e}
   - \DeclareUnicodeCharacter{014D}{\=o}
+  - \DeclareUnicodeCharacter{016B}{\=u}
 date: "July 18, 2016"
 output: pdf_document
 ---
 
-
 ```{r echo = FALSE, comment = NA}
+library(stringr)
 
-# for (number in seq(1, 10)) {
-#   fileframe <- 'stats_NoSoundChange_Epochs3_Gens10_TokFreqT_Trial'
-#   file <- paste0('../Main Code 7/TokenFreqOn/', fileframe, number, '.txt')
-#   
-#   df <- read.delim(file)
-#   
-# #   df$CaseNum <- df$Case
-# #   df$Case <- substring(df$CaseNum, 1, 3)
-# #   df$Num <- substring(df$CaseNum, 5, 6)
-#   
-# #   df <- df[ , c(seq(1,3), 18, 4, 19, seq(5, 17))]
-#   colnames(df)[seq(9, 19)] <- seq(0, 10)
-#   
-#   write.table(df, sep = "\t", quote = FALSE, file = paste0(fileframe, number, '.txt'))
-# }
-
-setwd('../Main Code 9/Romanian1TokFreqT')
-# setwd('../Main Code 7/TokenFreqOn')
+# setwd('../Main Code 9/CommonTokFreqT')
+setwd('../Main Code 7/TokenFreqOn')
 files = list.files(pattern = '\\.txt')
 
 genders <- c('m', 'f', 'n')
 declensions <- 1:5
 cases <- c('Nom', 'Acc', 'Gen', 'Dat', 'Abl')
 nums <- c('Sg', 'Pl')
+
+# Create dictionaries for sound changes
+soundchange <- TRUE
+
+diph_changes <- c('e', 'e', 'e', 'e', 'o')
+names(diph_changes) <- c('ai', 'ae', 'ie', 'oe', 'au')
+
+sv_changes <- c('e', 'o', '')
+names(sv_changes) <- c('i', 'u', 'm')
+
+lv_changes <- c('a', 'e', 'i', 'o', 'u')
+names(lv_changes) <- c('ā', 'ē', 'ī', 'ō', 'ū')
+
+# freq_table <- table(gencaseendings)[ , 'm', 'Sg', 'Nom']
+# freq_table[freq_table > 5]
+# 
+# freq_table[apply(freq_table, 1, function(x) !all(x==0)), ]
+
+# remove_zeros(data.frame(table(endings)[ , '2', , 'Sg', 'Nom']))
+# 
+# remove_zeros(table(endings)[ , '2', , 'Sg', 'Nom'])
 
 # Initialize variables to count proportion of trials in which relevant mergers happen
 nomaccsg <- 0
@@ -56,6 +63,58 @@ sg_same <- 0
 pl_same <- 0
 
 all_same <- 0
+
+# Trends
+pl_all_s <- 0    # All plurals end in -s
+pl_nomacc_s <- 0 # Nom and Acc plurals end in -s
+pl_all_mf_s <- 0 # All plurals (excluding neuter) end in -s
+pl_nomacc_mf_s <- 0 # Nom and Acc plurals (excluding neuter) end in -s
+
+#############
+# Functions #
+#############
+
+# Remove rows with all 0's from frequency table
+remove_zeros <- function(input_table) return(input_table[apply(input_table, 1, function(x) !all(x==0)), ])
+
+# Show frequency count table by number and case
+freq_table <- function(input_table, trial) {
+  tables <- list()
+  print(paste('Trial', trial))
+    for (num in nums) {
+      for (case in cases) {
+        
+        freq_table <- data.frame(table(input_table)[ , , num, case])
+
+        # Now show the whole table
+        tables[[paste0(case, num)]] <- remove_zeros(freq_table)
+      }
+    }
+  return(tables)
+}
+
+# Check if plurals end in s
+# Need to give cases as a vector
+getPlSuf <- function(df, cases, genders) {
+  
+  # Isolate necessary cases
+  casegender_df <- df[df$Case %in% cases & df$Gender %in% genders, ]
+  pl_table <- data.frame(table(casegender_df)[ , , 'Pl', ])
+  all_suffixes <- remove_zeros(pl_table)
+  
+  # Isolate suffixes that are only used in the plural
+  pl_suffixes <- names(all_suffixes[all_suffixes == TRUE])
+  return(pl_suffixes)
+}
+
+# Check if certain combinations end up the same
+# Take in vector of cases/numbers/genders and determine if combo is same or not
+# Returns truth value
+checkSame <- function(df, gen1, num1, case1, gen2, num2, case2) {
+  if (missing(gen1)) return(all(data.frame(table(gencaseendings)[, , num1, case1]) == data.frame(table(gencaseendings)[, , num2, case2]))) 
+  else return(all(data.frame(table(gencaseendings)[, gen1, num1, case1]) == data.frame(table(gencaseendings)[, gen2, num2, case2])))
+}
+
 
 for (i in 1:length(files)) {
   file = files[i]
@@ -79,41 +138,41 @@ for (i in 1:length(files)) {
   df[df == 'fh'] <- 'f'
   df[df == 'mh, fh'] <- 'm'
   df[df == 'm, f'] <- 'm'
+  
+  # If apply sound change
+  if (soundchange == TRUE) {
+    for (diph in names(diph_changes)) df$X10 <- sub(diph, diph_changes[diph], df$X10)
+    for (sv in names(sv_changes)) df$X10 <- sub(sv, sv_changes[sv], df$X10)
+    for (lv in names(lv_changes)) df$X10 <- sub(lv, lv_changes[lv], df$X10)
+  }
+  
   df[df == ''] <- '-'
   
+  endings <- subset(df, select = c('X10', 'Declension', 'Gender', 'Num', 'Case'))
   gencaseendings <- subset(df, select = c('X10', 'Gender', 'Num', 'Case'))
+  
+  print(freq_table(gencaseendings, i))
+  
+  # Now let's see how well the results approximate Romance
+  # First, which plurals end in "s"
+  allpl_suf <- getPlSuf(gencaseendings, cases, genders)
+  if (all(str_sub(allpl_suf, -1) == "s")) pl_all_s <- pl_all_s + 1
+  
+  nomaccpl_suf <- getPlSuf(gencaseendings, c('Nom', 'Acc'), genders)
+  if (all(str_sub(nomaccpl_suf, -1) == "s")) pl_nomacc_s <- pl_nomacc_s + 1
+  
+  allpl_mf_suf <- getPlSuf(gencaseendings, cases, c('m', 'f'))
+  if (all(str_sub(allpl_mf_suf, -1) == "s")) pl_all_mf_s <- pl_all_mf_s + 1
 
-  for (num in nums) {
-    for (case in cases) {
-      print(paste('Trial', i, ':', case, num))
-      
-      table(gencaseendings)[ , 'f', 'Sg', 'Nom']
-      
-      # current_table <- table(gencaseendings)[ , 'f', 'Sg', 'Nom']
- 
-      # suffixes = names(current_table)
-      
-      # as.vector(current_table['a']) + as.vector(current_table['e'])
-#       
-#       for (suffix in suffixes) {
-#         print(current_table[suffix])
-#       }
-        
-      freq_table <- table(gencaseendings)[ , , num, case]
-
-      # Remove 0 values
-      new_table <- freq_table[apply(freq_table[ , -1], 1, function(x) !all(x==0)), ]
-      
-      print(new_table)
-    }
-  }
-
-  # We want to count the trials in which the relevant mergers happen: first relationship between nom, acc, and abl
-  if (all(table(gencaseendings)[, , 'Sg', 'Nom'] == table(gencaseendings)[, , 'Sg', 'Acc'])) {
+  nomaccpl_mf_suf <- getPlSuf(gencaseendings, c('Nom', 'Acc'), c('m', 'f'))
+  if (all(str_sub(nomaccpl_mf_suf, -1) == "s")) pl_nomacc_mf_s <- pl_nomacc_mf_s + 1
+  
+  # Check where mergers happen--nom, acc, abl ; gen, dat
+  if (checkSame(gencaseendings, case1 = 'Nom', num1 = 'Sg', case2 = 'Acc', num2 = 'Sg')) {
     nomaccsg <- nomaccsg + 1
     nomaccsg_same <- TRUE
   }
-  if (all(table(gencaseendings)[, , 'Sg', 'Acc'] == table(gencaseendings)[, , 'Sg', 'Abl'])) {
+  if (checkSame(gencaseendings, case1 = 'Acc', num1 = 'Sg', case2 = 'Abl', num2 = 'Sg')) {
     accablsg <- accablsg + 1
     accablsg_same <- TRUE
   }
@@ -122,11 +181,11 @@ for (i in 1:length(files)) {
     nomaccablsg_same <- TRUE
   }
   
-  if (all(table(gencaseendings)[, , 'Pl', 'Nom'] == table(gencaseendings)[, , 'Pl', 'Acc'])) {
+  if (checkSame(gencaseendings, case1 = 'Nom', num1 = 'Pl', case2 = 'Acc', num2 = 'Pl')) {
     nomaccpl <- nomaccpl + 1
     nomaccpl_same <- TRUE
   }
-  if (all(table(gencaseendings)[, , 'Pl', 'Acc'] == table(gencaseendings)[, , 'Pl', 'Abl'])) {
+  if (checkSame(gencaseendings, case1 = 'Acc', num1 = 'Pl', case2 = 'Abl', num2 = 'Pl')) {
     accablpl <- accablpl + 1
     accablpl_same <- TRUE
   }
@@ -135,11 +194,11 @@ for (i in 1:length(files)) {
     nomaccablpl_same <- TRUE
   }
   
-  if (all(table(gencaseendings)[, , 'Sg', 'Gen'] == table(gencaseendings)[, , 'Sg', 'Dat'])) {
+  if (checkSame(gencaseendings, case1 = 'Gen', num1 = 'Sg', case2 = 'Dat', num2 = 'Sg')) {
     gendatsg <- gendatsg + 1
     gendatsg_same <- TRUE
   }
-  if (all(table(gencaseendings)[, , 'Pl', 'Gen'] == table(gencaseendings)[, , 'Pl', 'Dat'])) {
+  if (checkSame(gencaseendings, case1 = 'Gen', num1 = 'Pl', case2 = 'Dat', num2 = 'Pl')) {
     gendatpl <- gendatpl + 1
     gendatpl_same <- TRUE
   }
@@ -156,9 +215,12 @@ for (i in 1:length(files)) {
   }
 }
 
-
-
 tot_trials <- length(files)
+
+print(paste("Percentage of trials where all plurals end in /s/", pl_all_s/tot_trials))
+print(paste("Percentage of trials where Nom and Acc plurals end in /s/", pl_nomacc_s/tot_trials))
+print(paste("Percentage of trials where all plurals end in /s/", pl_all_mf_s/tot_trials))
+print(paste("Percentage of trials where Nom and Acc plurals end in /s/", pl_nomacc_mf_s/tot_trials))
 
 print(paste("Percentage of trials where Nom.Sg and Acc.Sg end up the same", nomaccsg/tot_trials))
 print(paste("Percentage of trials where Abl.Sg and Acc.Sg end up the same", accablsg/tot_trials))
@@ -186,6 +248,57 @@ print(paste("Percentage of trials where all forms end up the same", all_same/tot
 #   df <- read.delim(file)
 #   
 #   
+# }
+
+# file <- '../Main Code 7/TokenFreqOn/stats_NoSoundChange_Epochs3_Gens10_TokFreqT_Trial1.txt'
+# df <- read.delim(file, stringsAsFactors = FALSE)
+# df[df == 'mh'] <- 'm'
+# df[df == 'fh'] <- 'f'
+# df[df == 'mh, fh'] <- 'm'
+# df[df == 'm, f'] <- 'm'
+# df[df == ''] <- '-'
+# gencaseendings <- subset(df, select = c('X10', 'Gender', 'Num', 'Case'))
+# current_table <- table(gencaseendings)[ , , 'Pl', ]
+# # 
+# gencaseendings[gencaseendings$Case %in% c("Nom", "Acc"), ]
+# 
+# nomacc_only <- table(gencaseendings[gencaseendings$Case %in% c("Nom", "Acc"), ])
+# 
+# nomacc_only[ , , "Pl", ]
+# nomacc_suffixes <- apply(nomacc_only, 1, function(x) !all(x==0))
+# nomaccpl_suffixes <- names(nomacc_suffixes[nomacc_suffixes == TRUE])
+# names(nomacc_suffixes[nomacc_suffixes == TRUE])
+
+
+# current_table
+# 
+# all_suffixes <- apply(current_table, 1, function(x) !all(x==0))
+# 
+# current_suffixes <- names(all_suffixes[all_suffixes == TRUE])
+# 
+# all(str_sub(current_suffixes, -1) == "s")
+# 
+# current_table[apply(current_table, 1, function(x) !all(x==0)), , ]
+# 
+# new_table <- current_table[apply(current_table, 1, function(x) !all(x==0)), ]
+# 
+# max(new_table[ , 'f'])
+
+# IF NEED TO REWRITE
+# for (number in seq(1, 10)) {
+#   fileframe <- 'stats_NoSoundChange_Epochs3_Gens10_TokFreqT_Trial'
+#   file <- paste0('../Main Code 7/TokenFreqOn/', fileframe, number, '.txt')
+#   
+#   df <- read.delim(file)
+#   
+# #   df$CaseNum <- df$Case
+# #   df$Case <- substring(df$CaseNum, 1, 3)
+# #   df$Num <- substring(df$CaseNum, 5, 6)
+#   
+# #   df <- df[ , c(seq(1,3), 18, 4, 19, seq(5, 17))]
+#   colnames(df)[seq(9, 19)] <- seq(0, 10)
+#   
+#   write.table(df, sep = "\t", quote = FALSE, file = paste0(fileframe, number, '.txt'))
 # }
 
 ```

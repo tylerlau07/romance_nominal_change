@@ -14,7 +14,7 @@ import unicodecsv as csv
 # Our files
 import constants
 
-print "Beginning simulation"
+print "Beginning simulation %s" % constants.trial
 
 import objects
 import functions

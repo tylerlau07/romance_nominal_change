@@ -2,8 +2,6 @@
 # Author: Tyler Lau
 # Main Code 7
 
-print '''Beginning simulation'''
-
 # Standard Library Imports
 from math import ceil
 from math import log
@@ -15,6 +13,8 @@ import unicodecsv as csv
 
 # Our files
 import constants
+
+print '''Beginning simulation %s''' % constants.trial
 
 import objects
 import functions
