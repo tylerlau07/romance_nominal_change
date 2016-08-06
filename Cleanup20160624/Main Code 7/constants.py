@@ -19,16 +19,16 @@ corpus_file = "../Corpus Preparation/latin_corpus.txt"
 ##############
 
 # Trial number
-trial = 23
+trial = "10"
 
 # Generations to run simulation
 total_generations = 10
 
 # Make false to test with no token frequency
-token_freq = False
+token_freq = True
 
 # Number of times to introduce training set: P&VE uses 3, HareEllman uses 10
-epochs = 3
+epochs = 8
 
 # Case and number treated separately or together?
 casenum_sep = True
@@ -109,7 +109,10 @@ else:
 # MINIMAL FEATURES
 #   Arithmetic mean between 20 and 42 is 31
 #   Geometric mean between 20 and 42 is 28.98
-hidden_nodes = 30
+if vectors == "binary":
+    hidden_nodes = 30
+else:
+    hidden_nodes = 140
 
 ##########################
 # Coding the output file #

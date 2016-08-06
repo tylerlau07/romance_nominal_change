@@ -64,7 +64,7 @@ def conductGeneration(generation, corpus, previous_output):
 
         # Construct the training set
         print '''--------Generation %s--------''' % generation
-        print '''-----------Trial %d----------
+        print '''-----------Trial %s----------
         Training on %d Epochs
         Number of Input Nodes: %d
         Number of Hidden Nodes: %d
@@ -153,7 +153,10 @@ def conductGeneration(generation, corpus, previous_output):
 # Determine corpus size from this
 corpus_size = len(corpus)
 
-root_size = int(ceil(log(corpus_size, 2)))
+if constants.vectors == "binary":
+    root_size = int(ceil(log(corpus_size, 2)))
+else:
+    root_size = corpus_size
 
 # # Create suffix dictionary
 # if constants.vectors == 'binary':

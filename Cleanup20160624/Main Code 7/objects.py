@@ -128,7 +128,12 @@ class Case:
         '''Create the input tuple off the phonology, human value, declension, gender, case, number'''
         
         # Convert phonemes into binary features
-        self.rootbin = tuple(map(int, bin(self.parent.rootid)[2:].zfill(root_size)))
+        if constants.vectors == "binary":
+            self.rootbin = tuple(map(int, bin(self.parent.rootid)[2:].zfill(root_size)))
+        else:
+            self.rootbin = [0]*500
+            self.rootbin[self.parent.rootid] = 1
+            self.rootbin = tuple(self.rootbin)
         self.humanbin = constants.human_dict[self.parent.human]
         self.decbin = constants.dec_dict[self.parent.declension]
         self.genbin = constants.gen_dict[self.parent.gender]
