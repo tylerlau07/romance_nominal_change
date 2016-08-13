@@ -19,22 +19,43 @@ corpus_file = "../Corpus Preparation/latin_corpus.txt"
 ##############
 
 # Trial number
-trial = "10"
+trial = "50"
 
 # Generations to run simulation
 total_generations = 10
 
 # Make false to test with no token frequency
-token_freq = True
+token_freq = False
 
 # Number of times to introduce training set: P&VE uses 3, HareEllman uses 10
-epochs = 8
+epochs = 3
 
 # Case and number treated separately or together?
 casenum_sep = True
 
 # Binary or identity vectors
-vectors = 'binary'
+vectors = 'Binary'
+
+########################
+# Frequency Adjustment #
+########################
+
+# Adjust type frequencies depending on case and human/nonhuman
+
+# New case frequencies using Delatte et al 1981
+# TOTAL ACROSS PROSE AND POETRY
+case_raw = {
+    'Nom.Sg': 41617, 'Nom.Pl': 12738,
+    'Acc.Sg': 42709, 'Acc.Pl': 30327,
+    'Gen.Sg': 21639, 'Gen.Pl': 10467,
+    # 'Dat.Sg': 8222, 'Dat.Pl': 5056,
+    # 'Abl.Sg': 39345, 'Abl.Pl': 14440,
+    # 'Voc.Sg': 2243, 'Voc.Pl': 611
+}
+
+case_freqs = {key:float(value)/float(min(case_raw.values())) for key, value in case_raw.items()}
+
+ncases = len(case_freqs)/2
 
 #####################
 # Layer Information #
@@ -54,12 +75,12 @@ declensions = [str(i) for i in range(1, 6)]
 genders = ['m', 'f', 'n']
 
 if casenum_sep == True:
-    cases = ['Nom', 'Acc', 'Gen', 'Dat', 'Abl', 'Voc']
-    numbers = ['Sg', 'Pl']
+    cases = list(set(map(lambda x: x[:3], case_raw.keys())))
+    numbers = list(set(map(lambda x: x[4:], case_raw.keys())))
 else:
-    cases = ['Nom.Sg', 'Acc.Sg', 'Gen.Sg', 'Dat.Sg', 'Abl.Sg', 'Nom.Pl', 'Acc.Pl', 'Gen.Pl', 'Dat.Pl', 'Abl.Pl']
+    cases = case_raw.keys()
 
-if vectors == 'binary':
+if vectors == 'Binary':
     # Take log base 2 to figure out how many bits we need for each
     human_size = int(ceil(log(len(human), 2))) # 2
     dec_size = int(ceil(log(len(declensions), 2))) # 3
@@ -109,7 +130,7 @@ else:
 # MINIMAL FEATURES
 #   Arithmetic mean between 20 and 42 is 31
 #   Geometric mean between 20 and 42 is 28.98
-if vectors == "binary":
+if vectors == "Binary":
     hidden_nodes = 30
 else:
     hidden_nodes = 140
@@ -119,7 +140,7 @@ else:
 ##########################
 
 # Number of generations
-out_file = 'stats_NoSoundChange_Epochs%s_Gens%s' % (str(epochs), str(total_generations))
+out_file = 'stats_NoSoundChange_Cases%s_Epochs%s_Gens%s' % (str(ncases), str(epochs), str(total_generations))
 
 # Token Frequency?
 if token_freq == False:
@@ -132,40 +153,14 @@ else:
 # else:
 #     out_file += '_CaseNumSepF'
 # # Binary or Identity Vectors?
-# if vectors == 'binary':
-#     out_file += '_BinVec'
-# else:
-#     out_file += '_IdVec'
+if vectors == 'binary':
+    out_file += '_BinVec'
+else:
+    out_file += '_IdVec'
 
 
 # Number of epochs, number of hidden nodes, trial number
 out_file += '_Trial%s.txt' % str(trial)                   
-
-########################
-# Frequency Adjustment #
-########################
-
-# Adjust type frequencies depending on case and human/nonhuman
-
-# New case frequencies using Delatte et al 1981
-# # WITH VOCATIVE
-# case_freqs = {
-#     'Nom.Sg': 68.11, 'Nom.Pl': 20.85,
-#     'Acc.Sg': 69.90, 'Acc.Pl': 49.63,
-#     'Gen.Sg': 35.42, 'Gen.Pl': 17.13,
-#     'Dat.Sg': 13.46, 'Dat.Pl': 8.27,
-#     'Abl.Sg': 64.39, 'Abl.Pl': 23.63,
-#     'Voc.Sg': 3.67, 'Voc.Pl': 1
-# }
-
-# WITHOUT VOCATIVE
-case_freqs = {
-    'Nom.Sg': 8.23, 'Nom.Pl': 2.52,
-    'Acc.Sg': 8.45, 'Acc.Pl': 6.00,
-    'Gen.Sg': 4.28, 'Gen.Pl': 2.07,
-    'Dat.Sg': 1.63, 'Dat.Pl': 1,
-    'Abl.Sg': 7.78, 'Abl.Pl': 2.86
-}
 
 #############################################
 # Organize data to make it easier to handle #
@@ -174,53 +169,12 @@ case_freqs = {
 # Map phonemes to Chomsky and Halle values (1968) --> Hayes 2009:
 cns = son = cor = nas = cnt = voi = vow = hgh = low = frt = bck = (0.0, 1.0, -1.0)
 
-# phon_to_feat = {
-#     # "p": (cns[1],  son[-1], cor[-1], nas[-1], cnt[-1], voi[-1], vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]), 
-#     # "t": (cns[1],  son[-1], cor[1],  nas[-1], cnt[-1], voi[-1], vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
-#     # "k": (cns[1],  son[-1], cor[-1], nas[-1], cnt[-1], voi[-1], vow[-1], hgh[1],  low[-1], frt[0],  bck[0]), # rnd[-1]),
-#     "b": (cns[1],  son[-1], cor[-1], nas[-1], cnt[-1], voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]), # RELEVANT
-#     # "d": (cns[1],  son[-1], cor[1],  nas[-1], cnt[-1], voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
-#     # "g": (cns[1],  son[-1], cor[-1], nas[-1], cnt[-1], voi[1],  vow[-1], hgh[1],  low[-1], frt[0],  bck[0]), # rnd[-1]),
-#     # "f": (cns[1],  son[-1], cor[-1], nas[-1], cnt[1],  voi[-1], vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]), 
-#     # "v": (cns[1],  son[-1], cor[-1], nas[-1], cnt[1],  voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
-#     "s": (cns[1],  son[-1], cor[1],  nas[-1], cnt[1],  voi[-1], vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]), # RELEVANT
-#     # "z": (cns[1],  son[-1], cor[1],  nas[-1], cnt[1],  voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
-#     # "h": (cns[1],  son[-1], cor[-1], nas[-1], cnt[1],  voi[-1], vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
-#     "m": (cns[1],  son[1],  cor[-1], nas[1],  cnt[-1], voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]), # RELEVANT
-#     # "n": (cns[1],  son[1],  cor[1],  nas[1],  cnt[-1], voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
-#     # "N": (cns[1],  son[1],  cor[-1], nas[1],  cnt[-1], voi[1],  vow[-1], hgh[1],  low[-1], frt[0],  bck[0]), # rnd[-1]), # engma
-#     "r": (cns[1],  son[1],  cor[1],  nas[-1], cnt[1],  voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]), # RELEVANT
-#     # "l": (cns[1],  son[1],  cor[1],  nas[-1], cnt[1],  voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
-#     # "w": (cns[-1], son[1],  cor[-1], nas[-1], cnt[1],  voi[1],  vow[-1], hgh[1],  low[-1], frt[-1], bck[1]), # rnd[1]),
-#     # "j": (cns[-1], son[1],  cor[-1], nas[-1], cnt[1],  voi[1],  vow[-1], hgh[1],  low[-1], frt[1], bck[-1]), # rnd[-1]), # y
-#     "i": (cns[-1], son[1],  cor[-1], nas[-1], cnt[1],  voi[1],  vow[1],  hgh[1],  low[-1], frt[1], bck[-1]), # rnd[-1]), # RELEVANT
-#     "u": (cns[-1], son[1],  cor[-1], nas[-1], cnt[1],  voi[1],  vow[1],  hgh[1],  low[-1], frt[-1], bck[1]), # rnd[1]),  # RELEVANT
-#     "e": (cns[-1], son[1],  cor[-1], nas[-1], cnt[1],  voi[1],  vow[1],  hgh[-1], low[-1], frt[1], bck[-1]), # rnd[-1]), # RELEVANT
-#     "o": (cns[-1], son[1],  cor[-1], nas[-1], cnt[1],  voi[1],  vow[1],  hgh[-1], low[-1], frt[-1], bck[1]), # rnd[1]),  # RELEVANT
-#     "a": (cns[-1], son[1],  cor[-1], nas[-1], cnt[1],  voi[1],  vow[1],  hgh[-1], low[1],  frt[-1], bck[-1]), # rnd[-1]), # RELEVANT
-#     "-": (0.0,) * n_feat
-# }
-
 # MINIMALLY DISTINGUISHING FEATURES
 phon_to_feat = {
-    # "p": (cns[1],  son[-1], cor[-1], nas[-1], cnt[-1], voi[-1], vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]), 
-    # "t": (cns[1],  son[-1], cor[1],  nas[-1], cnt[-1], voi[-1], vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
-    # "k": (cns[1],  son[-1], cor[-1], nas[-1], cnt[-1], voi[-1], vow[-1], hgh[1],  low[-1], frt[0],  bck[0]), # rnd[-1]),
     "b": (son[-1], cnt[-1], hgh[0],  frt[0], low[0],  bck[0]), # rnd[-1]), # RELEVANT
-    # "d": (cns[1],  son[-1], cor[1],  nas[-1], cnt[-1], voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
-    # "g": (cns[1],  son[-1], cor[-1], nas[-1], cnt[-1], voi[1],  vow[-1], hgh[1],  low[-1], frt[0],  bck[0]), # rnd[-1]),
-    # "f": (cns[1],  son[-1], cor[-1], nas[-1], cnt[1],  voi[-1], vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]), 
-    # "v": (cns[1],  son[-1], cor[-1], nas[-1], cnt[1],  voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
     "s": (son[-1], cnt[1],  hgh[0],  frt[0], low[0],  bck[0]), # rnd[-1]), # RELEVANT
-    # "z": (cns[1],  son[-1], cor[1],  nas[-1], cnt[1],  voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
-    # "h": (cns[1],  son[-1], cor[-1], nas[-1], cnt[1],  voi[-1], vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
     "m": (son[1],  cnt[-1], hgh[0],  frt[0], low[0],  bck[0]), # rnd[-1]), # RELEVANT
-    # "n": (cns[1],  son[1],  cor[1],  nas[1],  cnt[-1], voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
-    # "N": (cns[1],  son[1],  cor[-1], nas[1],  cnt[-1], voi[1],  vow[-1], hgh[1],  low[-1], frt[0],  bck[0]), # rnd[-1]), # engma
     "r": (son[1],  cnt[1],  hgh[0],  frt[0], low[0],  bck[0]), # rnd[-1]), # RELEVANT
-    # "l": (cns[1],  son[1],  cor[1],  nas[-1], cnt[1],  voi[1],  vow[-1], hgh[0],  low[0],  frt[0],  bck[0]), # rnd[-1]),
-    # "w": (cns[-1], son[1],  cor[-1], nas[-1], cnt[1],  voi[1],  vow[-1], hgh[1],  low[-1], frt[-1], bck[1]), # rnd[1]),
-    # "j": (cns[-1], son[1],  cor[-1], nas[-1], cnt[1],  voi[1],  vow[-1], hgh[1],  low[-1], frt[1], bck[-1]), # rnd[-1]), # y
     "i": (son[0],  cnt[0],  hgh[1],  frt[1],  low[-1], bck[-1]), # rnd[-1]), # RELEVANT
     "u": (son[0],  cnt[0],  hgh[1],  frt[-1], low[-1], bck[1]), # rnd[1]),  # RELEVANT
     "e": (son[0],  cnt[0],  hgh[-1], frt[1],  low[-1], bck[-1]), # rnd[-1]), # RELEVANT

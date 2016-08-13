@@ -128,7 +128,7 @@ class Case:
         '''Create the input tuple off the phonology, human value, declension, gender, case, number'''
         
         # Convert phonemes into binary features
-        if constants.vectors == "binary":
+        if constants.vectors == 'Binary':
             self.rootbin = tuple(map(int, bin(self.parent.rootid)[2:].zfill(root_size)))
         else:
             self.rootbin = [0]*500
@@ -209,8 +209,8 @@ def readCorpus(f):
                 if suffix not in suffixes:
                     suffixes.append(suffix)
 
-                # Vocative too rare
-                if 'Voc' in case_dict['casenum']:
+                # Remove cases that are not in simulation
+                if case_dict['casenum'] not in constants.case_freqs.keys():
                     continue
 
                 # Create Case object and add

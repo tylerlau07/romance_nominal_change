@@ -63,9 +63,10 @@ def conductGeneration(generation, corpus, previous_output):
                         training_corpus.addByFreq(constants.token_freq, form, previous_output[form.lemmacase])
 
         # Construct the training set
-        print '''--------Generation %s--------''' % generation
-        print '''----------Trial %d-----------
+        print '''--------Generation %d--------''' % generation
+        print '''----------Trial %s-----------
         Training on %d Epochs
+        Vectors: %s
         Number of Input Nodes: %d
         Number of Hidden Nodes: %d
         Number of Output Nodes: %d
@@ -73,7 +74,8 @@ def conductGeneration(generation, corpus, previous_output):
         Language to Model: %s
         Secondary Sound Change (for Italian and Romanian) Implemented: %s\n''' % (
                 constants.trial,
-                constants.epochs, 
+                constants.epochs,
+                constants.vectors, 
                 input_nodes,
                 constants.hidden_nodes,
                 constants.output_nodes,
@@ -145,7 +147,9 @@ def conductGeneration(generation, corpus, previous_output):
                 print form.lemmacase, form.root+form.suffix, form.changed_suf, form.parent.declension, form.parent.gender, form.parent.totfreq, form.root+new_suf, new_suf
 
         print "Results have been determined"
-        print "Percentage correct in test run: %f" % round(float(ncorrect)/float(tot_phon)*100, 2)
+        try: 
+            print "Percentage correct in test run: %f" % round(float(ncorrect)/float(tot_phon)*100, 2)
+        except ZeroDivisionError: print "Percentage correct in test run: 0.00"
 
         return results
 

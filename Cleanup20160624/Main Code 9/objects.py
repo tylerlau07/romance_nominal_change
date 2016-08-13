@@ -204,8 +204,8 @@ def readCorpus(f):
                 if suffix not in suffixes:
                     suffixes.append(suffix)
 
-                # Vocative too rare
-                if 'Voc' in case_dict['casenum']:
+                # Remove cases that are not in simulation
+                if case_dict['casenum'] not in constants.case_freqs.keys():
                     continue
 
                 # Create Case object and add

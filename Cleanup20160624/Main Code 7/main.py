@@ -66,12 +66,14 @@ def conductGeneration(generation, corpus, previous_output):
         print '''--------Generation %s--------''' % generation
         print '''-----------Trial %s----------
         Training on %d Epochs
+        Vectors: %s
         Number of Input Nodes: %d
         Number of Hidden Nodes: %d
         Number of Output Nodes: %d
         Token Frequency taken into account: %s\n''' % (
                 constants.trial,
                 constants.epochs, 
+                constants.vectors,
                 input_nodes,
                 constants.hidden_nodes,
                 constants.output_nodes,
@@ -139,7 +141,9 @@ def conductGeneration(generation, corpus, previous_output):
                 print form.lemmacase, form.root+form.suffix, form.parent.declension, form.parent.gender, form.parent.totfreq, form.root+new_suf, new_suf
 
         print "Results have been determined"
-        print "Percentage correct in test run: %f" % round(float(ncorrect)/float(tot_phon)*100, 2)
+        try: 
+            print "Percentage correct in test run: %f" % round(float(ncorrect)/float(tot_phon)*100, 2)
+        except ZeroDivisionError: print "Percentage correct in test run: 0.00"
 
         return results
 
@@ -153,7 +157,7 @@ def conductGeneration(generation, corpus, previous_output):
 # Determine corpus size from this
 corpus_size = len(corpus)
 
-if constants.vectors == "binary":
+if constants.vectors == "Binary":
     root_size = int(ceil(log(corpus_size, 2)))
 else:
     root_size = corpus_size

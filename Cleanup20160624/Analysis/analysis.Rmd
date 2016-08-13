@@ -1,10 +1,10 @@
 ---
-title: "NoSoundChange"
+title: "Aggregate Data"
 author: "Tyler Lau"
 header-includes:
   - \DeclareUnicodeCharacter{0101}{\=a}
-  - \DeclareUnicodeCharacter{012B}{\=\i}
   - \DeclareUnicodeCharacter{0113}{\=e}
+  - \DeclareUnicodeCharacter{012B}{\=\i}
   - \DeclareUnicodeCharacter{014D}{\=o}
   - \DeclareUnicodeCharacter{016B}{\=u}
 date: "July 18, 2016"
@@ -14,49 +14,36 @@ output: pdf_document
 ```{r echo = FALSE, comment = NA}
 library(stringr)
 
-name <- "TokFreqT"
+# Parameters: Token Frequency and Number of Cases
+tokfreq <- "T"
+ncases <- "5"
 
-# setwd(paste0('../Main Code 9/Common', name))
-setwd(paste0('../Main Code 7/', name))
-
-print(paste0('No Sound Change, ', name))
-
-files = list.files(pattern = '\\.txt')
-
-global_genders <- c('m', 'f', 'n')
-global_declensions <- 1:5
-global_cases <- c('Nom', 'Acc', 'Gen', 'Dat', 'Abl')
-global_nums <- c('Sg', 'Pl')
+# Look only for most common suffix or for all suffixes below threshold?
+onlymax <- TRUE
+onlymax_same <- TRUE
 
 # IF APPLY SOUND CHANGE
 soundchange <- TRUE
-language <- 'common'
+language <- 'Common'
 
-# Initialize variables to count proportion of trials in which relevant mergers happen
-nomaccsg <- 0
-accablsg <- 0
-nomaccablsg <- 0
+# Number below which to drop
+above <- 10
 
-nomaccpl <- 0
-accablpl <- 0
-nomaccablpl <- 0
+# Now set directory
+# setwd(paste0('../Main Code 9/Cases', ncases, "/", language, "/TokFreq", tokfreq))
+setwd(paste0('../Main Code 7/Cases', ncases, "/TokFreq", tokfreq))
 
-gendatsg <- 0
-gendatpl <- 0
+print(paste0(language, ' Sound Change, Token Freq ', tokfreq))
+print(paste0("Only considering max suffixes: ", onlymax, ", Only considering max suffixes for same trend: ", onlymax_same))
+print(paste0("Dropping suffixes that appear ", above, " or less times" ))
 
-sg <- 0
-pl <- 0
+files = list.files(pattern = '\\.txt')
 
-sg_same <- 0
-pl_same <- 0
-
-all_same <- 0
-
-# Trends
-pl_all_s <- 0    # All plurals end in -s
-pl_nomacc_s <- 0 # Nom and Acc plurals end in -s
-pl_all_mf_s <- 0 # All plurals (excluding neuter) end in -s
-pl_nomacc_mf_s <- 0 # Nom and Acc plurals (excluding neuter) end in -s
+global_genders <- c('m', 'f', 'n', 'mf')
+global_decs <- 1:5
+global_cases <- c('Nom', 'Acc', 'Gen', 'Dat', 'Abl')
+global_casecombos <- c('Nom_Acc', 'Acc_Abl', 'Nom_Acc_Abl', 'Gen_Dat')
+global_nums <- c('Sg', 'Pl')
 
 #############
 # Functions #
@@ -64,7 +51,9 @@ pl_nomacc_mf_s <- 0 # Nom and Acc plurals (excluding neuter) end in -s
 
 # Remove rows with all 0's from frequency table
 # Take in df with suffixes
-remove_zeros <- function(input_table) return(input_table[apply(input_table, 1, function(x) !all(x < 5)), ])
+# remove_zeros <- function(input_table) return(input_table[apply(input_table, 1, function(x) !all(x < 5)) ])
+
+remove_zeros <- function(input_table, above) return(input_table[input_table > above])
 
 applySoundChange <- function(vector, language) {
   # Dictionaries of changes
@@ -77,118 +66,142 @@ applySoundChange <- function(vector, language) {
   lv_changes <- c('a', 'e', 'i', 'o', 'u')
   names(lv_changes) <- c('ā', 'ē', 'ī', 'ō', 'ū')
   
-  if (language == 'common') {
-    for (diph in names(diph_changes)) new_sufs <- sub(diph, diph_changes[diph], vector)
-    for (sv in names(sv_changes)) new_sufs <- sub(sv, sv_changes[sv], vector)
-    for (lv in names(lv_changes)) new_sufs <- sub(lv, lv_changes[lv], vector)
+  new_sufs <- vector
+  if (language == 'Common') {
+    for (diph in names(diph_changes)) new_sufs <- sub(diph, diph_changes[diph], new_sufs)
+    for (sv in names(sv_changes)) {
+      new_sufs <- sub(sv, sv_changes[sv], new_sufs)
+    }
+    for (lv in names(lv_changes)) new_sufs <- sub(lv, lv_changes[lv], new_sufs)
   }
   
   return(new_sufs)
 }
 
-# Show frequency count table by number and case
-freq_table <- function(input_table, trial) {
-  tables <- list()
-  print(paste('Trial', trial))
-    for (num in global_nums) {
-      for (case in global_cases) {
-        
-        freq_table <- data.frame(table(input_table)[ , , case, num])
-
-        # Now show the whole table
-        tables[[paste0(case, num)]] <- remove_zeros(freq_table)
-      }
-    }
-  return(tables)
-}
-
-# Check if plurals end in s
-# Need to give cases as a vector
-getPlSuf <- function(df, cases, genders) {
-  
-  # Isolate necessary cases
-  casegender_df <- df[df$Case %in% cases & df$Gender %in% genders, ]
-  pl_table <- table(casegender_df)[ , , , 'Pl']
-
-  # Isolate suffixes that are only used in the plural  
-  all_suf <- c()
-  for (case in cases) {
-    current_suf <- remove_zeros(data.frame(pl_table[ , , case ]))
-    
-    all_suf <- c(all_suf, rownames(current_suf))
-  }
-  
-  pl_suf <- unique(all_suf)
-  return(pl_suf)
-}
-table(sub_d)[ , , "f", "Nom", "Sg"]
-# Check endings for specific declension, case, number combo
-decEndings <- function(df, decs, genders, cases, nums) {
-  all_suf <- c()
-  
-  if (missing(genders)) {
-    for (dec in decs) {
-      for (case in cases) {
-        for (num in nums) {
-          current_suf <- remove_zeros(data.frame(table(df)[ , dec, , case, num]))
-          
-          all_suf <- c(all_suf, rownames(current_suf))
-        }
-      }
-    }
-  }
-  
-  else if (missing(decs)) {
-    for (gen in genders) {
-      for (case in cases) {
-        for (num in nums) {
-          current_suf <- remove_zeros(data.frame(table(df)[ , , gen, case, num]))
-          
-          all_suf <- c(all_suf, rownames(current_suf))
-        }
-      }
-    }
-  }
-  
-  all_suf <- unique(all_suf)
-  return(all_suf)
-}
-
 # This function gets endings of a particular combination
 # Take in specific combination and also the threshold for inclusion is (count above which must exist)
-getEndings <- function(df, gender, dec, case, num, above) {
-  sub_df <- subset(df, select = c("Suffix", "Gender", "Declension", "Case", "Num"))
-  all_endings <- table(sub_df)[ , gender, dec, case, num]
-  return(names(all_endings[all_endings > above]))
+# If onlyendings is FALSE, return the frequency table
+getEndings <- function(df, gender, dec, case, num, above = 0, onlyendings = TRUE) {
+  # Only gender
+  if (missing(dec) & missing(case) & missing(num)) {
+    sub_df <- subset(df, select = c("Suffix", "Gender"))
+    all_endings <- table(sub_df)[ , gender]
+  }
+  if (missing(case) & missing(gender) & missing(num)) {
+    sub_df <- subset(df, select = c("Suffix", "Declension"))
+    all_endings <- table(sub_df)[ , dec]
+  }
+  # Only number
+  if (missing(gender) & missing(dec) & missing(case)) {
+    sub_df <- subset(df, select = c("Suffix", "Num"))
+    all_endings <- table(sub_df)[ , num]
+  }
+  # Only number and gender
+  else if (missing(dec) & missing(case)) {
+    sub_df <- subset(df, select = c("Suffix", "Gender", "Num"))
+    all_endings <- table(sub_df)[ , gender, num]
+  }
+  # Only number and declension
+  else if (missing(gender) & missing(case)) {
+    sub_df <- subset(df, select = c("Suffix", "Declension", "Num"))
+    all_endings <- table(sub_df)[ , dec, num]
+  }
+  # Only number and case
+  else if (missing(gender) & missing(dec)) {
+    sub_df <- subset(df, select = c("Suffix", "Case", "Num"))
+    all_endings <- table(sub_df)[ , case, num]
+  }  
+  # Number, gender, and case
+  else if (missing(dec)) {
+    sub_df <- subset(df, select = c("Suffix", "Gender", "Case", "Num"))
+    all_endings <- table(sub_df)[ , gender, case, num]
+  }  
+  # Number, declension, and case
+  else if (missing(gender)) {
+    sub_df <- subset(df, select = c("Suffix", "Declension", "Case", "Num"))
+    all_endings <- table(sub_df)[ , dec, case, num]
+  }
+  # All 4
+  else {
+    sub_df <- subset(df, select = c("Suffix", "Gender", "Declension", "Case", "Num"))
+    all_endings <- table(sub_df)[ , gender, dec, case, num]
+  }
+  if (onlyendings == TRUE) {
+    return(names(all_endings[all_endings > above]))
+  }
+  else {return(all_endings)}
 }
 
+# Return the most common suffix
+maxSuf <- function(freqtable) return(names(which.max(freqtable)))
+
 # Check if certain combinations end up the same
-# Take in vector of cases/numbers/genders and determine if combo is same or not
+# Take in list of endings to compare
 # Returns truth value
-checkSame <- function(df, gen1, num1, case1, gen2, num2, case2) {
-  if (missing(gen1)) return(setequal(rownames(remove_zeros(data.frame(table(gencaseendings)[, , case1, num1]))), rownames(remove_zeros(data.frame(table(gencaseendings)[, , case2, num2]))))) 
-  else return(setequal(rownames(remove_zeros(data.frame(table(gencaseendings)[, gen1, case1, num1]))) == rownames(remove_zeros(data.frame(table(gencaseendings)[, gen2, case2, num2])))))
+checkSame <- function(endings) {
+  return(all(sapply(endings[-length(endings)], FUN = identical, unlist(endings[length(endings)]))))
 }
 
 ########
 # MAIN #
 ########
 
-nomaccpl_suf_systems <- c()
-nomaccpl_mf_suf_systems <- c()
-
-# To collect endings
+# Initialize vectors to collect endings
 for (num in global_nums) {
-  assign(paste(num, systems, sep = "_"), c())
-  for (dec in c('I', 'II', 'III', 'IV', 'V')) {
-    assign(paste(dec, num, systems, sep = "_"), c())
-    assign(paste(dec, num, "nomacc", systems, sep = "_"), c())
+  # Number + Case
+  for (combo in global_casecombos) {
+    assign(paste(combo, num, 'systems', sep = '_'), c())
+  }
+  # Only by number
+  assign(paste(num, 'systems', sep = "_"), c())
+  # Number for Nom/Acc
+  assign(paste('NomAcc', num, 'systems', sep = '_'), c())
+  for (dec in global_decs) {
+    # Number + Declension
+    assign(paste(num, dec, 'systems', sep = "_"), c())
+    for (combo in global_casecombos) {
+      assign(paste(combo, num, dec, 'systems', sep = "_"), c())
+    }
   }
   for (gender in global_genders) {
-    assign(paste(gender, num, systems, sep = "_"), c())
-    assign(paste(gender, num, "nomacc", systems, sep = "_"), c())
+    # Number + Gender
+    assign(paste(num, gender, 'systems', sep = "_"), c())
+    for (combo in global_casecombos) {
+      assign(paste(combo, num, gender, 'systems', sep = "_"), c())
+    }
   }
 }
+
+# Initialize variables to count proportion of trials in which relevant mergers happen
+compare <- c()
+
+for (num in global_nums) {
+  # All cases in number
+  compare <- c(compare, paste(num, 'same', sep = '_'))
+  for (combo in global_casecombos) {
+    compare <- c(compare, paste(combo, num, 'same', sep = '_'))
+    for (dec in global_decs) {
+      compare <- c(compare, paste(combo, num, dec, 'same', sep = '_'))
+    }
+  }
+  for (gen1 in c('m', 'f', 'n')) {
+    compare <- c(compare, paste(gen1, num, 'same', sep = '_'))
+    for (gen2 in c('m', 'f', 'n')) {
+      for (num2 in global_nums) {
+        compare <- c(compare, paste(gen1, num, gen2, num2, 'same', sep = '_'))
+      }
+    }
+  }
+}
+
+compare <- c(compare, 'm_n_same', 'Dec_24_same', 'All_same')
+
+same_counts <- as.list(rep(0, length(compare)))
+names(same_counts) <- compare
+
+########################
+# Now go through files #
+########################
 
 for (i in 1:length(files)) {
   file = files[i]
@@ -219,228 +232,184 @@ for (i in 1:length(files)) {
   
   df[df == ''] <- '-'
   
-  # Modify gencaseendings files
-  gencaseendings <- subset(df, select = c('X10', 'Gender', 'Case', 'Num'))
-  names(gencaseendings)[1] <- 'Suffix'
+  if (onlymax == TRUE) {to_assign <- c("maxSuf(getEndings(onlyendings = FALSE, ", ")")
+  } else {to_assign <- c("getEndings(onlyendings = TRUE, ", "")}
   
-  gencaseendings[gencaseendings == 'mh'] <- 'm'
-  gencaseendings[gencaseendings == 'fh'] <- 'f'
-  gencaseendings[gencaseendings == 'mh, fh'] <- 'm'
-  gencaseendings[gencaseendings == 'm, f'] <- 'm'
-  
-  if (soundchange == TRUE) gencaseendings <- applySoundChange(gencaseendings, language)
-  
-  gencaseendings[gencaseendings == ''] <- '-'
+  # To collect endings
+  for (num in global_nums) {
+    ### ONLY BY NUMBER ###
+    assign(paste(num, 'systems', sep = "_"), c(eval(parse(text = paste(num, 'systems', sep = '_'))), paste(eval(parse(text = paste(to_assign, collapse = 'df = df, num = num, above = above)'))), collapse = ",")))
+    # Number + Case Combo
+    for (combo in global_casecombos) {
+      case_endings <- c()
+      for (case in unlist(strsplit(combo, split = '_'))) {
+        case_endings <- c(case_endings, eval(parse(text = paste(to_assign, collapse = 'df = df, num = num, case = case, above = above)'))))
+      }
+      assign(paste(combo, num, 'systems', sep = '_'), c(eval(parse(text = paste(combo, num, 'systems', sep = '_'))), paste(unique(case_endings), collapse = ",")))
+    }
 
-  print(freq_table(gencaseendings, i))
-  
-  # Collect all systems
-  # Modify above variable as necessary
-  for (gender in global_genders) {
-    for (dec in global_declensions) {
-      for (case in global_cases) {
-        for (num in global_nums) {
-          assign(paste0(gender, dec, case, num, "_endings"), getEndings(df, gender, dec, case, num, 0))
+    ### BY DECLENSION ###
+    for (dec in global_decs) {
+      # Number + Declension
+      assign(paste(num, dec, 'systems', sep = "_"), c(eval(parse(text = paste(num, dec, 'systems', sep = '_'))), paste(eval(parse(text = paste(to_assign, collapse = 'df = df, dec = dec, num = num, above = above)'))), collapse = ",")))
+      # Number + Declension + Case Combo
+      for (combo in global_casecombos) {
+        case_endings <- c()
+        for (case in unlist(strsplit(combo, split = '_'))) {
+          case_endings <- c(case_endings, eval(parse(text = paste(to_assign, collapse = 'df = df, num = num, dec = dec, case = case, above = above)'))))
         }
+        assign(paste(combo, num, dec, 'systems', sep = '_'), c(eval(parse(text = paste(combo, num, dec, 'systems', sep = '_'))), paste(unique(case_endings), collapse = ",")))
+      }
+    }
+    
+    #### BY GENDER ####
+    for (gender in global_genders) {
+      # Exception for 'mf'
+      if (gender == 'mf') {
+        gender_endings <- c()
+        for (sing_gender in c('m', 'f')) {
+          gender_endings <- c(gender_endings, eval(parse(text = paste(to_assign, collapse = 'df = df, num = num, gender = sing_gender, above = above)'))))
+        }
+        assign(paste(num, gender, 'systems', sep = '_'), c(eval(parse(text = paste(num, gender, 'systems', sep = '_'))), paste(unique(gender_endings), collapse = ',')))
+      }
+      # Number + Gender
+      else { assign(paste(num, gender, 'systems', sep = "_"), c(eval(parse(text = paste(num, gender, 'systems', sep = '_'))), paste(eval(parse(text = paste(to_assign, collapse = 'df = df, gender = gender, num = num, above = above)'))), collapse = ","))) }
+      # Number + Gender + Case Combo
+      for (combo in global_casecombos) {
+        case_endings <- c()
+        for (case in unlist(strsplit(combo, split = '_'))) {
+          # Exception for mf gender
+          if (gender == 'mf') {
+            for (sing_gender in c('m', 'f')) {
+              case_endings <- c(case_endings, eval(parse(text = paste(to_assign, collapse = 'df = df, num = num, gender = sing_gender, case = case, above = above)'))))
+            }
+          }
+          else { case_endings <- c(case_endings, eval(parse(text = paste(to_assign, collapse = 'df = df, num = num, gender = gender, case = case, above = above)')))) }
+        }
+        assign(paste(combo, num, gender, 'systems', sep = '_'), c(eval(parse(text = paste(combo, num, gender, 'systems', sep = '_'))), paste(unique(case_endings), collapse = ",")))
       }
     }
   }
   
-  # Collect plural suffix systems
-  nomaccpl_suf_systems <- c(nomaccpl_suf_systems, paste(sort(getPlSuf(gencaseendings, c("Nom", "Acc"), global_genders)), collapse = ", "))
+  # Now determine which ending sets ended up the same
+  if (onlymax_same == TRUE) {to_assign <- c("maxSuf(getEndings(onlyendings = FALSE, ", ")")
+  } else {to_assign <- c("getEndings(onlyendings = TRUE, ", "")}
   
-  nomaccpl_mf_suf_systems <- c(nomaccpl_mf_suf_systems, paste(sort(getPlSuf(gencaseendings, c("Nom", "Acc"), c("m", "f"))), collapse = ", "))
-  
-  # Collect declension systems
+  for (dec in global_decs) {
+    assign(paste0('Dec', dec), eval(parse(text = paste(to_assign, collapse = 'df = df, dec = dec, above = above)'))))
+  }
   for (num in global_nums) {
-    assign(paste(num, systems, sep = "_"), c(eval(parse(text = paste(num, systems, sep = "_"))), paste(sort(decEndings(endings, decs = )))))
-    for (dec in c('I', 'II', 'III', 'IV', 'V')) {
-      assign(paste(dec, num, systems, sep = "_"), c())
-      assign(paste(dec, num, "nomacc", systems, sep = "_"), c())
+    assign(paste0(num), eval(parse(text = paste(to_assign, collapse = 'df = df, num = num, above = above)'))))
+    for (gender in c('m', 'f', 'n')) {
+      assign(gender, eval(parse(text = paste(to_assign, collapse = 'df = df, gender = gender, above = above)'))))
+      assign(paste0(gender, num), eval(parse(text = paste(to_assign, collapse = 'df = df, num = num, gender = gender, above = above)'))))
+      for (case in global_cases) {
+        assign(paste0(gender, case, num), eval(parse(text = paste(to_assign, collapse = 'df = df, num = num, case = case, gender = gender, above = above)'))))
+      }
     }
-    for (gender in global_genders) {
-      assign(paste(gender, num, systems, sep = "_"), c())
-      assign(paste(gender, num, "nomacc", systems, sep = "_"), c())
+    for (case in global_cases) {
+      assign(paste0(case, num), eval(parse(text = paste(to_assign, collapse = 'df = df, num = num, case = case, above = above)'))))
+      for (dec in global_decs) {
+        assign(paste0(case, num, dec), eval(parse(text = paste(to_assign, collapse = 'df = df, num = num, case = case, dec = dec, above = above)'))))
+      }
     }
   }
+  
+  # Check which combos are the same
+  if (checkSame(list(NomSg, AccSg))) same_counts$Nom_Acc_Sg_same <- same_counts$Nom_Acc_Sg_same + 1
+  if (checkSame(list(AccSg, AblSg))) same_counts$Acc_Abl_Sg_same <- same_counts$Acc_Abl_Sg_same + 1
+  if (checkSame(list(NomSg, AccSg, AblSg))) same_counts$Nom_Acc_Abl_Sg_same <- same_counts$Nom_Acc_Abl_Sg_same + 1
+  if (checkSame(list(NomPl, AccPl))) same_counts$Nom_Acc_Pl_same <- same_counts$Nom_Acc_Pl_same + 1
+  if (checkSame(list(AccPl, AblPl))) same_counts$Acc_Abl_Pl_same <- same_counts$Acc_Abl_Pl_same + 1
+  if (checkSame(list(NomPl, AccPl, AblPl))) same_counts$Nom_Acc_Abl_Pl_same <- same_counts$Nom_Acc_Abl_Pl_same + 1
+  if (checkSame(list(GenSg, DatSg))) same_counts$Gen_Dat_Sg_same <- same_counts$Gen_Dat_Sg_same + 1
+  if (checkSame(list(GenPl, DatPl))) same_counts$Gen_Dat_Pl_same <- same_counts$Gen_Dat_Pl_same + 1
+  
+  if (checkSame(list(mSg, nSg)))
+same_counts$m_Sg_n_Sg_same <- same_counts$m_Sg_n_Sg_same + 1
+  if (checkSame(list(mPl, nPl)))
+same_counts$m_Pl_n_Pl_same <- same_counts$m_Pl_n_Pl_same + 1
+  if (checkSame(list(mSg, nSg)) & checkSame(list(mPl, nPl))) same_counts$m_n_same <- same_counts$m_n_same + 1
+  if (checkSame(list(nPl, fSg))) same_counts$n_Pl_f_Sg_same <- same_counts$n_Pl_f_Sg_same + 1
+  if (checkSame(list(nPl, fPl))) same_counts$n_Pl_f_Pl_same <- same_counts$n_Pl_f_Pl_same + 1
+  if (checkSame(list(mPl, fPl))) same_counts$m_Pl_f_Pl_same <- same_counts$m_Pl_f_Pl_same + 1
+  
+  if (checkSame(list(Dec2, Dec4))) same_counts$Dec_24_same <- same_counts$Dec_24_same + 1
+  
+  if (checkSame(list(NomSg, AccSg, AblSg, DatSg, GenSg))) same_counts$Sg_same <- same_counts$Sg_same + 1
+  if (checkSame(list(NomPl, AccPl, AblPl, DatPl, GenPl))) same_counts$Pl_same <- same_counts$Pl_same + 1
+  if (checkSame(list(NomSg, AccSg, AblSg, DatSg, GenSg)) & checkSame(list(NomPl, AccPl, AblPl, DatPl, GenPl))) same_counts$All_same <- same_counts$All_same + 1
+  
+}
 
-  I_sg_systems <- c(I_sg_systems, paste(sort(decEndings(endings, decs = 1, cases = global_cases, nums = "Sg")), collapse = ","))
-  II_sg_systems <- c(II_sg_systems, paste(sort(decEndings(endings, decs = 2, cases = global_cases, nums = "Sg")), collapse = ","))
-  III_sg_systems <- c(III_sg_systems, paste(sort(decEndings(endings, decs = 3, cases = global_cases, nums = "Sg")), collapse = ","))
-  IV_sg_systems <- c(IV_sg_systems, paste(sort(decEndings(endings, decs = 4, cases = global_cases, nums = "Sg")), collapse = ","))
-  V_sg_systems <- c(V_sg_systems, paste(sort(decEndings(endings, decs = 5, cases = global_cases, nums = "Sg")), collapse = ","))
+# Need negative for Sg
+to_search <- c("a(,|$)", "o(,|$)", "[e-](,|$)", "o(,|$)", "e(,|$)",
+               "s(,|$)", "s(,|$)", "s(,|$)", "s(,|$)", "s(,|$)",
+               "s(,|$)", "s(,|$)",
+               "[oe-](,|$)", "[ae-](,|$)", "[aoe-](,|$)", "[oe-](,|$)", 
+               "s(,|$)", "s(,|$)", "s(,|$)", "a(,|$)")
 
-  I_pl_systems <- c(I_pl_systems, paste(sort(decEndings(endings, decs = 1, cases = global_cases, nums = "Pl")), collapse = ","))
-  II_pl_systems <- c(II_pl_systems, paste(sort(decEndings(endings, decs = 2, cases = global_cases, nums = "Pl")), collapse = ","))
-  III_pl_systems <- c(III_pl_systems, paste(sort(decEndings(endings, decs = 3, cases = global_cases, nums = "Pl")), collapse = ","))
-  IV_pl_systems <- c(IV_pl_systems, paste(sort(decEndings(endings, decs = 4, cases = global_cases, nums = "Pl")), collapse = ","))
-  V_pl_systems <- c(V_pl_systems, paste(sort(decEndings(endings, decs = 5, cases = global_cases, nums = "Pl")), collapse = ","))
-  
-  N_pl_systems <- c(N_pl_systems, paste(sort(decEndings(endings, genders = "n", cases = global_cases, nums = "Pl")), collapse = ","))
-  
-  I_sg_systems <- c(I_sg_systems, paste(sort(decEndings(endings, decs = 1, cases = global_cases, nums = "Sg")), collapse = ","))
-  II_sg_systems <- c(II_sg_systems, paste(sort(decEndings(endings, decs = 2, cases = global_cases, nums = "Sg")), collapse = ","))
-  III_sg_systems <- c(III_sg_systems, paste(sort(decEndings(endings, decs = 3, cases = global_cases, nums = "Sg")), collapse = ","))
-  IV_sg_systems <- c(IV_sg_systems, paste(sort(decEndings(endings, decs = 4, cases = global_cases, nums = "Sg")), collapse = ","))
-  V_sg_systems <- c(V_sg_systems, paste(sort(decEndings(endings, decs = 5, cases = global_cases, nums = "Sg")), collapse = ","))
+names(to_search) <- c("Sg1", "Sg2", "Sg3", "Sg4", "Sg5",
+                      "Pl1", "Pl2", "Pl3", "Pl4", "Pl5",
+                      "Sg", "Pl", 
+                      "Sgm", "Sgf", "Sgmf", "Sgn",
+                      "Plm", "Plf", "Plmf", "Pln")
 
-  I_pl_systems <- c(I_pl_systems, paste(sort(decEndings(endings, decs = 1, cases = global_cases, nums = "Pl")), collapse = ","))
-  II_pl_systems <- c(II_pl_systems, paste(sort(decEndings(endings, decs = 2, cases = global_cases, nums = "Pl")), collapse = ","))
-  III_pl_systems <- c(III_pl_systems, paste(sort(decEndings(endings, decs = 3, cases = global_cases, nums = "Pl")), collapse = ","))
-  IV_pl_systems <- c(IV_pl_systems, paste(sort(decEndings(endings, decs = 4, cases = global_cases, nums = "Pl")), collapse = ","))
-  V_pl_systems <- c(V_pl_systems, paste(sort(decEndings(endings, decs = 5, cases = global_cases, nums = "Pl")), collapse = ","))
+for (num in global_nums) {
+  ### ONLY NUMBERS ###
+  print(paste(num, "systems", sep = "_"))
+  proportions <- sort(prop.table(table(eval(parse(text = paste(num, "systems", sep = "_"))))), decreasing = TRUE)
+  print(proportions)
+  # If singular, look for systems without s
+  s <- ifelse(num == "Sg", "without", "with")
+  expr <- "grepl(to_search[num], names(proportions))"
+  if (num == "Sg") expr <- paste0("!", expr)
+  print(paste0("Proportion of ", num, " systems ", s, " s ending: ", sum(proportions[eval(parse(text = expr))])))
   
-  N_pl_systems <- c(N_pl_systems, paste(sort(decEndings(endings, genders = "n", cases = global_cases, nums = "Pl")), collapse = ","))
-  
-  # Now let's see how well the results approximate Romance
-  # First, which plurals end in "s"
-  allpl_suf <- getPlSuf(gencaseendings, global_cases, global_genders)
-  if (all(str_sub(allpl_suf, -1) == "s")) pl_all_s <- pl_all_s + 1
-  
-  nomaccpl_suf <- getPlSuf(gencaseendings, c('Nom', 'Acc'), global_genders)
-  if (all(str_sub(nomaccpl_suf, -1) == "s")) pl_nomacc_s <- pl_nomacc_s + 1
-  
-  allpl_mf_suf <- getPlSuf(gencaseendings, global_cases, c('m', 'f'))
-  if (all(str_sub(allpl_mf_suf, -1) == "s")) pl_all_mf_s <- pl_all_mf_s + 1
-
-  nomaccpl_mf_suf <- getPlSuf(gencaseendings, c('Nom', 'Acc'), c('m', 'f'))
-  if (all(str_sub(nomaccpl_mf_suf, -1) == "s")) pl_nomacc_mf_s <- pl_nomacc_mf_s + 1
-  
-  # Check where mergers happen--nom, acc, abl ; gen, dat
-  if (checkSame(gencaseendings, case1 = 'Nom', num1 = 'Sg', case2 = 'Acc', num2 = 'Sg')) {
-    nomaccsg <- nomaccsg + 1
-    nomaccsg_same <- TRUE
+  # Now number + case combo
+  for (combo in global_casecombos) {
+    sort(prop.table(table(eval(parse(text = paste(combo, num, "systems", sep = "_"))))))
+    print(paste(combo, num, "systems", sep = "_"))
+    proportions <- sort(prop.table(table(eval(parse(text = paste(combo, num, "systems", sep = "_"))))), decreasing = TRUE)
+    print(proportions)
+    print(paste0("Proportion of ", combo, num, " systems ", s, " s ending: ", sum(proportions[eval(parse(text = expr))])))
   }
-  if (checkSame(gencaseendings, case1 = 'Acc', num1 = 'Sg', case2 = 'Abl', num2 = 'Sg')) {
-    accablsg <- accablsg + 1
-    accablsg_same <- TRUE
+    
+  # Declension number combos
+  for (dec in global_decs) {
+    print(paste(num, dec, "systems", sep = "_"))
+    proportions <- sort(prop.table(table(eval(parse(text = paste(num, dec, "systems", sep = "_"))))), decreasing = TRUE)
+    print(proportions)
+    print(paste0("Proportion of ", num, dec, " systems with ", str_replace_all(to_search[paste0(num, dec)], "[^[:alnum:]]", ""), " ending: ", sum(proportions[grepl(to_search[paste0(num, dec)], names(proportions))])))
+    
+    # Now declension + number + case combos
+    for (combo in global_casecombos) {
+      print(paste(combo, num, dec, "systems", sep = "_"))
+      proportions <- sort(prop.table(table(eval(parse(text = paste(combo, num, dec, "systems", sep = "_"))))), decreasing = TRUE)
+      print(proportions)
+      print(paste0("Proportion of ", combo, num, dec, " systems with ", str_replace_all(to_search[paste0(num, dec)], "[^[:alnum:]]", ""), " ending: ", sum(proportions[grepl(to_search[paste0(num, dec)], names(proportions))])))
+    }
   }
-  if (nomaccsg_same & accablsg_same) {
-    nomaccablsg <- nomaccablsg + 1
-    nomaccablsg_same <- TRUE
-  }
-  
-  if (checkSame(gencaseendings, case1 = 'Nom', num1 = 'Pl', case2 = 'Acc', num2 = 'Pl')) {
-    nomaccpl <- nomaccpl + 1
-    nomaccpl_same <- TRUE
-  }
-  if (checkSame(gencaseendings, case1 = 'Acc', num1 = 'Pl', case2 = 'Abl', num2 = 'Pl')) {
-    accablpl <- accablpl + 1
-    accablpl_same <- TRUE
-  }
-  if (nomaccpl_same & accablpl_same) {
-    nomaccablpl <- nomaccablpl + 1
-    nomaccablpl_same <- TRUE
-  }
-  
-  if (checkSame(gencaseendings, case1 = 'Gen', num1 = 'Sg', case2 = 'Dat', num2 = 'Sg')) {
-    gendatsg <- gendatsg + 1
-    gendatsg_same <- TRUE
-  }
-  if (checkSame(gencaseendings, case1 = 'Gen', num1 = 'Pl', case2 = 'Dat', num2 = 'Pl')) {
-    gendatpl <- gendatpl + 1
-    gendatpl_same <- TRUE
-  }
-  
-  if (all(table(gencaseendings)[, , , 'Sg'])) {
-    sg <- sg + 1
-  }
-  if (all(table(gencaseendings)[, , , 'Pl'])) {
-    pl <- pl + 1
-  }
-  
-  if (all(table(gencaseendings))) {
-    all_same <- all_same + 1
+      
+  # Gender number combos
+  for (gender in global_genders) {
+    print(paste(num, gender, "systems", sep = "_"))
+    proportions <- sort(prop.table(table(eval(parse(text = paste(num, gender, "systems", sep = "_"))))), decreasing = TRUE)
+    print(proportions)
+    print(paste0("Proportion of ", num, gender, " systems with ", str_replace_all(to_search[paste0(num, gender)], "[^[:alnum:]]", ""), " ending: ", sum(proportions[grepl(to_search[paste0(num, gender)], names(proportions))])))
+    
+    # Now gender + number + case combos
+    for (combo in global_casecombos) {
+      print(paste(combo, num, gender, "systems", sep = "_"))
+      proportions <- sort(prop.table(table(eval(parse(text = paste(combo, num, gender, "systems", sep = "_"))))), decreasing = TRUE)
+      print(proportions)
+      print(paste0("Proportion of ", combo, num, gender, " systems with ", str_replace_all(to_search[paste0(num, gender)], "[^[:alnum:]]", ""), " ending: ", sum(proportions[grepl(to_search[paste0(num, gender)], names(proportions))])))
+    }
   }
 }
 
-tot_trials <- length(files)
-
-print(paste("Percentage of trials where all plurals end in /s/", pl_all_s/tot_trials*100, "%"))
-print(paste("Percentage of trials where Nom and Acc plurals end in /s/", pl_nomacc_s/tot_trials*100, "%"))
-print(paste("Percentage of trials where all masculine/feminine plurals end in /s/", pl_all_mf_s/tot_trials*100, "%"))
-print(paste("Percentage of trials where masculine/feminine Nom and Acc plurals end in /s/", pl_nomacc_mf_s/tot_trials*100, "%"))
-
-print(paste("Percentage of trials where Nom.Sg and Acc.Sg end up the same", nomaccsg/tot_trials*100, "%"))
-print(paste("Percentage of trials where Abl.Sg and Acc.Sg end up the same", accablsg/tot_trials*100, "%"))
-print(paste("Percentage of trials where Nom.Sg, Acc.Sg, and Abl.Sg end up the same", nomaccablsg/tot_trials*100, "%"))
-
-print(paste("Percentage of trials where Nom.Pl and Acc.Pl end up the same", nomaccpl/tot_trials*100, "%"))
-print(paste("Percentage of trials where Abl.Pl and Acc.Pl end up the same", accablpl/tot_trials*100, "%"))
-print(paste("Percentage of trials where Nom.Pl, Acc.Pl, and Abl.Pl end up the same", nomaccablpl/tot_trials*100, "%"))
-
-print(paste("Percentage of trials where Gen.Sg and Dat.Sg end up the same", gendatsg/tot_trials*100, "%"))
-print(paste("Percentage of trials where Gen.Pl and Dat.Pl end up the same", gendatpl/tot_trials*100, "%"))
-
-print(paste("Percentage of trials where all singulars end up the same", sg/tot_trials*100, "%"))
-print(paste("Percentage of trials where all plurals end up the same", pl/tot_trials*100, "%"))
-
-print(paste("Percentage of trials where all forms end up the same", all_same/tot_trials*100, "%"))
-
-print("I.SG Systems")
-print(prop.table(sort(table(I_sg_systems), decreasing = TRUE)))
-print("II.SG Systems")
-print(prop.table(sort(table(II_sg_systems), decreasing = TRUE)))
-print("III.SG Systems")
-print(prop.table(sort(table(III_sg_systems), decreasing = TRUE)))
-print("IV.SG Systems")
-print(prop.table(sort(table(IV_sg_systems), decreasing = TRUE)))
-print("V.SG Systems")
-print(prop.table(sort(table(V_sg_systems), decreasing = TRUE)))
-
-print("I.PL Systems")
-print(prop.table(sort(table(I_pl_systems), decreasing = TRUE)))
-print("II.PL Systems")
-print(prop.table(sort(table(II_pl_systems), decreasing = TRUE)))
-print("III.PL Systems")
-print(prop.table(sort(table(III_pl_systems), decreasing = TRUE)))
-print("IV.PL Systems")
-print(prop.table(sort(table(IV_pl_systems), decreasing = TRUE)))
-print("V.PL Systems")
-print(prop.table(sort(table(V_pl_systems), decreasing = TRUE)))
-
-print("N.PL Systems")
-print(prop.table(sort(table(N_pl_systems), decreasing = TRUE)))
-
-# print(table(nomaccpl_suf_systems))
-# print(table(nomaccpl_mf_suf_systems))
-
-#####################################
-# MISCELLANEOUS REWORKING FUNCTIONS #
-#####################################
-
-# IF NEED TO REWRITE
-# for (number in seq(1, 1)) {
-#   fileframe <- 'stats_NoSoundChange_Epochs3_Gens10_TokFreqF_Trial'
-#   file <- paste0('../Main Code 7/TokenFreqOff/', fileframe, number, '.txt')
-#   
-#   df <- read.delim(file)
-#   
-#   df$CaseNum <- df$Case
-#   df$Case <- substring(df$CaseNum, 1, 3)
-#   df$Num <- substring(df$CaseNum, 5, 6)
-#   
-#   df <- df[ , c(seq(1,3), 18, 4, 19, seq(5, 17))]
-#   colnames(df)[seq(9, 19)] <- seq(0, 10)
-#   
-#   write.table(df, sep = "\t", quote = FALSE, file = paste0(fileframe, number, '.txt'))
-# }
-
-# TO CHECK
-
-# fileframe <- 'stats_NoSoundChange_Epochs3_Gens10_TokFreqT_Trial'
-# file <- paste0('../Main Code 7/TokenFreqOn/', fileframe, '01', '.txt')
-# 
-# d <- read.delim(file, stringsAsFactors = FALSE)
-# 
-# sub_d <- subset(d, select = c('X10', 'Declension', 'Gender', 'Case', 'Num'))
-# names(sub_d)[1] <- 'Suffix'
-# 
-# sub_d[sub_d == 'mh'] <- 'm'
-# sub_d[sub_d == 'fh'] <- 'f'
-# sub_d[sub_d == 'mh, fh'] <- 'm'
-# sub_d[sub_d == 'm, f'] <- 'm'
-# 
-# if (soundchange == TRUE) sub_d <- applySoundChange(sub_d, language)
+# Now print which are same
+same_counts <- lapply(same_counts[same_counts != 0], function(x) paste0(x/length(files)*100, '%'))
+print(same_counts)
 
 ```
