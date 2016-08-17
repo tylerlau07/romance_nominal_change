@@ -19,7 +19,7 @@ corpus_file = "../Corpus Preparation/latin_corpus.txt"
 ##############
 
 # Trial number
-trial = "50"
+trial = "21"
 
 # Generations to run simulation
 total_generations = 10
@@ -153,7 +153,7 @@ else:
 # else:
 #     out_file += '_CaseNumSepF'
 # # Binary or Identity Vectors?
-if vectors == 'binary':
+if vectors == 'Binary':
     out_file += '_BinVec'
 else:
     out_file += '_IdVec'

@@ -20,7 +20,7 @@ ncases <- "5"
 
 # Look only for most common suffix or for all suffixes below threshold?
 onlymax <- TRUE
-onlymax_same <- TRUE
+onlymax_same <- FALSE
 
 # IF APPLY SOUND CHANGE
 soundchange <- TRUE
@@ -205,17 +205,6 @@ names(same_counts) <- compare
 
 for (i in 1:length(files)) {
   file = files[i]
-  
-  nomaccsg_same <- FALSE
-  accablsg_same <- FALSE
-  nomaccablsg_same <- FALSE
-  
-  nomaccpl_same <- FALSE
-  accablpl_same <- FALSE
-  nomaccablpl_same <- FALSE
-  
-  gendatsg_same <- FALSE
-  gendatpl_same <- FALSE
 
   # Count human as same as nonhuman
   df <- read.delim(file, stringsAsFactors = FALSE)
@@ -297,6 +286,9 @@ for (i in 1:length(files)) {
   
   for (dec in global_decs) {
     assign(paste0('Dec', dec), eval(parse(text = paste(to_assign, collapse = 'df = df, dec = dec, above = above)'))))
+    for (num in global_nums) {
+      assign(paste0(num, dec), eval(parse(text = paste(to_assign, collapse = 'df = df, dec = dec, num = num, above = above)'))))
+    }
   }
   for (num in global_nums) {
     assign(paste0(num), eval(parse(text = paste(to_assign, collapse = 'df = df, num = num, above = above)'))))
@@ -340,6 +332,7 @@ same_counts$m_Pl_n_Pl_same <- same_counts$m_Pl_n_Pl_same + 1
   if (checkSame(list(NomPl, AccPl, AblPl, DatPl, GenPl))) same_counts$Pl_same <- same_counts$Pl_same + 1
   if (checkSame(list(NomSg, AccSg, AblSg, DatSg, GenSg)) & checkSame(list(NomPl, AccPl, AblPl, DatPl, GenPl))) same_counts$All_same <- same_counts$All_same + 1
   
+  # if (checkSame(list(NomSg1)))
 }
 
 # Need negative for Sg

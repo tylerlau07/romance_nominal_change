@@ -1,0 +1,31 @@
+Combo	1	2	3	4	5
+mSgNom	a	o	e,-	o	e, a
+fSgNom	a	o	e, -	o	e, a
+nSgNom	NA	o	e, -	o	NA
+mSgAcc 	a	o	e, -	o	e, a
+fSgAcc 	a	o	e, -	o	e, a
+nSgAcc	NA	o	e, -	o	NA
+mSgGen	a	o	e, -	o	e, a
+fSgGen	a	o	e, -	o	e, a
+nSgGen	NA	o	e, -	o	NA
+mSgDat 	a	o	e, -	o	e, a
+fSgDat 	a	o	e, -	o	e, a
+nSgDat	NA	o	e, -	o	NA
+mSgAbl	a	o	e, -	o	e, a
+fSgAbl	a	o	e, -	o	e, a
+nSgAbl	NA	o	e, -	o	NA
+mPlNom	as	os	es, s	os	es, as
+fPlNom	as	os	es, s	os	es, as
+nPlNom	NA	os	es, s	os	NA
+mPlAcc	as	os	es, s	os	es, as
+fPlAcc 	as	os	es, s	os	es, as
+nPlAcc	NA	os	es, s	os	NA
+mPlGen	as	os	es, s	os	es, as
+fPlGen	as	os	es, s	os	es, as
+nPlGen	NA	os	es, s	os	NA
+mPlDat	as	os	es, s	os	es, as
+fPlDat	as	os	es, s	os	es, as
+nPlDat	NA	os	es, s	os	NA
+mPlAbl	as	os	es, s	os	es, as
+fPlAbl	as	os	es, s	os	es, as
+nPlAbl	NA	os	es, s	os	NA
