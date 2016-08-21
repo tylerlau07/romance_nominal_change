@@ -18,15 +18,20 @@ library(data.table)
 
 # Parameters: Token Frequency and Number of Cases
 tokfreq <- "T"
-ncases <- "5"
+ncases <- "2"
 code <- 7
 
 # Look only for most common suffix or for all suffixes below threshold?
 onlymax <- TRUE
 
 # IF APPLY SOUND CHANGE
-soundchange <- TRUE
-language <- 'Common'
+if (code == 7) { 
+  language <- "No"
+  soundchange <- TRUE
+} else { 
+  language <- 'Common'
+  soundchange <- FALSE
+}
 
 # Number below which to drop
 above <- 10
@@ -38,16 +43,24 @@ if (code == 9) directory <- c(directory[1:4], c("/", language), directory[5:6])
 setwd(paste0(directory, collapse = ""))
 # setwd(paste0('../Main Code ', code, '/Cases', ncases, "/TokFreq", tokfreq))
 
-print(paste0(language, ' Sound Change, Token Freq ', tokfreq))
-print(paste0("Only considering max suffixes: ", onlymax))
+print(paste0(language, ' Sound Change, Token Freq ', tokfreq, ', Number of cases being considered: ', ncases))
+# print(paste0("Only considering max suffixes: ", onlymax))
 if (onlymax == FALSE) print(paste0("Dropping suffixes that appear ", above, " or less times" ))
 
 files = list.files(pattern = '\\.txt')
 
 global_genders <- c('m', 'f', 'n')
 global_decs <- 1:5
-global_cases <- c('Nom', 'Acc', 'Gen', 'Dat', 'Abl')
-global_casecombos <- c('Nom_Acc', 'Acc_Abl', 'Nom_Acc_Abl', 'Gen_Dat')
+if (ncases == 2) {
+  global_cases <- c('Nom', 'Acc')
+  global_casecombos <- c('Nom,Acc')
+} else if (ncases == 3) { 
+  global_cases <- c('Nom', 'Acc', 'Gen')
+  global_casecombos <- c('Nom,Acc', 'Acc,Gen', 'Nom,Gen', 'Nom,Acc,Gen')  
+} else if (ncases == 5) {
+  global_cases <- c('Nom', 'Acc', 'Gen', 'Dat', 'Abl')
+  global_casecombos <- c('Nom,Acc', 'Acc,Abl', 'Nom,Acc,Abl', 'Gen,Dat')
+}
 global_nums <- c('Sg', 'Pl')
 
 #############
@@ -72,7 +85,7 @@ applySoundChange <- function(vector, language) {
   names(lv_changes) <- c('ā', 'ē', 'ī', 'ō', 'ū')
   
   new_sufs <- vector
-  if (language == 'Common') {
+  if (language %in% c('Common', 'No')) {
     for (diph in names(diph_changes)) new_sufs <- sub(diph, diph_changes[diph], new_sufs)
     for (sv in names(sv_changes)) {
       new_sufs <- sub(sv, sv_changes[sv], new_sufs)
@@ -169,6 +182,7 @@ for (i in 1:length(files)) {
   
   if (soundchange == TRUE) df$Suffix <- applySoundChange(df$Suffix, language)
   
+  df[is.na(df)] <- '-'
   df[df == ''] <- '-'
   
   sub_df <- count(subset(df, select = c('Suffix', 'Declension', 'Gender', 'Num', 'Case')))
@@ -190,6 +204,19 @@ for (i in 1:length(files)) {
     endings[[num]][[as.character(i)]] <- getEndings(ft, above = above)
     all_endings[[num]][[as.character(i)]] <- getEndings(ft, above = 0)
     max_endings[[num]][[as.character(i)]] <- maxSuf(ft)
+    
+    for (combo in global_casecombos) {
+      # Only Case Combo and Num
+      for (dec in global_decs) {
+        # Only Case Combo and Dec
+        # Case Combo, Dec, and Num
+        ft <- freqTable(df = sub_df, case = unlist(strsplit(combo, ',')), dec = dec, num = num)
+        freq_tables[[paste0(dec, num, combo)]][[as.character(i)]] <- ft
+        endings[[paste0(dec, num, combo)]][[as.character(i)]] <- getEndings(ft, above = above)
+        all_endings[[paste0(dec, num, combo)]][[as.character(i)]] <- getEndings(ft, above = 0)
+        max_endings[[paste0(dec, num, combo)]][[as.character(i)]] <- maxSuf(ft)        
+      }
+    }
     
     for (case in global_cases) {
       # Only Case
@@ -289,13 +316,22 @@ for (i in 1:length(files)) {
 }
 
 # Now get frequency counts of ending systems
-ending_distrib <- lapply(endings, count)
+ending_distrib <- lapply(all_endings, count)
+filtered_ending_distrib <- lapply(endings, count)
 maxending_distrib <- lapply(max_endings, count)
 
+# Max Ending Distributions
+for (combo in names(maxending_distrib)) {
+  print(combo)
+  distrib <- maxending_distrib[[combo]]
+  colnames(distrib)[1] <- "Suffix"
+  distrib$Percent_Trials <- distrib$freq/sum(distrib$freq)*100
+  print(distrib[with(distrib, order(-Percent_Trials)), ])
+}
+
 # Get true systems and assign
-if (code == 7) {
-  to_read <- "../../../Analysis/True_Endings.txt"
-} else if (code == 9) to_read <- "../../../../Analysis/True_Endings.txt"
+to_read <- "../../../Analysis/True_Endings.txt"
+if (code == 9) to_read <- paste0(c("../", to_read), collapse = "")
 
 true_systems_df <- read.delim(to_read, stringsAsFactors = FALSE)
 
@@ -328,7 +364,7 @@ systemMatch <- function(systems, true_system) {
 system_distribs <- list()
 
 for (system_name in names(true_systems)) {
-  system_distribs[[paste0(system_name, "distrib", sep = "_")]] <- systemMatch(systems, true_systems[[system_name]])
+  system_distribs[[paste(system_name, "distrib", sep = "_")]] <- systemMatch(systems, true_systems[[system_name]])
 }
 
 # Now we want to see specific trends, which match up with reality?
@@ -336,32 +372,38 @@ for (system_name in names(true_systems)) {
 for (dec in global_decs) {
   true_dec_systems <- lapply(true_systems, function(x) x[grep(dec, names(x))])
   for (system_name in names(true_dec_systems)) {
-    system_distribs[[paste0(dec, system_name, "distrib", sep = "_")]] <- systemMatch(systems, true_dec_systems[[system_name]])
+    system_distribs[[paste(dec, system_name, "distrib", sep = "_")]] <- systemMatch(systems, true_dec_systems[[system_name]])
   }
 }
 # Then gender
 for (gender in global_genders) {
   true_gen_systems <- lapply(true_systems, function(x) x[grep(paste0(gender, '[[:digit:]]'), names(x))])
   for (system_name in names(true_gen_systems)) {
-    system_distribs[[paste0(gender, system_name, "distrib", sep = "_")]] <- systemMatch(systems, true_gen_systems[[system_name]])
+    system_distribs[[paste(gender, system_name, "distrib", sep = "_")]] <- systemMatch(systems, true_gen_systems[[system_name]])
   }
 }
 # Then case
 for (case in global_cases) {
   true_case_systems <- lapply(true_systems, function(x) x[grep(case, names(x))])
   for (system_name in names(true_case_systems)) {
-    system_distribs[[paste0(case, system_name, "distrib", sep = "_")]] <- systemMatch(systems, true_case_systems[[system_name]])
+    system_distribs[[paste(case, system_name, "distrib", sep = "_")]] <- systemMatch(systems, true_case_systems[[system_name]])
   }
 }
 # Then number
 for (num in global_nums) {
   true_num_systems <- lapply(true_systems, function(x) x[grep(num, names(x))])
   for (system_name in names(true_num_systems)) {
-    system_distribs[[paste0(num, system_name, "distrib", sep = "_")]] <- systemMatch(systems, true_num_systems[[system_name]])
+    system_distribs[[paste(num, system_name, "distrib", sep = "_")]] <- systemMatch(systems, true_num_systems[[system_name]])
   }
 }
 
-print(system_distribs)
+# Print histograms and distributions
+for (system_name in names(system_distribs)) {
+  print(system_name)
+  system <- system_distribs[[system_name]]
+  print(system)
+  hist(rep(system$Percent_Match, system$Percent_Trials), xlim = c(0,100), ylim = c(0, 100), xlab = "Percent Matching True System", ylab = "Percent of Trials", main = paste0("Percent of ", system_name, " Matching Reality"))
+}
 
 ##
 # Now make statements about which forms end up same
@@ -379,9 +421,9 @@ checkSame <- function(system, to_search) {
   return(sum(equal_vector)/length(equal_vector)*100)
 }
 
-to_compare <- c("Nom,Acc", "Acc,Abl", "Nom,Acc,Abl", "Gen,Dat",
-                "n.Sg,m.Sg", "n.Pl,m.Pl", "n.Pl,f.Sg", "n.Pl,f.Pl",
+to_compare <- c("n.Sg,m.Sg", "n.Pl,m.Pl", "n.Pl,f.Sg", "n.Pl,f.Pl",
                 "m.Pl,f.Pl", "1,5", "2,4")
+to_compare <- c(to_compare, global_casecombos)
 
 comparisons <- list()
 
@@ -423,20 +465,27 @@ for (combo in c("nPlmPl_percentsame", "nPlfPl_percentsame")) {
   comparisons[[gsub("_.*", "_exclusive", combo)]] <- compare_distrib
 }
 
-print(comparisons)
+for (comparison_name in names(comparisons)) {
+  print(comparison_name)
+  comparison <- comparisons[[comparison_name]]
+  print(comparison)
+  hist(rep(comparison$Percent_Match, comparison$Percent_Trials), xlim = c(0,100), ylim = c(0, 100), xlab = "Percent Matching Each Other", ylab = "Percent of Trials", main = paste0("Percent of ", comparison_name, " Matching Each Other"))
+}
 
 # Now we want to observe how many obey certain trends
-trends <- c("Sg_nots", "Pl_s($|,)", "[mf].Pl_s($|,)", "n.Pl_s($|,)",
+# First overall trends
+trends <- c(# Trends by Nom/Acc
+            "1Sg(Nom|Acc)_a($|,)", "[24]Sg(Nom|Acc)_o($|,)", "3Sg(Nom|Acc)_[e-]($|,)", "3Pl(Nom|Acc)_e?s($|,)", "[124]Pl(Nom|Acc)_s($|,)", "[24]Pl(Nom|Acc)_os($|,)", "1Pl(Nom|Acc)_as($|,)", "n.Pl(Nom|Acc)_a($|,)", "n.Pl(Nom|Acc)_as($|,)", "n.Pl(Nom|Acc)_os($|,)", "m.Pl(Nom|Acc)_as($|,)", "m.Pl(Nom|Acc)_os($|,)", "Pl(Nom|Acc)_s($|,)")
+
+# Check Nom/Acc, Acc/Gen, Nom/Gen, Nom/Acc/Gen
+if (ncases == 3) { trends <- c(trends, gsub("Nom", "Gen", trends), gsub("Acc", "Gen", trends))
+# Check Nom/Acc, Acc/Abl, Nom/Acc/Abl
+} else if (ncases == 5) trends <- c(trends, gsub("Nom", "Abl", trends), gsub("Acc", "Acc|Abl", trends), "1Sg(Gen|Dat)_e($|,)", "Pl(Gen|Dat)_s($|,)", "[124]Pl(Gen|Dat)_s($|,)")
+
+# Add general trends
+trends <- c(trends, "Sg_nots", "Pl_s($|,)", "[mf].Pl_s($|,)", "[124]Pl_s($|,)", "n.Pl_s($|,)",
             "1Sg_a($|,)", "[24]Sg_o($|,)", "3Sg_[e-]($|,)", "3Pl_e?s",
-            "[24]Pl_os($|,)", "1Pl_as($|,)", "n.Pl_a($|,)", "n.Pl_as($|,)", "n.Pl_os($|,)", "m.Pl_as($|,)",
-            "1Sg(Nom|Acc)_a($|,)", "[24]Sg(Nom|Acc)_o($|,)", "3Sg(Nom|Acc)_[e-]($|,)", "3Pl(Nom|Acc)_e?s($|,)",
-            "[24]Pl(Nom|Acc)_os($|,)", "1Pl(Nom|Acc)_as($|,)", "n.Pl(Nom|Acc)_a($|,)", "n.Pl(Nom|Acc)_as($|,)", "n.Pl(Nom|Acc)_os($|,)",
-            "1Sg(Nom|Acc|Abl)_a($|,)", "[24]Sg(Nom|Acc|Abl)_o($|,)", "3Sg(Nom|Acc|Abl)_[e-]($|,)", "3Pl(Nom|Acc|Abl)_e?s($|,)",
-            "[24]Pl(Nom|Acc|Abl)_os($|,)", "1Pl(Nom|Acc|Abl)_as($|,)", "n.Pl(Nom|Acc|Abl)_a($|,)", "n.Pl(Nom|Acc|Abl)_as($|,)", "n.Pl(Nom|Acc|Abl)_os($|,)", "m.Pl(Nom|Acc|Abl)_as($|,)",
-            "1Sg(Gen|Dat)_e($|,)",
-            "Pl(Nom|Acc)_s($|,)", "Pl(Nom|Acc|Abl)_s($|,)", "Pl(Gen|Dat)_s($|,)",
-            "[124]Pl_s($|,)", "[124]Pl(Nom|Acc)_s($|,)", 
-            "[124]Pl(Nom|Acc|Abl)_s($|,)", "[124]Pl(Gen|Dat)_s($|,)")
+            "[24]Pl_os($|,)", "1Pl_as($|,)", "n.Pl_a($|,)", "n.Pl_as($|,)", "n.Pl_os($|,)", "m.Pl_as($|,)", "m.Pl_os($|,)")
 
 trend_distribs <- list()
 
@@ -450,7 +499,7 @@ for (trend in trends) {
     sub_sys <- sub_sys[!is.na(sub_sys)]
     if (ending == "nots") { trend_success <- c(trend_success, sum(!grepl("s($|,)", sub_sys))/length(sub_sys)*100)
     } else trend_success <- c(trend_success, sum(grepl(ending, sub_sys))/length(sub_sys)*100)
-    if (trend == "n.Pl(Nom|Acc)_as($|,)" & round(sum(grepl(ending, sub_sys))/length(sub_sys)*100, digits = 5) == 66.66667) print(sub_sys)
+    # if (trend == "n.Pl(Nom|Acc)_as($|,)" & round(sum(grepl(ending, sub_sys))/length(sub_sys)*100, digits = 5) == 66.66667) print(sub_sys)
   }
   trend_distrib <- count(trend_success)
   colnames(trend_distrib)[1] <- "Percent_Match"
@@ -458,5 +507,35 @@ for (trend in trends) {
   trend_distribs[[trend]] <- trend_distrib
 }
 
-print(trend_distribs)
+for (trend_distrib_name in names(trend_distribs)) {
+  print(trend_distrib_name)
+  trend_distrib <- trend_distribs[[trend_distrib_name]]
+  print(trend_distrib)
+  hist(rep(trend_distrib$Percent_Match, trend_distrib$Percent_Trials), xlim = c(0,100), ylim = c(0, 100), xlab = "Percent Matching Reality", ylab = "Percent of Trials", main = paste0("Percent of ", unlist(strsplit(trend_distrib_name, "_"))[1], " ending in ", unlist(strsplit(trend_distrib_name, "_"))[2]))
+}
+
+# Normal Ending Distributions
+for (combo in names(ending_distrib)) {
+  print(combo)
+  
+  # Only endings appear more than "above" number times included
+  distrib <- filtered_ending_distrib[[combo]]
+  # Now we need to break apart trials with multiple endings to count how often each ending appears in trials
+  # Multiply each ending combo by its frequency, then split up endings by , and then count up for new table
+  new_distrib <- count(unlist(strsplit(as.character(rep(distrib$x, distrib$freq)), ",")))
+  colnames(new_distrib)[1] <- "Suffix"
+  new_distrib$Percent_Trials <- new_distrib$freq/sum(distrib$freq)*100
+  print(paste("Endings occuring", above, "times or less excluded"))
+  print(new_distrib[with(new_distrib, order(-Percent_Trials)), ])
+  
+  # Now with all endings included
+  distrib <- ending_distrib[[combo]]
+  new_distrib <- count(unlist(strsplit(as.character(rep(distrib$x, distrib$freq)), ",")))
+  colnames(new_distrib)[1] <- "Suffix"
+  new_distrib$Percent_Trials <- new_distrib$freq/sum(distrib$freq)*100
+  print("All Endings Included")
+  print(new_distrib[with(new_distrib, order(-Percent_Trials)), ])
+  
+}
+
 ```

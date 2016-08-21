@@ -19,7 +19,7 @@ corpus_file = "../Corpus Preparation/latin_corpus.txt"
 ##############
 
 # Trial number
-trial = "47"
+trial = "16"
 
 # Generations to run simulation
 total_generations = 10
@@ -53,7 +53,7 @@ secondsoundchange = 0
 case_raw = {
     'Nom.Sg': 41617, 'Nom.Pl': 12738,
     'Acc.Sg': 42709, 'Acc.Pl': 30327,
-    'Gen.Sg': 21639, 'Gen.Pl': 10467,
+    # 'Gen.Sg': 21639, 'Gen.Pl': 10467,
     # 'Dat.Sg': 8222, 'Dat.Pl': 5056,
     # 'Abl.Sg': 39345, 'Abl.Pl': 14440,
     # 'Voc.Sg': 2243, 'Voc.Pl': 611

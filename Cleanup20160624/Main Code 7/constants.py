@@ -19,13 +19,13 @@ corpus_file = "../Corpus Preparation/latin_corpus.txt"
 ##############
 
 # Trial number
-trial = "21"
+trial = "16"
 
 # Generations to run simulation
 total_generations = 10
 
 # Make false to test with no token frequency
-token_freq = False
+token_freq = True
 
 # Number of times to introduce training set: P&VE uses 3, HareEllman uses 10
 epochs = 3
@@ -47,7 +47,7 @@ vectors = 'Binary'
 case_raw = {
     'Nom.Sg': 41617, 'Nom.Pl': 12738,
     'Acc.Sg': 42709, 'Acc.Pl': 30327,
-    'Gen.Sg': 21639, 'Gen.Pl': 10467,
+    # 'Gen.Sg': 21639, 'Gen.Pl': 10467,
     # 'Dat.Sg': 8222, 'Dat.Pl': 5056,
     # 'Abl.Sg': 39345, 'Abl.Pl': 14440,
     # 'Voc.Sg': 2243, 'Voc.Pl': 611

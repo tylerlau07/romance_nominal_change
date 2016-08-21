@@ -1,0 +1,2001 @@
+Word	Declension	Gender	CaseNum	Case	Num	TotFreq	LatSuf	Declined	0	1	2	3	4	5	6	7	8	9	10
+acies:Nom.Sg	5	f	Nom.Sg	Nom	Sg	328	ēs	aciēs	es	es	e	e	-	-	-	-	-	a	-
+acies:Nom.Pl	5	f	Nom.Pl	Nom	Pl	328	ēs	aciēs	es	es	es	e	-	-	-	-	-	-	-
+acies:Acc.Sg	5	f	Acc.Sg	Acc	Sg	328	em	aciem	e	e	es	es	e	e	e	e	e	e	e
+acies:Acc.Pl	5	f	Acc.Pl	Acc	Pl	328	ēs	aciēs	es	es	es	e	e	e	e	e	e	e	e
+aditus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	107	us	aditus	os	o	o	o	o	o	o	o	o	o	o
+aditus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	107	ūs	aditūs	us	os	o	o	o	o	o	o	o	o	o
+aditus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	107	um	aditum	o	o	o	o	o	o	o	o	o	o	o
+aditus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	107	ūs	aditūs	us	os	o	o	o	o	o	o	o	o	o
+adulter:Nom.Sg	2	mh	Nom.Sg	Nom	Sg	55		adulter	-	o	o	o	o	o	o	o	o	o	o
+adulter:Nom.Pl	2	mh	Nom.Pl	Nom	Pl	55	ī	adulterī	i	o	o	o	o	o	o	o	o	o	o
+adulter:Acc.Sg	2	mh	Acc.Sg	Acc	Sg	55	um	adulterum	o	o	o	o	o	o	o	o	o	o	o
+adulter:Acc.Pl	2	mh	Acc.Pl	Acc	Pl	55	ōs	adulterōs	os	o	o	o	o	o	o	o	o	o	o
+adventus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	112	us	adventus	os	o	o	o	o	o	o	o	o	o	o
+adventus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	112	ūs	adventūs	us	os	o	o	o	o	o	o	o	o	o
+adventus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	112	um	adventum	o	o	o	o	o	o	o	o	o	o	o
+adventus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	112	ūs	adventūs	us	os	o	o	o	o	o	o	o	o	o
+aedes:Nom.Sg	3	f	Nom.Sg	Nom	Sg	68	ēs	aedēs	es	-	-	-	-	-	-	-	-	-	-
+aedes:Nom.Pl	3	f	Nom.Pl	Nom	Pl	68	ēs	aedēs	es	es	e	-	-	-	-	-	-	-	-
+aedes:Acc.Sg	3	f	Acc.Sg	Acc	Sg	68	em	aedem	e	e	e	e	e	e	e	e	e	e	e
+aedes:Acc.Pl	3	f	Acc.Pl	Acc	Pl	68	ēs	aedēs	es	es	es	e	e	e	e	e	e	e	e
+aer:Nom.Sg	3	m	Nom.Sg	Nom	Sg	78		āēr	-	-	e	-	-	-	-	-	-	-	-
+aer:Nom.Pl	3	m	Nom.Pl	Nom	Pl	78	ēs	āerēs	es	es	e	-	-	-	-	-	-	-	-
+aer:Acc.Sg	3	m	Acc.Sg	Acc	Sg	78	a	āera	a	e	e	e	e	e	e	e	e	e	e
+aer:Acc.Pl	3	m	Acc.Pl	Acc	Pl	78	ēs	āerēs	es	es	e	e	e	e	e	e	e	e	e
+aes:Nom.Sg	3	n	Nom.Sg	Nom	Sg	141		aes	-	-	-	-	-	-	-	-	-	-	-
+aes:Nom.Pl	3	n	Nom.Pl	Nom	Pl	141	a	aera	a	-	-	-	-	-	-	-	-	-	-
+aes:Acc.Sg	3	n	Acc.Sg	Acc	Sg	141		aes	-	-	-	-	-	-	-	-	-	-	-
+aes:Acc.Pl	3	n	Acc.Pl	Acc	Pl	141	a	aera	a	-	-	-	-	-	-	-	-	-	-
+aestas:Nom.Sg	3	f	Nom.Sg	Nom	Sg	89		aestās	-	-	-	-	-	-	-	-	-	-	-
+aestas:Nom.Pl	3	f	Nom.Pl	Nom	Pl	89	ēs	aestātēs	es	es	e	-	-	-	-	-	-	-	-
+aestas:Acc.Sg	3	f	Acc.Sg	Acc	Sg	89	em	aestātem	e	e	e	e	e	e	e	e	e	e	e
+aestas:Acc.Pl	3	f	Acc.Pl	Acc	Pl	89	ēs	aestātēs	es	es	es	e	e	e	e	e	e	e	e
+aestus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	105	us	aestus	os	o	o	o	o	o	o	o	o	o	o
+aestus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	105	ūs	aestūs	us	os	o	o	o	o	o	o	o	o	o
+aestus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	105	um	aestum	o	o	o	o	o	o	o	o	o	o	o
+aestus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	105	ūs	aestūs	us	os	o	o	o	o	o	o	o	o	o
+aetas:Nom.Sg	3	f	Nom.Sg	Nom	Sg	418		aetās	-	-	-	-	-	-	-	-	-	-	-
+aetas:Nom.Pl	3	f	Nom.Pl	Nom	Pl	418	ēs	aetātēs	es	es	e	-	-	-	-	-	-	-	-
+aetas:Acc.Sg	3	f	Acc.Sg	Acc	Sg	418	em	aetātem	e	e	e	e	e	e	e	e	e	e	e
+aetas:Acc.Pl	3	f	Acc.Pl	Acc	Pl	418	ēs	aetātēs	es	es	e	e	e	e	e	e	e	e	e
+aevum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	91	um	aevum	o	o	o	o	o	o	o	o	o	o	o
+aevum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	91	a	aeva	a	-	o	o	o	o	o	o	o	o	o
+aevum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	91	um	aevum	o	o	o	o	o	o	o	o	o	o	o
+aevum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	91	a	aeva	a	o	o	o	o	o	o	o	o	o	o
+affectus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	185	us	affectus	os	o	o	o	o	o	o	o	o	o	o
+affectus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	185	ūs	affectūs	us	o	o	o	o	o	o	o	o	o	o
+affectus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	185	um	affectum	o	o	o	o	o	o	o	o	o	o	o
+affectus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	185	ūs	affectūs	us	os	o	o	o	o	o	o	o	o	o
+ager:Nom.Sg	2	m	Nom.Sg	Nom	Sg	337		ager	-	o	o	o	o	o	o	o	o	o	o
+ager:Nom.Pl	2	m	Nom.Pl	Nom	Pl	337	ī	agrī	i	o	o	o	o	o	o	o	o	o	o
+ager:Acc.Sg	2	m	Acc.Sg	Acc	Sg	337	um	agrum	o	o	o	o	o	o	o	o	o	o	o
+ager:Acc.Pl	2	m	Acc.Pl	Acc	Pl	337	ōs	agrōs	os	o	o	o	o	o	o	o	o	o	o
+agger:Nom.Sg	3	m	Nom.Sg	Nom	Sg	76		agger	-	-	-	-	-	-	-	-	-	-	-
+agger:Nom.Pl	3	m	Nom.Pl	Nom	Pl	76	ēs	aggerēs	es	es	e	-	-	-	-	-	-	-	-
+agger:Acc.Sg	3	m	Acc.Sg	Acc	Sg	76	em	aggerem	e	e	e	e	e	e	e	e	e	e	e
+agger:Acc.Pl	3	m	Acc.Pl	Acc	Pl	76	ēs	aggerēs	es	es	e	e	e	e	e	e	e	e	e
+agmen:Nom.Sg	3	n	Nom.Sg	Nom	Sg	360		agmen	-	-	-	-	-	-	-	-	-	-	-
+agmen:Nom.Pl	3	n	Nom.Pl	Nom	Pl	360	a	agmina	a	-	-	-	-	-	-	-	-	-	-
+agmen:Acc.Sg	3	n	Acc.Sg	Acc	Sg	360		agmen	-	-	-	-	-	-	-	-	-	-	-
+agmen:Acc.Pl	3	n	Acc.Pl	Acc	Pl	360	a	agmina	a	-	-	-	-	-	-	-	-	-	-
+ala:Nom.Sg	1	f	Nom.Sg	Nom	Sg	73	a	āla	a	a	a	a	a	a	a	a	a	a	a
+ala:Nom.Pl	1	f	Nom.Pl	Nom	Pl	73	ae	ālae	e	a	a	a	a	a	a	a	a	a	a
+ala:Acc.Sg	1	f	Acc.Sg	Acc	Sg	73	am	ālam	a	a	a	a	a	a	a	a	a	a	a
+ala:Acc.Pl	1	f	Acc.Pl	Acc	Pl	73	ās	ālās	as	a	a	a	a	a	a	a	a	a	a
+altum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	96	um	altum	o	o	o	o	o	o	o	o	o	o	o
+altum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	96	a	alta	a	-	o	o	o	o	o	o	o	o	o
+altum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	96	um	altum	o	o	o	o	o	o	o	o	o	o	o
+altum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	96	a	alta	a	-	o	o	o	o	o	o	o	o	o
+amica:Nom.Sg	1	f	Nom.Sg	Nom	Sg	564	a	amīca	a	a	a	a	a	a	a	a	a	a	a
+amica:Nom.Pl	1	f	Nom.Pl	Nom	Pl	564	ae	amīcae	e	a	a	a	a	a	a	a	a	a	a
+amica:Acc.Sg	1	f	Acc.Sg	Acc	Sg	564	am	amīcam	a	a	a	a	a	a	a	a	a	a	a
+amica:Acc.Pl	1	f	Acc.Pl	Acc	Pl	564	ās	amīcās	as	as	a	a	a	a	a	a	a	a	a
+amicus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	564	us	amīcus	os	o	o	o	o	o	o	o	o	o	o
+amicus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	564	ī	amīcī	i	o	o	o	o	o	o	o	o	o	o
+amicus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	564	um	amīcum	o	o	o	o	o	o	o	o	o	o	o
+amicus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	564	ōs	amīcōs	os	o	o	o	o	o	o	o	o	o	o
+amnis:Nom.Sg	3	m	Nom.Sg	Nom	Sg	244	is	amnis	es	-	-	-	-	-	-	-	-	-	-
+amnis:Nom.Pl	3	m	Nom.Pl	Nom	Pl	244	ēs	amnēs	es	es	e	-	-	-	-	-	-	-	-
+amnis:Acc.Sg	3	m	Acc.Sg	Acc	Sg	244	em	amnem	e	e	e	e	e	e	e	e	e	e	e
+amnis:Acc.Pl	3	m	Acc.Pl	Acc	Pl	244	ēs	amnēs	es	es	e	e	e	e	e	e	e	e	e
+amor:Nom.Sg	3	m	Nom.Sg	Nom	Sg	539		amor	-	-	-	-	-	-	-	-	-	-	-
+amor:Nom.Pl	3	m	Nom.Pl	Nom	Pl	539	ēs	amōrēs	es	es	e	-	-	-	-	-	-	-	-
+amor:Acc.Sg	3	m	Acc.Sg	Acc	Sg	539	em	amōrem	e	e	e	e	e	e	e	e	e	e	e
+amor:Acc.Pl	3	m	Acc.Pl	Acc	Pl	539	ēs	amōrēs	es	es	es	e	e	e	e	e	e	e	e
+anima:Nom.Sg	1	f	Nom.Sg	Nom	Sg	182	a	anima	a	a	a	a	a	a	a	a	a	a	a
+anima:Nom.Pl	1	f	Nom.Pl	Nom	Pl	182	ae	animae	e	a	a	a	a	a	a	a	a	a	a
+anima:Acc.Sg	1	f	Acc.Sg	Acc	Sg	182	am	animam	a	a	a	a	a	a	a	a	a	a	a
+anima:Acc.Pl	1	f	Acc.Pl	Acc	Pl	182	ās	animās	as	a	a	a	a	a	a	a	a	a	a
+animal:Nom.Sg	3	n	Nom.Sg	Nom	Sg	307		animal	-	-	-	-	-	-	-	-	-	-	-
+animal:Nom.Pl	3	n	Nom.Pl	Nom	Pl	307	ia	animālia	ea	-	-	-	-	-	-	-	-	-	-
+animal:Acc.Sg	3	n	Acc.Sg	Acc	Sg	307		animal	-	-	-	-	-	-	-	-	-	-	-
+animal:Acc.Pl	3	n	Acc.Pl	Acc	Pl	307	ia	animālia	ea	-	-	-	-	-	-	-	-	-	-
+animus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	2407	us	animus	os	o	o	o	o	o	o	o	o	o	o
+animus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	2407	ī	animī	i	o	o	o	o	o	o	o	o	o	o
+animus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	2407	um	animum	o	o	o	o	o	o	o	o	o	o	o
+animus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	2407	ōs	animōs	os	o	o	o	o	o	o	o	o	o	o
+annus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	650	us	annus	os	o	o	o	o	o	o	o	o	o	o
+annus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	650	ī	annī	i	o	o	o	o	o	o	o	o	o	o
+annus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	650	um	annum	o	o	o	o	o	o	o	o	o	o	o
+annus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	650	ōs	annōs	os	o	o	o	o	o	o	o	o	o	o
+aqua:Nom.Sg	1	f	Nom.Sg	Nom	Sg	383	a	aqua	a	a	a	a	a	a	a	a	a	a	a
+aqua:Nom.Pl	1	f	Nom.Pl	Nom	Pl	383	ae	aquae	e	a	a	a	a	a	a	a	a	a	a
+aqua:Acc.Sg	1	f	Acc.Sg	Acc	Sg	383	am	aquam	a	a	a	a	a	a	a	a	a	a	a
+aqua:Acc.Pl	1	f	Acc.Pl	Acc	Pl	383	ās	aquās	as	a	a	a	a	a	a	a	a	a	a
+ara:Nom.Sg	1	f	Nom.Sg	Nom	Sg	199	a	āra	a	a	a	a	a	a	a	a	a	a	a
+ara:Nom.Pl	1	f	Nom.Pl	Nom	Pl	199	ae	ārae	e	a	a	a	a	a	a	a	a	a	a
+ara:Acc.Sg	1	f	Acc.Sg	Acc	Sg	199	am	āram	a	a	a	a	a	a	a	a	a	a	a
+ara:Acc.Pl	1	f	Acc.Pl	Acc	Pl	199	ās	ārās	as	a	a	a	a	a	a	a	a	a	a
+arbiter:Nom.Sg	2	mh	Nom.Sg	Nom	Sg	54		arbiter	-	o	o	o	o	o	o	o	o	o	o
+arbiter:Nom.Pl	2	mh	Nom.Pl	Nom	Pl	54	ī	arbitrī	i	o	o	o	o	o	o	o	o	o	o
+arbiter:Acc.Sg	2	mh	Acc.Sg	Acc	Sg	54	um	arbitrum	o	o	o	o	o	o	o	o	o	o	o
+arbiter:Acc.Pl	2	mh	Acc.Pl	Acc	Pl	54	ōs	arbitrōs	os	o	o	o	o	o	o	o	o	o	o
+arbitrium:Nom.Sg	2	n	Nom.Sg	Nom	Sg	98	um	arbitrium	o	o	o	o	o	o	o	o	o	o	o
+arbitrium:Nom.Pl	2	n	Nom.Pl	Nom	Pl	98	a	arbitria	a	o	o	o	o	o	o	o	o	o	o
+arbitrium:Acc.Sg	2	n	Acc.Sg	Acc	Sg	98	um	arbitrium	o	o	o	o	o	o	o	o	o	o	o
+arbitrium:Acc.Pl	2	n	Acc.Pl	Acc	Pl	98	a	arbitria	a	o	o	o	o	o	o	o	o	o	o
+arbor:Nom.Sg	3	f	Nom.Sg	Nom	Sg	202		arbor	-	-	-	-	-	-	-	-	-	-	-
+arbor:Nom.Pl	3	f	Nom.Pl	Nom	Pl	202	ēs	arborēs	es	es	e	-	-	-	-	-	-	-	-
+arbor:Acc.Sg	3	f	Acc.Sg	Acc	Sg	202	em	arborem	e	e	e	e	e	e	e	e	e	e	e
+arbor:Acc.Pl	3	f	Acc.Pl	Acc	Pl	202	ēs	arborēs	es	es	es	e	e	e	e	e	e	e	e
+arcus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	86	us	arcus	os	o	o	o	o	o	o	o	o	o	o
+arcus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	86	ūs	arcūs	us	o	o	o	o	o	o	o	o	o	o
+arcus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	86	um	arcum	o	o	o	o	o	o	o	o	o	o	o
+arcus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	86	ūs	arcūs	us	os	o	o	o	o	o	o	o	o	o
+arena:Nom.Sg	1	f	Nom.Sg	Nom	Sg	103	a	arēna	a	a	a	a	a	a	a	a	a	a	a
+arena:Nom.Pl	1	f	Nom.Pl	Nom	Pl	103	ae	arēnae	e	a	a	a	a	a	a	a	a	a	a
+arena:Acc.Sg	1	f	Acc.Sg	Acc	Sg	103	am	arēnam	a	a	a	a	a	a	a	a	a	a	a
+arena:Acc.Pl	1	f	Acc.Pl	Acc	Pl	103	ās	arēnās	as	a	a	a	a	a	a	a	a	a	a
+argentum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	131	um	argentum	o	o	o	o	o	o	o	o	o	o	o
+argentum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	131	a	argenta	a	-	o	o	o	o	o	o	o	o	o
+argentum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	131	um	argentum	o	o	o	o	o	o	o	o	o	o	o
+argentum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	131	a	argenta	a	-	o	o	o	o	o	o	o	o	o
+arma:Nom.Sg	2	n	Nom.Sg	Nom	Sg	864			-	o	o	o	o	o	o	o	o	o	o
+arma:Nom.Pl	2	n	Nom.Pl	Nom	Pl	864	a	arma	a	-	o	o	o	o	o	o	o	o	o
+arma:Acc.Sg	2	n	Acc.Sg	Acc	Sg	864			-	o	o	o	o	o	o	o	o	o	o
+arma:Acc.Pl	2	n	Acc.Pl	Acc	Pl	864	a	arma	a	-	o	o	o	o	o	o	o	o	o
+armentum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	56	um	armentum	o	o	o	o	o	o	o	o	o	o	o
+armentum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	56	a	armenta	a	-	o	o	o	o	o	o	o	o	o
+armentum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	56	um	armentum	o	o	o	o	o	o	o	o	o	o	o
+armentum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	56	a	armenta	a	o	o	o	o	o	o	o	o	o	o
+ars:Nom.Sg	3	f	Nom.Sg	Nom	Sg	446		ars	-	-	-	-	-	-	-	-	-	-	-
+ars:Nom.Pl	3	f	Nom.Pl	Nom	Pl	446	ēs	artēs	es	es	e	-	-	-	-	-	-	-	-
+ars:Acc.Sg	3	f	Acc.Sg	Acc	Sg	446	em	artem	e	e	e	e	e	e	e	e	e	e	e
+ars:Acc.Pl	3	f	Acc.Pl	Acc	Pl	446	ēs	artēs	es	es	e	e	e	e	e	e	e	e	e
+artifex:Nom.Sg	3	mh	Nom.Sg	Nom	Sg	70		artifex	-	-	-	-	-	-	-	-	-	-	-
+artifex:Nom.Pl	3	mh	Nom.Pl	Nom	Pl	70	ēs	artificēs	es	es	e	-	-	-	-	-	-	-	-
+artifex:Acc.Sg	3	mh	Acc.Sg	Acc	Sg	70	em	artificem	e	e	e	e	e	e	e	e	e	e	e
+artifex:Acc.Pl	3	mh	Acc.Pl	Acc	Pl	70	ēs	artificēs	es	es	es	e	e	e	e	e	e	e	e
+artus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	106	us	artus	os	o	o	o	o	o	o	o	o	o	o
+artus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	106	ūs	artūs	us	os	o	o	o	o	o	o	o	o	o
+artus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	106	um	artum	o	o	o	o	o	o	o	o	o	o	o
+artus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	106	ūs	artūs	us	os	o	o	o	o	o	o	o	o	o
+arvum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	113	um	arvum	o	o	o	o	o	o	o	o	o	o	o
+arvum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	113	a	arva	a	o	o	o	o	o	o	o	o	o	o
+arvum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	113	um	arvum	o	o	o	o	o	o	o	o	o	o	o
+arvum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	113	a	arva	a	o	o	o	o	o	o	o	o	o	o
+arx:Nom.Sg	3	f	Nom.Sg	Nom	Sg	147		arx	-	-	-	-	-	-	-	-	-	-	-
+arx:Nom.Pl	3	f	Nom.Pl	Nom	Pl	147	ēs	arcēs	es	es	e	-	-	-	-	-	-	-	-
+arx:Acc.Sg	3	f	Acc.Sg	Acc	Sg	147	em	arcem	e	e	e	e	e	e	e	e	e	e	e
+arx:Acc.Pl	3	f	Acc.Pl	Acc	Pl	147	ēs	arcēs	es	es	e	e	e	e	e	e	e	e	e
+aspectus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	76	us	aspectus	os	o	o	o	o	o	o	o	o	o	o
+aspectus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	76	ūs	aspectūs	us	os	o	o	o	o	o	o	o	o	o
+aspectus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	76	um	aspectum	o	o	o	o	o	o	o	o	o	o	o
+aspectus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	76	ūs	aspectūs	us	os	o	o	o	o	o	o	o	o	o
+astrum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	103	um	astrum	o	o	o	o	o	o	o	o	o	o	o
+astrum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	103	a	astra	a	-	o	o	o	o	o	o	o	o	o
+astrum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	103	um	astrum	o	o	o	o	o	o	o	o	o	o	o
+astrum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	103	a	astra	a	-	o	o	o	o	o	o	o	o	o
+auctor:Nom.Sg	3	mh	Nom.Sg	Nom	Sg	248		auctor	-	-	-	-	-	-	-	-	-	-	-
+auctor:Nom.Pl	3	mh	Nom.Pl	Nom	Pl	248	ēs	auctōrēs	es	es	e	-	-	-	-	-	-	-	-
+auctor:Acc.Sg	3	mh	Acc.Sg	Acc	Sg	248	em	auctōrem	e	e	e	e	e	e	e	e	e	e	e
+auctor:Acc.Pl	3	mh	Acc.Pl	Acc	Pl	248	ēs	auctōrēs	es	es	e	e	e	e	e	e	e	e	e
+aura:Nom.Sg	1	f	Nom.Sg	Nom	Sg	159	a	aura	a	a	a	a	a	a	a	a	a	a	a
+aura:Nom.Pl	1	f	Nom.Pl	Nom	Pl	159	ae	aurae	e	a	a	a	a	a	a	a	a	a	a
+aura:Acc.Sg	1	f	Acc.Sg	Acc	Sg	159	am	auram	a	a	a	a	a	a	a	a	a	a	a
+aura:Acc.Pl	1	f	Acc.Pl	Acc	Pl	159	ās	aurās	as	a	a	a	a	a	a	a	a	a	a
+auris:Nom.Sg	3	f	Nom.Sg	Nom	Sg	275	is	auris	es	-	-	-	-	-	-	-	-	-	-
+auris:Nom.Pl	3	f	Nom.Pl	Nom	Pl	275	ēs	aurēs	es	es	e	-	-	-	-	-	-	-	-
+auris:Acc.Sg	3	f	Acc.Sg	Acc	Sg	275	em	aurem	e	e	e	e	e	e	e	e	e	e	e
+auris:Acc.Pl	3	f	Acc.Pl	Acc	Pl	275	ēs	aurēs	es	es	e	e	e	e	e	e	e	e	e
+aurum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	300	um	aurum	o	o	o	o	o	o	o	o	o	o	o
+aurum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	300	a	aura	a	o	o	o	o	o	o	o	o	o	o
+aurum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	300	um	aurum	o	o	o	o	o	o	o	o	o	o	o
+aurum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	300	a	aura	a	o	o	o	o	o	o	o	o	o	o
+auxilium:Nom.Sg	2	n	Nom.Sg	Nom	Sg	278	um	auxilium	o	o	o	o	o	o	o	o	o	o	o
+auxilium:Nom.Pl	2	n	Nom.Pl	Nom	Pl	278	a	auxilia	a	o	o	o	o	o	o	o	o	o	o
+auxilium:Acc.Sg	2	n	Acc.Sg	Acc	Sg	278	um	auxilium	o	o	o	o	o	o	o	o	o	o	o
+auxilium:Acc.Pl	2	n	Acc.Pl	Acc	Pl	278	a	auxilia	a	o	o	o	o	o	o	o	o	o	o
+avis:Nom.Sg	3	f	Nom.Sg	Nom	Sg	94	is	avis	es	-	-	-	-	-	-	-	-	-	-
+avis:Nom.Pl	3	f	Nom.Pl	Nom	Pl	94	ēs	avēs	es	es	e	-	-	-	-	-	-	-	-
+avis:Acc.Sg	3	f	Acc.Sg	Acc	Sg	94	em	avem	e	e	e	e	e	e	e	e	e	e	e
+avis:Acc.Pl	3	f	Acc.Pl	Acc	Pl	94	ēs	avēs	es	es	e	e	e	e	e	e	e	e	e
+avus:Nom.Sg	2	mh	Nom.Sg	Nom	Sg	91	us	avus	os	o	o	o	o	o	o	o	o	o	o
+avus:Nom.Pl	2	mh	Nom.Pl	Nom	Pl	91	ī	avī	i	o	o	o	o	o	o	o	o	o	o
+avus:Acc.Sg	2	mh	Acc.Sg	Acc	Sg	91	um	avum	o	o	o	o	o	o	o	o	o	o	o
+avus:Acc.Pl	2	mh	Acc.Pl	Acc	Pl	91	ōs	avōs	os	o	o	o	o	o	o	o	o	o	o
+axis:Nom.Sg	3	m	Nom.Sg	Nom	Sg	72	is	axis	es	-	-	-	-	-	-	-	-	-	-
+axis:Nom.Pl	3	m	Nom.Pl	Nom	Pl	72	ēs	axēs	es	es	e	-	-	-	-	-	-	-	-
+axis:Acc.Sg	3	m	Acc.Sg	Acc	Sg	72	em	axem	e	e	e	e	e	e	e	e	e	e	e
+axis:Acc.Pl	3	m	Acc.Pl	Acc	Pl	72	ēs	axēs	es	es	e	e	e	e	e	e	e	e	e
+bellua:Nom.Sg	1	f	Nom.Sg	Nom	Sg	61	a	bellua	a	a	a	a	a	a	a	a	a	a	a
+bellua:Nom.Pl	1	f	Nom.Pl	Nom	Pl	61	ae	belluae	e	a	a	a	a	a	a	a	a	a	a
+bellua:Acc.Sg	1	f	Acc.Sg	Acc	Sg	61	am	belluam	a	a	a	a	a	a	a	a	a	a	a
+bellua:Acc.Pl	1	f	Acc.Pl	Acc	Pl	61	ās	belluās	as	a	a	a	a	a	a	a	a	a	a
+bellum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	1167	um	bellum	o	o	o	o	o	o	o	o	o	o	o
+bellum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	1167	a	bella	a	-	o	o	o	o	o	o	o	o	o
+bellum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	1167	um	bellum	o	o	o	o	o	o	o	o	o	o	o
+bellum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	1167	a	bella	a	o	o	o	o	o	o	o	o	o	o
+bonum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	919	um	bonum	o	o	o	o	o	o	o	o	o	o	o
+bonum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	919	a	bona	a	o	o	o	o	o	o	o	o	o	o
+bonum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	919	um	bonum	o	o	o	o	o	o	o	o	o	o	o
+bonum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	919	a	bona	a	o	o	o	o	o	o	o	o	o	o
+bos:Nom.Sg	3	m	Nom.Sg	Nom	Sg	90		bōs	-	-	-	-	-	-	-	-	-	-	-
+bos:Nom.Pl	3	m	Nom.Pl	Nom	Pl	90	ēs	bovēs	es	es	e	-	-	-	-	-	-	-	-
+bos:Acc.Sg	3	m	Acc.Sg	Acc	Sg	90	em	bovem	e	e	e	e	e	e	e	e	e	e	e
+bos:Acc.Pl	3	m	Acc.Pl	Acc	Pl	90	ēs	bovēs	es	es	e	e	e	e	e	e	e	e	e
+brachium:Nom.Sg	2	n	Nom.Sg	Nom	Sg	100	um	brachium	o	o	o	o	o	o	o	o	o	o	o
+brachium:Nom.Pl	2	n	Nom.Pl	Nom	Pl	100	a	brachia	a	o	o	o	o	o	o	o	o	o	o
+brachium:Acc.Sg	2	n	Acc.Sg	Acc	Sg	100	um	brachium	o	o	o	o	o	o	o	o	o	o	o
+brachium:Acc.Pl	2	n	Acc.Pl	Acc	Pl	100	a	brachia	a	o	o	o	o	o	o	o	o	o	o
+caedes:Nom.Sg	3	f	Nom.Sg	Nom	Sg	274	ēs	caedēs	es	-	-	-	-	-	-	-	-	-	-
+caedes:Nom.Pl	3	f	Nom.Pl	Nom	Pl	274	ēs	caedēs	es	es	e	-	-	-	-	-	-	-	-
+caedes:Acc.Sg	3	f	Acc.Sg	Acc	Sg	274	em	caedem	e	e	e	e	e	e	e	e	e	e	e
+caedes:Acc.Pl	3	f	Acc.Pl	Acc	Pl	274	ēs	caedēs	es	es	es	e	e	e	e	e	e	e	e
+caelum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	565	um	caelum	o	o	o	o	o	o	o	o	o	o	o
+caelum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	565	a	caela	a	o	o	o	o	o	o	o	o	o	o
+caelum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	565	um	caelum	o	o	o	o	o	o	o	o	o	o	o
+caelum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	565	a	caela	a	o	o	o	o	o	o	o	o	o	o
+calor:Nom.Sg	3	m	Nom.Sg	Nom	Sg	68		calor	-	-	-	-	-	-	-	-	-	-	-
+calor:Nom.Pl	3	m	Nom.Pl	Nom	Pl	68	ēs	calōrēs	es	es	e	-	-	-	-	-	-	-	-
+calor:Acc.Sg	3	m	Acc.Sg	Acc	Sg	68	em	calōrem	e	e	e	e	e	e	e	e	e	e	e
+calor:Acc.Pl	3	m	Acc.Pl	Acc	Pl	68	ēs	calōrēs	es	es	e	e	e	e	e	e	e	e	e
+campus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	233	us	campus	os	o	o	o	o	o	o	o	o	o	o
+campus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	233	ī	campī	i	o	o	o	o	o	o	o	o	o	o
+campus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	233	um	campum	o	o	o	o	o	o	o	o	o	o	o
+campus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	233	ōs	campōs	os	o	o	o	o	o	o	o	o	o	o
+canis:Nom.Sg	3	m	Nom.Sg	Nom	Sg	118	is	canis	es	-	-	-	-	-	-	-	-	-	-
+canis:Nom.Pl	3	m	Nom.Pl	Nom	Pl	118	ēs	canēs	es	es	e	-	-	-	-	-	-	-	-
+canis:Acc.Sg	3	m	Acc.Sg	Acc	Sg	118	em	canem	e	e	e	e	e	e	e	e	e	e	e
+canis:Acc.Pl	3	m	Acc.Pl	Acc	Pl	118	ēs	canēs	es	es	e	e	e	e	e	e	e	e	e
+cantus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	89	us	cantus	os	o	o	o	o	o	o	o	o	o	o
+cantus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	89	ūs	cantūs	us	o	o	o	o	o	o	o	o	o	o
+cantus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	89	um	cantum	o	o	o	o	o	o	o	o	o	o	o
+cantus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	89	ūs	cantūs	us	o	o	o	o	o	o	o	o	o	o
+capillus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	80	us	capillus	os	o	o	o	o	o	o	o	o	o	o
+capillus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	80	ī	capillī	i	o	o	o	o	o	o	o	o	o	o
+capillus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	80	um	capillum	o	o	o	o	o	o	o	o	o	o	o
+capillus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	80	ōs	capillōs	os	o	o	o	o	o	o	o	o	o	o
+caput:Nom.Sg	3	n	Nom.Sg	Nom	Sg	607		caput	-	-	-	-	-	-	-	-	-	-	-
+caput:Nom.Pl	3	n	Nom.Pl	Nom	Pl	607	a	capita	a	-	-	-	-	-	-	-	-	-	-
+caput:Acc.Sg	3	n	Acc.Sg	Acc	Sg	607		caput	-	-	-	-	-	-	-	-	-	-	-
+caput:Acc.Pl	3	n	Acc.Pl	Acc	Pl	607	a	capita	a	-	-	-	-	-	-	-	-	-	-
+carcer:Nom.Sg	3	m	Nom.Sg	Nom	Sg	96		carcer	-	-	-	-	-	-	-	-	-	-	-
+carcer:Nom.Pl	3	m	Nom.Pl	Nom	Pl	96	ēs	carcerēs	es	es	e	-	-	-	-	-	-	-	-
+carcer:Acc.Sg	3	m	Acc.Sg	Acc	Sg	96	em	carcerem	e	e	e	e	e	e	e	e	e	e	e
+carcer:Acc.Pl	3	m	Acc.Pl	Acc	Pl	96	ēs	carcerēs	es	es	e	e	e	e	e	e	e	e	e
+carmen:Nom.Sg	3	n	Nom.Sg	Nom	Sg	296		carmen	-	-	-	-	-	-	-	-	-	-	-
+carmen:Nom.Pl	3	n	Nom.Pl	Nom	Pl	296	a	carmina	a	-	-	-	-	-	-	-	-	-	-
+carmen:Acc.Sg	3	n	Acc.Sg	Acc	Sg	296		carmen	-	-	-	-	-	-	-	-	-	-	-
+carmen:Acc.Pl	3	n	Acc.Pl	Acc	Pl	296	a	carmina	a	-	-	-	-	-	-	-	-	-	-
+castra:Nom.Sg	2	n	Nom.Sg	Nom	Sg	635			-	o	o	o	o	o	o	o	o	o	o
+castra:Nom.Pl	2	n	Nom.Pl	Nom	Pl	635	a	castra	a	-	o	o	o	o	o	o	o	o	o
+castra:Acc.Sg	2	n	Acc.Sg	Acc	Sg	635			-	o	o	o	o	o	o	o	o	o	o
+castra:Acc.Pl	2	n	Acc.Pl	Acc	Pl	635	a	castra	a	-	o	o	o	o	o	o	o	o	o
+catena:Nom.Sg	1	f	Nom.Sg	Nom	Sg	68	a	catēna	a	a	a	a	a	a	a	a	a	a	a
+catena:Nom.Pl	1	f	Nom.Pl	Nom	Pl	68	ae	catēnae	e	a	a	a	a	a	a	a	a	a	a
+catena:Acc.Sg	1	f	Acc.Sg	Acc	Sg	68	am	catēnam	a	a	a	a	a	a	a	a	a	a	a
+catena:Acc.Pl	1	f	Acc.Pl	Acc	Pl	68	ās	catēnās	as	a	a	a	a	a	a	a	a	a	a
+cena:Nom.Sg	1	f	Nom.Sg	Nom	Sg	65	a	cēna	a	a	a	a	a	a	a	a	a	a	a
+cena:Nom.Pl	1	f	Nom.Pl	Nom	Pl	65	ae	cēnae	e	a	a	a	a	a	a	a	a	a	a
+cena:Acc.Sg	1	f	Acc.Sg	Acc	Sg	65	am	cēnam	a	a	a	a	a	a	a	a	a	a	a
+cena:Acc.Pl	1	f	Acc.Pl	Acc	Pl	65	ās	cēnās	as	a	a	a	a	a	a	a	a	a	a
+certamen:Nom.Sg	3	n	Nom.Sg	Nom	Sg	156		certāmen	-	-	-	-	-	-	-	-	-	-	-
+certamen:Nom.Pl	3	n	Nom.Pl	Nom	Pl	156	a	certāmina	a	-	-	-	-	-	-	-	-	-	-
+certamen:Acc.Sg	3	n	Acc.Sg	Acc	Sg	156		certāmen	-	-	-	-	-	-	-	-	-	-	-
+certamen:Acc.Pl	3	n	Acc.Pl	Acc	Pl	156	a	certāmina	a	-	-	-	-	-	-	-	-	-	-
+cervix:Nom.Sg	3	f	Nom.Sg	Nom	Sg	132		cervīx	-	-	-	-	-	-	-	-	-	-	-
+cervix:Nom.Pl	3	f	Nom.Pl	Nom	Pl	132	ēs	cervīcēs	es	es	e	-	-	-	-	-	-	-	-
+cervix:Acc.Sg	3	f	Acc.Sg	Acc	Sg	132	em	cervīcem	e	e	e	e	e	e	e	e	e	e	e
+cervix:Acc.Pl	3	f	Acc.Pl	Acc	Pl	132	ēs	cervīcēs	es	es	es	e	e	e	e	e	e	e	e
+cibus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	138	us	cibus	os	o	o	o	o	o	o	o	o	o	o
+cibus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	138	ī	cibī	i	o	o	o	o	o	o	o	o	o	o
+cibus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	138	um	cibum	o	o	o	o	o	o	o	o	o	o	o
+cibus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	138	ōs	cibōs	os	o	o	o	o	o	o	o	o	o	o
+cinis:Nom.Sg	3	m	Nom.Sg	Nom	Sg	91		cinis	-	-	-	-	-	-	-	-	-	-	-
+cinis:Nom.Pl	3	m	Nom.Pl	Nom	Pl	91	ēs	cinerēs	es	es	e	-	-	-	-	-	-	-	-
+cinis:Acc.Sg	3	m	Acc.Sg	Acc	Sg	91	em	cinerem	e	e	e	e	e	e	e	e	e	e	e
+cinis:Acc.Pl	3	m	Acc.Pl	Acc	Pl	91	ēs	cinerēs	es	es	e	e	e	e	e	e	e	e	e
+civis:Nom.Sg	3	mh	Nom.Sg	Nom	Sg	315	is	cīvis	es	-	-	-	-	-	-	-	-	-	-
+civis:Nom.Pl	3	mh	Nom.Pl	Nom	Pl	315	ēs	cīvēs	es	es	e	-	-	-	-	-	-	-	-
+civis:Acc.Sg	3	mh	Acc.Sg	Acc	Sg	315	em	cīvem	e	e	e	e	e	e	e	e	e	e	e
+civis:Acc.Pl	3	mh	Acc.Pl	Acc	Pl	315	ēs	cīvēs	es	es	e	e	e	e	e	e	e	e	e
+clades:Nom.Sg	3	f	Nom.Sg	Nom	Sg	134	es	clādes	es	-	-	-	-	-	-	-	-	-	-
+clades:Nom.Pl	3	f	Nom.Pl	Nom	Pl	134	ēs	clādēs	es	es	e	-	-	-	-	-	-	-	-
+clades:Acc.Sg	3	f	Acc.Sg	Acc	Sg	134	em	clādem	e	e	e	e	e	e	e	e	e	e	e
+clades:Acc.Pl	3	f	Acc.Pl	Acc	Pl	134	ēs	clādēs	es	es	e	e	e	e	e	e	e	e	e
+clamor:Nom.Sg	3	m	Nom.Sg	Nom	Sg	198		clāmor	-	-	-	-	-	-	-	-	-	-	-
+clamor:Nom.Pl	3	m	Nom.Pl	Nom	Pl	198	ēs	clāmōrēs	es	es	e	-	-	-	-	-	-	-	-
+clamor:Acc.Sg	3	m	Acc.Sg	Acc	Sg	198	em	clāmōrem	e	e	e	e	e	e	e	e	e	e	e
+clamor:Acc.Pl	3	m	Acc.Pl	Acc	Pl	198	ēs	clāmōrēs	es	es	e	e	e	e	e	e	e	e	e
+classis:Nom.Sg	3	f	Nom.Sg	Nom	Sg	210	is	classis	es	-	-	-	-	-	-	-	-	-	-
+classis:Nom.Pl	3	f	Nom.Pl	Nom	Pl	210	ēs	classēs	es	es	e	-	-	-	-	-	-	-	-
+classis:Acc.Sg	3	f	Acc.Sg	Acc	Sg	210	em	classem	e	e	e	e	e	e	e	e	e	e	e
+classis:Acc.Pl	3	f	Acc.Pl	Acc	Pl	210	ēs	classēs	es	es	e	e	e	e	e	e	e	e	e
+cliens:Nom.Sg	3	mh	Nom.Sg	Nom	Sg	66		cliēns	-	-	-	-	-	-	-	-	-	-	-
+cliens:Nom.Pl	3	mh	Nom.Pl	Nom	Pl	66	ēs	clientēs	es	es	e	-	-	-	-	-	-	-	-
+cliens:Acc.Sg	3	mh	Acc.Sg	Acc	Sg	66	em	clientem	e	e	e	e	e	e	e	e	e	e	e
+cliens:Acc.Pl	3	mh	Acc.Pl	Acc	Pl	66	ēs	clientēs	es	es	e	e	e	e	e	e	e	e	e
+coetus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	63	us	coetus	os	o	o	o	o	o	o	o	o	o	o
+coetus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	63	ūs	coetūs	us	o	o	o	o	o	o	o	o	o	o
+coetus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	63	um	coetum	o	o	o	o	o	o	o	o	o	o	o
+coetus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	63	ūs	coetūs	us	o	o	o	o	o	o	o	o	o	o
+cohors:Nom.Sg	3	f	Nom.Sg	Nom	Sg	223		cohors	-	-	-	-	-	-	-	-	-	-	-
+cohors:Nom.Pl	3	f	Nom.Pl	Nom	Pl	223	ēs	cohortēs	es	es	e	-	-	-	-	-	-	-	-
+cohors:Acc.Sg	3	f	Acc.Sg	Acc	Sg	223	em	cohortem	e	e	e	e	e	e	e	e	e	e	e
+cohors:Acc.Pl	3	f	Acc.Pl	Acc	Pl	223	ēs	cohortēs	es	es	e	e	e	e	e	e	e	e	e
+collis:Nom.Sg	3	m	Nom.Sg	Nom	Sg	114	is	collis	es	-	-	-	-	-	-	-	-	-	-
+collis:Nom.Pl	3	m	Nom.Pl	Nom	Pl	114	ēs	collēs	es	es	e	-	-	-	-	-	-	-	-
+collis:Acc.Sg	3	m	Acc.Sg	Acc	Sg	114	em	collem	e	e	e	e	e	e	e	e	e	e	e
+collis:Acc.Pl	3	m	Acc.Pl	Acc	Pl	114	ēs	collēs	es	es	e	e	e	e	e	e	e	e	e
+collum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	122	um	collum	o	o	o	o	o	o	o	o	o	o	o
+collum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	122	a	colla	a	o	o	o	o	o	o	o	o	o	o
+collum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	122	um	collum	o	o	o	o	o	o	o	o	o	o	o
+collum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	122	a	colla	a	o	o	o	o	o	o	o	o	o	o
+color:Nom.Sg	3	m	Nom.Sg	Nom	Sg	128		color	-	-	-	-	-	-	-	-	-	-	-
+color:Nom.Pl	3	m	Nom.Pl	Nom	Pl	128	ēs	colōrēs	es	es	e	-	-	-	-	-	-	-	-
+color:Acc.Sg	3	m	Acc.Sg	Acc	Sg	128	em	colōrem	e	e	e	e	e	e	e	e	e	e	e
+color:Acc.Pl	3	m	Acc.Pl	Acc	Pl	128	ēs	colōrēs	es	es	e	e	e	e	e	e	e	e	e
+coma:Nom.Sg	1	f	Nom.Sg	Nom	Sg	163	a	coma	a	a	a	a	a	a	a	a	a	a	a
+coma:Nom.Pl	1	f	Nom.Pl	Nom	Pl	163	ae	comae	e	a	a	a	a	a	a	a	a	a	a
+coma:Acc.Sg	1	f	Acc.Sg	Acc	Sg	163	am	comam	a	a	a	a	a	a	a	a	a	a	a
+coma:Acc.Pl	1	f	Acc.Pl	Acc	Pl	163	ās	comās	as	a	a	a	a	a	a	a	a	a	a
+comes:Nom.Sg	3	mh	Nom.Sg	Nom	Sg	185		comes	-	-	-	-	-	-	-	-	-	-	-
+comes:Nom.Pl	3	mh	Nom.Pl	Nom	Pl	185	ēs	comitēs	es	es	e	-	-	-	-	-	-	-	-
+comes:Acc.Sg	3	mh	Acc.Sg	Acc	Sg	185	em	comitem	e	e	e	e	e	e	e	e	e	e	e
+comes:Acc.Pl	3	mh	Acc.Pl	Acc	Pl	185	ēs	comitēs	es	es	e	e	e	e	e	e	e	e	e
+concilium:Nom.Sg	2	n	Nom.Sg	Nom	Sg	657	um	concilium	o	o	o	o	o	o	o	o	o	o	o
+concilium:Nom.Pl	2	n	Nom.Pl	Nom	Pl	657	a	concilia	a	o	o	o	o	o	o	o	o	o	o
+concilium:Acc.Sg	2	n	Acc.Sg	Acc	Sg	657	um	concilium	o	o	o	o	o	o	o	o	o	o	o
+concilium:Acc.Pl	2	n	Acc.Pl	Acc	Pl	657	a	concilia	a	o	o	o	o	o	o	o	o	o	o
+coniux:Nom.Sg	3	mh	Nom.Sg	Nom	Sg	351		coniūx	-	-	-	-	-	-	-	-	-	-	-
+coniux:Nom.Pl	3	mh	Nom.Pl	Nom	Pl	351	ēs	coniugēs	es	es	e	-	-	-	-	-	-	-	-
+coniux:Acc.Sg	3	mh	Acc.Sg	Acc	Sg	351	em	coniugem	e	e	e	e	e	e	e	e	e	e	e
+coniux:Acc.Pl	3	mh	Acc.Pl	Acc	Pl	351	ēs	coniugēs	es	es	e	e	e	e	e	e	e	e	e
+consul:Nom.Sg	3	mh	Nom.Sg	Nom	Sg	480		cōnsul	-	-	-	-	-	-	-	-	-	-	-
+consul:Nom.Pl	3	mh	Nom.Pl	Nom	Pl	480	ēs	cōnsulēs	es	es	e	-	-	-	-	-	-	-	-
+consul:Acc.Sg	3	mh	Acc.Sg	Acc	Sg	480	em	cōnsulem	e	e	e	e	e	e	e	e	e	e	e
+consul:Acc.Pl	3	mh	Acc.Pl	Acc	Pl	480	ēs	cōnsulēs	es	es	e	e	e	e	e	e	e	e	e
+convivium:Nom.Sg	2	n	Nom.Sg	Nom	Sg	116	um	convīvium	o	o	o	o	o	o	o	o	o	o	o
+convivium:Nom.Pl	2	n	Nom.Pl	Nom	Pl	116	a	convīvia	a	o	o	o	o	o	o	o	o	o	o
+convivium:Acc.Sg	2	n	Acc.Sg	Acc	Sg	116	um	convīvium	o	o	o	o	o	o	o	o	o	o	o
+convivium:Acc.Pl	2	n	Acc.Pl	Acc	Pl	116	a	convīvia	a	o	o	o	o	o	o	o	o	o	o
+copia:Nom.Sg	1	f	Nom.Sg	Nom	Sg	469	a	cōpia	a	a	a	a	a	a	a	a	a	a	a
+copia:Nom.Pl	1	f	Nom.Pl	Nom	Pl	469	ae	cōpiae	e	a	a	a	a	a	a	a	a	a	a
+copia:Acc.Sg	1	f	Acc.Sg	Acc	Sg	469	am	cōpiam	a	a	a	a	a	a	a	a	a	a	a
+copia:Acc.Pl	1	f	Acc.Pl	Acc	Pl	469	ās	cōpiās	as	a	a	a	a	a	a	a	a	a	a
+cor:Nom.Sg	3	n	Nom.Sg	Nom	Sg	94		cor	-	-	-	-	-	-	-	-	-	-	-
+cor:Nom.Pl	3	n	Nom.Pl	Nom	Pl	94	a	corda	a	-	-	-	-	-	-	-	-	-	-
+cor:Acc.Sg	3	n	Acc.Sg	Acc	Sg	94		cor	-	-	-	-	-	-	-	-	-	-	-
+cor:Acc.Pl	3	n	Acc.Pl	Acc	Pl	94	a	corda	a	-	-	-	-	-	-	-	-	-	-
+cornu:Nom.Sg	4	n	Nom.Sg	Nom	Sg	168	ū	cornū	u	o	o	o	o	o	o	o	o	o	o
+cornu:Nom.Pl	4	n	Nom.Pl	Nom	Pl	168	ua	cornua	oa	o	o	o	o	o	o	o	o	o	o
+cornu:Acc.Sg	4	n	Acc.Sg	Acc	Sg	168	ū	cornū	u	o	o	o	o	o	o	o	o	o	o
+cornu:Acc.Pl	4	n	Acc.Pl	Acc	Pl	168	ua	cornua	oa	o	o	o	o	o	o	o	o	o	o
+corona:Nom.Sg	1	f	Nom.Sg	Nom	Sg	96	a	corōna	a	a	a	a	a	a	a	a	a	a	a
+corona:Nom.Pl	1	f	Nom.Pl	Nom	Pl	96	ae	corōnae	e	a	a	a	a	a	a	a	a	a	a
+corona:Acc.Sg	1	f	Acc.Sg	Acc	Sg	96	am	corōnam	a	a	a	a	a	a	a	a	a	a	a
+corona:Acc.Pl	1	f	Acc.Pl	Acc	Pl	96	ās	corōnās	as	a	a	a	a	a	a	a	a	a	a
+corpus:Nom.Sg	3	n	Nom.Sg	Nom	Sg	1174		corpus	-	-	-	-	-	-	-	-	-	-	-
+corpus:Nom.Pl	3	n	Nom.Pl	Nom	Pl	1174	a	corpora	a	-	-	-	-	-	-	-	-	-	-
+corpus:Acc.Sg	3	n	Acc.Sg	Acc	Sg	1174		corpus	-	-	-	-	-	-	-	-	-	-	-
+corpus:Acc.Pl	3	n	Acc.Pl	Acc	Pl	1174	a	corpora	a	-	-	-	-	-	-	-	-	-	-
+crimen:Nom.Sg	3	n	Nom.Sg	Nom	Sg	229		crīmen	-	-	-	-	-	-	-	-	-	-	-
+crimen:Nom.Pl	3	n	Nom.Pl	Nom	Pl	229	a	crīmina	a	-	-	-	-	-	-	-	-	-	-
+crimen:Acc.Sg	3	n	Acc.Sg	Acc	Sg	229		crīmen	-	-	-	-	-	-	-	-	-	-	-
+crimen:Acc.Pl	3	n	Acc.Pl	Acc	Pl	229	a	crīmina	a	-	-	-	-	-	-	-	-	-	-
+crinis:Nom.Sg	3	m	Nom.Sg	Nom	Sg	93	is	crīnis	es	-	-	-	-	-	-	-	-	-	-
+crinis:Nom.Pl	3	m	Nom.Pl	Nom	Pl	93	ēs	crīnēs	es	es	e	-	-	-	-	-	-	-	-
+crinis:Acc.Sg	3	m	Acc.Sg	Acc	Sg	93	em	crīnem	e	e	e	e	e	e	e	e	e	e	e
+crinis:Acc.Pl	3	m	Acc.Pl	Acc	Pl	93	ēs	crīnēs	es	es	e	e	e	e	e	e	e	e	e
+cruor:Nom.Sg	3	m	Nom.Sg	Nom	Sg	103		cruor	-	-	-	-	-	-	-	-	-	-	-
+cruor:Nom.Pl	3	m	Nom.Pl	Nom	Pl	103	ēs	cruōrēs	es	es	e	-	-	-	-	-	-	-	-
+cruor:Acc.Sg	3	m	Acc.Sg	Acc	Sg	103	em	cruōrem	e	e	e	e	e	e	e	e	e	e	e
+cruor:Acc.Pl	3	m	Acc.Pl	Acc	Pl	103	ēs	cruōrēs	es	es	e	e	e	e	e	e	e	e	e
+cubile:Nom.Sg	3	n	Nom.Sg	Nom	Sg	56	e	cubīle	e	-	-	-	-	-	-	-	-	-	-
+cubile:Nom.Pl	3	n	Nom.Pl	Nom	Pl	56	ia	cubīlia	ea	-	-	-	-	-	-	-	-	-	-
+cubile:Acc.Sg	3	n	Acc.Sg	Acc	Sg	56	e	cubīle	e	-	-	-	-	-	-	-	-	-	-
+cubile:Acc.Pl	3	n	Acc.Pl	Acc	Pl	56	ia	cubīlia	ea	-	-	-	-	-	-	-	-	-	-
+culpa:Nom.Sg	1	f	Nom.Sg	Nom	Sg	121	a	culpa	a	a	a	a	a	a	a	a	a	a	a
+culpa:Nom.Pl	1	f	Nom.Pl	Nom	Pl	121	ae	culpae	e	a	a	a	a	a	a	a	a	a	a
+culpa:Acc.Sg	1	f	Acc.Sg	Acc	Sg	121	am	culpam	a	a	a	a	a	a	a	a	a	a	a
+culpa:Acc.Pl	1	f	Acc.Pl	Acc	Pl	121	ās	culpās	as	a	a	a	a	a	a	a	a	a	a
+cultus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	145	us	cultus	os	o	o	o	o	o	o	o	o	o	o
+cultus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	145	ūs	cultūs	us	o	o	o	o	o	o	o	o	o	o
+cultus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	145	um	cultum	o	o	o	o	o	o	o	o	o	o	o
+cultus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	145	ūs	cultūs	us	o	o	o	o	o	o	o	o	o	o
+cupido:Nom.Sg	3	f	Nom.Sg	Nom	Sg	116		cupīdō	-	-	-	-	-	-	-	-	-	-	-
+cupido:Nom.Pl	3	f	Nom.Pl	Nom	Pl	116	ēs	cupīdinēs	es	es	e	-	-	-	-	-	-	-	-
+cupido:Acc.Sg	3	f	Acc.Sg	Acc	Sg	116	em	cupīdinem	e	e	e	e	e	e	e	e	e	e	e
+cupido:Acc.Pl	3	f	Acc.Pl	Acc	Pl	116	ēs	cupīdinēs	es	es	e	e	e	e	e	e	e	e	e
+cura:Nom.Sg	1	f	Nom.Sg	Nom	Sg	492	a	cūra	a	a	a	a	a	a	a	a	a	a	a
+cura:Nom.Pl	1	f	Nom.Pl	Nom	Pl	492	ae	cūrae	e	a	a	a	a	a	a	a	a	a	a
+cura:Acc.Sg	1	f	Acc.Sg	Acc	Sg	492	am	cūram	a	a	a	a	a	a	a	a	a	a	a
+cura:Acc.Pl	1	f	Acc.Pl	Acc	Pl	492	ās	cūrās	as	a	a	a	a	a	a	a	a	a	a
+currus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	177	us	currus	os	o	o	o	o	o	o	o	o	o	o
+currus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	177	ūs	currūs	us	o	o	o	o	o	o	o	o	o	o
+currus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	177	um	currum	o	o	o	o	o	o	o	o	o	o	o
+currus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	177	ūs	currūs	us	o	o	o	o	o	o	o	o	o	o
+cursus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	293	us	cursus	os	o	o	o	o	o	o	o	o	o	o
+cursus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	293	ūs	cursūs	us	o	o	o	o	o	o	o	o	o	o
+cursus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	293	um	cursum	o	o	o	o	o	o	o	o	o	o	o
+cursus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	293	ūs	cursūs	us	o	o	o	o	o	o	o	o	o	o
+custodia:Nom.Sg	1	f	Nom.Sg	Nom	Sg	104	a	custōdia	a	a	a	a	a	a	a	a	a	a	a
+custodia:Nom.Pl	1	f	Nom.Pl	Nom	Pl	104	ae	custōdiae	e	a	a	a	a	a	a	a	a	a	a
+custodia:Acc.Sg	1	f	Acc.Sg	Acc	Sg	104	am	custōdiam	a	a	a	a	a	a	a	a	a	a	a
+custodia:Acc.Pl	1	f	Acc.Pl	Acc	Pl	104	ās	custōdiās	as	a	a	a	a	a	a	a	a	a	a
+custos:Nom.Sg	3	m	Nom.Sg	Nom	Sg	165		custōs	-	-	-	-	-	-	-	-	-	-	-
+custos:Nom.Pl	3	m	Nom.Pl	Nom	Pl	165	ēs	custōdēs	es	es	e	-	-	-	-	-	-	-	-
+custos:Acc.Sg	3	m	Acc.Sg	Acc	Sg	165	em	custōdem	e	e	e	e	e	e	e	e	e	e	e
+custos:Acc.Pl	3	m	Acc.Pl	Acc	Pl	165	ēs	custōdēs	es	es	e	e	e	e	e	e	e	e	e
+damnum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	109	um	damnum	o	o	o	o	o	o	o	o	o	o	o
+damnum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	109	a	damna	a	o	o	o	o	o	o	o	o	o	o
+damnum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	109	um	damnum	o	o	o	o	o	o	o	o	o	o	o
+damnum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	109	a	damna	a	o	o	o	o	o	o	o	o	o	o
+dea:Nom.Sg	1	fh	Nom.Sg	Nom	Sg	138	a	dea	a	a	a	a	a	a	a	a	a	a	a
+dea:Nom.Pl	1	fh	Nom.Pl	Nom	Pl	138	ae	deae	e	a	a	a	a	a	a	a	a	a	a
+dea:Acc.Sg	1	fh	Acc.Sg	Acc	Sg	138	am	deam	a	a	a	a	a	a	a	a	a	a	a
+dea:Acc.Pl	1	fh	Acc.Pl	Acc	Pl	138	ās	deās	as	a	a	a	a	a	a	a	a	a	a
+decus:Nom.Sg	3	n	Nom.Sg	Nom	Sg	183		decus	-	-	-	-	-	-	-	-	-	-	-
+decus:Nom.Pl	3	n	Nom.Pl	Nom	Pl	183	a	decora	a	-	-	-	-	-	-	-	-	-	-
+decus:Acc.Sg	3	n	Acc.Sg	Acc	Sg	183		decus	-	-	-	-	-	-	-	-	-	-	-
+decus:Acc.Pl	3	n	Acc.Pl	Acc	Pl	183	a	decora	a	-	-	-	-	-	-	-	-	-	-
+delicia:Nom.Sg	1	f	Nom.Sg	Nom	Sg	54	a	dēlicia	a	a	a	a	a	a	a	a	a	a	a
+delicia:Nom.Pl	1	f	Nom.Pl	Nom	Pl	54	ae	dēliciae	e	a	a	a	a	a	a	a	a	a	a
+delicia:Acc.Sg	1	f	Acc.Sg	Acc	Sg	54	am	dēliciam	a	a	a	a	a	a	a	a	a	a	a
+delicia:Acc.Pl	1	f	Acc.Pl	Acc	Pl	54	ās	dēliciās	as	a	a	a	a	a	a	a	a	a	a
+dens:Nom.Sg	3	m	Nom.Sg	Nom	Sg	105		dēns	-	-	-	-	-	-	-	-	-	-	-
+dens:Nom.Pl	3	m	Nom.Pl	Nom	Pl	105	ēs	dentēs	es	es	e	-	-	-	-	-	-	-	-
+dens:Acc.Sg	3	m	Acc.Sg	Acc	Sg	105	em	dentem	e	e	e	e	e	e	e	e	e	e	e
+dens:Acc.Pl	3	m	Acc.Pl	Acc	Pl	105	ēs	dentēs	es	es	e	e	e	e	e	e	e	e	e
+deus:Nom.Sg	2	mh	Nom.Sg	Nom	Sg	1507	us	deus	os	o	o	o	o	o	o	o	o	o	o
+deus:Nom.Pl	2	mh	Nom.Pl	Nom	Pl	1507	ī	dī	i	o	o	o	o	o	o	o	o	o	o
+deus:Acc.Sg	2	mh	Acc.Sg	Acc	Sg	1507	um	deum	o	o	o	o	o	o	o	o	o	o	o
+deus:Acc.Pl	2	mh	Acc.Pl	Acc	Pl	1507	ōs	deōs	os	o	o	o	o	o	o	o	o	o	o
+dictum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	126	um	dictum	o	o	o	o	o	o	o	o	o	o	o
+dictum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	126	a	dicta	a	o	o	o	o	o	o	o	o	o	o
+dictum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	126	um	dictum	o	o	o	o	o	o	o	o	o	o	o
+dictum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	126	a	dicta	a	o	o	o	o	o	o	o	o	o	o
+dies:Nom.Sg	5	m	Nom.Sg	Nom	Sg	1458	ēs	diēs	es	es	e	e	-	-	-	-	-	-	-
+dies:Nom.Pl	5	m	Nom.Pl	Nom	Pl	1458	ēs	diēs	es	es	es	e	-	-	-	-	-	-	-
+dies:Acc.Sg	5	m	Acc.Sg	Acc	Sg	1458	em	diem	e	e	e	e	e	e	e	e	e	e	e
+dies:Acc.Pl	5	m	Acc.Pl	Acc	Pl	1458	ēs	diēs	es	es	es	e	e	e	e	e	e	e	e
+digitus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	84	us	digitus	os	o	o	o	o	o	o	o	o	o	o
+digitus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	84	ī	digitī	i	o	o	o	o	o	o	o	o	o	o
+digitus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	84	um	digitum	o	o	o	o	o	o	o	o	o	o	o
+digitus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	84	ōs	digitōs	os	o	o	o	o	o	o	o	o	o	o
+discrimen:Nom.Sg	3	n	Nom.Sg	Nom	Sg	129		discrīmen	-	-	-	-	-	-	-	-	-	-	-
+discrimen:Nom.Pl	3	n	Nom.Pl	Nom	Pl	129	a	discrīmina	a	-	-	-	-	-	-	-	-	-	-
+discrimen:Acc.Sg	3	n	Acc.Sg	Acc	Sg	129		discrīmen	-	-	-	-	-	-	-	-	-	-	-
+discrimen:Acc.Pl	3	n	Acc.Pl	Acc	Pl	129	a	discrīmina	a	-	-	-	-	-	-	-	-	-	-
+divitiae:Nom.Sg	1	f	Nom.Sg	Nom	Sg	209			-	a	a	a	a	a	a	a	a	a	a
+divitiae:Nom.Pl	1	f	Nom.Pl	Nom	Pl	209	ae	dīvitiae	e	a	a	a	a	a	a	a	a	a	a
+divitiae:Acc.Sg	1	f	Acc.Sg	Acc	Sg	209			-	a	a	a	a	a	a	a	a	a	a
+divitiae:Acc.Pl	1	f	Acc.Pl	Acc	Pl	209	ās	dīvitiās	as	a	a	a	a	a	a	a	a	a	a
+dolor:Nom.Sg	3	m	Nom.Sg	Nom	Sg	540		dolor	-	-	-	-	-	-	-	-	-	-	-
+dolor:Nom.Pl	3	m	Nom.Pl	Nom	Pl	540	ēs	dolōrēs	es	es	e	-	-	-	-	-	-	-	-
+dolor:Acc.Sg	3	m	Acc.Sg	Acc	Sg	540	em	dolōrem	e	e	e	e	e	e	e	e	e	e	e
+dolor:Acc.Pl	3	m	Acc.Pl	Acc	Pl	540	ēs	dolōrēs	es	es	e	e	e	e	e	e	e	e	e
+dolus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	130	us	dolus	os	o	o	o	o	o	o	o	o	o	o
+dolus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	130	ī	dolī	i	o	o	o	o	o	o	o	o	o	o
+dolus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	130	um	dolum	o	o	o	o	o	o	o	o	o	o	o
+dolus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	130	ōs	dolōs	os	o	o	o	o	o	o	o	o	o	o
+domina:Nom.Sg	1	fh	Nom.Sg	Nom	Sg	94	a	domina	a	a	a	a	a	a	a	a	a	a	a
+domina:Nom.Pl	1	fh	Nom.Pl	Nom	Pl	94	ae	dominae	e	a	a	a	a	a	a	a	a	a	a
+domina:Acc.Sg	1	fh	Acc.Sg	Acc	Sg	94	am	dominam	a	a	a	a	a	a	a	a	a	a	a
+domina:Acc.Pl	1	fh	Acc.Pl	Acc	Pl	94	ās	dominās	as	a	a	a	a	a	a	a	a	a	a
+dominus:Nom.Sg	2	mh	Nom.Sg	Nom	Sg	269	us	dominus	os	o	o	o	o	o	o	o	o	o	o
+dominus:Nom.Pl	2	mh	Nom.Pl	Nom	Pl	269	ī	dominī	i	o	o	o	o	o	o	o	o	o	o
+dominus:Acc.Sg	2	mh	Acc.Sg	Acc	Sg	269	um	dominum	o	o	o	o	o	o	o	o	o	o	o
+dominus:Acc.Pl	2	mh	Acc.Pl	Acc	Pl	269	ōs	dominōs	os	o	o	o	o	o	o	o	o	o	o
+domus:Nom.Sg	4	f	Nom.Sg	Nom	Sg	946	us	domus	os	o	o	o	o	o	o	o	o	o	-
+domus:Nom.Pl	4	f	Nom.Pl	Nom	Pl	946	ūs	domūs	us	os	o	o	o	o	o	o	o	o	-
+domus:Acc.Sg	4	f	Acc.Sg	Acc	Sg	946	um	domum	o	o	o	o	o	o	o	o	o	o	-
+domus:Acc.Pl	4	f	Acc.Pl	Acc	Pl	946	ūs	domūs	us	os	o	o	o	o	o	o	o	o	-
+donum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	195	um	dōnum	o	o	o	o	o	o	o	o	o	o	o
+donum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	195	a	dōna	a	o	o	o	o	o	o	o	o	o	o
+donum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	195	um	dōnum	o	o	o	o	o	o	o	o	o	o	o
+donum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	195	a	dōna	a	o	o	o	o	o	o	o	o	o	o
+dux:Nom.Sg	3	mh	Nom.Sg	Nom	Sg	480		dux	-	-	-	-	-	-	-	-	-	-	-
+dux:Nom.Pl	3	mh	Nom.Pl	Nom	Pl	480	ēs	ducēs	es	es	e	-	-	-	-	-	-	-	-
+dux:Acc.Sg	3	mh	Acc.Sg	Acc	Sg	480	em	ducem	e	e	e	e	e	e	e	e	e	e	e
+dux:Acc.Pl	3	mh	Acc.Pl	Acc	Pl	480	ēs	ducēs	es	es	e	e	e	e	e	e	e	e	e
+effigies:Nom.Sg	5	f	Nom.Sg	Nom	Sg	69	ēs	effigiēs	es	es	es	e	-	-	-	-	-	-	-
+effigies:Nom.Pl	5	f	Nom.Pl	Nom	Pl	69	ēs	effigiēs	es	es	es	e	-	-	-	-	-	-	-
+effigies:Acc.Sg	5	f	Acc.Sg	Acc	Sg	69	em	effigiem	e	es	es	e	e	e	e	e	e	e	e
+effigies:Acc.Pl	5	f	Acc.Pl	Acc	Pl	69	ēs	effigiēs	es	es	es	e	e	e	e	e	e	e	e
+epulae:Nom.Sg	1	f	Nom.Sg	Nom	Sg	93			-	a	a	a	a	a	a	a	a	a	a
+epulae:Nom.Pl	1	f	Nom.Pl	Nom	Pl	93	ae	epulae	e	a	a	a	a	a	a	a	a	a	a
+epulae:Acc.Sg	1	f	Acc.Sg	Acc	Sg	93			-	a	a	a	a	a	a	a	a	a	a
+epulae:Acc.Pl	1	f	Acc.Pl	Acc	Pl	93	ās	epulās	as	a	a	a	a	a	a	a	a	a	a
+eques:Nom.Sg	3	mh	Nom.Sg	Nom	Sg	526		eques	-	-	-	-	-	-	-	-	-	-	-
+eques:Nom.Pl	3	mh	Nom.Pl	Nom	Pl	526	ēs	equitēs	es	es	e	-	-	-	-	-	-	-	-
+eques:Acc.Sg	3	mh	Acc.Sg	Acc	Sg	526	em	equitem	e	e	e	e	e	e	e	e	e	e	e
+eques:Acc.Pl	3	mh	Acc.Pl	Acc	Pl	526	ēs	equitēs	es	es	e	e	e	e	e	e	e	e	e
+equus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	411	us	equus	os	o	o	o	o	o	o	o	o	o	o
+equus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	411	ī	equī	i	o	o	o	o	o	o	o	o	o	o
+equus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	411	um	equum	o	o	o	o	o	o	o	o	o	o	o
+equus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	411	ōs	equōs	os	o	o	o	o	o	o	o	o	o	o
+error:Nom.Sg	3	m	Nom.Sg	Nom	Sg	127		error	-	-	-	-	-	-	-	-	-	-	-
+error:Nom.Pl	3	m	Nom.Pl	Nom	Pl	127	ēs	errōrēs	es	es	e	-	-	-	-	-	-	-	-
+error:Acc.Sg	3	m	Acc.Sg	Acc	Sg	127	em	errōrem	e	e	e	e	e	e	e	e	e	e	e
+error:Acc.Pl	3	m	Acc.Pl	Acc	Pl	127	ēs	errōrēs	es	es	e	e	e	e	e	e	e	e	e
+exemplum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	286	um	exemplum	o	o	o	o	o	o	o	o	o	o	o
+exemplum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	286	a	exempla	a	-	o	o	o	o	o	o	o	o	o
+exemplum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	286	um	exemplum	o	o	o	o	o	o	o	o	o	o	o
+exemplum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	286	a	exempla	a	-	o	o	o	o	o	o	o	o	o
+exiguus:Nom.Sg	2	mh	Nom.Sg	Nom	Sg	124	us	exiguus	os	o	o	o	o	o	o	o	o	o	o
+exiguus:Nom.Pl	2	mh	Nom.Pl	Nom	Pl	124	ī	exiguī	i	o	o	o	o	o	o	o	o	o	o
+exiguus:Acc.Sg	2	mh	Acc.Sg	Acc	Sg	124	um	exiguum	o	o	o	o	o	o	o	o	o	o	o
+exiguus:Acc.Pl	2	mh	Acc.Pl	Acc	Pl	124	ōs	exiguōs	os	o	o	o	o	o	o	o	o	o	o
+exitium:Nom.Sg	2	n	Nom.Sg	Nom	Sg	122	um	exitium	o	o	o	o	o	o	o	o	o	o	o
+exitium:Nom.Pl	2	n	Nom.Pl	Nom	Pl	122	a	exitia	a	-	o	o	o	o	o	o	o	o	o
+exitium:Acc.Sg	2	n	Acc.Sg	Acc	Sg	122	um	exitium	o	o	o	o	o	o	o	o	o	o	o
+exitium:Acc.Pl	2	n	Acc.Pl	Acc	Pl	122	a	exitia	a	o	o	o	o	o	o	o	o	o	o
+exitus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	146	us	exitus	os	o	o	o	o	o	o	o	o	o	o
+exitus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	146	ūs	exitūs	us	os	o	o	o	o	o	o	o	o	o
+exitus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	146	um	exitum	o	o	o	o	o	o	o	o	o	o	o
+exitus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	146	ūs	exitūs	us	os	o	o	o	o	o	o	o	o	o
+exsilium:Nom.Sg	2	n	Nom.Sg	Nom	Sg	165	um	exsilium	o	o	o	o	o	o	o	o	o	o	o
+exsilium:Nom.Pl	2	n	Nom.Pl	Nom	Pl	165	a	exsilia	a	o	o	o	o	o	o	o	o	o	o
+exsilium:Acc.Sg	2	n	Acc.Sg	Acc	Sg	165	um	exsilium	o	o	o	o	o	o	o	o	o	o	o
+exsilium:Acc.Pl	2	n	Acc.Pl	Acc	Pl	165	a	exsilia	a	o	o	o	o	o	o	o	o	o	o
+exsul:Nom.Sg	3	mh	Nom.Sg	Nom	Sg	81		exsul	-	-	-	-	-	-	-	-	-	-	-
+exsul:Nom.Pl	3	mh	Nom.Pl	Nom	Pl	81	ēs	exsulēs	es	es	e	-	-	-	-	-	-	-	-
+exsul:Acc.Sg	3	mh	Acc.Sg	Acc	Sg	81	em	exsulem	e	e	e	e	e	e	e	e	e	e	e
+exsul:Acc.Pl	3	mh	Acc.Pl	Acc	Pl	81	ēs	exsulēs	es	es	es	e	e	e	e	e	e	e	e
+fabula:Nom.Sg	1	f	Nom.Sg	Nom	Sg	64	a	fābula	a	a	a	a	a	a	a	a	a	a	a
+fabula:Nom.Pl	1	f	Nom.Pl	Nom	Pl	64	ae	fābulae	e	a	a	a	a	a	a	a	a	a	a
+fabula:Acc.Sg	1	f	Acc.Sg	Acc	Sg	64	am	fābulam	a	a	a	a	a	a	a	a	a	a	a
+fabula:Acc.Pl	1	f	Acc.Pl	Acc	Pl	64	ās	fābulās	as	a	a	a	a	a	a	a	a	a	a
+facies:Nom.Sg	5	f	Nom.Sg	Nom	Sg	202	ēs	faciēs	es	es	es	e	-	-	-	-	-	-	-
+facies:Nom.Pl	5	f	Nom.Pl	Nom	Pl	202	ēs	faciēs	es	es	es	e	-	-	-	-	-	-	-
+facies:Acc.Sg	5	f	Acc.Sg	Acc	Sg	202	em	faciem	e	es	es	e	e	e	e	e	e	e	e
+facies:Acc.Pl	5	f	Acc.Pl	Acc	Pl	202	ēs	faciēs	es	es	es	e	e	e	e	e	e	e	e
+facinus:Nom.Sg	3	n	Nom.Sg	Nom	Sg	191		facinus	-	-	-	-	-	-	-	-	-	-	-
+facinus:Nom.Pl	3	n	Nom.Pl	Nom	Pl	191	a	facinora	a	-	-	-	-	-	-	-	-	-	-
+facinus:Acc.Sg	3	n	Acc.Sg	Acc	Sg	191		facinus	-	-	-	-	-	-	-	-	-	-	-
+facinus:Acc.Pl	3	n	Acc.Pl	Acc	Pl	191	a	facinora	a	-	-	-	-	-	-	-	-	-	-
+factum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	188	um	factum	o	o	o	o	o	o	o	o	o	o	o
+factum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	188	a	facta	a	-	o	o	o	o	o	o	o	o	o
+factum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	188	um	factum	o	o	o	o	o	o	o	o	o	o	o
+factum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	188	a	facta	a	-	o	o	o	o	o	o	o	o	o
+fama:Nom.Sg	1	f	Nom.Sg	Nom	Sg	425	a	fāma	a	a	a	a	a	a	a	a	a	a	a
+fama:Nom.Pl	1	f	Nom.Pl	Nom	Pl	425	ae	fāmae	e	a	a	a	a	a	a	a	a	a	a
+fama:Acc.Sg	1	f	Acc.Sg	Acc	Sg	425	am	fāmam	a	a	a	a	a	a	a	a	a	a	a
+fama:Acc.Pl	1	f	Acc.Pl	Acc	Pl	425	ās	fāmās	as	a	a	a	a	a	a	a	a	a	a
+fames:Nom.Sg	3	f	Nom.Sg	Nom	Sg	127	ēs	famēs	es	-	-	-	-	-	-	-	-	-	-
+fames:Nom.Pl	3	f	Nom.Pl	Nom	Pl	127	ēs	famēs	es	es	e	-	-	-	-	-	-	-	-
+fames:Acc.Sg	3	f	Acc.Sg	Acc	Sg	127	em	famem	e	e	e	e	e	e	e	e	e	e	e
+fames:Acc.Pl	3	f	Acc.Pl	Acc	Pl	127	ēs	famēs	es	es	e	e	e	e	e	e	e	e	e
+fastigium:Nom.Sg	2	n	Nom.Sg	Nom	Sg	93	um	fastīgium	o	o	o	o	o	o	o	o	o	o	o
+fastigium:Nom.Pl	2	n	Nom.Pl	Nom	Pl	93	a	fastīgia	a	o	o	o	o	o	o	o	o	o	o
+fastigium:Acc.Sg	2	n	Acc.Sg	Acc	Sg	93	um	fastīgium	o	o	o	o	o	o	o	o	o	o	o
+fastigium:Acc.Pl	2	n	Acc.Pl	Acc	Pl	93	a	fastīgia	a	o	o	o	o	o	o	o	o	o	o
+fatum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	424	um	fātum	o	o	o	o	o	o	o	o	o	o	o
+fatum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	424	a	fāta	a	o	o	o	o	o	o	o	o	o	o
+fatum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	424	um	fātum	o	o	o	o	o	o	o	o	o	o	o
+fatum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	424	a	fāta	a	o	o	o	o	o	o	o	o	o	o
+favor:Nom.Sg	3	m	Nom.Sg	Nom	Sg	56		favor	-	-	-	-	-	-	-	-	-	-	-
+favor:Nom.Pl	3	m	Nom.Pl	Nom	Pl	56	ēs	favōrēs	es	es	e	-	-	-	-	-	-	-	-
+favor:Acc.Sg	3	m	Acc.Sg	Acc	Sg	56	em	favōrem	e	e	e	e	e	e	e	e	e	e	e
+favor:Acc.Pl	3	m	Acc.Pl	Acc	Pl	56	ēs	favōrēs	es	es	e	e	e	e	e	e	e	e	e
+fax:Nom.Sg	3	f	Nom.Sg	Nom	Sg	147		fax	-	-	-	-	-	-	-	-	-	-	-
+fax:Nom.Pl	3	f	Nom.Pl	Nom	Pl	147	ēs	facēs	es	es	e	-	-	-	-	-	-	-	-
+fax:Acc.Sg	3	f	Acc.Sg	Acc	Sg	147	em	facem	e	e	e	e	e	e	e	e	e	e	e
+fax:Acc.Pl	3	f	Acc.Pl	Acc	Pl	147	ēs	facēs	es	es	e	e	e	e	e	e	e	e	e
+femina:Nom.Sg	1	fh	Nom.Sg	Nom	Sg	238	a	fēmina	a	a	a	a	a	a	a	a	a	a	a
+femina:Nom.Pl	1	fh	Nom.Pl	Nom	Pl	238	ae	fēminae	e	a	a	a	a	a	a	a	a	a	a
+femina:Acc.Sg	1	fh	Acc.Sg	Acc	Sg	238	am	fēminam	a	a	a	a	a	a	a	a	a	a	a
+femina:Acc.Pl	1	fh	Acc.Pl	Acc	Pl	238	ās	fēminās	as	a	a	a	a	a	a	a	a	a	a
+fera:Nom.Sg	1	f	Nom.Sg	Nom	Sg	218	a	fera	a	a	a	a	a	a	a	a	a	a	a
+fera:Nom.Pl	1	f	Nom.Pl	Nom	Pl	218	ae	ferae	e	a	a	a	a	a	a	a	a	a	a
+fera:Acc.Sg	1	f	Acc.Sg	Acc	Sg	218	am	feram	a	a	a	a	a	a	a	a	a	a	a
+fera:Acc.Pl	1	f	Acc.Pl	Acc	Pl	218	ās	ferās	as	a	a	a	a	a	a	a	a	a	a
+ferrum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	352	um	ferrum	o	o	o	o	o	o	o	o	o	o	o
+ferrum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	352	a	ferra	a	o	o	o	o	o	o	o	o	o	o
+ferrum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	352	um	ferrum	o	o	o	o	o	o	o	o	o	o	o
+ferrum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	352	a	ferra	a	o	o	o	o	o	o	o	o	o	o
+fetus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	57	us	fētus	os	o	o	o	o	o	o	o	o	o	o
+fetus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	57	ūs	fētūs	us	os	o	o	o	o	o	o	o	o	o
+fetus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	57	um	fētum	o	o	o	o	o	o	o	o	o	o	o
+fetus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	57	ūs	fētūs	us	os	o	o	o	o	o	o	o	o	o
+fides:Nom.Sg	5	f	Nom.Sg	Nom	Sg	581	ēs	fidēs	es	es	es	e	-	-	-	-	-	-	-
+fides:Nom.Pl	5	f	Nom.Pl	Nom	Pl	581	ēs	fidēs	es	es	es	e	-	-	-	-	-	-	-
+fides:Acc.Sg	5	f	Acc.Sg	Acc	Sg	581	em	fidem	e	es	es	e	e	e	e	e	e	e	e
+fides:Acc.Pl	5	f	Acc.Pl	Acc	Pl	581	ēs	fidēs	es	es	es	e	e	e	e	e	e	e	e
+filia:Nom.Sg	1	f	Nom.Sg	Nom	Sg	129	a	fīlia	a	a	a	a	a	a	a	a	a	a	a
+filia:Nom.Pl	1	f	Nom.Pl	Nom	Pl	129	ae	fīliae	e	a	a	a	a	a	a	a	a	a	a
+filia:Acc.Sg	1	f	Acc.Sg	Acc	Sg	129	am	fīliam	a	a	a	a	a	a	a	a	a	a	a
+filia:Acc.Pl	1	f	Acc.Pl	Acc	Pl	129	ās	fīliās	as	a	a	a	a	a	a	a	a	a	a
+filius:Nom.Sg	2	m	Nom.Sg	Nom	Sg	446	us	fīlius	os	o	o	o	o	o	o	o	o	o	o
+filius:Nom.Pl	2	m	Nom.Pl	Nom	Pl	446	ī	fīliī	i	o	o	o	o	o	o	o	o	o	o
+filius:Acc.Sg	2	m	Acc.Sg	Acc	Sg	446	um	fīlium	o	o	o	o	o	o	o	o	o	o	o
+filius:Acc.Pl	2	m	Acc.Pl	Acc	Pl	446	ōs	fīliōs	os	o	o	o	o	o	o	o	o	o	o
+finis:Nom.Sg	3	m	Nom.Sg	Nom	Sg	529	is	fīnis	es	-	-	-	-	-	-	-	-	-	-
+finis:Nom.Pl	3	m	Nom.Pl	Nom	Pl	529	ēs	fīnēs	es	es	e	-	-	-	-	-	-	-	-
+finis:Acc.Sg	3	m	Acc.Sg	Acc	Sg	529	em	fīnem	e	e	e	e	e	e	e	e	e	e	e
+finis:Acc.Pl	3	m	Acc.Pl	Acc	Pl	529	ēs	fīnēs	es	es	e	e	e	e	e	e	e	e	e
+flamma:Nom.Sg	1	f	Nom.Sg	Nom	Sg	237	a	flamma	a	a	a	a	a	a	a	a	a	a	a
+flamma:Nom.Pl	1	f	Nom.Pl	Nom	Pl	237	ae	flammae	e	a	a	a	a	a	a	a	a	a	a
+flamma:Acc.Sg	1	f	Acc.Sg	Acc	Sg	237	am	flammam	a	a	a	a	a	a	a	a	a	a	a
+flamma:Acc.Pl	1	f	Acc.Pl	Acc	Pl	237	ās	flammās	as	a	a	a	a	a	a	a	a	a	a
+fletus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	83	us	flētus	os	o	o	o	o	o	o	o	o	o	o
+fletus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	83	ūs	flētūs	us	os	o	o	o	o	o	o	o	o	o
+fletus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	83	um	flētum	o	o	o	o	o	o	o	o	o	o	o
+fletus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	83	ūs	flētūs	us	os	o	o	o	o	o	o	o	o	o
+flos:Nom.Sg	3	m	Nom.Sg	Nom	Sg	91		flōs	-	-	-	-	-	-	-	-	-	-	-
+flos:Nom.Pl	3	m	Nom.Pl	Nom	Pl	91	ēs	flōrēs	es	es	e	-	-	-	-	-	-	-	-
+flos:Acc.Sg	3	m	Acc.Sg	Acc	Sg	91	em	flōrem	e	e	e	e	e	e	e	e	e	e	e
+flos:Acc.Pl	3	m	Acc.Pl	Acc	Pl	91	ēs	flōrēs	es	es	e	e	e	e	e	e	e	e	e
+fluctus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	167	us	fluctus	os	o	o	o	o	o	o	o	o	o	o
+fluctus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	167	ūs	fluctūs	us	o	o	o	o	o	o	o	o	o	o
+fluctus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	167	um	fluctum	o	o	o	o	o	o	o	o	o	o	o
+fluctus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	167	ūs	fluctūs	us	o	o	o	o	o	o	o	o	o	o
+flumen:Nom.Sg	3	n	Nom.Sg	Nom	Sg	380		flūmen	-	-	-	-	-	-	-	-	-	-	-
+flumen:Nom.Pl	3	n	Nom.Pl	Nom	Pl	380	a	flūmina	a	-	-	-	-	-	-	-	-	-	-
+flumen:Acc.Sg	3	n	Acc.Sg	Acc	Sg	380		flūmen	-	-	-	-	-	-	-	-	-	-	-
+flumen:Acc.Pl	3	n	Acc.Pl	Acc	Pl	380	a	flūmina	a	-	-	-	-	-	-	-	-	-	-
+focus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	65	us	focus	os	o	o	o	o	o	o	o	o	o	o
+focus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	65	ī	focī	i	o	o	o	o	o	o	o	o	o	o
+focus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	65	um	focum	o	o	o	o	o	o	o	o	o	o	o
+focus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	65	ōs	focōs	os	o	o	o	o	o	o	o	o	o	o
+foedus:Nom.Sg	3	n	Nom.Sg	Nom	Sg	82		foedus	-	-	-	-	-	-	-	-	-	-	-
+foedus:Nom.Pl	3	n	Nom.Pl	Nom	Pl	82	a	foedera	a	-	-	-	-	-	-	-	-	-	-
+foedus:Acc.Sg	3	n	Acc.Sg	Acc	Sg	82		foedus	-	-	-	-	-	-	-	-	-	-	-
+foedus:Acc.Pl	3	n	Acc.Pl	Acc	Pl	82	a	foedera	a	-	-	-	-	-	-	-	-	-	-
+fons:Nom.Sg	3	m	Nom.Sg	Nom	Sg	127		fōns	-	-	-	-	-	-	-	-	-	-	-
+fons:Nom.Pl	3	m	Nom.Pl	Nom	Pl	127	ēs	fontēs	es	es	e	-	-	-	-	-	-	-	-
+fons:Acc.Sg	3	m	Acc.Sg	Acc	Sg	127	em	fontem	e	e	e	e	e	e	e	e	e	e	e
+fons:Acc.Pl	3	m	Acc.Pl	Acc	Pl	127	ēs	fontēs	es	es	e	e	e	e	e	e	e	e	e
+foris:Nom.Sg	3	f	Nom.Sg	Nom	Sg	94	is	foris	es	-	-	-	-	-	-	-	-	-	-
+foris:Nom.Pl	3	f	Nom.Pl	Nom	Pl	94	ēs	forēs	es	es	e	-	-	-	-	-	-	-	-
+foris:Acc.Sg	3	f	Acc.Sg	Acc	Sg	94	em	forem	e	e	e	e	e	e	e	e	e	e	e
+foris:Acc.Pl	3	f	Acc.Pl	Acc	Pl	94	ēs	forēs	es	es	e	e	e	e	e	e	e	e	e
+forma:Nom.Sg	1	f	Nom.Sg	Nom	Sg	249	a	fōrma	a	a	a	a	a	a	a	a	a	a	a
+forma:Nom.Pl	1	f	Nom.Pl	Nom	Pl	249	ae	fōrmae	e	a	a	a	a	a	a	a	a	a	a
+forma:Acc.Sg	1	f	Acc.Sg	Acc	Sg	249	am	fōrmam	a	a	a	a	a	a	a	a	a	a	a
+forma:Acc.Pl	1	f	Acc.Pl	Acc	Pl	249	ās	fōrmās	as	a	a	a	a	a	a	a	a	a	a
+formido:Nom.Sg	3	f	Nom.Sg	Nom	Sg	82		formīdo	-	-	-	-	-	-	-	-	-	-	-
+formido:Nom.Pl	3	f	Nom.Pl	Nom	Pl	82	ēs	formīdinēs	es	es	e	-	-	-	-	-	-	-	-
+formido:Acc.Sg	3	f	Acc.Sg	Acc	Sg	82	em	formīdinem	e	e	e	e	e	e	e	e	e	e	e
+formido:Acc.Pl	3	f	Acc.Pl	Acc	Pl	82	ēs	formīdinēs	es	es	e	e	e	e	e	e	e	e	e
+fortuna:Nom.Sg	1	f	Nom.Sg	Nom	Sg	886	a	fortūna	a	a	a	a	a	a	a	a	a	a	a
+fortuna:Nom.Pl	1	f	Nom.Pl	Nom	Pl	886	ae	fortūnae	e	a	a	a	a	a	a	a	a	a	a
+fortuna:Acc.Sg	1	f	Acc.Sg	Acc	Sg	886	am	fortūnam	a	a	a	a	a	a	a	a	a	a	a
+fortuna:Acc.Pl	1	f	Acc.Pl	Acc	Pl	886	ās	fortūnās	as	a	a	a	a	a	a	a	a	a	a
+forum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	171	um	forum	o	o	o	o	o	o	o	o	o	o	o
+forum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	171	a	fora	a	o	o	o	o	o	o	o	o	o	o
+forum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	171	um	forum	o	o	o	o	o	o	o	o	o	o	o
+forum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	171	a	fora	a	o	o	o	o	o	o	o	o	o	o
+frater:Nom.Sg	3	mh	Nom.Sg	Nom	Sg	426		frāter	-	-	-	-	-	-	-	-	-	-	-
+frater:Nom.Pl	3	mh	Nom.Pl	Nom	Pl	426	ēs	frātrēs	es	es	e	-	-	-	-	-	-	-	-
+frater:Acc.Sg	3	mh	Acc.Sg	Acc	Sg	426	em	frātrem	e	e	e	e	e	e	e	e	e	e	e
+frater:Acc.Pl	3	mh	Acc.Pl	Acc	Pl	426	ēs	frātrēs	es	es	e	e	e	e	e	e	e	e	e
+fraus:Nom.Sg	3	f	Nom.Sg	Nom	Sg	120		fraus	-	-	-	-	-	-	-	-	-	-	-
+fraus:Nom.Pl	3	f	Nom.Pl	Nom	Pl	120	ēs	fraudēs	es	es	e	-	-	-	-	-	-	-	-
+fraus:Acc.Sg	3	f	Acc.Sg	Acc	Sg	120	em	fraudem	e	e	e	e	e	e	e	e	e	e	e
+fraus:Acc.Pl	3	f	Acc.Pl	Acc	Pl	120	ēs	fraudēs	es	es	e	e	e	e	e	e	e	e	e
+fremitus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	54	us	fremitus	os	o	o	o	o	o	o	o	o	o	o
+fremitus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	54	ūs	fremitūs	us	o	o	o	o	o	o	o	o	o	o
+fremitus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	54	um	fremitum	o	o	o	o	o	o	o	o	o	o	o
+fremitus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	54	ūs	fremitūs	us	o	o	o	o	o	o	o	o	o	o
+frenum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	62	um	frēnum	o	o	o	o	o	o	o	o	o	o	o
+frenum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	62	a	frēna	a	o	o	o	o	o	o	o	o	o	o
+frenum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	62	um	frēnum	o	o	o	o	o	o	o	o	o	o	o
+frenum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	62	a	frēna	a	o	o	o	o	o	o	o	o	o	o
+fretum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	107	um	fretum	o	o	o	o	o	o	o	o	o	o	o
+fretum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	107	a	freta	a	-	o	o	o	o	o	o	o	o	o
+fretum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	107	um	fretum	o	o	o	o	o	o	o	o	o	o	o
+fretum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	107	a	freta	a	-	o	o	o	o	o	o	o	o	o
+frigus:Nom.Sg	3	n	Nom.Sg	Nom	Sg	105		frīgus	-	-	-	-	-	-	-	-	-	-	-
+frigus:Nom.Pl	3	n	Nom.Pl	Nom	Pl	105	a	frīgora	a	-	-	-	-	-	-	-	-	-	-
+frigus:Acc.Sg	3	n	Acc.Sg	Acc	Sg	105		frīgus	-	-	-	-	-	-	-	-	-	-	-
+frigus:Acc.Pl	3	n	Acc.Pl	Acc	Pl	105	a	frīgora	a	-	-	-	-	-	-	-	-	-	-
+frons:Nom.Sg	3	f	Nom.Sg	Nom	Sg	180		frōns	-	-	-	-	-	-	-	-	-	-	-
+frons:Nom.Pl	3	f	Nom.Pl	Nom	Pl	180	ēs	frontēs	es	es	e	-	-	-	-	-	-	-	-
+frons:Acc.Sg	3	f	Acc.Sg	Acc	Sg	180	em	frontem	e	e	e	e	e	e	e	e	e	e	e
+frons:Acc.Pl	3	f	Acc.Pl	Acc	Pl	180	ēs	frontēs	es	es	e	e	e	e	e	e	e	e	e
+frons:Nom.Sg	3	f	Nom.Sg	Nom	Sg	75		frons	-	-	-	-	-	-	-	-	-	-	-
+frons:Nom.Pl	3	f	Nom.Pl	Nom	Pl	75	ēs	frondēs	es	es	e	-	-	-	-	-	-	-	-
+frons:Acc.Sg	3	f	Acc.Sg	Acc	Sg	75	em	frondem	e	e	e	e	e	e	e	e	e	e	e
+frons:Acc.Pl	3	f	Acc.Pl	Acc	Pl	75	ēs	frondēs	es	es	e	e	e	e	e	e	e	e	e
+fructus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	116	us	fructus	os	o	o	o	o	o	o	o	o	o	o
+fructus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	116	ūs	fructūs	us	o	o	o	o	o	o	o	o	o	o
+fructus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	116	um	fructum	o	o	o	o	o	o	o	o	o	o	o
+fructus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	116	ūs	fructūs	us	o	o	o	o	o	o	o	o	o	o
+frumentum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	122	um	frūmentum	o	o	o	o	o	o	o	o	o	o	o
+frumentum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	122	a	frūmenta	a	o	o	o	o	o	o	o	o	o	o
+frumentum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	122	um	frūmentum	o	o	o	o	o	o	o	o	o	o	o
+frumentum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	122	a	frūmenta	a	o	o	o	o	o	o	o	o	o	o
+frux:Nom.Sg	3	f	Nom.Sg	Nom	Sg	68		frūx	-	-	-	-	-	-	-	-	-	-	-
+frux:Nom.Pl	3	f	Nom.Pl	Nom	Pl	68	ēs	frūgēs	es	es	e	-	-	-	-	-	-	-	-
+frux:Acc.Sg	3	f	Acc.Sg	Acc	Sg	68	em	frūgem	e	e	e	e	e	e	e	e	e	e	e
+frux:Acc.Pl	3	f	Acc.Pl	Acc	Pl	68	ēs	frūgēs	es	es	e	e	e	e	e	e	e	e	e
+fuga:Nom.Sg	1	f	Nom.Sg	Nom	Sg	323	a	fuga	a	a	a	a	a	a	a	a	a	a	a
+fuga:Nom.Pl	1	f	Nom.Pl	Nom	Pl	323	ae	fugae	e	a	a	a	a	a	a	a	a	a	a
+fuga:Acc.Sg	1	f	Acc.Sg	Acc	Sg	323	am	fugam	a	a	a	a	a	a	a	a	a	a	a
+fuga:Acc.Pl	1	f	Acc.Pl	Acc	Pl	323	ās	fugās	as	a	a	a	a	a	a	a	a	a	a
+fulmen:Nom.Sg	3	n	Nom.Sg	Nom	Sg	98		fulmen	-	-	-	-	-	-	-	-	-	-	-
+fulmen:Nom.Pl	3	n	Nom.Pl	Nom	Pl	98	a	fulmina	a	-	-	-	-	-	-	-	-	-	-
+fulmen:Acc.Sg	3	n	Acc.Sg	Acc	Sg	98		fulmen	-	-	-	-	-	-	-	-	-	-	-
+fulmen:Acc.Pl	3	n	Acc.Pl	Acc	Pl	98	a	fulmina	a	-	-	-	-	-	-	-	-	-	-
+funis:Nom.Sg	3	m	Nom.Sg	Nom	Sg	61	is	fūnis	es	-	-	-	-	-	-	-	-	-	-
+funis:Nom.Pl	3	m	Nom.Pl	Nom	Pl	61	ēs	fūnēs	es	es	e	-	-	-	-	-	-	-	-
+funis:Acc.Sg	3	m	Acc.Sg	Acc	Sg	61	em	fūnem	e	e	e	e	e	e	e	e	e	e	e
+funis:Acc.Pl	3	m	Acc.Pl	Acc	Pl	61	ēs	fūnēs	es	es	e	e	e	e	e	e	e	e	e
+funus:Nom.Sg	3	n	Nom.Sg	Nom	Sg	176		fūnus	-	-	-	-	-	-	-	-	-	-	-
+funus:Nom.Pl	3	n	Nom.Pl	Nom	Pl	176	a	fūnera	a	-	-	-	-	-	-	-	-	-	-
+funus:Acc.Sg	3	n	Acc.Sg	Acc	Sg	176		fūnus	-	-	-	-	-	-	-	-	-	-	-
+funus:Acc.Pl	3	n	Acc.Pl	Acc	Pl	176	a	fūnera	a	-	-	-	-	-	-	-	-	-	-
+furor:Nom.Sg	3	m	Nom.Sg	Nom	Sg	182		furor	-	-	-	-	-	-	-	-	-	-	-
+furor:Nom.Pl	3	m	Nom.Pl	Nom	Pl	182	ēs	furōrēs	es	es	e	-	-	-	-	-	-	-	-
+furor:Acc.Sg	3	m	Acc.Sg	Acc	Sg	182	em	furōrem	e	e	e	e	e	e	e	e	e	e	e
+furor:Acc.Pl	3	m	Acc.Pl	Acc	Pl	182	ēs	furōrēs	es	es	e	e	e	e	e	e	e	e	e
+furtum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	58	um	fūrtum	o	o	o	o	o	o	o	o	o	o	o
+furtum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	58	a	fūrta	a	o	o	o	o	o	o	o	o	o	o
+furtum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	58	um	fūrtum	o	o	o	o	o	o	o	o	o	o	o
+furtum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	58	a	fūrta	a	o	o	o	o	o	o	o	o	o	o
+gaudium:Nom.Sg	2	n	Nom.Sg	Nom	Sg	168	um	gaudium	o	o	o	o	o	o	o	o	o	o	o
+gaudium:Nom.Pl	2	n	Nom.Pl	Nom	Pl	168	a	gaudia	a	o	o	o	o	o	o	o	o	o	o
+gaudium:Acc.Sg	2	n	Acc.Sg	Acc	Sg	168	um	gaudium	o	o	o	o	o	o	o	o	o	o	o
+gaudium:Acc.Pl	2	n	Acc.Pl	Acc	Pl	168	a	gaudia	a	o	o	o	o	o	o	o	o	o	o
+gemitus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	87	us	gemitus	os	o	o	o	o	o	o	o	o	o	o
+gemitus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	87	ūs	gemitūs	us	o	o	o	o	o	o	o	o	o	o
+gemitus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	87	um	gemitum	o	o	o	o	o	o	o	o	o	o	o
+gemitus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	87	ūs	gemitūs	us	o	o	o	o	o	o	o	o	o	o
+gemma:Nom.Sg	1	f	Nom.Sg	Nom	Sg	54	a	gemma	a	a	a	a	a	a	a	a	a	a	a
+gemma:Nom.Pl	1	f	Nom.Pl	Nom	Pl	54	ae	gemmae	e	a	a	a	a	a	a	a	a	a	a
+gemma:Acc.Sg	1	f	Acc.Sg	Acc	Sg	54	am	gemmam	a	a	a	a	a	a	a	a	a	a	a
+gemma:Acc.Pl	1	f	Acc.Pl	Acc	Pl	54	ās	gemmās	as	a	a	a	a	a	a	a	a	a	a
+gens:Nom.Sg	3	f	Nom.Sg	Nom	Sg	577		gēns	-	-	-	-	-	-	-	-	-	-	-
+gens:Nom.Pl	3	f	Nom.Pl	Nom	Pl	577	ēs	gentēs	es	es	e	-	-	-	-	-	-	-	-
+gens:Acc.Sg	3	f	Acc.Sg	Acc	Sg	577	em	gentem	e	e	e	e	e	e	e	e	e	e	e
+gens:Acc.Pl	3	f	Acc.Pl	Acc	Pl	577	ēs	gentēs	es	es	e	e	e	e	e	e	e	e	e
+genu:Nom.Sg	4	n	Nom.Sg	Nom	Sg	70	ū	genū	u	o	o	o	o	o	o	o	o	o	o
+genu:Nom.Pl	4	n	Nom.Pl	Nom	Pl	70	ua	genua	oa	o	o	o	o	o	o	o	o	o	o
+genu:Acc.Sg	4	n	Acc.Sg	Acc	Sg	70	ū	genū	u	o	o	o	o	o	o	o	o	o	o
+genu:Acc.Pl	4	n	Acc.Pl	Acc	Pl	70	ua	genua	oa	o	o	o	o	o	o	o	o	o	o
+genus:Nom.Sg	3	n	Nom.Sg	Nom	Sg	613		genus	-	-	-	-	-	-	-	-	-	-	-
+genus:Nom.Pl	3	n	Nom.Pl	Nom	Pl	613	a	genera	a	-	-	-	-	-	-	-	-	-	-
+genus:Acc.Sg	3	n	Acc.Sg	Acc	Sg	613		genus	-	-	-	-	-	-	-	-	-	-	-
+genus:Acc.Pl	3	n	Acc.Pl	Acc	Pl	613	a	genera	a	-	-	-	-	-	-	-	-	-	-
+gladius:Nom.Sg	2	m	Nom.Sg	Nom	Sg	152	us	gladius	os	o	o	o	o	o	o	o	o	o	o
+gladius:Nom.Pl	2	m	Nom.Pl	Nom	Pl	152	ī	gladiī	i	o	o	o	o	o	o	o	o	o	o
+gladius:Acc.Sg	2	m	Acc.Sg	Acc	Sg	152	um	gladium	o	o	o	o	o	o	o	o	o	o	o
+gladius:Acc.Pl	2	m	Acc.Pl	Acc	Pl	152	ōs	gladiōs	os	o	o	o	o	o	o	o	o	o	o
+gloria:Nom.Sg	1	f	Nom.Sg	Nom	Sg	373	a	glōria	a	a	a	a	a	a	a	a	a	a	a
+gloria:Nom.Pl	1	f	Nom.Pl	Nom	Pl	373	ae	glōriae	e	a	a	a	a	a	a	a	a	a	a
+gloria:Acc.Sg	1	f	Acc.Sg	Acc	Sg	373	am	glōriam	a	a	a	a	a	a	a	a	a	a	a
+gloria:Acc.Pl	1	f	Acc.Pl	Acc	Pl	373	ās	glōriās	as	a	a	a	a	a	a	a	a	a	a
+gradus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	172	us	gradus	os	o	o	o	o	o	o	o	o	o	o
+gradus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	172	ūs	gradūs	us	o	o	o	o	o	o	o	o	o	o
+gradus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	172	um	gradum	o	o	o	o	o	o	o	o	o	o	o
+gradus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	172	ūs	gradūs	us	o	o	o	o	o	o	o	o	o	o
+gratia:Nom.Sg	1	f	Nom.Sg	Nom	Sg	418	a	grātia	a	a	a	a	a	a	a	a	a	a	a
+gratia:Nom.Pl	1	f	Nom.Pl	Nom	Pl	418	ae	grātiae	e	a	a	a	a	a	a	a	a	a	a
+gratia:Acc.Sg	1	f	Acc.Sg	Acc	Sg	418	am	grātiam	a	a	a	a	a	a	a	a	a	a	a
+gratia:Acc.Pl	1	f	Acc.Pl	Acc	Pl	418	ās	grātiās	as	a	a	a	a	a	a	a	a	a	a
+grex:Nom.Sg	3	m	Nom.Sg	Nom	Sg	137		grex	-	-	-	-	-	-	-	-	-	-	-
+grex:Nom.Pl	3	m	Nom.Pl	Nom	Pl	137	ēs	gregēs	es	es	e	-	-	-	-	-	-	-	-
+grex:Acc.Sg	3	m	Acc.Sg	Acc	Sg	137	em	gregem	e	e	e	e	e	e	e	e	e	e	e
+grex:Acc.Pl	3	m	Acc.Pl	Acc	Pl	137	ēs	gregēs	es	es	e	e	e	e	e	e	e	e	e
+habitus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	148	us	habitus	os	o	o	o	o	o	o	o	o	o	o
+habitus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	148	ūs	habitūs	us	os	o	o	o	o	o	o	o	o	o
+habitus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	148	um	habitum	o	o	o	o	o	o	o	o	o	o	o
+habitus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	148	ūs	habitūs	us	os	o	o	o	o	o	o	o	o	o
+hasta:Nom.Sg	1	f	Nom.Sg	Nom	Sg	75	a	hasta	a	a	a	a	a	a	a	a	a	a	a
+hasta:Nom.Pl	1	f	Nom.Pl	Nom	Pl	75	ae	hastae	e	a	a	a	a	a	a	a	a	a	a
+hasta:Acc.Sg	1	f	Acc.Sg	Acc	Sg	75	am	hastam	a	a	a	a	a	a	a	a	a	a	a
+hasta:Acc.Pl	1	f	Acc.Pl	Acc	Pl	75	ās	hastās	as	a	a	a	a	a	a	a	a	a	a
+herba:Nom.Sg	1	f	Nom.Sg	Nom	Sg	123	a	herba	a	a	a	a	a	a	a	a	a	a	a
+herba:Nom.Pl	1	f	Nom.Pl	Nom	Pl	123	ae	herbae	e	a	a	a	a	a	a	a	a	a	a
+herba:Acc.Sg	1	f	Acc.Sg	Acc	Sg	123	am	herbam	a	a	a	a	a	a	a	a	a	a	a
+herba:Acc.Pl	1	f	Acc.Pl	Acc	Pl	123	ās	herbās	as	a	a	a	a	a	a	a	a	a	a
+heres:Nom.Sg	3	mh	Nom.Sg	Nom	Sg	53		hērēs	-	-	-	-	-	-	-	-	-	-	-
+heres:Nom.Pl	3	mh	Nom.Pl	Nom	Pl	53	es	hērēdes	es	es	e	-	-	-	-	-	-	-	-
+heres:Acc.Sg	3	mh	Acc.Sg	Acc	Sg	53	em	hērēdem	e	e	e	e	e	e	e	e	e	e	e
+heres:Acc.Pl	3	mh	Acc.Pl	Acc	Pl	53	ēs	hērēdēs	es	es	e	e	e	e	e	e	e	e	e
+hiems:Nom.Sg	3	f	Nom.Sg	Nom	Sg	124		hiems	-	-	-	-	-	-	-	-	-	-	-
+hiems:Nom.Pl	3	f	Nom.Pl	Nom	Pl	124	ēs	hiemēs	es	es	e	-	-	-	-	-	-	-	-
+hiems:Acc.Sg	3	f	Acc.Sg	Acc	Sg	124	em	hiemem	e	e	e	e	e	e	e	e	e	e	e
+hiems:Acc.Pl	3	f	Acc.Pl	Acc	Pl	124	ēs	hiemēs	es	es	es	e	e	e	e	e	e	e	e
+homo:Nom.Sg	3	mh	Nom.Sg	Nom	Sg	1273		homō	-	-	-	-	-	-	-	-	-	-	-
+homo:Nom.Pl	3	mh	Nom.Pl	Nom	Pl	1273	ēs	hominēs	es	es	e	-	-	-	-	-	-	-	-
+homo:Acc.Sg	3	mh	Acc.Sg	Acc	Sg	1273	em	hominem	e	e	e	e	e	e	e	e	e	e	e
+homo:Acc.Pl	3	mh	Acc.Pl	Acc	Pl	1273	ēs	hominēs	es	es	e	e	e	e	e	e	e	e	e
+honor:Nom.Sg	3	m	Nom.Sg	Nom	Sg	429		honor	-	-	-	-	-	-	-	-	-	-	-
+honor:Nom.Pl	3	m	Nom.Pl	Nom	Pl	429	ēs	honōrēs	es	es	e	-	-	-	-	-	-	-	-
+honor:Acc.Sg	3	m	Acc.Sg	Acc	Sg	429	em	honōrem	e	e	e	e	e	e	e	e	e	e	e
+honor:Acc.Pl	3	m	Acc.Pl	Acc	Pl	429	ēs	honōrēs	es	es	e	e	e	e	e	e	e	e	e
+hora:Nom.Sg	1	f	Nom.Sg	Nom	Sg	163	a	hōra	a	a	a	a	a	a	a	a	a	a	a
+hora:Nom.Pl	1	f	Nom.Pl	Nom	Pl	163	ae	hōrae	e	a	a	a	a	a	a	a	a	a	a
+hora:Acc.Sg	1	f	Acc.Sg	Acc	Sg	163	am	hōram	a	a	a	a	a	a	a	a	a	a	a
+hora:Acc.Pl	1	f	Acc.Pl	Acc	Pl	163	ās	hōrās	as	a	a	a	a	a	a	a	a	a	a
+hortus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	61	us	hortus	os	o	o	o	o	o	o	o	o	o	o
+hortus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	61	ī	hortī	i	o	o	o	o	o	o	o	o	o	o
+hortus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	61	um	hortum	o	o	o	o	o	o	o	o	o	o	o
+hortus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	61	ōs	hortōs	os	o	o	o	o	o	o	o	o	o	o
+hospes:Nom.Sg	3	mh	Nom.Sg	Nom	Sg	88		hospes	-	-	-	-	-	-	-	-	-	-	-
+hospes:Nom.Pl	3	mh	Nom.Pl	Nom	Pl	88	ēs	hospitēs	es	es	e	-	-	-	-	-	-	-	-
+hospes:Acc.Sg	3	mh	Acc.Sg	Acc	Sg	88	em	hospitem	e	e	e	e	e	e	e	e	e	e	e
+hospes:Acc.Pl	3	mh	Acc.Pl	Acc	Pl	88	ēs	hospitēs	es	es	e	e	e	e	e	e	e	e	e
+hostis:Nom.Sg	3	mh	Nom.Sg	Nom	Sg	1230	is	hostis	es	-	-	-	-	-	-	-	-	-	-
+hostis:Nom.Pl	3	mh	Nom.Pl	Nom	Pl	1230	ēs	hostēs	es	es	e	-	-	-	-	-	-	-	-
+hostis:Acc.Sg	3	mh	Acc.Sg	Acc	Sg	1230	em	hostem	e	e	e	e	e	e	e	e	e	e	e
+hostis:Acc.Pl	3	mh	Acc.Pl	Acc	Pl	1230	ēs	hostēs	es	es	e	e	e	e	e	e	e	e	e
+humerus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	103	us	humerus	os	o	o	o	o	o	o	o	o	o	o
+humerus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	103	ī	humerī	i	o	o	o	o	o	o	o	o	o	o
+humerus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	103	um	humerum	o	o	o	o	o	o	o	o	o	o	o
+humerus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	103	ōs	humerōs	os	o	o	o	o	o	o	o	o	o	o
+humor:Nom.Sg	3	m	Nom.Sg	Nom	Sg	66		hūmor	-	-	-	-	-	-	-	-	-	-	-
+humor:Nom.Pl	3	m	Nom.Pl	Nom	Pl	66	ēs	hūmōrēs	es	es	e	-	-	-	-	-	-	-	-
+humor:Acc.Sg	3	m	Acc.Sg	Acc	Sg	66	em	hūmōrem	e	e	e	e	e	e	e	e	e	e	e
+humor:Acc.Pl	3	m	Acc.Pl	Acc	Pl	66	ēs	hūmōrēs	es	es	e	e	e	e	e	e	e	e	e
+humus:Nom.Sg	2	f	Nom.Sg	Nom	Sg	128	us	humus	os	o	o	o	o	o	o	o	o	o	o
+humus:Nom.Pl	2	f	Nom.Pl	Nom	Pl	128	ī	humī	i	o	o	o	o	o	o	o	o	o	o
+humus:Acc.Sg	2	f	Acc.Sg	Acc	Sg	128	um	humum	o	o	o	o	o	o	o	o	o	o	o
+humus:Acc.Pl	2	f	Acc.Pl	Acc	Pl	128	ōs	humōs	os	o	o	o	o	o	o	o	o	o	o
+ictus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	130	us	ictus	os	o	o	o	o	o	o	o	o	o	o
+ictus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	130	ūs	ictūs	us	o	o	o	o	o	o	o	o	o	o
+ictus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	130	um	ictum	o	o	o	o	o	o	o	o	o	o	o
+ictus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	130	ūs	ictūs	us	o	o	o	o	o	o	o	o	o	o
+ignis:Nom.Sg	3	m	Nom.Sg	Nom	Sg	505	is	ignis	es	-	-	-	-	-	-	-	-	-	-
+ignis:Nom.Pl	3	m	Nom.Pl	Nom	Pl	505	ēs	ignēs	es	es	e	-	-	-	-	-	-	-	-
+ignis:Acc.Sg	3	m	Acc.Sg	Acc	Sg	505	em	ignem	e	e	e	e	e	e	e	e	e	e	e
+ignis:Acc.Pl	3	m	Acc.Pl	Acc	Pl	505	ēs	ignēs	es	es	e	e	e	e	e	e	e	e	e
+imago:Nom.Sg	3	f	Nom.Sg	Nom	Sg	152		imāgō	-	-	-	-	-	-	-	-	-	-	-
+imago:Nom.Pl	3	f	Nom.Pl	Nom	Pl	152	ēs	imāginēs	es	es	e	-	-	-	-	-	-	-	-
+imago:Acc.Sg	3	f	Acc.Sg	Acc	Sg	152	em	imāginem	e	e	e	e	e	e	e	e	e	e	e
+imago:Acc.Pl	3	f	Acc.Pl	Acc	Pl	152	ēs	imāginēs	es	es	es	e	e	e	e	e	e	e	e
+imber:Nom.Sg	3	m	Nom.Sg	Nom	Sg	88		imber	-	-	-	-	-	-	-	-	-	-	-
+imber:Nom.Pl	3	m	Nom.Pl	Nom	Pl	88	ēs	imbrēs	es	es	e	-	-	-	-	-	-	-	-
+imber:Acc.Sg	3	m	Acc.Sg	Acc	Sg	88	em	imbrem	e	e	e	e	e	e	e	e	e	e	e
+imber:Acc.Pl	3	m	Acc.Pl	Acc	Pl	88	ēs	imbrēs	es	es	e	e	e	e	e	e	e	e	e
+imperium:Nom.Sg	2	n	Nom.Sg	Nom	Sg	652	um	imperium	o	o	o	o	o	o	o	o	o	o	o
+imperium:Nom.Pl	2	n	Nom.Pl	Nom	Pl	652	a	imperia	a	-	o	o	o	o	o	o	o	o	o
+imperium:Acc.Sg	2	n	Acc.Sg	Acc	Sg	652	um	imperium	o	o	o	o	o	o	o	o	o	o	o
+imperium:Acc.Pl	2	n	Acc.Pl	Acc	Pl	652	a	imperia	a	o	o	o	o	o	o	o	o	o	o
+impetus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	339	us	impetus	os	o	o	o	o	o	o	o	o	o	o
+impetus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	339	ūs	impetūs	us	o	o	o	o	o	o	o	o	o	o
+impetus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	339	um	impetum	o	o	o	o	o	o	o	o	o	o	o
+impetus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	339	ūs	impetūs	us	o	o	o	o	o	o	o	o	o	o
+incendium:Nom.Sg	2	n	Nom.Sg	Nom	Sg	108	um	incendium	o	o	o	o	o	o	o	o	o	o	o
+incendium:Nom.Pl	2	n	Nom.Pl	Nom	Pl	108	a	incendia	a	o	o	o	o	o	o	o	o	o	o
+incendium:Acc.Sg	2	n	Acc.Sg	Acc	Sg	108	um	incendium	o	o	o	o	o	o	o	o	o	o	o
+incendium:Acc.Pl	2	n	Acc.Pl	Acc	Pl	108	a	incendia	a	o	o	o	o	o	o	o	o	o	o
+infans:Nom.Sg	3	mh	Nom.Sg	Nom	Sg	64		īnfāns	-	-	-	-	-	-	-	-	-	-	-
+infans:Nom.Pl	3	mh	Nom.Pl	Nom	Pl	64	ēs	īnfantēs	es	es	e	-	-	-	-	-	-	-	-
+infans:Acc.Sg	3	mh	Acc.Sg	Acc	Sg	64	em	īnfantem	e	e	e	e	e	e	e	e	e	e	e
+infans:Acc.Pl	3	mh	Acc.Pl	Acc	Pl	64	ēs	īnfantēs	es	es	e	e	e	e	e	e	e	e	e
+ingenium:Nom.Sg	2	n	Nom.Sg	Nom	Sg	377	um	ingenium	o	o	o	o	o	o	o	o	o	o	o
+ingenium:Nom.Pl	2	n	Nom.Pl	Nom	Pl	377	a	ingenia	a	o	o	o	o	o	o	o	o	o	o
+ingenium:Acc.Sg	2	n	Acc.Sg	Acc	Sg	377	um	ingenium	o	o	o	o	o	o	o	o	o	o	o
+ingenium:Acc.Pl	2	n	Acc.Pl	Acc	Pl	377	a	ingenia	a	o	o	o	o	o	o	o	o	o	o
+iniuria:Nom.Sg	1	f	Nom.Sg	Nom	Sg	425	a	iniūria	a	a	a	a	a	a	a	a	a	a	a
+iniuria:Nom.Pl	1	f	Nom.Pl	Nom	Pl	425	ae	iniūriae	e	a	a	a	a	a	a	a	a	a	a
+iniuria:Acc.Sg	1	f	Acc.Sg	Acc	Sg	425	am	iniūriam	a	a	a	a	a	a	a	a	a	a	a
+iniuria:Acc.Pl	1	f	Acc.Pl	Acc	Pl	425	ās	iniūriās	as	a	a	a	a	a	a	a	a	a	a
+insidia:Nom.Sg	1	f	Nom.Sg	Nom	Sg	149	a	īnsidia	a	a	a	a	a	a	a	a	a	a	a
+insidia:Nom.Pl	1	f	Nom.Pl	Nom	Pl	149	ae	īnsidiae	e	a	a	a	a	a	a	a	a	a	a
+insidia:Acc.Sg	1	f	Acc.Sg	Acc	Sg	149	am	īnsidiam	a	a	a	a	a	a	a	a	a	a	a
+insidia:Acc.Pl	1	f	Acc.Pl	Acc	Pl	149	ās	īnsidiās	as	a	a	a	a	a	a	a	a	a	a
+insula:Nom.Sg	1	f	Nom.Sg	Nom	Sg	136	a	īnsula	a	a	a	a	a	a	a	a	a	a	a
+insula:Nom.Pl	1	f	Nom.Pl	Nom	Pl	136	ae	īnsulae	e	a	a	a	a	a	a	a	a	a	a
+insula:Acc.Sg	1	f	Acc.Sg	Acc	Sg	136	am	īnsulam	a	a	a	a	a	a	a	a	a	a	a
+insula:Acc.Pl	1	f	Acc.Pl	Acc	Pl	136	ās	īnsulās	as	a	a	a	a	a	a	a	a	a	a
+invidia:Nom.Sg	1	f	Nom.Sg	Nom	Sg	209	a	invidia	a	a	a	a	a	a	a	a	a	a	a
+invidia:Nom.Pl	1	f	Nom.Pl	Nom	Pl	209	ae	invidiae	e	a	a	a	a	a	a	a	a	a	a
+invidia:Acc.Sg	1	f	Acc.Sg	Acc	Sg	209	am	invidiam	a	a	a	a	a	a	a	a	a	a	a
+invidia:Acc.Pl	1	f	Acc.Pl	Acc	Pl	209	ās	invidiās	as	a	a	a	a	a	a	a	a	a	a
+ira:Nom.Sg	1	f	Nom.Sg	Nom	Sg	585	a	īra	a	a	a	a	a	a	a	a	a	a	a
+ira:Nom.Pl	1	f	Nom.Pl	Nom	Pl	585	ae	īrae	e	a	a	a	a	a	a	a	a	a	a
+ira:Acc.Sg	1	f	Acc.Sg	Acc	Sg	585	am	īram	a	a	a	a	a	a	a	a	a	a	a
+ira:Acc.Pl	1	f	Acc.Pl	Acc	Pl	585	ās	īrās	as	a	a	a	a	a	a	a	a	a	a
+iter:Nom.Sg	3	n	Nom.Sg	Nom	Sg	532		iter	-	-	-	-	-	-	-	-	-	-	-
+iter:Nom.Pl	3	n	Nom.Pl	Nom	Pl	532	a	itinera	a	-	-	-	-	-	-	-	-	-	-
+iter:Acc.Sg	3	n	Acc.Sg	Acc	Sg	532		iter	-	-	-	-	-	-	-	-	-	-	-
+iter:Acc.Pl	3	n	Acc.Pl	Acc	Pl	532	a	itinera	a	-	-	-	-	-	-	-	-	-	-
+iudex:Nom.Sg	3	mh	Nom.Sg	Nom	Sg	136		iūdex	-	-	-	-	-	-	-	-	-	-	-
+iudex:Nom.Pl	3	mh	Nom.Pl	Nom	Pl	136	ēs	iūdicēs	es	es	e	-	-	-	-	-	-	-	-
+iudex:Acc.Sg	3	mh	Acc.Sg	Acc	Sg	136	em	iūdicem	e	-	e	e	e	e	e	e	e	e	e
+iudex:Acc.Pl	3	mh	Acc.Pl	Acc	Pl	136	ēs	iūdicēs	es	es	e	e	e	e	e	e	e	e	e
+iugum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	254	um	iugum	o	o	o	o	o	o	o	o	o	o	o
+iugum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	254	a	iuga	a	o	o	o	o	o	o	o	o	o	o
+iugum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	254	um	iugum	o	o	o	o	o	o	o	o	o	o	o
+iugum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	254	a	iuga	a	o	o	o	o	o	o	o	o	o	o
+ius:Nom.Sg	3	n	Nom.Sg	Nom	Sg	388		iūs	-	-	-	-	-	-	-	-	-	-	-
+ius:Nom.Pl	3	n	Nom.Pl	Nom	Pl	388	a	iūra	a	-	-	-	-	-	-	-	-	-	-
+ius:Acc.Sg	3	n	Acc.Sg	Acc	Sg	388		iūs	-	-	-	-	-	-	-	-	-	-	-
+ius:Acc.Pl	3	n	Acc.Pl	Acc	Pl	388	a	iūra	a	-	-	-	-	-	-	-	-	-	-
+iuvenis:Nom.Sg	3	mh	Nom.Sg	Nom	Sg	311	is	iuvenis	es	-	-	-	-	-	-	-	-	-	-
+iuvenis:Nom.Pl	3	mh	Nom.Pl	Nom	Pl	311	ēs	iuvenēs	es	es	e	-	-	-	-	-	-	-	-
+iuvenis:Acc.Sg	3	mh	Acc.Sg	Acc	Sg	311	em	iuvenem	e	e	e	e	e	e	e	e	e	e	e
+iuvenis:Acc.Pl	3	mh	Acc.Pl	Acc	Pl	311	ēs	iuvenēs	es	es	e	e	e	e	e	e	e	e	e
+iuventa:Nom.Sg	1	f	Nom.Sg	Nom	Sg	68	a	iuventa	a	a	a	a	a	a	a	a	a	a	a
+iuventa:Nom.Pl	1	f	Nom.Pl	Nom	Pl	68	ae	iuventae	e	a	a	a	a	a	a	a	a	a	a
+iuventa:Acc.Sg	1	f	Acc.Sg	Acc	Sg	68	am	iuventam	a	a	a	a	a	a	a	a	a	a	a
+iuventa:Acc.Pl	1	f	Acc.Pl	Acc	Pl	68	ās	iuventās	as	a	a	a	a	a	a	a	a	a	a
+iuventus:Nom.Sg	3	f	Nom.Sg	Nom	Sg	88		iuventūs	-	-	-	-	-	-	-	-	-	-	-
+iuventus:Nom.Pl	3	f	Nom.Pl	Nom	Pl	88	ēs	iuventūtēs	es	es	e	-	-	-	-	-	-	-	-
+iuventus:Acc.Sg	3	f	Acc.Sg	Acc	Sg	88	em	iuventūtem	e	e	e	e	e	e	e	e	e	e	e
+iuventus:Acc.Pl	3	f	Acc.Pl	Acc	Pl	88	ēs	iuventūtēs	es	es	e	e	e	e	e	e	e	e	e
+labor:Nom.Sg	3	m	Nom.Sg	Nom	Sg	475		labor	-	-	-	-	-	-	-	-	-	-	-
+labor:Nom.Pl	3	m	Nom.Pl	Nom	Pl	475	ēs	labōrēs	es	es	e	-	-	-	-	-	-	-	-
+labor:Acc.Sg	3	m	Acc.Sg	Acc	Sg	475	em	labōrem	e	e	e	e	e	e	e	e	e	e	e
+labor:Acc.Pl	3	m	Acc.Pl	Acc	Pl	475	ēs	labōrēs	es	es	e	e	e	e	e	e	e	e	e
+lacrima:Nom.Sg	1	f	Nom.Sg	Nom	Sg	254	a	lacrima	a	a	a	a	a	a	a	a	a	a	a
+lacrima:Nom.Pl	1	f	Nom.Pl	Nom	Pl	254	ae	lacrimae	e	a	a	a	a	a	a	a	a	a	a
+lacrima:Acc.Sg	1	f	Acc.Sg	Acc	Sg	254	am	lacrimam	a	a	a	a	a	a	a	a	a	a	a
+lacrima:Acc.Pl	1	f	Acc.Pl	Acc	Pl	254	ās	lacrimās	as	a	a	a	a	a	a	a	a	a	a
+lacus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	90	us	lacus	os	o	o	o	o	o	o	o	o	o	o
+lacus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	90	ūs	lacūs	us	o	o	o	o	o	o	o	o	o	o
+lacus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	90	um	lacum	o	o	o	o	o	o	o	o	o	o	o
+lacus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	90	ūs	lacūs	us	o	o	o	o	o	o	o	o	o	o
+laetitia:Nom.Sg	1	f	Nom.Sg	Nom	Sg	80	a	laetitia	a	a	a	a	a	a	a	a	a	a	a
+laetitia:Nom.Pl	1	f	Nom.Pl	Nom	Pl	80	ae	laetitiae	e	a	a	a	a	a	a	a	a	a	a
+laetitia:Acc.Sg	1	f	Acc.Sg	Acc	Sg	80	am	laetitiam	a	a	a	a	a	a	a	a	a	a	a
+laetitia:Acc.Pl	1	f	Acc.Pl	Acc	Pl	80	ās	laetitiās	as	a	a	a	a	a	a	a	a	a	a
+lapis:Nom.Sg	3	m	Nom.Sg	Nom	Sg	107	is	lapis	es	-	-	-	-	-	-	-	-	-	-
+lapis:Nom.Pl	3	m	Nom.Pl	Nom	Pl	107	ēs	lapidēs	es	es	e	-	-	-	-	-	-	-	-
+lapis:Acc.Sg	3	m	Acc.Sg	Acc	Sg	107	em	lapidem	e	e	e	e	e	e	e	e	e	e	e
+lapis:Acc.Pl	3	m	Acc.Pl	Acc	Pl	107	ēs	lapidēs	es	es	e	e	e	e	e	e	e	e	e
+latebra:Nom.Sg	1	f	Nom.Sg	Nom	Sg	54	a	latēbra	a	a	a	a	a	a	a	a	a	a	a
+latebra:Nom.Pl	1	f	Nom.Pl	Nom	Pl	54	ae	latēbrae	e	a	a	a	a	a	a	a	a	a	a
+latebra:Acc.Sg	1	f	Acc.Sg	Acc	Sg	54	am	latēbram	a	a	a	a	a	a	a	a	a	a	a
+latebra:Acc.Pl	1	f	Acc.Pl	Acc	Pl	54	ās	latēbrās	as	a	a	a	a	a	a	a	a	a	a
+latus:Nom.Sg	3	n	Nom.Sg	Nom	Sg	254		latus	-	-	-	-	-	-	-	-	-	-	-
+latus:Nom.Pl	3	n	Nom.Pl	Nom	Pl	254	a	latera	a	-	-	-	-	-	-	-	-	-	-
+latus:Acc.Sg	3	n	Acc.Sg	Acc	Sg	254		latus	-	-	-	-	-	-	-	-	-	-	-
+latus:Acc.Pl	3	n	Acc.Pl	Acc	Pl	254	a	latera	a	-	-	-	-	-	-	-	-	-	-
+laus:Nom.Sg	3	f	Nom.Sg	Nom	Sg	238		laus	-	-	-	-	-	-	-	-	-	-	-
+laus:Nom.Pl	3	f	Nom.Pl	Nom	Pl	238	ēs	laudēs	es	es	e	-	-	-	-	-	-	-	-
+laus:Acc.Sg	3	f	Acc.Sg	Acc	Sg	238	em	laudem	e	e	e	e	e	e	e	e	e	e	e
+laus:Acc.Pl	3	f	Acc.Pl	Acc	Pl	238	ēs	laudēs	es	es	e	e	e	e	e	e	e	e	e
+lectus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	89	us	lectus	os	o	o	o	o	o	o	o	o	o	o
+lectus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	89	ī	lectī	i	o	o	o	o	o	o	o	o	o	o
+lectus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	89	um	lectum	o	o	o	o	o	o	o	o	o	o	o
+lectus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	89	ōs	lectōs	os	o	o	o	o	o	o	o	o	o	o
+leo:Nom.Sg	3	m	Nom.Sg	Nom	Sg	97		leō	-	-	-	-	-	-	-	-	-	-	-
+leo:Nom.Pl	3	m	Nom.Pl	Nom	Pl	97	ēs	leōnēs	es	es	e	-	-	-	-	-	-	-	-
+leo:Acc.Sg	3	m	Acc.Sg	Acc	Sg	97	em	leōnem	e	e	e	e	e	e	e	e	e	e	e
+leo:Acc.Pl	3	m	Acc.Pl	Acc	Pl	97	ēs	leōnēs	es	es	e	e	e	e	e	e	e	e	e
+lex:Nom.Sg	3	f	Nom.Sg	Nom	Sg	472		lēx	-	-	-	-	-	-	-	-	-	-	-
+lex:Nom.Pl	3	f	Nom.Pl	Nom	Pl	472	ēs	lēgēs	es	es	e	-	-	-	-	-	-	-	-
+lex:Acc.Sg	3	f	Acc.Sg	Acc	Sg	472	em	lēgem	e	e	e	e	e	e	e	e	e	e	e
+lex:Acc.Pl	3	f	Acc.Pl	Acc	Pl	472	ēs	lēgēs	es	es	e	e	e	e	e	e	e	e	e
+liber:Nom.Sg	2	m	Nom.Sg	Nom	Sg	124		liber	-	o	o	o	o	o	o	o	o	o	o
+liber:Nom.Pl	2	m	Nom.Pl	Nom	Pl	124	ī	librī	i	o	o	o	o	o	o	o	o	o	o
+liber:Acc.Sg	2	m	Acc.Sg	Acc	Sg	124	um	librum	o	o	o	o	o	o	o	o	o	o	o
+liber:Acc.Pl	2	m	Acc.Pl	Acc	Pl	124	ōs	librōs	os	o	o	o	o	o	o	o	o	o	o
+libertas:Nom.Sg	3	f	Nom.Sg	Nom	Sg	321		lībertās	-	-	-	-	-	-	-	-	-	-	-
+libertas:Nom.Pl	3	f	Nom.Pl	Nom	Pl	321	ēs	lībertātēs	es	es	e	-	-	-	-	-	-	-	-
+libertas:Acc.Sg	3	f	Acc.Sg	Acc	Sg	321	em	lībertātem	e	e	e	e	e	e	e	e	e	e	e
+libertas:Acc.Pl	3	f	Acc.Pl	Acc	Pl	321	ēs	lībertātēs	es	es	e	e	e	e	e	e	e	e	e
+libido:Nom.Sg	3	f	Nom.Sg	Nom	Sg	185		libīdō	-	-	-	-	-	-	-	-	-	-	-
+libido:Nom.Pl	3	f	Nom.Pl	Nom	Pl	185	ēs	libīdinēs	es	es	e	-	-	-	-	-	-	-	-
+libido:Acc.Sg	3	f	Acc.Sg	Acc	Sg	185	em	libīdinem	e	e	e	e	e	e	e	e	e	e	e
+libido:Acc.Pl	3	f	Acc.Pl	Acc	Pl	185	ēs	libīdinēs	es	es	e	e	e	e	e	e	e	e	e
+limen:Nom.Sg	3	n	Nom.Sg	Nom	Sg	149		līmen	-	-	-	-	-	-	-	-	-	-	-
+limen:Nom.Pl	3	n	Nom.Pl	Nom	Pl	149	a	līmina	a	-	-	-	-	-	-	-	-	-	-
+limen:Acc.Sg	3	n	Acc.Sg	Acc	Sg	149		līmen	-	-	-	-	-	-	-	-	-	-	-
+limen:Acc.Pl	3	n	Acc.Pl	Acc	Pl	149	a	līmina	a	-	-	-	-	-	-	-	-	-	-
+lingua:Nom.Sg	1	f	Nom.Sg	Nom	Sg	137	a	lingua	a	a	a	a	a	a	a	a	a	a	a
+lingua:Nom.Pl	1	f	Nom.Pl	Nom	Pl	137	ae	linguae	e	a	a	a	a	a	a	a	a	a	a
+lingua:Acc.Sg	1	f	Acc.Sg	Acc	Sg	137	am	linguam	a	a	a	a	a	a	a	a	a	a	a
+lingua:Acc.Pl	1	f	Acc.Pl	Acc	Pl	137	ās	linguās	as	a	a	a	a	a	a	a	a	a	a
+litus:Nom.Sg	3	n	Nom.Sg	Nom	Sg	303		lītus	-	-	-	-	-	-	-	-	-	-	-
+litus:Nom.Pl	3	n	Nom.Pl	Nom	Pl	303	a	lītora	a	-	-	-	-	-	-	-	-	-	-
+litus:Acc.Sg	3	n	Acc.Sg	Acc	Sg	303		lītus	-	-	-	-	-	-	-	-	-	-	-
+litus:Acc.Pl	3	n	Acc.Pl	Acc	Pl	303	a	lītora	a	-	-	-	-	-	-	-	-	-	-
+locus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	1516	us	locus	os	o	o	o	o	o	o	o	o	o	o
+locus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	1516	ī	locī	i	o	o	o	o	o	o	o	o	o	o
+locus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	1516	um	locum	o	o	o	o	o	o	o	o	o	o	o
+locus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	1516	ōs	locōs	os	o	o	o	o	o	o	o	o	o	o
+luctus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	126	us	luctus	os	o	o	o	o	o	o	o	o	o	o
+luctus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	126	ūs	luctūs	us	o	o	o	o	o	o	o	o	o	o
+luctus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	126	um	luctum	o	o	o	o	o	o	o	o	o	o	o
+luctus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	126	ūs	luctūs	us	o	o	o	o	o	o	o	o	o	o
+lucus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	80	us	lūcus	os	o	o	o	o	o	o	o	o	o	o
+lucus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	80	ī	lūcī	i	o	o	o	o	o	o	o	o	o	o
+lucus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	80	um	lūcum	o	o	o	o	o	o	o	o	o	o	o
+lucus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	80	ōs	lūcōs	os	o	o	o	o	o	o	o	o	o	o
+ludus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	100	us	lūdus	os	o	o	o	o	o	o	o	o	o	o
+ludus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	100	ī	lūdī	i	o	o	o	o	o	o	o	o	o	o
+ludus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	100	um	lūdum	o	o	o	o	o	o	o	o	o	o	o
+ludus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	100	ōs	lūdōs	os	o	o	o	o	o	o	o	o	o	o
+lumen:Nom.Sg	3	n	Nom.Sg	Nom	Sg	201		lūmen	-	-	-	-	-	-	-	-	-	-	-
+lumen:Nom.Pl	3	n	Nom.Pl	Nom	Pl	201	a	lūmina	a	-	-	-	-	-	-	-	-	-	-
+lumen:Acc.Sg	3	n	Acc.Sg	Acc	Sg	201		lūmen	-	-	-	-	-	-	-	-	-	-	-
+lumen:Acc.Pl	3	n	Acc.Pl	Acc	Pl	201	a	lūmina	a	-	-	-	-	-	-	-	-	-	-
+luna:Nom.Sg	1	f	Nom.Sg	Nom	Sg	87	a	lūna	a	a	a	a	a	a	a	a	a	a	a
+luna:Nom.Pl	1	f	Nom.Pl	Nom	Pl	87	ae	lūnae	e	a	a	a	a	a	a	a	a	a	a
+luna:Acc.Sg	1	f	Acc.Sg	Acc	Sg	87	am	lūnam	a	a	a	a	a	a	a	a	a	a	a
+luna:Acc.Pl	1	f	Acc.Pl	Acc	Pl	87	ās	lūnās	as	a	a	a	a	a	a	a	a	a	a
+lux:Nom.Sg	3	f	Nom.Sg	Nom	Sg	314		lūx	-	-	-	-	-	-	-	-	-	-	-
+lux:Nom.Pl	3	f	Nom.Pl	Nom	Pl	314	ēs	lūcēs	es	es	e	-	-	-	-	-	-	-	-
+lux:Acc.Sg	3	f	Acc.Sg	Acc	Sg	314	em	lūcem	e	e	e	e	e	e	e	e	e	e	e
+lux:Acc.Pl	3	f	Acc.Pl	Acc	Pl	314	ēs	lūcēs	es	es	e	e	e	e	e	e	e	e	e
+luxuria:Nom.Sg	1	f	Nom.Sg	Nom	Sg	129	a	luxuria	a	a	a	a	a	a	a	a	a	a	a
+luxuria:Nom.Pl	1	f	Nom.Pl	Nom	Pl	129	ae	luxuriae	e	a	a	a	a	a	a	a	a	a	a
+luxuria:Acc.Sg	1	f	Acc.Sg	Acc	Sg	129	am	luxuriam	a	a	a	a	a	a	a	a	a	a	a
+luxuria:Acc.Pl	1	f	Acc.Pl	Acc	Pl	129	ās	luxuriās	as	a	a	a	a	a	a	a	a	a	a
+magister:Nom.Sg	2	mh	Nom.Sg	Nom	Sg	67		magister	-	o	o	o	o	o	o	o	o	o	o
+magister:Nom.Pl	2	mh	Nom.Pl	Nom	Pl	67	ī	magistrī	i	o	o	o	o	o	o	o	o	o	o
+magister:Acc.Sg	2	mh	Acc.Sg	Acc	Sg	67	um	magistrum	o	o	o	o	o	o	o	o	o	o	o
+magister:Acc.Pl	2	mh	Acc.Pl	Acc	Pl	67	ōs	magistrōs	os	o	o	o	o	o	o	o	o	o	o
+malum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	908	um	malum	o	o	o	o	o	o	o	o	o	o	o
+malum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	908	a	mala	a	o	o	o	o	o	o	o	o	o	o
+malum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	908	um	malum	o	o	o	o	o	o	o	o	o	o	o
+malum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	908	a	mala	a	o	o	o	o	o	o	o	o	o	o
+manus:Nom.Sg	4	f	Nom.Sg	Nom	Sg	1369	us	manus	os	o	o	o	o	o	o	o	o	o	-
+manus:Nom.Pl	4	f	Nom.Pl	Nom	Pl	1369	ūs	manūs	us	o	o	o	o	o	o	o	o	o	-
+manus:Acc.Sg	4	f	Acc.Sg	Acc	Sg	1369	um	manum	o	o	o	o	o	o	o	o	o	o	-
+manus:Acc.Pl	4	f	Acc.Pl	Acc	Pl	1369	ūs	manūs	us	os	o	o	o	o	o	o	o	o	-
+mare:Nom.Sg	3	n	Nom.Sg	Nom	Sg	660	e	mare	e	-	-	-	-	-	-	-	-	-	-
+mare:Nom.Pl	3	n	Nom.Pl	Nom	Pl	660	ia	maria	ea	-	-	-	-	-	-	-	-	-	-
+mare:Acc.Sg	3	n	Acc.Sg	Acc	Sg	660	e	mare	e	-	-	-	-	-	-	-	-	-	-
+mare:Acc.Pl	3	n	Acc.Pl	Acc	Pl	660	ia	maria	ea	-	-	-	-	-	-	-	-	-	-
+maritus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	146	us	marītus	os	o	o	o	o	o	o	o	o	o	o
+maritus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	146	ī	marītī	i	o	o	o	o	o	o	o	o	o	o
+maritus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	146	um	marītum	o	o	o	o	o	o	o	o	o	o	o
+maritus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	146	ōs	marītōs	os	o	o	o	o	o	o	o	o	o	o
+mater:Nom.Sg	3	fh	Nom.Sg	Nom	Sg	544		māter	-	-	e	-	-	-	-	-	-	-	-
+mater:Nom.Pl	3	fh	Nom.Pl	Nom	Pl	544	ēs	mātrēs	es	es	e	e	-	-	-	-	-	-	-
+mater:Acc.Sg	3	fh	Acc.Sg	Acc	Sg	544	em	mātrem	e	e	e	e	e	e	e	e	e	e	e
+mater:Acc.Pl	3	fh	Acc.Pl	Acc	Pl	544	ēs	mātrēs	es	es	es	e	e	e	e	e	e	e	e
+medium:Nom.Sg	2	n	Nom.Sg	Nom	Sg	103	um	medium	o	o	o	o	o	o	o	o	o	o	o
+medium:Nom.Pl	2	n	Nom.Pl	Nom	Pl	103	a	media	a	o	o	o	o	o	o	o	o	o	o
+medium:Acc.Sg	2	n	Acc.Sg	Acc	Sg	103	um	medium	o	o	o	o	o	o	o	o	o	o	o
+medium:Acc.Pl	2	n	Acc.Pl	Acc	Pl	103	a	media	a	o	o	o	o	o	o	o	o	o	o
+membrum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	184	um	membrum	o	o	o	o	o	o	o	o	o	o	o
+membrum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	184	a	membra	a	o	o	o	o	o	o	o	o	o	o
+membrum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	184	um	membrum	o	o	o	o	o	o	o	o	o	o	o
+membrum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	184	a	membra	a	o	o	o	o	o	o	o	o	o	o
+mens:Nom.Sg	3	f	Nom.Sg	Nom	Sg	538		mēns	-	-	-	-	-	-	-	-	-	-	-
+mens:Nom.Pl	3	f	Nom.Pl	Nom	Pl	538	ēs	mentēs	es	es	e	-	-	-	-	-	-	-	-
+mens:Acc.Sg	3	f	Acc.Sg	Acc	Sg	538	em	mentem	e	e	e	e	e	e	e	e	e	e	e
+mens:Acc.Pl	3	f	Acc.Pl	Acc	Pl	538	ēs	mentēs	es	es	es	e	e	e	e	e	e	e	e
+mensa:Nom.Sg	1	f	Nom.Sg	Nom	Sg	117	a	mēnsa	a	a	a	a	a	a	a	a	a	a	a
+mensa:Nom.Pl	1	f	Nom.Pl	Nom	Pl	117	ae	mēnsae	e	a	a	a	a	a	a	a	a	a	a
+mensa:Acc.Sg	1	f	Acc.Sg	Acc	Sg	117	am	mēnsam	a	a	a	a	a	a	a	a	a	a	a
+mensa:Acc.Pl	1	f	Acc.Pl	Acc	Pl	117	ās	mēnsās	as	a	a	a	a	a	a	a	a	a	a
+mensis:Nom.Sg	3	m	Nom.Sg	Nom	Sg	86	is	mēnsis	es	-	-	-	-	-	-	-	-	-	-
+mensis:Nom.Pl	3	m	Nom.Pl	Nom	Pl	86	ēs	mēnsēs	es	es	e	-	-	-	-	-	-	-	-
+mensis:Acc.Sg	3	m	Acc.Sg	Acc	Sg	86	em	mēnsem	e	e	e	e	e	e	e	e	e	e	e
+mensis:Acc.Pl	3	m	Acc.Pl	Acc	Pl	86	ēs	mēnsēs	es	es	e	e	e	e	e	e	e	e	e
+merces:Nom.Sg	3	f	Nom.Sg	Nom	Sg	80		mercēs	-	-	-	-	-	-	-	-	-	-	-
+merces:Nom.Pl	3	f	Nom.Pl	Nom	Pl	80	ēs	mercēdēs	es	es	e	-	-	-	-	-	-	-	-
+merces:Acc.Sg	3	f	Acc.Sg	Acc	Sg	80	em	mercēdem	e	e	e	e	e	e	e	e	e	e	e
+merces:Acc.Pl	3	f	Acc.Pl	Acc	Pl	80	ēs	mercēdēs	es	es	e	e	e	e	e	e	e	e	e
+meritum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	91	um	meritum	o	o	o	o	o	o	o	o	o	o	o
+meritum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	91	a	merita	a	o	o	o	o	o	o	o	o	o	o
+meritum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	91	um	meritum	o	o	o	o	o	o	o	o	o	o	o
+meritum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	91	a	merita	a	o	o	o	o	o	o	o	o	o	o
+merum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	71	um	merum	o	o	o	o	o	o	o	o	o	o	o
+merum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	71	a	mera	a	o	o	o	o	o	o	o	o	o	o
+merum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	71	um	merum	o	o	o	o	o	o	o	o	o	o	o
+merum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	71	a	mera	a	o	o	o	o	o	o	o	o	o	o
+metus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	548	us	metus	os	o	o	o	o	o	o	o	o	o	o
+metus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	548	ūs	metūs	us	o	o	o	o	o	o	o	o	o	o
+metus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	548	um	metum	o	o	o	o	o	o	o	o	o	o	o
+metus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	548	ūs	metūs	us	os	o	o	o	o	o	o	o	o	o
+miles:Nom.Sg	3	m	Nom.Sg	Nom	Sg	842		mīles	-	-	-	-	-	-	-	-	-	-	-
+miles:Nom.Pl	3	m	Nom.Pl	Nom	Pl	842	ēs	mīlitēs	es	es	e	-	-	-	-	-	-	-	-
+miles:Acc.Sg	3	m	Acc.Sg	Acc	Sg	842	em	mīlitem	e	e	e	e	e	e	e	e	e	e	e
+miles:Acc.Pl	3	m	Acc.Pl	Acc	Pl	842	ēs	mīlitēs	es	es	e	e	e	e	e	e	e	e	e
+militia:Nom.Sg	1	f	Nom.Sg	Nom	Sg	117	a	mīlitia	a	a	a	a	a	a	a	a	a	a	a
+militia:Nom.Pl	1	f	Nom.Pl	Nom	Pl	117	ae	mīlitiae	e	a	a	a	a	a	a	a	a	a	a
+militia:Acc.Sg	1	f	Acc.Sg	Acc	Sg	117	am	mīlitiam	a	a	a	a	a	a	a	a	a	a	a
+militia:Acc.Pl	1	f	Acc.Pl	Acc	Pl	117	ās	mīlitiās	as	a	a	a	a	a	a	a	a	a	a
+minae:Nom.Sg	1	f	Nom.Sg	Nom	Sg	105			-	a	a	a	a	a	a	a	a	a	a
+minae:Nom.Pl	1	f	Nom.Pl	Nom	Pl	105	ae	minae	e	a	a	a	a	a	a	a	a	a	a
+minae:Acc.Sg	1	f	Acc.Sg	Acc	Sg	105			-	a	a	a	a	a	a	a	a	a	a
+minae:Acc.Pl	1	f	Acc.Pl	Acc	Pl	105	ās	minās	as	a	a	a	a	a	a	a	a	a	a
+minister:Nom.Sg	2	mh	Nom.Sg	Nom	Sg	84		minister	-	o	o	o	o	o	o	o	o	o	o
+minister:Nom.Pl	2	mh	Nom.Pl	Nom	Pl	84	ī	ministrī	i	o	o	o	o	o	o	o	o	o	o
+minister:Acc.Sg	2	mh	Acc.Sg	Acc	Sg	84	um	ministrum	o	o	o	o	o	o	o	o	o	o	o
+minister:Acc.Pl	2	mh	Acc.Pl	Acc	Pl	84	ōs	ministrōs	os	o	o	o	o	o	o	o	o	o	o
+modus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	634	us	modus	os	o	o	o	o	o	o	o	o	o	o
+modus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	634	ī	modī	i	o	o	o	o	o	o	o	o	o	o
+modus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	634	um	modum	o	o	o	o	o	o	o	o	o	o	o
+modus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	634	ōs	modōs	os	o	o	o	o	o	o	o	o	o	o
+moenia:Nom.Sg	3	n	Nom.Sg	Nom	Sg	170			-	-	-	-	-	-	-	-	-	-	-
+moenia:Nom.Pl	3	n	Nom.Pl	Nom	Pl	170	ia	moenia	ea	-	-	-	-	-	-	-	-	-	-
+moenia:Acc.Sg	3	n	Acc.Sg	Acc	Sg	170			-	-	-	-	-	-	-	-	-	-	-
+moenia:Acc.Pl	3	n	Acc.Pl	Acc	Pl	170	ia	moenia	ea	-	-	-	-	-	-	-	-	-	-
+moles:Nom.Sg	3	f	Nom.Sg	Nom	Sg	129	ēs	mōlēs	es	-	-	-	-	-	-	-	-	-	-
+moles:Nom.Pl	3	f	Nom.Pl	Nom	Pl	129	ēs	mōlēs	es	es	e	-	-	-	-	-	-	-	-
+moles:Acc.Sg	3	f	Acc.Sg	Acc	Sg	129	em	mōlem	e	e	e	e	e	e	e	e	e	e	e
+moles:Acc.Pl	3	f	Acc.Pl	Acc	Pl	129	ēs	mōlēs	es	es	es	e	e	e	e	e	e	e	e
+mons:Nom.Sg	3	m	Nom.Sg	Nom	Sg	391		mōns	-	-	-	-	-	-	-	-	-	-	-
+mons:Nom.Pl	3	m	Nom.Pl	Nom	Pl	391	ēs	montēs	es	es	e	-	-	-	-	-	-	-	-
+mons:Acc.Sg	3	m	Acc.Sg	Acc	Sg	391	em	montem	e	e	e	e	e	e	e	e	e	e	e
+mons:Acc.Pl	3	m	Acc.Pl	Acc	Pl	391	ēs	montēs	es	es	e	e	e	e	e	e	e	e	e
+monstrum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	111	um	mōnstrum	o	o	o	o	o	o	o	o	o	o	o
+monstrum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	111	a	mōnstra	a	o	o	o	o	o	o	o	o	o	o
+monstrum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	111	um	mōnstrum	o	o	o	o	o	o	o	o	o	o	o
+monstrum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	111	a	mōnstra	a	o	o	o	o	o	o	o	o	o	o
+monumentum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	59	um	monumentum	o	o	o	o	o	o	o	o	o	o	o
+monumentum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	59	a	monumenta	a	o	o	o	o	o	o	o	o	o	o
+monumentum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	59	um	monumentum	o	o	o	o	o	o	o	o	o	o	o
+monumentum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	59	a	monumenta	a	o	o	o	o	o	o	o	o	o	o
+mora:Nom.Sg	1	f	Nom.Sg	Nom	Sg	230	a	mora	a	a	a	a	a	a	a	a	a	a	a
+mora:Nom.Pl	1	f	Nom.Pl	Nom	Pl	230	ae	morae	e	a	a	a	a	a	a	a	a	a	a
+mora:Acc.Sg	1	f	Acc.Sg	Acc	Sg	230	am	moram	a	a	a	a	a	a	a	a	a	a	a
+mora:Acc.Pl	1	f	Acc.Pl	Acc	Pl	230	ās	morās	as	a	a	a	a	a	a	a	a	a	a
+morbus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	209	us	morbus	os	o	o	o	o	o	o	o	o	o	o
+morbus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	209	ī	morbī	i	o	o	o	o	o	o	o	o	o	o
+morbus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	209	um	morbum	o	o	o	o	o	o	o	o	o	o	o
+morbus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	209	ōs	morbōs	os	o	o	o	o	o	o	o	o	o	o
+mors:Nom.Sg	3	f	Nom.Sg	Nom	Sg	921		mors	-	-	-	-	-	-	-	-	-	-	-
+mors:Nom.Pl	3	f	Nom.Pl	Nom	Pl	921	ēs	mortēs	es	es	e	-	-	-	-	-	-	-	-
+mors:Acc.Sg	3	f	Acc.Sg	Acc	Sg	921	em	mortem	e	e	e	e	e	e	e	e	e	e	e
+mors:Acc.Pl	3	f	Acc.Pl	Acc	Pl	921	ēs	mortēs	es	es	e	e	e	e	e	e	e	e	e
+mos:Nom.Sg	3	m	Nom.Sg	Nom	Sg	635		mōs	-	-	-	-	-	-	-	-	-	-	-
+mos:Nom.Pl	3	m	Nom.Pl	Nom	Pl	635	ēs	mōrēs	es	es	e	-	-	-	-	-	-	-	-
+mos:Acc.Sg	3	m	Acc.Sg	Acc	Sg	635	em	mōrem	e	e	e	e	e	e	e	e	e	e	e
+mos:Acc.Pl	3	m	Acc.Pl	Acc	Pl	635	ēs	mōrēs	es	es	e	e	e	e	e	e	e	e	e
+motus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	178	us	mōtus	os	o	o	o	o	o	o	o	o	o	o
+motus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	178	ūs	mōtūs	us	o	o	o	o	o	o	o	o	o	o
+motus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	178	um	mōtum	o	o	o	o	o	o	o	o	o	o	o
+motus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	178	ūs	mōtūs	us	os	o	o	o	o	o	o	o	o	o
+mulier:Nom.Sg	3	fh	Nom.Sg	Nom	Sg	70		mulier	-	-	e	-	-	-	-	-	-	-	-
+mulier:Nom.Pl	3	fh	Nom.Pl	Nom	Pl	70	ēs	mulierēs	es	es	e	e	-	-	-	-	-	-	-
+mulier:Acc.Sg	3	fh	Acc.Sg	Acc	Sg	70	em	mulierem	e	e	e	e	e	e	e	e	e	e	e
+mulier:Acc.Pl	3	fh	Acc.Pl	Acc	Pl	70	ēs	mulierēs	es	es	es	e	e	e	e	e	e	e	e
+mundus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	280	us	mundus	os	o	o	o	o	o	o	o	o	o	o
+mundus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	280	ī	mundī	i	o	o	o	o	o	o	o	o	o	o
+mundus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	280	um	mundum	o	o	o	o	o	o	o	o	o	o	o
+mundus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	280	ōs	mundōs	os	o	o	o	o	o	o	o	o	o	o
+munus:Nom.Sg	3	n	Nom.Sg	Nom	Sg	322		mūnus	-	-	-	-	-	-	-	-	-	-	-
+munus:Nom.Pl	3	n	Nom.Pl	Nom	Pl	322	a	mūnera	a	-	-	-	-	-	-	-	-	-	-
+munus:Acc.Sg	3	n	Acc.Sg	Acc	Sg	322		mūnus	-	-	-	-	-	-	-	-	-	-	-
+munus:Acc.Pl	3	n	Acc.Pl	Acc	Pl	322	a	mūnera	a	-	-	-	-	-	-	-	-	-	-
+murus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	250	us	mūrus	os	o	o	o	o	o	o	o	o	o	o
+murus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	250	ī	mūrī	i	o	o	o	o	o	o	o	o	o	o
+murus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	250	um	mūrum	o	o	o	o	o	o	o	o	o	o	o
+murus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	250	ōs	mūrōs	os	o	o	o	o	o	o	o	o	o	o
+natura:Nom.Sg	1	f	Nom.Sg	Nom	Sg	769	a	nātūra	a	a	a	a	a	a	a	a	a	a	a
+natura:Nom.Pl	1	f	Nom.Pl	Nom	Pl	769	ae	nātūrae	e	a	a	a	a	a	a	a	a	a	a
+natura:Acc.Sg	1	f	Acc.Sg	Acc	Sg	769	am	nātūram	a	a	a	a	a	a	a	a	a	a	a
+natura:Acc.Pl	1	f	Acc.Pl	Acc	Pl	769	ās	nātūrās	as	a	a	a	a	a	a	a	a	a	a
+nauta:Nom.Sg	1	mh	Nom.Sg	Nom	Sg	71	a	nauta	a	-	a	a	a	a	a	a	a	a	a
+nauta:Nom.Pl	1	mh	Nom.Pl	Nom	Pl	71	ae	nautae	e	-	a	a	a	a	a	a	a	a	a
+nauta:Acc.Sg	1	mh	Acc.Sg	Acc	Sg	71	am	nautam	a	-	a	a	a	a	a	a	a	a	a
+nauta:Acc.Pl	1	mh	Acc.Pl	Acc	Pl	71	ās	nautās	as	-	a	a	a	a	a	a	a	a	a
+navis:Nom.Sg	3	f	Nom.Sg	Nom	Sg	349	is	nāvis	es	-	-	-	-	-	-	-	-	-	-
+navis:Nom.Pl	3	f	Nom.Pl	Nom	Pl	349	ēs	nāvēs	es	es	e	-	-	-	-	-	-	-	-
+navis:Acc.Sg	3	f	Acc.Sg	Acc	Sg	349	em	nāvem	e	e	e	e	e	e	e	e	e	e	e
+navis:Acc.Pl	3	f	Acc.Pl	Acc	Pl	349	ēs	nāvēs	es	es	es	e	e	e	e	e	e	e	e
+nemus:Nom.Sg	3	n	Nom.Sg	Nom	Sg	166		nemus	-	-	-	-	-	-	-	-	-	-	-
+nemus:Nom.Pl	3	n	Nom.Pl	Nom	Pl	166	a	nemora	a	-	-	-	-	-	-	-	-	-	-
+nemus:Acc.Sg	3	n	Acc.Sg	Acc	Sg	166		nemus	-	-	-	-	-	-	-	-	-	-	-
+nemus:Acc.Pl	3	n	Acc.Pl	Acc	Pl	166	a	nemora	a	-	-	-	-	-	-	-	-	-	-
+nepos:Nom.Sg	3	mh	Nom.Sg	Nom	Sg	116		nepōs	-	-	-	-	-	-	-	-	-	-	-
+nepos:Nom.Pl	3	mh	Nom.Pl	Nom	Pl	116	ēs	nepōtēs	es	es	e	-	-	-	-	-	-	-	-
+nepos:Acc.Sg	3	mh	Acc.Sg	Acc	Sg	116	em	nepōtem	e	e	e	e	e	e	e	e	e	e	e
+nepos:Acc.Pl	3	mh	Acc.Pl	Acc	Pl	116	ēs	nepōtēs	es	es	e	e	e	e	e	e	e	e	e
+nequitia:Nom.Sg	1	f	Nom.Sg	Nom	Sg	55	a	nēquitia	a	a	a	a	a	a	a	a	a	a	a
+nequitia:Nom.Pl	1	f	Nom.Pl	Nom	Pl	55	ae	nēquitiae	e	a	a	a	a	a	a	a	a	a	a
+nequitia:Acc.Sg	1	f	Acc.Sg	Acc	Sg	55	am	nēquitiam	a	a	a	a	a	a	a	a	a	a	a
+nequitia:Acc.Pl	1	f	Acc.Pl	Acc	Pl	55	ās	nēquitiās	as	a	a	a	a	a	a	a	a	a	a
+nex:Nom.Sg	3	f	Nom.Sg	Nom	Sg	89		nex	-	-	-	-	-	-	-	-	-	-	-
+nex:Nom.Pl	3	f	Nom.Pl	Nom	Pl	89	ēs	necēs	es	es	e	-	-	-	-	-	-	-	-
+nex:Acc.Sg	3	f	Acc.Sg	Acc	Sg	89	em	necem	e	e	e	e	e	e	e	e	e	e	e
+nex:Acc.Pl	3	f	Acc.Pl	Acc	Pl	89	ēs	necēs	es	es	es	e	e	e	e	e	e	e	e
+nix:Nom.Sg	3	f	Nom.Sg	Nom	Sg	83		nix	-	-	-	-	-	-	-	-	-	-	-
+nix:Nom.Pl	3	f	Nom.Pl	Nom	Pl	83	ēs	nivēs	es	es	e	-	-	-	-	-	-	-	-
+nix:Acc.Sg	3	f	Acc.Sg	Acc	Sg	83	em	nivem	e	e	e	e	e	e	e	e	e	e	e
+nix:Acc.Pl	3	f	Acc.Pl	Acc	Pl	83	ēs	nivēs	es	es	e	e	e	e	e	e	e	e	e
+nomen:Nom.Sg	3	n	Nom.Sg	Nom	Sg	756		nōmen	-	-	-	-	-	-	-	-	-	-	-
+nomen:Nom.Pl	3	n	Nom.Pl	Nom	Pl	756	a	nōmina	a	-	-	-	-	-	-	-	-	-	-
+nomen:Acc.Sg	3	n	Acc.Sg	Acc	Sg	756		nōmen	-	-	-	-	-	-	-	-	-	-	-
+nomen:Acc.Pl	3	n	Acc.Pl	Acc	Pl	756	a	nōmina	a	-	-	-	-	-	-	-	-	-	-
+nota:Nom.Sg	1	f	Nom.Sg	Nom	Sg	96	a	nota	a	a	a	a	a	a	a	a	a	a	a
+nota:Nom.Pl	1	f	Nom.Pl	Nom	Pl	96	ae	notae	e	a	a	a	a	a	a	a	a	a	a
+nota:Acc.Sg	1	f	Acc.Sg	Acc	Sg	96	am	notam	a	a	a	a	a	a	a	a	a	a	a
+nota:Acc.Pl	1	f	Acc.Pl	Acc	Pl	96	ās	notās	as	a	a	a	a	a	a	a	a	a	a
+nox:Nom.Sg	3	f	Nom.Sg	Nom	Sg	622		nox	-	-	-	-	-	-	-	-	-	-	-
+nox:Nom.Pl	3	f	Nom.Pl	Nom	Pl	622	ēs	noctēs	es	es	e	-	-	-	-	-	-	-	-
+nox:Acc.Sg	3	f	Acc.Sg	Acc	Sg	622	em	noctem	e	e	e	e	e	e	e	e	e	e	e
+nox:Acc.Pl	3	f	Acc.Pl	Acc	Pl	622	ēs	noctēs	es	es	e	e	e	e	e	e	e	e	e
+nubes:Nom.Sg	3	f	Nom.Sg	Nom	Sg	121	ēs	nūbēs	es	-	-	-	-	-	-	-	-	-	-
+nubes:Nom.Pl	3	f	Nom.Pl	Nom	Pl	121	ēs	nūbēs	es	es	e	-	-	-	-	-	-	-	-
+nubes:Acc.Sg	3	f	Acc.Sg	Acc	Sg	121	em	nūbem	e	e	e	e	e	e	e	e	e	e	e
+nubes:Acc.Pl	3	f	Acc.Pl	Acc	Pl	121	ēs	nūbēs	es	es	e	e	e	e	e	e	e	e	e
+numen:Nom.Sg	3	n	Nom.Sg	Nom	Sg	173		nūmen	-	-	-	-	-	-	-	-	-	-	-
+numen:Nom.Pl	3	n	Nom.Pl	Nom	Pl	173	a	nūmina	a	-	-	-	-	-	-	-	-	-	-
+numen:Acc.Sg	3	n	Acc.Sg	Acc	Sg	173		nūmen	-	-	-	-	-	-	-	-	-	-	-
+numen:Acc.Pl	3	n	Acc.Pl	Acc	Pl	173	a	nūmina	a	-	-	-	-	-	-	-	-	-	-
+numerus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	390	us	numerus	os	o	o	o	o	o	o	o	o	o	o
+numerus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	390	ī	numerī	i	o	o	o	o	o	o	o	o	o	o
+numerus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	390	um	numerum	o	o	o	o	o	o	o	o	o	o	o
+numerus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	390	ōs	numerōs	os	o	o	o	o	o	o	o	o	o	o
+nuntius:Nom.Sg	2	mh	Nom.Sg	Nom	Sg	121	us	nūntius	os	o	o	o	o	o	o	o	o	o	o
+nuntius:Nom.Pl	2	mh	Nom.Pl	Nom	Pl	121	ī	nūntiī	i	o	o	o	o	o	o	o	o	o	o
+nuntius:Acc.Sg	2	mh	Acc.Sg	Acc	Sg	121	um	nūntium	o	o	o	o	o	o	o	o	o	o	o
+nuntius:Acc.Pl	2	mh	Acc.Pl	Acc	Pl	121	ōs	nūntiōs	os	o	o	o	o	o	o	o	o	o	o
+oculus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	496	us	oculus	os	o	o	o	o	o	o	o	o	o	o
+oculus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	496	ī	oculī	i	o	o	o	o	o	o	o	o	o	o
+oculus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	496	um	oculum	o	o	o	o	o	o	o	o	o	o	o
+oculus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	496	ōs	oculōs	os	o	o	o	o	o	o	o	o	o	o
+odium:Nom.Sg	2	n	Nom.Sg	Nom	Sg	250	um	odium	o	o	o	o	o	o	o	o	o	o	o
+odium:Nom.Pl	2	n	Nom.Pl	Nom	Pl	250	a	odia	a	o	o	o	o	o	o	o	o	o	o
+odium:Acc.Sg	2	n	Acc.Sg	Acc	Sg	250	um	odium	o	o	o	o	o	o	o	o	o	o	o
+odium:Acc.Pl	2	n	Acc.Pl	Acc	Pl	250	a	odia	a	o	o	o	o	o	o	o	o	o	o
+odor:Nom.Sg	3	m	Nom.Sg	Nom	Sg	59		odor	-	-	-	-	-	-	-	-	-	-	-
+odor:Nom.Pl	3	m	Nom.Pl	Nom	Pl	59	ēs	odōrēs	es	es	e	-	-	-	-	-	-	-	-
+odor:Acc.Sg	3	m	Acc.Sg	Acc	Sg	59	em	odōrem	e	e	e	e	e	e	e	e	e	e	e
+odor:Acc.Pl	3	m	Acc.Pl	Acc	Pl	59	ēs	odōrēs	es	es	e	e	e	e	e	e	e	e	e
+officium:Nom.Sg	2	n	Nom.Sg	Nom	Sg	252	um	officium	o	o	o	o	o	o	o	o	o	o	o
+officium:Nom.Pl	2	n	Nom.Pl	Nom	Pl	252	a	officia	a	o	o	o	o	o	o	o	o	o	o
+officium:Acc.Sg	2	n	Acc.Sg	Acc	Sg	252	um	officium	o	o	o	o	o	o	o	o	o	o	o
+officium:Acc.Pl	2	n	Acc.Pl	Acc	Pl	252	a	officia	a	o	o	o	o	o	o	o	o	o	o
+omen:Nom.Sg	3	n	Nom.Sg	Nom	Sg	61		ōmen	-	-	-	-	-	-	-	-	-	-	-
+omen:Nom.Pl	3	n	Nom.Pl	Nom	Pl	61	a	ōmina	a	-	-	-	-	-	-	-	-	-	-
+omen:Acc.Sg	3	n	Acc.Sg	Acc	Sg	61		ōmen	-	-	-	-	-	-	-	-	-	-	-
+omen:Acc.Pl	3	n	Acc.Pl	Acc	Pl	61	a	ōmina	a	-	-	-	-	-	-	-	-	-	-
+onus:Nom.Sg	3	n	Nom.Sg	Nom	Sg	146		onus	-	-	-	-	-	-	-	-	-	-	-
+onus:Nom.Pl	3	n	Nom.Pl	Nom	Pl	146	a	onera	a	-	-	-	-	-	-	-	-	-	-
+onus:Acc.Sg	3	n	Acc.Sg	Acc	Sg	146		onus	-	-	-	-	-	-	-	-	-	-	-
+onus:Acc.Pl	3	n	Acc.Pl	Acc	Pl	146	a	onera	a	-	-	-	-	-	-	-	-	-	-
+oppidum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	257	um	oppidum	o	o	o	o	o	o	o	o	o	o	o
+oppidum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	257	a	oppida	a	o	o	o	o	o	o	o	o	o	o
+oppidum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	257	um	oppidum	o	o	o	o	o	o	o	o	o	o	o
+oppidum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	257	a	oppida	a	o	o	o	o	o	o	o	o	o	o
+ops:Nom.Sg	3	f	Nom.Sg	Nom	Sg	376		ops	-	-	-	-	-	-	-	-	-	-	-
+ops:Nom.Pl	3	f	Nom.Pl	Nom	Pl	376	ēs	opēs	es	es	e	-	-	-	-	-	-	-	-
+ops:Acc.Sg	3	f	Acc.Sg	Acc	Sg	376	em	opem	e	e	e	e	e	e	e	e	e	e	e
+ops:Acc.Pl	3	f	Acc.Pl	Acc	Pl	376	ēs	opēs	es	es	es	e	e	e	e	e	e	e	e
+opus:Nom.Sg	3	n	Nom.Sg	Nom	Sg	393		opus	-	-	-	-	-	-	-	-	-	-	-
+opus:Nom.Pl	3	n	Nom.Pl	Nom	Pl	393	a	opera	a	-	-	-	-	-	-	-	-	-	-
+opus:Acc.Sg	3	n	Acc.Sg	Acc	Sg	393		opus	-	-	-	-	-	-	-	-	-	-	-
+opus:Acc.Pl	3	n	Acc.Pl	Acc	Pl	393	a	opera	a	-	-	-	-	-	-	-	-	-	-
+ora:Nom.Sg	1	f	Nom.Sg	Nom	Sg	120	a	ōra	a	a	a	a	a	a	a	a	a	a	a
+ora:Nom.Pl	1	f	Nom.Pl	Nom	Pl	120	ae	ōrae	e	a	a	a	a	a	a	a	a	a	a
+ora:Acc.Sg	1	f	Acc.Sg	Acc	Sg	120	am	ōram	a	a	a	a	a	a	a	a	a	a	a
+ora:Acc.Pl	1	f	Acc.Pl	Acc	Pl	120	ās	ōrās	as	a	a	a	a	a	a	a	a	a	a
+orbis:Nom.Sg	3	m	Nom.Sg	Nom	Sg	262	is	orbis	es	-	-	-	-	-	-	-	-	-	-
+orbis:Nom.Pl	3	m	Nom.Pl	Nom	Pl	262	ēs	orbēs	es	es	e	-	-	-	-	-	-	-	-
+orbis:Acc.Sg	3	m	Acc.Sg	Acc	Sg	262	em	orbem	e	e	e	e	e	e	e	e	e	e	e
+orbis:Acc.Pl	3	m	Acc.Pl	Acc	Pl	262	ēs	orbēs	es	es	e	e	e	e	e	e	e	e	e
+ordo:Nom.Sg	3	m	Nom.Sg	Nom	Sg	313		ōrdō	-	-	-	-	-	-	-	-	-	-	-
+ordo:Nom.Pl	3	m	Nom.Pl	Nom	Pl	313	ēs	ōrdinēs	es	es	e	-	-	-	-	-	-	-	-
+ordo:Acc.Sg	3	m	Acc.Sg	Acc	Sg	313	em	ōrdinem	e	e	e	e	e	e	e	e	e	e	e
+ordo:Acc.Pl	3	m	Acc.Pl	Acc	Pl	313	ēs	ōrdinēs	es	es	e	e	e	e	e	e	e	e	e
+origo:Nom.Sg	3	f	Nom.Sg	Nom	Sg	78		orīgō	-	-	-	-	-	-	-	-	-	-	-
+origo:Nom.Pl	3	f	Nom.Pl	Nom	Pl	78	ēs	orīginēs	es	es	e	-	-	-	-	-	-	-	-
+origo:Acc.Sg	3	f	Acc.Sg	Acc	Sg	78	em	orīginem	e	e	e	e	e	e	e	e	e	e	e
+origo:Acc.Pl	3	f	Acc.Pl	Acc	Pl	78	ēs	orīginēs	es	es	e	e	e	e	e	e	e	e	e
+ortus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	81	us	ortus	os	o	o	o	o	o	o	o	o	o	o
+ortus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	81	ūs	ortūs	us	o	o	o	o	o	o	o	o	o	o
+ortus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	81	um	ortum	o	o	o	o	o	o	o	o	o	o	o
+ortus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	81	ūs	ortūs	us	o	o	o	o	o	o	o	o	o	o
+os:Nom.Sg	3	n	Nom.Sg	Nom	Sg	110		os	-	-	-	-	-	-	-	-	-	-	-
+os:Nom.Pl	3	n	Nom.Pl	Nom	Pl	110	a	ossa	a	-	-	-	-	-	-	-	-	-	-
+os:Acc.Sg	3	n	Acc.Sg	Acc	Sg	110		os	-	-	-	-	-	-	-	-	-	-	-
+os:Acc.Pl	3	n	Acc.Pl	Acc	Pl	110	a	ossa	a	-	-	-	-	-	-	-	-	-	-
+os:Nom.Sg	3	n	Nom.Sg	Nom	Sg	478		ōs	-	-	-	-	-	-	-	-	-	-	-
+os:Nom.Pl	3	n	Nom.Pl	Nom	Pl	478	a	ōra	a	-	-	-	-	-	-	-	-	-	-
+os:Acc.Sg	3	n	Acc.Sg	Acc	Sg	478		ōs	-	-	-	-	-	-	-	-	-	-	-
+os:Acc.Pl	3	n	Acc.Pl	Acc	Pl	478	a	ōra	a	-	-	-	-	-	-	-	-	-	-
+osculum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	61	um	osculum	o	o	o	o	o	o	o	o	o	o	o
+osculum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	61	a	oscula	a	o	o	o	o	o	o	o	o	o	o
+osculum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	61	um	osculum	o	o	o	o	o	o	o	o	o	o	o
+osculum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	61	a	oscula	a	o	o	o	o	o	o	o	o	o	o
+otium:Nom.Sg	2	n	Nom.Sg	Nom	Sg	201	um	ōtium	o	o	o	o	o	o	o	o	o	o	o
+otium:Nom.Pl	2	n	Nom.Pl	Nom	Pl	201	a	ōtia	a	o	o	o	o	o	o	o	o	o	o
+otium:Acc.Sg	2	n	Acc.Sg	Acc	Sg	201	um	ōtium	o	o	o	o	o	o	o	o	o	o	o
+otium:Acc.Pl	2	n	Acc.Pl	Acc	Pl	201	a	ōtia	a	o	o	o	o	o	o	o	o	o	o
+palma:Nom.Sg	1	f	Nom.Sg	Nom	Sg	76	a	palma	a	a	a	a	a	a	a	a	a	a	a
+palma:Nom.Pl	1	f	Nom.Pl	Nom	Pl	76	ae	palmae	e	a	a	a	a	a	a	a	a	a	a
+palma:Acc.Sg	1	f	Acc.Sg	Acc	Sg	76	am	palmam	a	a	a	a	a	a	a	a	a	a	a
+palma:Acc.Pl	1	f	Acc.Pl	Acc	Pl	76	ās	palmās	as	a	a	a	a	a	a	a	a	a	a
+palus:Nom.Sg	3	f	Nom.Sg	Nom	Sg	93		palūs	-	-	-	-	-	-	-	-	-	-	-
+palus:Nom.Pl	3	f	Nom.Pl	Nom	Pl	93	ēs	palūdēs	es	es	e	-	-	-	-	-	-	-	-
+palus:Acc.Sg	3	f	Acc.Sg	Acc	Sg	93	em	palūdem	e	e	e	e	e	e	e	e	e	e	e
+palus:Acc.Pl	3	f	Acc.Pl	Acc	Pl	93	ēs	palūdēs	es	es	es	e	e	e	e	e	e	e	e
+parens:Nom.Sg	3	mh	Nom.Sg	Nom	Sg	439		parēns	-	-	-	-	-	-	-	-	-	-	-
+parens:Nom.Pl	3	mh	Nom.Pl	Nom	Pl	439	ēs	parentēs	es	es	e	-	-	-	-	-	-	-	-
+parens:Acc.Sg	3	mh	Acc.Sg	Acc	Sg	439	em	parentem	e	e	e	e	e	e	e	e	e	e	e
+parens:Acc.Pl	3	mh	Acc.Pl	Acc	Pl	439	ēs	parentēs	es	es	e	e	e	e	e	e	e	e	e
+pater:Nom.Sg	3	mh	Nom.Sg	Nom	Sg	1053		pater	-	-	-	-	-	-	-	-	-	-	-
+pater:Nom.Pl	3	mh	Nom.Pl	Nom	Pl	1053	ēs	patrēs	es	es	e	-	-	-	-	-	-	-	-
+pater:Acc.Sg	3	mh	Acc.Sg	Acc	Sg	1053	em	patrem	e	e	e	e	e	e	e	e	e	e	e
+pater:Acc.Pl	3	mh	Acc.Pl	Acc	Pl	1053	ēs	patrēs	es	es	e	e	e	e	e	e	e	e	e
+patria:Nom.Sg	1	f	Nom.Sg	Nom	Sg	301	a	patria	a	a	a	a	a	a	a	a	a	a	a
+patria:Nom.Pl	1	f	Nom.Pl	Nom	Pl	301	ae	patriae	e	a	a	a	a	a	a	a	a	a	a
+patria:Acc.Sg	1	f	Acc.Sg	Acc	Sg	301	am	patriam	a	a	a	a	a	a	a	a	a	a	a
+patria:Acc.Pl	1	f	Acc.Pl	Acc	Pl	301	ās	patriās	as	a	a	a	a	a	a	a	a	a	a
+patruus:Nom.Sg	2	mh	Nom.Sg	Nom	Sg	64	us	patruus	os	o	o	o	o	o	o	o	o	o	o
+patruus:Nom.Pl	2	mh	Nom.Pl	Nom	Pl	64	ī	patruī	i	o	o	o	o	o	o	o	o	o	o
+patruus:Acc.Sg	2	mh	Acc.Sg	Acc	Sg	64	um	patruum	o	o	o	o	o	o	o	o	o	o	o
+patruus:Acc.Pl	2	mh	Acc.Pl	Acc	Pl	64	ōs	patruōs	os	o	o	o	o	o	o	o	o	o	o
+paupertas:Nom.Sg	3	f	Nom.Sg	Nom	Sg	144		paupertās	-	-	-	-	-	-	-	-	-	-	-
+paupertas:Nom.Pl	3	f	Nom.Pl	Nom	Pl	144	ēs	paupertātēs	es	es	e	-	-	-	-	-	-	-	-
+paupertas:Acc.Sg	3	f	Acc.Sg	Acc	Sg	144	em	paupertātem	e	e	e	e	e	e	e	e	e	e	e
+paupertas:Acc.Pl	3	f	Acc.Pl	Acc	Pl	144	ēs	paupertātēs	es	es	es	e	e	e	e	e	e	e	e
+pavor:Nom.Sg	3	m	Nom.Sg	Nom	Sg	67		pavor	-	-	-	-	-	-	-	-	-	-	-
+pavor:Nom.Pl	3	m	Nom.Pl	Nom	Pl	67	ēs	pavōrēs	es	es	e	-	-	-	-	-	-	-	-
+pavor:Acc.Sg	3	m	Acc.Sg	Acc	Sg	67	em	pavōrem	e	e	e	e	e	e	e	e	e	e	e
+pavor:Acc.Pl	3	m	Acc.Pl	Acc	Pl	67	ēs	pavōrēs	es	es	e	e	e	e	e	e	e	e	e
+pax:Nom.Sg	3	f	Nom.Sg	Nom	Sg	318		pāx	-	-	-	-	-	-	-	-	-	-	-
+pax:Nom.Pl	3	f	Nom.Pl	Nom	Pl	318	ēs	pācēs	es	es	e	-	-	-	-	-	-	-	-
+pax:Acc.Sg	3	f	Acc.Sg	Acc	Sg	318	em	pācem	e	e	e	e	e	e	e	e	e	e	e
+pax:Acc.Pl	3	f	Acc.Pl	Acc	Pl	318	ēs	pācēs	es	es	e	e	e	e	e	e	e	e	e
+pectus:Nom.Sg	3	n	Nom.Sg	Nom	Sg	387		pectus	-	-	-	-	-	-	-	-	-	-	-
+pectus:Nom.Pl	3	n	Nom.Pl	Nom	Pl	387	a	pectora	a	-	-	-	-	-	-	-	-	-	-
+pectus:Acc.Sg	3	n	Acc.Sg	Acc	Sg	387		pectus	-	-	-	-	-	-	-	-	-	-	-
+pectus:Acc.Pl	3	n	Acc.Pl	Acc	Pl	387	a	pectora	a	-	-	-	-	-	-	-	-	-	-
+pecunia:Nom.Sg	1	f	Nom.Sg	Nom	Sg	322	a	pecūnia	a	a	a	a	a	a	a	a	a	a	a
+pecunia:Nom.Pl	1	f	Nom.Pl	Nom	Pl	322	ae	pecūniae	e	a	a	a	a	a	a	a	a	a	a
+pecunia:Acc.Sg	1	f	Acc.Sg	Acc	Sg	322	am	pecūniam	a	a	a	a	a	a	a	a	a	a	a
+pecunia:Acc.Pl	1	f	Acc.Pl	Acc	Pl	322	ās	pecūniās	as	a	a	a	a	a	a	a	a	a	a
+pecus:Nom.Sg	3	n	Nom.Sg	Nom	Sg	164		pecus	-	-	-	-	-	-	-	-	-	-	-
+pecus:Nom.Pl	3	n	Nom.Pl	Nom	Pl	164	a	pecora	a	-	-	-	-	-	-	-	-	-	-
+pecus:Acc.Sg	3	n	Acc.Sg	Acc	Sg	164		pecus	-	-	-	-	-	-	-	-	-	-	-
+pecus:Acc.Pl	3	n	Acc.Pl	Acc	Pl	164	a	pecora	a	-	-	-	-	-	-	-	-	-	-
+pellex:Nom.Sg	3	fh	Nom.Sg	Nom	Sg	56		pellex	-	-	e	-	-	-	-	-	-	-	-
+pellex:Nom.Pl	3	fh	Nom.Pl	Nom	Pl	56	ēs	pellicēs	es	es	e	e	-	-	-	-	-	-	-
+pellex:Acc.Sg	3	fh	Acc.Sg	Acc	Sg	56	em	pellicem	e	e	e	e	e	e	e	e	e	e	e
+pellex:Acc.Pl	3	fh	Acc.Pl	Acc	Pl	56	ēs	pellicēs	es	es	es	e	e	e	e	e	e	e	e
+penas:Nom.Sg	3	m	Nom.Sg	Nom	Sg	75		penās	-	-	-	-	-	-	-	-	-	-	-
+penas:Nom.Pl	3	m	Nom.Pl	Nom	Pl	75	ēs	penātēs	es	es	e	-	-	-	-	-	-	-	-
+penas:Acc.Sg	3	m	Acc.Sg	Acc	Sg	75	em	penātem	e	e	e	e	e	e	e	e	e	e	e
+penas:Acc.Pl	3	m	Acc.Pl	Acc	Pl	75	ēs	penātēs	es	es	e	e	e	e	e	e	e	e	e
+periculum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	559	um	perīculum	o	o	o	o	o	o	o	o	o	o	o
+periculum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	559	a	perīcula	a	o	o	o	o	o	o	o	o	o	o
+periculum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	559	um	perīculum	o	o	o	o	o	o	o	o	o	o	o
+periculum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	559	a	perīcula	a	o	o	o	o	o	o	o	o	o	o
+pes:Nom.Sg	3	m	Nom.Sg	Nom	Sg	447		pēs	-	-	-	-	-	-	-	-	-	-	-
+pes:Nom.Pl	3	m	Nom.Pl	Nom	Pl	447	ēs	pedēs	es	es	e	-	-	-	-	-	-	-	-
+pes:Acc.Sg	3	m	Acc.Sg	Acc	Sg	447	em	pedem	e	e	e	e	e	e	e	e	e	e	e
+pes:Acc.Pl	3	m	Acc.Pl	Acc	Pl	447	ēs	pedēs	es	es	e	e	e	e	e	e	e	e	e
+pestis:Nom.Sg	3	f	Nom.Sg	Nom	Sg	77	is	pestis	es	-	-	-	-	-	-	-	-	-	-
+pestis:Nom.Pl	3	f	Nom.Pl	Nom	Pl	77	ēs	pestēs	es	es	e	-	-	-	-	-	-	-	-
+pestis:Acc.Sg	3	f	Acc.Sg	Acc	Sg	77	em	pestem	e	e	e	e	e	e	e	e	e	e	e
+pestis:Acc.Pl	3	f	Acc.Pl	Acc	Pl	77	ēs	pestēs	es	es	es	e	e	e	e	e	e	e	e
+pietas:Nom.Sg	3	f	Nom.Sg	Nom	Sg	125		pietās	-	-	-	-	-	-	-	-	-	-	-
+pietas:Nom.Pl	3	f	Nom.Pl	Nom	Pl	125	ēs	pietātēs	es	es	e	-	-	-	-	-	-	-	-
+pietas:Acc.Sg	3	f	Acc.Sg	Acc	Sg	125	em	pietātem	e	e	e	e	e	e	e	e	e	e	e
+pietas:Acc.Pl	3	f	Acc.Pl	Acc	Pl	125	ēs	pietātēs	es	es	es	e	e	e	e	e	e	e	e
+pignus:Nom.Sg	3	n	Nom.Sg	Nom	Sg	55		pignus	-	-	-	-	-	-	-	-	-	-	-
+pignus:Nom.Pl	3	n	Nom.Pl	Nom	Pl	55	a	pignora	a	-	-	-	-	-	-	-	-	-	-
+pignus:Acc.Sg	3	n	Acc.Sg	Acc	Sg	55		pignus	-	-	-	-	-	-	-	-	-	-	-
+pignus:Acc.Pl	3	n	Acc.Pl	Acc	Pl	55	a	pignora	a	-	-	-	-	-	-	-	-	-	-
+poculum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	76	um	pōculum	o	o	o	o	o	o	o	o	o	o	o
+poculum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	76	a	pōcula	a	o	o	o	o	o	o	o	o	o	o
+poculum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	76	um	pōculum	o	o	o	o	o	o	o	o	o	o	o
+poculum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	76	a	pōcula	a	o	o	o	o	o	o	o	o	o	o
+poena:Nom.Sg	1	f	Nom.Sg	Nom	Sg	428	a	poena	a	a	a	a	a	a	a	a	a	a	a
+poena:Nom.Pl	1	f	Nom.Pl	Nom	Pl	428	ae	poenae	e	a	a	a	a	a	a	a	a	a	a
+poena:Acc.Sg	1	f	Acc.Sg	Acc	Sg	428	am	poenam	a	a	a	a	a	a	a	a	a	a	a
+poena:Acc.Pl	1	f	Acc.Pl	Acc	Pl	428	ās	poenās	as	a	a	a	a	a	a	a	a	a	a
+poeta:Nom.Sg	1	mh	Nom.Sg	Nom	Sg	89	a	poēta	a	-	a	a	a	a	a	a	a	a	a
+poeta:Nom.Pl	1	mh	Nom.Pl	Nom	Pl	89	ae	poētae	e	-	a	a	a	a	a	a	a	a	a
+poeta:Acc.Sg	1	mh	Acc.Sg	Acc	Sg	89	am	poētam	a	-	a	a	a	a	a	a	a	a	a
+poeta:Acc.Pl	1	mh	Acc.Pl	Acc	Pl	89	ās	poētās	as	-	a	a	a	a	a	a	a	a	a
+pondus:Nom.Sg	3	n	Nom.Sg	Nom	Sg	164		pondus	-	-	-	-	-	-	-	-	-	-	-
+pondus:Nom.Pl	3	n	Nom.Pl	Nom	Pl	164	a	pondera	a	-	-	-	-	-	-	-	-	-	-
+pondus:Acc.Sg	3	n	Acc.Sg	Acc	Sg	164		pondus	-	-	-	-	-	-	-	-	-	-	-
+pondus:Acc.Pl	3	n	Acc.Pl	Acc	Pl	164	a	pondera	a	-	-	-	-	-	-	-	-	-	-
+pons:Nom.Sg	3	m	Nom.Sg	Nom	Sg	97		pōns	-	-	-	-	-	-	-	-	-	-	-
+pons:Nom.Pl	3	m	Nom.Pl	Nom	Pl	97	ēs	pontēs	es	es	e	-	-	-	-	-	-	-	-
+pons:Acc.Sg	3	m	Acc.Sg	Acc	Sg	97	em	pontem	e	e	e	e	e	e	e	e	e	e	e
+pons:Acc.Pl	3	m	Acc.Pl	Acc	Pl	97	ēs	pontēs	es	es	e	e	e	e	e	e	e	e	e
+populus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	822	us	populus	os	o	o	o	o	o	o	o	o	o	o
+populus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	822	ī	populī	i	o	o	o	o	o	o	o	o	o	o
+populus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	822	um	populum	o	o	o	o	o	o	o	o	o	o	o
+populus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	822	ōs	populōs	os	o	o	o	o	o	o	o	o	o	o
+porta:Nom.Sg	1	f	Nom.Sg	Nom	Sg	146	a	porta	a	a	a	a	a	a	a	a	a	a	a
+porta:Nom.Pl	1	f	Nom.Pl	Nom	Pl	146	ae	portae	e	a	a	a	a	a	a	a	a	a	a
+porta:Acc.Sg	1	f	Acc.Sg	Acc	Sg	146	am	portam	a	a	a	a	a	a	a	a	a	a	a
+porta:Acc.Pl	1	f	Acc.Pl	Acc	Pl	146	ās	portās	as	a	a	a	a	a	a	a	a	a	a
+portus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	132	us	portus	os	o	o	o	o	o	o	o	o	o	o
+portus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	132	ūs	portūs	us	o	o	o	o	o	o	o	o	o	o
+portus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	132	um	portum	o	o	o	o	o	o	o	o	o	o	o
+portus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	132	ūs	portūs	us	o	o	o	o	o	o	o	o	o	o
+praeceptum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	164	um	praeceptum	o	o	o	o	o	o	o	o	o	o	o
+praeceptum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	164	a	praecepta	a	o	o	o	o	o	o	o	o	o	o
+praeceptum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	164	um	praeceptum	o	o	o	o	o	o	o	o	o	o	o
+praeceptum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	164	a	praecepta	a	o	o	o	o	o	o	o	o	o	o
+praeda:Nom.Sg	1	f	Nom.Sg	Nom	Sg	196	a	praeda	a	a	a	a	a	a	a	a	a	a	a
+praeda:Nom.Pl	1	f	Nom.Pl	Nom	Pl	196	ae	praedae	e	a	a	a	a	a	a	a	a	a	a
+praeda:Acc.Sg	1	f	Acc.Sg	Acc	Sg	196	am	praedam	a	a	a	a	a	a	a	a	a	a	a
+praeda:Acc.Pl	1	f	Acc.Pl	Acc	Pl	196	ās	praedās	as	a	a	a	a	a	a	a	a	a	a
+praemium:Nom.Sg	2	n	Nom.Sg	Nom	Sg	185	um	praemium	o	o	o	o	o	o	o	o	o	o	o
+praemium:Nom.Pl	2	n	Nom.Pl	Nom	Pl	185	a	praemia	a	o	o	o	o	o	o	o	o	o	o
+praemium:Acc.Sg	2	n	Acc.Sg	Acc	Sg	185	um	praemium	o	o	o	o	o	o	o	o	o	o	o
+praemium:Acc.Pl	2	n	Acc.Pl	Acc	Pl	185	a	praemia	a	o	o	o	o	o	o	o	o	o	o
+praesidium:Nom.Sg	2	n	Nom.Sg	Nom	Sg	284	um	praesidium	o	o	o	o	o	o	o	o	o	o	o
+praesidium:Nom.Pl	2	n	Nom.Pl	Nom	Pl	284	a	praesidia	a	o	o	o	o	o	o	o	o	o	o
+praesidium:Acc.Sg	2	n	Acc.Sg	Acc	Sg	284	um	praesidium	o	o	o	o	o	o	o	o	o	o	o
+praesidium:Acc.Pl	2	n	Acc.Pl	Acc	Pl	284	a	praesidia	a	o	o	o	o	o	o	o	o	o	o
+praetor:Nom.Sg	3	mh	Nom.Sg	Nom	Sg	148		praetōr	-	-	-	-	-	-	-	-	-	-	-
+praetor:Nom.Pl	3	mh	Nom.Pl	Nom	Pl	148	ēs	praetōrēs	es	es	e	-	-	-	-	-	-	-	-
+praetor:Acc.Sg	3	mh	Acc.Sg	Acc	Sg	148	em	praetōrem	e	-	e	e	e	e	e	e	e	e	e
+praetor:Acc.Pl	3	mh	Acc.Pl	Acc	Pl	148	ēs	praetōrēs	es	es	es	e	e	e	e	e	e	e	e
+pretium:Nom.Sg	2	n	Nom.Sg	Nom	Sg	197	um	pretium	o	o	o	o	o	o	o	o	o	o	o
+pretium:Nom.Pl	2	n	Nom.Pl	Nom	Pl	197	a	pretia	a	o	o	o	o	o	o	o	o	o	o
+pretium:Acc.Sg	2	n	Acc.Sg	Acc	Sg	197	um	pretium	o	o	o	o	o	o	o	o	o	o	o
+pretium:Acc.Pl	2	n	Acc.Pl	Acc	Pl	197	a	pretia	a	o	o	o	o	o	o	o	o	o	o
+prex:Nom.Sg	3	f	Nom.Sg	Nom	Sg	190		prex	-	-	-	-	-	-	-	-	-	-	-
+prex:Nom.Pl	3	f	Nom.Pl	Nom	Pl	190	ēs	precēs	es	es	e	-	-	-	-	-	-	-	-
+prex:Acc.Sg	3	f	Acc.Sg	Acc	Sg	190	em	precem	e	e	e	e	e	e	e	e	e	e	e
+prex:Acc.Pl	3	f	Acc.Pl	Acc	Pl	190	ēs	precēs	es	es	es	e	e	e	e	e	e	e	e
+princeps:Nom.Sg	3	mh	Nom.Sg	Nom	Sg	516		prīnceps	-	-	-	-	-	-	-	-	-	-	-
+princeps:Nom.Pl	3	mh	Nom.Pl	Nom	Pl	516	ēs	prīncipēs	es	es	e	-	-	-	-	-	-	-	-
+princeps:Acc.Sg	3	mh	Acc.Sg	Acc	Sg	516	em	prīncipem	e	e	e	e	e	e	e	e	e	e	e
+princeps:Acc.Pl	3	mh	Acc.Pl	Acc	Pl	516	ēs	prīncipēs	es	es	e	e	e	e	e	e	e	e	e
+principium:Nom.Sg	2	n	Nom.Sg	Nom	Sg	103	um	prīncipium	o	o	o	o	o	o	o	o	o	o	o
+principium:Nom.Pl	2	n	Nom.Pl	Nom	Pl	103	a	prīncipia	a	o	o	o	o	o	o	o	o	o	o
+principium:Acc.Sg	2	n	Acc.Sg	Acc	Sg	103	um	prīncipium	o	o	o	o	o	o	o	o	o	o	o
+principium:Acc.Pl	2	n	Acc.Pl	Acc	Pl	103	a	prīncipia	a	o	o	o	o	o	o	o	o	o	o
+proelium:Nom.Sg	2	n	Nom.Sg	Nom	Sg	401	um	proelium	o	o	o	o	o	o	o	o	o	o	o
+proelium:Nom.Pl	2	n	Nom.Pl	Nom	Pl	401	a	proelia	a	o	o	o	o	o	o	o	o	o	o
+proelium:Acc.Sg	2	n	Acc.Sg	Acc	Sg	401	um	proelium	o	o	o	o	o	o	o	o	o	o	o
+proelium:Acc.Pl	2	n	Acc.Pl	Acc	Pl	401	a	proelia	a	o	o	o	o	o	o	o	o	o	o
+pudor:Nom.Sg	3	m	Nom.Sg	Nom	Sg	172		pudor	-	-	-	-	-	-	-	-	-	-	-
+pudor:Nom.Pl	3	m	Nom.Pl	Nom	Pl	172	ēs	pudōrēs	es	es	e	-	-	-	-	-	-	-	-
+pudor:Acc.Sg	3	m	Acc.Sg	Acc	Sg	172	em	pudōrem	e	e	e	e	e	e	e	e	e	e	e
+pudor:Acc.Pl	3	m	Acc.Pl	Acc	Pl	172	ēs	pudōrēs	es	es	e	e	e	e	e	e	e	e	e
+puella:Nom.Sg	1	f	Nom.Sg	Nom	Sg	262	a	puella	a	a	a	a	a	a	a	a	a	a	a
+puella:Nom.Pl	1	f	Nom.Pl	Nom	Pl	262	ae	puellae	e	a	a	a	a	a	a	a	a	a	a
+puella:Acc.Sg	1	f	Acc.Sg	Acc	Sg	262	am	puellam	a	a	a	a	a	a	a	a	a	a	a
+puella:Acc.Pl	1	f	Acc.Pl	Acc	Pl	262	ās	puellās	as	a	a	a	a	a	a	a	a	a	a
+puer:Nom.Sg	2	m	Nom.Sg	Nom	Sg	385		puer	-	o	o	o	o	o	o	o	o	o	o
+puer:Nom.Pl	2	m	Nom.Pl	Nom	Pl	385	ī	puerī	i	o	o	o	o	o	o	o	o	o	o
+puer:Acc.Sg	2	m	Acc.Sg	Acc	Sg	385	um	puerum	o	o	o	o	o	o	o	o	o	o	o
+puer:Acc.Pl	2	m	Acc.Pl	Acc	Pl	385	ōs	puerōs	os	o	o	o	o	o	o	o	o	o	o
+pugna:Nom.Sg	1	f	Nom.Sg	Nom	Sg	215	a	pugna	a	a	a	a	a	a	a	a	a	a	a
+pugna:Nom.Pl	1	f	Nom.Pl	Nom	Pl	215	ae	pugnae	e	a	a	a	a	a	a	a	a	a	a
+pugna:Acc.Sg	1	f	Acc.Sg	Acc	Sg	215	am	pugnam	a	a	a	a	a	a	a	a	a	a	a
+pugna:Acc.Pl	1	f	Acc.Pl	Acc	Pl	215	ās	pugnās	as	a	a	a	a	a	a	a	a	a	a
+pulvis:Nom.Sg	3	m	Nom.Sg	Nom	Sg	62		pulvis	-	-	-	-	-	-	-	-	-	-	-
+pulvis:Nom.Pl	3	m	Nom.Pl	Nom	Pl	62	ēs	pulverēs	es	es	e	-	-	-	-	-	-	-	-
+pulvis:Acc.Sg	3	m	Acc.Sg	Acc	Sg	62	em	pulverem	e	e	e	e	e	e	e	e	e	e	e
+pulvis:Acc.Pl	3	m	Acc.Pl	Acc	Pl	62	ēs	pulverēs	es	es	e	e	e	e	e	e	e	e	e
+puppis:Nom.Sg	3	f	Nom.Sg	Nom	Sg	75	is	puppis	es	-	-	-	-	-	-	-	-	-	-
+puppis:Nom.Pl	3	f	Nom.Pl	Nom	Pl	75	ēs	puppēs	es	es	e	-	-	-	-	-	-	-	-
+puppis:Acc.Sg	3	f	Acc.Sg	Acc	Sg	75	em	puppem	e	e	e	e	e	e	e	e	e	e	e
+puppis:Acc.Pl	3	f	Acc.Pl	Acc	Pl	75	ēs	puppēs	es	es	e	e	e	e	e	e	e	e	e
+querela:Nom.Sg	1	f	Nom.Sg	Nom	Sg	67	a	querēla	a	a	a	a	a	a	a	a	a	a	a
+querela:Nom.Pl	1	f	Nom.Pl	Nom	Pl	67	ae	querēlae	e	a	a	a	a	a	a	a	a	a	a
+querela:Acc.Sg	1	f	Acc.Sg	Acc	Sg	67	am	querēlam	a	a	a	a	a	a	a	a	a	a	a
+querela:Acc.Pl	1	f	Acc.Pl	Acc	Pl	67	ās	querēlās	as	a	a	a	a	a	a	a	a	a	a
+quies:Nom.Sg	3	f	Nom.Sg	Nom	Sg	162		quiēs	-	-	-	-	-	-	-	-	-	-	-
+quies:Nom.Pl	3	f	Nom.Pl	Nom	Pl	162	ēs	quiētēs	es	es	e	-	-	-	-	-	-	-	-
+quies:Acc.Sg	3	f	Acc.Sg	Acc	Sg	162	em	quiētem	e	e	e	e	e	e	e	e	e	e	e
+quies:Acc.Pl	3	f	Acc.Pl	Acc	Pl	162	ēs	quiētēs	es	es	e	e	e	e	e	e	e	e	e
+radius:Nom.Sg	2	m	Nom.Sg	Nom	Sg	54	us	radius	os	o	o	o	o	o	o	o	o	o	o
+radius:Nom.Pl	2	m	Nom.Pl	Nom	Pl	54	ī	radiī	i	o	o	o	o	o	o	o	o	o	o
+radius:Acc.Sg	2	m	Acc.Sg	Acc	Sg	54	um	radium	o	o	o	o	o	o	o	o	o	o	o
+radius:Acc.Pl	2	m	Acc.Pl	Acc	Pl	54	ōs	radiōs	os	o	o	o	o	o	o	o	o	o	o
+radix:Nom.Sg	3	f	Nom.Sg	Nom	Sg	63		rādīx	-	-	-	-	-	-	-	-	-	-	-
+radix:Nom.Pl	3	f	Nom.Pl	Nom	Pl	63	ēs	rādīcēs	es	es	e	-	-	-	-	-	-	-	-
+radix:Acc.Sg	3	f	Acc.Sg	Acc	Sg	63	em	rādīcem	e	e	e	e	e	e	e	e	e	e	e
+radix:Acc.Pl	3	f	Acc.Pl	Acc	Pl	63	ēs	rādīcēs	es	es	e	e	e	e	e	e	e	e	e
+ramus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	101	us	rāmus	os	o	o	o	o	o	o	o	o	o	o
+ramus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	101	ī	rāmī	i	o	o	o	o	o	o	o	o	o	o
+ramus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	101	um	rāmum	o	o	o	o	o	o	o	o	o	o	o
+ramus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	101	ōs	rāmōs	os	o	o	o	o	o	o	o	o	o	o
+ratio:Nom.Sg	3	f	Nom.Sg	Nom	Sg	594		ratiō	-	-	-	-	-	-	-	-	-	-	-
+ratio:Nom.Pl	3	f	Nom.Pl	Nom	Pl	594	ēs	ratiōnēs	es	es	e	-	-	-	-	-	-	-	-
+ratio:Acc.Sg	3	f	Acc.Sg	Acc	Sg	594	em	ratiōnem	e	e	e	e	e	e	e	e	e	e	e
+ratio:Acc.Pl	3	f	Acc.Pl	Acc	Pl	594	ēs	ratiōnēs	es	es	e	e	e	e	e	e	e	e	e
+ratis:Nom.Sg	3	f	Nom.Sg	Nom	Sg	132	is	ratis	es	-	-	-	-	-	-	-	-	-	-
+ratis:Nom.Pl	3	f	Nom.Pl	Nom	Pl	132	ēs	ratēs	es	es	e	-	-	-	-	-	-	-	-
+ratis:Acc.Sg	3	f	Acc.Sg	Acc	Sg	132	em	ratem	e	e	e	e	e	e	e	e	e	e	e
+ratis:Acc.Pl	3	f	Acc.Pl	Acc	Pl	132	ēs	ratēs	es	es	es	e	e	e	e	e	e	e	e
+rector:Nom.Sg	3	mh	Nom.Sg	Nom	Sg	66		rector	-	-	-	-	-	-	-	-	-	-	-
+rector:Nom.Pl	3	mh	Nom.Pl	Nom	Pl	66	ēs	rectōrēs	es	es	e	-	-	-	-	-	-	-	-
+rector:Acc.Sg	3	mh	Acc.Sg	Acc	Sg	66	em	rectōrem	e	e	e	e	e	e	e	e	e	e	e
+rector:Acc.Pl	3	mh	Acc.Pl	Acc	Pl	66	ēs	rectōrēs	es	es	e	e	e	e	e	e	e	e	e
+regia:Nom.Sg	1	f	Nom.Sg	Nom	Sg	95	a	rēgia	a	a	a	a	a	a	a	a	a	a	a
+regia:Nom.Pl	1	f	Nom.Pl	Nom	Pl	95	ae	rēgiae	e	a	a	a	a	a	a	a	a	a	a
+regia:Acc.Sg	1	f	Acc.Sg	Acc	Sg	95	am	rēgiam	a	a	a	a	a	a	a	a	a	a	a
+regia:Acc.Pl	1	f	Acc.Pl	Acc	Pl	95	ās	rēgiās	as	a	a	a	a	a	a	a	a	a	a
+regina:Nom.Sg	1	fh	Nom.Sg	Nom	Sg	73	a	rēgīna	a	a	a	a	a	a	a	a	a	a	a
+regina:Nom.Pl	1	fh	Nom.Pl	Nom	Pl	73	ae	rēgīnae	e	a	a	a	a	a	a	a	a	a	a
+regina:Acc.Sg	1	fh	Acc.Sg	Acc	Sg	73	am	rēgīnam	a	a	a	a	a	a	a	a	a	-	a
+regina:Acc.Pl	1	fh	Acc.Pl	Acc	Pl	73	ās	rēgīnās	as	a	a	a	a	a	a	a	a	-	a
+regio:Nom.Sg	3	f	Nom.Sg	Nom	Sg	266		regiō	-	-	-	-	-	-	-	-	-	-	-
+regio:Nom.Pl	3	f	Nom.Pl	Nom	Pl	266	ēs	regiōnēs	es	es	e	-	-	-	-	-	-	-	-
+regio:Acc.Sg	3	f	Acc.Sg	Acc	Sg	266	em	regiōnem	e	e	e	e	e	e	e	e	e	e	e
+regio:Acc.Pl	3	f	Acc.Pl	Acc	Pl	266	ēs	regiōnēs	es	es	es	e	e	e	e	e	e	e	e
+regnum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	607	um	rēgnum	o	o	o	o	o	o	o	o	o	o	o
+regnum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	607	a	rēgna	a	o	o	o	o	o	o	o	o	o	o
+regnum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	607	um	rēgnum	o	o	o	o	o	o	o	o	o	o	o
+regnum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	607	a	rēgna	a	o	o	o	o	o	o	o	o	o	o
+remus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	74	us	rēmus	os	o	o	o	o	o	o	o	o	o	o
+remus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	74	ī	rēmī	i	o	o	o	o	o	o	o	o	o	o
+remus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	74	um	rēmum	o	o	o	o	o	o	o	o	o	o	o
+remus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	74	ōs	rēmōs	os	o	o	o	o	o	o	o	o	o	o
+res:Nom.Sg	5	f	Nom.Sg	Nom	Sg	2735	ēs	rēs	es	es	es	e	-	-	-	-	-	-	-
+res:Nom.Pl	5	f	Nom.Pl	Nom	Pl	2735	ēs	rēs	es	es	es	e	-	-	-	-	-	-	-
+res:Acc.Sg	5	f	Acc.Sg	Acc	Sg	2735	em	rem	e	es	es	e	e	e	e	e	e	e	e
+res:Acc.Pl	5	f	Acc.Pl	Acc	Pl	2735	ēs	rēs	es	es	es	e	e	e	e	e	e	e	e
+rex:Nom.Sg	3	mh	Nom.Sg	Nom	Sg	1544		rēx	-	-	-	-	-	-	-	-	-	-	-
+rex:Nom.Pl	3	mh	Nom.Pl	Nom	Pl	1544	ēs	rēgēs	es	es	e	-	-	-	-	-	-	-	-
+rex:Acc.Sg	3	mh	Acc.Sg	Acc	Sg	1544	em	rēgem	e	e	e	e	e	e	e	e	e	e	e
+rex:Acc.Pl	3	mh	Acc.Pl	Acc	Pl	1544	ēs	rēgēs	es	es	e	e	e	e	e	e	e	e	e
+ripa:Nom.Sg	1	f	Nom.Sg	Nom	Sg	169	a	rīpa	a	a	a	a	a	a	a	a	a	a	a
+ripa:Nom.Pl	1	f	Nom.Pl	Nom	Pl	169	ae	rīpae	e	a	a	a	a	a	a	a	a	a	a
+ripa:Acc.Sg	1	f	Acc.Sg	Acc	Sg	169	am	rīpam	a	a	a	a	a	a	a	a	a	a	a
+ripa:Acc.Pl	1	f	Acc.Pl	Acc	Pl	169	ās	rīpās	as	a	a	a	a	a	a	a	a	a	a
+robur:Nom.Sg	3	n	Nom.Sg	Nom	Sg	134		rōbur	-	-	-	-	-	-	-	-	-	-	-
+robur:Nom.Pl	3	n	Nom.Pl	Nom	Pl	134	a	rōbora	a	-	-	-	-	-	-	-	-	-	-
+robur:Acc.Sg	3	n	Acc.Sg	Acc	Sg	134		rōbur	-	-	-	-	-	-	-	-	-	-	-
+robur:Acc.Pl	3	n	Acc.Pl	Acc	Pl	134	a	rōbora	a	-	-	-	-	-	-	-	-	-	-
+rogus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	61	us	rogus	os	o	o	o	o	o	o	o	o	o	o
+rogus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	61	ī	rogī	i	o	o	o	o	o	o	o	o	o	o
+rogus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	61	um	rogum	o	o	o	o	o	o	o	o	o	o	o
+rogus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	61	ōs	rogōs	os	o	o	o	o	o	o	o	o	o	o
+rota:Nom.Sg	1	f	Nom.Sg	Nom	Sg	120	a	rota	a	a	a	a	a	a	a	a	a	a	a
+rota:Nom.Pl	1	f	Nom.Pl	Nom	Pl	120	ae	rotae	e	a	a	a	a	a	a	a	a	a	a
+rota:Acc.Sg	1	f	Acc.Sg	Acc	Sg	120	am	rotam	a	a	a	a	a	a	a	a	a	a	a
+rota:Acc.Pl	1	f	Acc.Pl	Acc	Pl	120	ās	rotās	as	a	a	a	a	a	a	a	a	a	a
+ruina:Nom.Sg	1	f	Nom.Sg	Nom	Sg	114	a	ruīna	a	a	a	a	a	a	a	a	a	a	a
+ruina:Nom.Pl	1	f	Nom.Pl	Nom	Pl	114	ae	ruīnae	e	a	a	a	a	a	a	a	a	a	a
+ruina:Acc.Sg	1	f	Acc.Sg	Acc	Sg	114	am	ruīnam	a	a	a	a	a	a	a	a	a	a	a
+ruina:Acc.Pl	1	f	Acc.Pl	Acc	Pl	114	ās	ruīnās	as	a	a	a	a	a	a	a	a	a	a
+rumor:Nom.Sg	3	m	Nom.Sg	Nom	Sg	92		rūmor	-	-	-	-	-	-	-	-	-	-	-
+rumor:Nom.Pl	3	m	Nom.Pl	Nom	Pl	92	ēs	rūmōrēs	es	es	e	-	-	-	-	-	-	-	-
+rumor:Acc.Sg	3	m	Acc.Sg	Acc	Sg	92	em	rūmōrem	e	-	e	e	e	e	e	e	e	e	e
+rumor:Acc.Pl	3	m	Acc.Pl	Acc	Pl	92	ēs	rūmōrēs	es	es	e	e	e	e	e	e	e	e	e
+rupes:Nom.Sg	3	f	Nom.Sg	Nom	Sg	102	ēs	rūpēs	es	-	-	-	-	-	-	-	-	-	-
+rupes:Nom.Pl	3	f	Nom.Pl	Nom	Pl	102	ēs	rūpēs	es	es	e	-	-	-	-	-	-	-	-
+rupes:Acc.Sg	3	f	Acc.Sg	Acc	Sg	102	em	rūpem	e	e	e	e	e	e	e	e	e	e	e
+rupes:Acc.Pl	3	f	Acc.Pl	Acc	Pl	102	ēs	rūpēs	es	es	es	e	e	e	e	e	e	e	e
+rus:Nom.Sg	3	n	Nom.Sg	Nom	Sg	74		rūs	-	-	-	-	-	-	-	-	-	-	-
+rus:Nom.Pl	3	n	Nom.Pl	Nom	Pl	74	a	rūra	a	-	-	-	-	-	-	-	-	-	-
+rus:Acc.Sg	3	n	Acc.Sg	Acc	Sg	74		rūs	-	-	-	-	-	-	-	-	-	-	-
+rus:Acc.Pl	3	n	Acc.Pl	Acc	Pl	74	a	rūra	a	-	-	-	-	-	-	-	-	-	-
+sacerdos:Nom.Sg	3	mh	Nom.Sg	Nom	Sg	76		sacerdōs	-	-	-	-	-	-	-	-	-	-	-
+sacerdos:Nom.Pl	3	mh	Nom.Pl	Nom	Pl	76	ēs	sacerdōtēs	es	es	e	-	-	-	-	-	-	-	-
+sacerdos:Acc.Sg	3	mh	Acc.Sg	Acc	Sg	76	em	sacerdōtem	e	e	e	e	e	e	e	e	e	e	e
+sacerdos:Acc.Pl	3	mh	Acc.Pl	Acc	Pl	76	ēs	sacerdōtēs	es	es	e	e	e	e	e	e	e	e	e
+sacrum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	160	um	sacrum	o	o	o	o	o	o	o	o	o	o	o
+sacrum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	160	a	sacra	a	-	o	o	o	o	o	o	o	o	o
+sacrum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	160	um	sacrum	o	o	o	o	o	o	o	o	o	o	o
+sacrum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	160	a	sacra	a	o	o	o	o	o	o	o	o	o	o
+saeculum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	139	um	saeculum	o	o	o	o	o	o	o	o	o	o	o
+saeculum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	139	a	saecula	a	o	o	o	o	o	o	o	o	o	o
+saeculum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	139	um	saeculum	o	o	o	o	o	o	o	o	o	o	o
+saeculum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	139	a	saecula	a	o	o	o	o	o	o	o	o	o	o
+sagitta:Nom.Sg	1	f	Nom.Sg	Nom	Sg	105	a	sagitta	a	a	a	a	a	a	a	a	a	a	a
+sagitta:Nom.Pl	1	f	Nom.Pl	Nom	Pl	105	ae	sagittae	e	a	a	a	a	a	a	a	a	a	a
+sagitta:Acc.Sg	1	f	Acc.Sg	Acc	Sg	105	am	sagittam	a	a	a	a	a	a	a	a	a	a	a
+sagitta:Acc.Pl	1	f	Acc.Pl	Acc	Pl	105	ās	sagittās	as	a	a	a	a	a	a	a	a	a	a
+saltus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	92	us	saltus	os	o	o	o	o	o	o	o	o	o	o
+saltus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	92	ūs	saltūs	us	o	o	o	o	o	o	o	o	o	o
+saltus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	92	um	saltum	o	o	o	o	o	o	o	o	o	o	o
+saltus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	92	ūs	saltūs	us	os	o	o	o	o	o	o	o	o	o
+salus:Nom.Sg	3	f	Nom.Sg	Nom	Sg	280		salūs	-	-	-	-	-	-	-	-	-	-	-
+salus:Nom.Pl	3	f	Nom.Pl	Nom	Pl	280	ēs	salūtēs	es	es	e	-	-	-	-	-	-	-	-
+salus:Acc.Sg	3	f	Acc.Sg	Acc	Sg	280	em	salūtem	e	e	e	e	e	e	e	e	e	e	e
+salus:Acc.Pl	3	f	Acc.Pl	Acc	Pl	280	ēs	salūtēs	es	es	es	e	e	e	e	e	e	e	e
+sanctus:Nom.Sg	2	mh	Nom.Sg	Nom	Sg	134	us	sānctus	os	o	o	o	o	o	o	o	o	o	o
+sanctus:Nom.Pl	2	mh	Nom.Pl	Nom	Pl	134	ī	sānctī	i	o	o	o	o	o	o	o	o	o	o
+sanctus:Acc.Sg	2	mh	Acc.Sg	Acc	Sg	134	um	sānctum	o	o	o	o	o	o	o	o	o	o	o
+sanctus:Acc.Pl	2	mh	Acc.Pl	Acc	Pl	134	ōs	sānctōs	os	o	o	o	o	o	o	o	o	o	o
+sanguis:Nom.Sg	3	m	Nom.Sg	Nom	Sg	414		sanguis	-	-	-	-	-	-	-	-	-	-	-
+sanguis:Nom.Pl	3	m	Nom.Pl	Nom	Pl	414	ēs	sanguinēs	es	es	e	-	-	-	-	-	-	-	-
+sanguis:Acc.Sg	3	m	Acc.Sg	Acc	Sg	414	em	sanguinem	e	e	e	e	e	e	e	e	e	e	e
+sanguis:Acc.Pl	3	m	Acc.Pl	Acc	Pl	414	ēs	sanguinēs	es	es	e	e	e	e	e	e	e	e	e
+saxum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	281	um	saxum	o	o	o	o	o	o	o	o	o	o	o
+saxum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	281	a	saxa	a	o	o	o	o	o	o	o	o	o	o
+saxum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	281	um	saxum	o	o	o	o	o	o	o	o	o	o	o
+saxum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	281	a	saxa	a	o	o	o	o	o	o	o	o	o	o
+scelus:Nom.Sg	3	n	Nom.Sg	Nom	Sg	531		scelus	-	-	-	-	-	-	-	-	-	-	-
+scelus:Nom.Pl	3	n	Nom.Pl	Nom	Pl	531	a	scelera	a	-	-	-	-	-	-	-	-	-	-
+scelus:Acc.Sg	3	n	Acc.Sg	Acc	Sg	531		scelus	-	-	-	-	-	-	-	-	-	-	-
+scelus:Acc.Pl	3	n	Acc.Pl	Acc	Pl	531	a	scelera	a	-	-	-	-	-	-	-	-	-	-
+sedes:Nom.Sg	3	f	Nom.Sg	Nom	Sg	231	ēs	sēdēs	es	-	-	-	-	-	-	-	-	-	-
+sedes:Nom.Pl	3	f	Nom.Pl	Nom	Pl	231	ēs	sēdēs	es	es	e	-	-	-	-	-	-	-	-
+sedes:Acc.Sg	3	f	Acc.Sg	Acc	Sg	231	em	sēdem	e	e	e	e	e	e	e	e	e	e	e
+sedes:Acc.Pl	3	f	Acc.Pl	Acc	Pl	231	ēs	sēdēs	es	es	e	e	e	e	e	e	e	e	e
+seges:Nom.Sg	3	f	Nom.Sg	Nom	Sg	65		seges	-	-	-	-	-	-	-	-	-	-	-
+seges:Nom.Pl	3	f	Nom.Pl	Nom	Pl	65	ēs	segetēs	es	es	e	-	-	-	-	-	-	-	-
+seges:Acc.Sg	3	f	Acc.Sg	Acc	Sg	65	em	segetem	e	e	e	e	e	e	e	e	e	e	e
+seges:Acc.Pl	3	f	Acc.Pl	Acc	Pl	65	ēs	segetēs	es	es	es	e	e	e	e	e	e	e	e
+semen:Nom.Sg	3	n	Nom.Sg	Nom	Sg	71		sēmen	-	-	-	-	-	-	-	-	-	-	-
+semen:Nom.Pl	3	n	Nom.Pl	Nom	Pl	71	a	sēmina	a	-	-	-	-	-	-	-	-	-	-
+semen:Acc.Sg	3	n	Acc.Sg	Acc	Sg	71		sēmen	-	-	-	-	-	-	-	-	-	-	-
+semen:Acc.Pl	3	n	Acc.Pl	Acc	Pl	71	a	sēmina	a	-	-	-	-	-	-	-	-	-	-
+senectus:Nom.Sg	3	f	Nom.Sg	Nom	Sg	128		senectūs	-	-	-	-	-	-	-	-	-	-	-
+senectus:Nom.Pl	3	f	Nom.Pl	Nom	Pl	128	ēs	senectūtēs	es	es	e	-	-	-	-	-	-	-	-
+senectus:Acc.Sg	3	f	Acc.Sg	Acc	Sg	128	em	senectūtem	e	e	e	e	e	e	e	e	e	e	e
+senectus:Acc.Pl	3	f	Acc.Pl	Acc	Pl	128	ēs	senectūtēs	es	es	es	e	e	e	e	e	e	e	e
+senex:Nom.Sg	3	mh	Nom.Sg	Nom	Sg	178		senex	-	-	-	-	-	-	-	-	-	-	-
+senex:Nom.Pl	3	mh	Nom.Pl	Nom	Pl	178	ēs	senēs	es	es	e	-	-	-	-	-	-	-	-
+senex:Acc.Sg	3	mh	Acc.Sg	Acc	Sg	178	em	senem	e	e	e	e	e	e	e	e	e	e	e
+senex:Acc.Pl	3	mh	Acc.Pl	Acc	Pl	178	ēs	senēs	es	es	e	e	e	e	e	e	e	e	e
+sensus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	163	us	sēnsus	os	o	o	o	o	o	o	o	o	o	o
+sensus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	163	ūs	sēnsūs	us	os	o	o	o	o	o	o	o	o	o
+sensus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	163	um	sēnsum	o	o	o	o	o	o	o	o	o	o	o
+sensus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	163	ūs	sēnsūs	us	os	o	o	o	o	o	o	o	o	o
+sententia:Nom.Sg	1	f	Nom.Sg	Nom	Sg	285	a	sententia	a	a	a	a	a	a	a	a	a	a	a
+sententia:Nom.Pl	1	f	Nom.Pl	Nom	Pl	285	ae	sententiae	e	a	a	a	a	a	a	a	a	a	a
+sententia:Acc.Sg	1	f	Acc.Sg	Acc	Sg	285	am	sententiam	a	a	a	a	a	a	a	a	a	a	a
+sententia:Acc.Pl	1	f	Acc.Pl	Acc	Pl	285	ās	sententiās	as	a	a	a	a	a	a	a	a	a	a
+sepulcrum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	61	um	sepulcrum	o	o	o	o	o	o	o	o	o	o	o
+sepulcrum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	61	a	sepulcra	a	o	o	o	o	o	o	o	o	o	o
+sepulcrum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	61	um	sepulcrum	o	o	o	o	o	o	o	o	o	o	o
+sepulcrum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	61	a	sepulcra	a	o	o	o	o	o	o	o	o	o	o
+sermo:Nom.Sg	3	m	Nom.Sg	Nom	Sg	256		sermō	-	-	-	-	-	-	-	-	-	-	-
+sermo:Nom.Pl	3	m	Nom.Pl	Nom	Pl	256	ēs	sermōnēs	es	es	e	-	-	-	-	-	-	-	-
+sermo:Acc.Sg	3	m	Acc.Sg	Acc	Sg	256	em	sermōnem	e	e	e	e	e	e	e	e	e	e	e
+sermo:Acc.Pl	3	m	Acc.Pl	Acc	Pl	256	ēs	sermōnēs	es	es	e	e	e	e	e	e	e	e	e
+serpens:Nom.Sg	3	f	Nom.Sg	Nom	Sg	71		serpēns	-	-	-	-	-	-	-	-	-	-	-
+serpens:Nom.Pl	3	f	Nom.Pl	Nom	Pl	71	ēs	serpentēs	es	es	e	-	-	-	-	-	-	-	-
+serpens:Acc.Sg	3	f	Acc.Sg	Acc	Sg	71	em	serpentem	e	e	e	e	e	e	e	e	e	e	e
+serpens:Acc.Pl	3	f	Acc.Pl	Acc	Pl	71	ēs	serpentēs	es	es	es	e	e	e	e	e	e	e	e
+servitium:Nom.Sg	2	n	Nom.Sg	Nom	Sg	85	um	servitium	o	o	o	o	o	o	o	o	o	o	o
+servitium:Nom.Pl	2	n	Nom.Pl	Nom	Pl	85	a	servitia	a	o	o	o	o	o	o	o	o	o	o
+servitium:Acc.Sg	2	n	Acc.Sg	Acc	Sg	85	um	servitium	o	o	o	o	o	o	o	o	o	o	o
+servitium:Acc.Pl	2	n	Acc.Pl	Acc	Pl	85	a	servitia	a	o	o	o	o	o	o	o	o	o	o
+servus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	300	us	servus	os	o	o	o	o	o	o	o	o	o	o
+servus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	300	ī	servī	i	o	o	o	o	o	o	o	o	o	o
+servus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	300	um	servum	o	o	o	o	o	o	o	o	o	o	o
+servus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	300	ōs	servōs	os	o	o	o	o	o	o	o	o	o	o
+sidus:Nom.Sg	3	n	Nom.Sg	Nom	Sg	226		sīdus	-	-	-	-	-	-	-	-	-	-	-
+sidus:Nom.Pl	3	n	Nom.Pl	Nom	Pl	226	a	sīdera	a	-	-	-	-	-	-	-	-	-	-
+sidus:Acc.Sg	3	n	Acc.Sg	Acc	Sg	226		sīdus	-	-	-	-	-	-	-	-	-	-	-
+sidus:Acc.Pl	3	n	Acc.Pl	Acc	Pl	226	a	sīdera	a	-	-	-	-	-	-	-	-	-	-
+signum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	441	um	signum	o	o	o	o	o	o	o	o	o	o	o
+signum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	441	a	signa	a	o	o	o	o	o	o	o	o	o	o
+signum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	441	um	signum	o	o	o	o	o	o	o	o	o	o	o
+signum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	441	a	signa	a	o	o	o	o	o	o	o	o	o	o
+silentium:Nom.Sg	2	n	Nom.Sg	Nom	Sg	125	um	silentium	o	o	o	o	o	o	o	o	o	o	o
+silentium:Nom.Pl	2	n	Nom.Pl	Nom	Pl	125	a	silentia	a	o	o	o	o	o	o	o	o	o	o
+silentium:Acc.Sg	2	n	Acc.Sg	Acc	Sg	125	um	silentium	o	o	o	o	o	o	o	o	o	o	o
+silentium:Acc.Pl	2	n	Acc.Pl	Acc	Pl	125	a	silentia	a	o	o	o	o	o	o	o	o	o	o
+silva:Nom.Sg	1	f	Nom.Sg	Nom	Sg	341	a	silva	a	a	a	a	a	a	a	a	a	a	a
+silva:Nom.Pl	1	f	Nom.Pl	Nom	Pl	341	ae	silvae	e	a	a	a	a	a	a	a	a	a	a
+silva:Acc.Sg	1	f	Acc.Sg	Acc	Sg	341	am	silvam	a	a	a	a	a	a	a	a	a	a	a
+silva:Acc.Pl	1	f	Acc.Pl	Acc	Pl	341	ās	silvās	as	a	a	a	a	a	a	a	a	a	a
+simulacrum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	66	um	simulācrum	o	o	o	o	o	o	o	o	o	o	o
+simulacrum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	66	a	simulācra	a	o	o	o	o	o	o	o	o	o	o
+simulacrum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	66	um	simulācrum	o	o	o	o	o	o	o	o	o	o	o
+simulacrum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	66	a	simulācra	a	o	o	o	o	o	o	o	o	o	o
+sinus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	181	us	sinus	os	o	o	o	o	o	o	o	o	o	o
+sinus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	181	ūs	sinūs	us	o	o	o	o	o	o	o	o	o	o
+sinus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	181	um	sinum	o	o	o	o	o	o	o	o	o	o	o
+sinus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	181	ūs	sinūs	us	o	o	o	o	o	o	o	o	o	o
+sitis:Nom.Sg	3	f	Nom.Sg	Nom	Sg	75	is	sitis	es	-	-	-	-	-	-	-	-	-	-
+sitis:Nom.Pl	3	f	Nom.Pl	Nom	Pl	75			-	es	e	-	-	-	-	-	-	-	-
+sitis:Acc.Sg	3	f	Acc.Sg	Acc	Sg	75	em	sitem	e	-	e	e	e	e	e	e	e	e	e
+sitis:Acc.Pl	3	f	Acc.Pl	Acc	Pl	75			-	es	e	e	e	e	e	e	e	e	e
+sol:Nom.Sg	3	m	Nom.Sg	Nom	Sg	312		sōl	-	-	-	-	-	-	-	-	-	-	-
+sol:Nom.Pl	3	m	Nom.Pl	Nom	Pl	312	ēs	sōlēs	es	es	e	-	-	-	-	-	-	-	-
+sol:Acc.Sg	3	m	Acc.Sg	Acc	Sg	312	em	sōlem	e	e	e	e	e	e	e	e	e	e	e
+sol:Acc.Pl	3	m	Acc.Pl	Acc	Pl	312	ēs	sōlēs	es	es	e	e	e	e	e	e	e	e	e
+solum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	165	um	solum	o	o	o	o	o	o	o	o	o	o	o
+solum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	165	a	sola	a	o	o	o	o	o	o	o	o	o	o
+solum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	165	um	solum	o	o	o	o	o	o	o	o	o	o	o
+solum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	165	a	sola	a	o	o	o	o	o	o	o	o	o	o
+somnus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	200	us	somnus	os	o	o	o	o	o	o	o	o	o	o
+somnus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	200	ī	somnī	i	o	o	o	o	o	o	o	o	o	o
+somnus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	200	um	somnum	o	o	o	o	o	o	o	o	o	o	o
+somnus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	200	ōs	somnōs	os	o	o	o	o	o	o	o	o	o	o
+sonitus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	54	us	sonitus	os	o	o	o	o	o	o	o	o	o	o
+sonitus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	54	ūs	sonitūs	us	o	o	o	o	o	o	o	o	o	o
+sonitus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	54	um	sonitum	o	o	o	o	o	o	o	o	o	o	o
+sonitus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	54	ūs	sonitūs	us	o	o	o	o	o	o	o	o	o	o
+sonus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	97	us	sonus	os	o	o	o	o	o	o	o	o	o	o
+sonus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	97	ī	sonī	i	o	o	o	o	o	o	o	o	o	o
+sonus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	97	um	sonum	o	o	o	o	o	o	o	o	o	o	o
+sonus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	97	ōs	sonōs	os	o	o	o	o	o	o	o	o	o	o
+soror:Nom.Sg	3	fh	Nom.Sg	Nom	Sg	168		soror	-	-	-	-	-	-	-	-	-	-	-
+soror:Nom.Pl	3	fh	Nom.Pl	Nom	Pl	168	ēs	sorōrēs	es	es	e	-	-	-	-	-	-	-	-
+soror:Acc.Sg	3	fh	Acc.Sg	Acc	Sg	168	em	sorōrem	e	e	e	e	e	e	e	e	e	e	e
+soror:Acc.Pl	3	fh	Acc.Pl	Acc	Pl	168	ēs	sorōrēs	es	es	es	e	e	e	e	e	e	e	e
+sors:Nom.Sg	3	f	Nom.Sg	Nom	Sg	160		sors	-	-	-	-	-	-	-	-	-	-	-
+sors:Nom.Pl	3	f	Nom.Pl	Nom	Pl	160	ēs	sortēs	es	es	e	-	-	-	-	-	-	-	-
+sors:Acc.Sg	3	f	Acc.Sg	Acc	Sg	160	em	sortem	e	e	e	e	e	e	e	e	e	e	e
+sors:Acc.Pl	3	f	Acc.Pl	Acc	Pl	160	ēs	sortēs	es	es	e	e	e	e	e	e	e	e	e
+spatium:Nom.Sg	2	n	Nom.Sg	Nom	Sg	310	um	spatium	o	o	o	o	o	o	o	o	o	o	o
+spatium:Nom.Pl	2	n	Nom.Pl	Nom	Pl	310	a	spatia	a	o	o	o	o	o	o	o	o	o	o
+spatium:Acc.Sg	2	n	Acc.Sg	Acc	Sg	310	um	spatium	o	o	o	o	o	o	o	o	o	o	o
+spatium:Acc.Pl	2	n	Acc.Pl	Acc	Pl	310	a	spatia	a	o	o	o	o	o	o	o	o	o	o
+species:Nom.Sg	5	f	Nom.Sg	Nom	Sg	276	ēs	speciēs	es	es	es	e	-	-	-	-	-	-	-
+species:Nom.Pl	5	f	Nom.Pl	Nom	Pl	276	ēs	speciēs	es	es	es	e	-	-	-	-	-	-	-
+species:Acc.Sg	5	f	Acc.Sg	Acc	Sg	276	em	speciem	e	es	es	e	e	e	e	e	e	e	e
+species:Acc.Pl	5	f	Acc.Pl	Acc	Pl	276	ēs	speciēs	es	es	es	e	e	e	e	e	e	e	e
+specus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	59	us	specus	os	o	o	o	o	o	o	o	o	o	o
+specus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	59	ūs	specūs	us	o	o	o	o	o	o	o	o	o	o
+specus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	59	um	specum	o	o	o	o	o	o	o	o	o	o	o
+specus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	59	ūs	specūs	us	o	o	o	o	o	o	o	o	o	o
+spes:Nom.Sg	5	f	Nom.Sg	Nom	Sg	557	ēs	spēs	es	es	e	e	-	-	-	-	-	-	-
+spes:Nom.Pl	5	f	Nom.Pl	Nom	Pl	557	ēs	spēs	es	es	es	e	-	-	-	-	-	-	-
+spes:Acc.Sg	5	f	Acc.Sg	Acc	Sg	557	em	spem	e	es	es	e	e	e	e	e	e	e	e
+spes:Acc.Pl	5	f	Acc.Pl	Acc	Pl	557	ēs	spēs	es	es	es	e	e	e	e	e	e	e	e
+spiritus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	181	us	spīritus	os	o	o	o	o	o	o	o	o	o	o
+spiritus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	181	ūs	spīritūs	us	o	o	o	o	o	o	o	o	o	o
+spiritus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	181	um	spīritum	o	o	o	o	o	o	o	o	o	o	o
+spiritus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	181	ūs	spīritūs	us	o	o	o	o	o	o	o	o	o	o
+spolium:Nom.Sg	2	n	Nom.Sg	Nom	Sg	89	um	spolium	o	o	o	o	o	o	o	o	o	o	o
+spolium:Nom.Pl	2	n	Nom.Pl	Nom	Pl	89	a	spolia	a	o	o	o	o	o	o	o	o	o	o
+spolium:Acc.Sg	2	n	Acc.Sg	Acc	Sg	89	um	spolium	o	o	o	o	o	o	o	o	o	o	o
+spolium:Acc.Pl	2	n	Acc.Pl	Acc	Pl	89	a	spolia	a	o	o	o	o	o	o	o	o	o	o
+spons:Nom.Sg	3	f	Nom.Sg	Nom	Sg	58		spōns	-	-	-	-	-	-	-	-	-	-	-
+spons:Nom.Pl	3	f	Nom.Pl	Nom	Pl	58			-	es	e	-	-	-	-	-	-	-	-
+spons:Acc.Sg	3	f	Acc.Sg	Acc	Sg	58	em	spontem	e	e	e	e	e	e	e	e	e	e	e
+spons:Acc.Pl	3	f	Acc.Pl	Acc	Pl	58			-	es	e	e	e	e	e	e	e	e	e
+status:Nom.Sg	4	m	Nom.Sg	Nom	Sg	99	us	status	os	o	o	o	o	o	o	o	o	o	o
+status:Nom.Pl	4	m	Nom.Pl	Nom	Pl	99	ūs	statūs	us	o	o	o	o	o	o	o	o	o	o
+status:Acc.Sg	4	m	Acc.Sg	Acc	Sg	99	um	statum	o	o	o	o	o	o	o	o	o	o	o
+status:Acc.Pl	4	m	Acc.Pl	Acc	Pl	99	ūs	statūs	us	o	o	o	o	o	o	o	o	o	o
+stella:Nom.Sg	1	f	Nom.Sg	Nom	Sg	76	a	stēlla	a	a	a	a	a	a	a	a	a	a	a
+stella:Nom.Pl	1	f	Nom.Pl	Nom	Pl	76	ae	stēllae	e	a	a	a	a	a	a	a	a	a	a
+stella:Acc.Sg	1	f	Acc.Sg	Acc	Sg	76	am	stēllam	a	a	a	a	a	a	a	a	a	a	a
+stella:Acc.Pl	1	f	Acc.Pl	Acc	Pl	76	ās	stēllās	as	a	a	a	a	a	a	a	a	a	a
+stirps:Nom.Sg	3	f	Nom.Sg	Nom	Sg	84		stirps	-	-	-	-	-	-	-	-	-	-	-
+stirps:Nom.Pl	3	f	Nom.Pl	Nom	Pl	84	ēs	stirpēs	es	es	e	-	-	-	-	-	-	-	-
+stirps:Acc.Sg	3	f	Acc.Sg	Acc	Sg	84	em	stirpem	e	-	e	e	e	e	e	e	e	e	e
+stirps:Acc.Pl	3	f	Acc.Pl	Acc	Pl	84	ēs	stirpēs	es	es	e	e	e	e	e	e	e	e	e
+strepitus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	55	us	strepitus	os	o	o	o	o	o	o	o	o	o	o
+strepitus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	55	ūs	strepitūs	us	o	o	o	o	o	o	o	o	o	o
+strepitus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	55	um	strepitum	o	o	o	o	o	o	o	o	o	o	o
+strepitus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	55	ūs	strepitūs	us	o	o	o	o	o	o	o	o	o	o
+studium:Nom.Sg	2	n	Nom.Sg	Nom	Sg	335	um	studium	o	o	o	o	o	o	o	o	o	o	o
+studium:Nom.Pl	2	n	Nom.Pl	Nom	Pl	335	a	studia	a	o	o	o	o	o	o	o	o	o	o
+studium:Acc.Sg	2	n	Acc.Sg	Acc	Sg	335	um	studium	o	o	o	o	o	o	o	o	o	o	o
+studium:Acc.Pl	2	n	Acc.Pl	Acc	Pl	335	a	studia	a	o	o	o	o	o	o	o	o	o	o
+summa:Nom.Sg	1	f	Nom.Sg	Nom	Sg	101	a	summa	a	a	a	a	a	a	a	a	a	a	a
+summa:Nom.Pl	1	f	Nom.Pl	Nom	Pl	101	ae	summae	e	a	a	a	a	a	a	a	a	a	a
+summa:Acc.Sg	1	f	Acc.Sg	Acc	Sg	101	am	summam	a	a	a	a	a	a	a	a	a	a	a
+summa:Acc.Pl	1	f	Acc.Pl	Acc	Pl	101	ās	summās	as	a	a	a	a	a	a	a	a	a	a
+supplicium:Nom.Sg	2	n	Nom.Sg	Nom	Sg	212	um	supplicium	o	o	o	o	o	o	o	o	o	o	o
+supplicium:Nom.Pl	2	n	Nom.Pl	Nom	Pl	212	a	supplicia	a	o	o	o	o	o	o	o	o	o	o
+supplicium:Acc.Sg	2	n	Acc.Sg	Acc	Sg	212	um	supplicium	o	o	o	o	o	o	o	o	o	o	o
+supplicium:Acc.Pl	2	n	Acc.Pl	Acc	Pl	212	a	supplicia	a	o	o	o	o	o	o	o	o	o	o
+tabula:Nom.Sg	1	f	Nom.Sg	Nom	Sg	83	a	tabula	a	a	a	a	a	a	a	a	a	a	a
+tabula:Nom.Pl	1	f	Nom.Pl	Nom	Pl	83	ae	tabulae	e	a	a	a	a	a	a	a	a	a	a
+tabula:Acc.Sg	1	f	Acc.Sg	Acc	Sg	83	am	tabulam	a	a	a	a	a	a	a	a	a	a	a
+tabula:Acc.Pl	1	f	Acc.Pl	Acc	Pl	83	ās	tabulās	as	a	a	a	a	a	a	a	a	a	a
+taurus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	103	us	taurus	os	o	o	o	o	o	o	o	o	o	o
+taurus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	103	ī	taurī	i	o	o	o	o	o	o	o	o	o	o
+taurus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	103	um	taurum	o	o	o	o	o	o	o	o	o	o	o
+taurus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	103	ōs	taurōs	os	o	o	o	o	o	o	o	o	o	o
+tectum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	221	um	tēctum	o	o	o	o	o	o	o	o	o	o	o
+tectum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	221	a	tēcta	a	o	o	o	o	o	o	o	o	o	o
+tectum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	221	um	tēctum	o	o	o	o	o	o	o	o	o	o	o
+tectum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	221	a	tēcta	a	o	o	o	o	o	o	o	o	o	o
+telum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	386	um	tēlum	o	o	o	o	o	o	o	o	o	o	o
+telum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	386	a	tēla	a	o	o	o	o	o	o	o	o	o	o
+telum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	386	um	tēlum	o	o	o	o	o	o	o	o	o	o	o
+telum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	386	a	tēla	a	o	o	o	o	o	o	o	o	o	o
+tempestas:Nom.Sg	3	f	Nom.Sg	Nom	Sg	175		tempestās	-	-	-	-	-	-	-	-	-	-	-
+tempestas:Nom.Pl	3	f	Nom.Pl	Nom	Pl	175	ēs	tempestātēs	es	es	e	-	-	-	-	-	-	-	-
+tempestas:Acc.Sg	3	f	Acc.Sg	Acc	Sg	175	em	tempestātem	e	e	e	e	e	e	e	e	e	e	e
+tempestas:Acc.Pl	3	f	Acc.Pl	Acc	Pl	175	ēs	tempestātēs	es	es	e	e	e	e	e	e	e	e	e
+templum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	205	um	templum	o	o	o	o	o	o	o	o	o	o	o
+templum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	205	a	templa	a	o	o	o	o	o	o	o	o	o	o
+templum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	205	um	templum	o	o	o	o	o	o	o	o	o	o	o
+templum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	205	a	templa	a	o	o	o	o	o	o	o	o	o	o
+tempus:Nom.Sg	3	n	Nom.Sg	Nom	Sg	1113		tempus	-	-	-	-	-	-	-	-	-	-	-
+tempus:Nom.Pl	3	n	Nom.Pl	Nom	Pl	1113	a	tempora	a	-	-	-	-	-	-	-	-	-	-
+tempus:Acc.Sg	3	n	Acc.Sg	Acc	Sg	1113		tempus	-	-	-	-	-	-	-	-	-	-	-
+tempus:Acc.Pl	3	n	Acc.Pl	Acc	Pl	1113	a	tempora	a	-	-	-	-	-	-	-	-	-	-
+tenebrae:Nom.Sg	1	f	Nom.Sg	Nom	Sg	125			-	a	a	a	a	a	a	a	a	a	a
+tenebrae:Nom.Pl	1	f	Nom.Pl	Nom	Pl	125	ae	tenebrae	e	a	a	a	a	a	a	a	a	a	a
+tenebrae:Acc.Sg	1	f	Acc.Sg	Acc	Sg	125			-	a	a	a	a	a	a	a	a	a	a
+tenebrae:Acc.Pl	1	f	Acc.Pl	Acc	Pl	125	ās	tenebrās	as	a	a	a	a	a	a	a	a	a	a
+tergum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	218	um	tergum	o	o	o	o	o	o	o	o	o	o	o
+tergum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	218	a	terga	a	o	o	o	o	o	o	o	o	o	o
+tergum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	218	um	tergum	o	o	o	o	o	o	o	o	o	o	o
+tergum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	218	a	terga	a	o	o	o	o	o	o	o	o	o	o
+terra:Nom.Sg	1	f	Nom.Sg	Nom	Sg	905	a	terra	a	a	a	a	a	a	a	a	a	a	a
+terra:Nom.Pl	1	f	Nom.Pl	Nom	Pl	905	ae	terrae	e	a	a	a	a	a	a	a	a	a	a
+terra:Acc.Sg	1	f	Acc.Sg	Acc	Sg	905	am	terram	a	a	a	a	a	a	a	a	a	a	a
+terra:Acc.Pl	1	f	Acc.Pl	Acc	Pl	905	ās	terrās	as	a	a	a	a	a	a	a	a	a	a
+terror:Nom.Sg	3	m	Nom.Sg	Nom	Sg	110		terror	-	-	-	-	-	-	-	-	-	-	-
+terror:Nom.Pl	3	m	Nom.Pl	Nom	Pl	110	ēs	terrōrēs	es	es	e	-	-	-	-	-	-	-	-
+terror:Acc.Sg	3	m	Acc.Sg	Acc	Sg	110	em	terrōrem	e	-	e	e	e	e	e	e	e	e	e
+terror:Acc.Pl	3	m	Acc.Pl	Acc	Pl	110	ēs	terrōrēs	es	es	e	e	e	e	e	e	e	e	e
+testis:Nom.Sg	3	mh	Nom.Sg	Nom	Sg	142	is	testis	es	-	-	-	-	-	-	-	-	-	-
+testis:Nom.Pl	3	mh	Nom.Pl	Nom	Pl	142	ēs	testēs	es	es	e	-	-	-	-	-	-	-	-
+testis:Acc.Sg	3	mh	Acc.Sg	Acc	Sg	142	em	testem	e	-	e	e	e	e	e	e	e	e	e
+testis:Acc.Pl	3	mh	Acc.Pl	Acc	Pl	142	ēs	testēs	es	es	e	e	e	e	e	e	e	e	e
+theatrum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	63	um	theātrum	o	o	o	o	o	o	o	o	o	o	o
+theatrum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	63	a	theātra	a	o	o	o	o	o	o	o	o	o	o
+theatrum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	63	um	theātrum	o	o	o	o	o	o	o	o	o	o	o
+theatrum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	63	a	theātra	a	o	o	o	o	o	o	o	o	o	o
+timor:Nom.Sg	3	m	Nom.Sg	Nom	Sg	219		timor	-	-	-	-	-	-	-	-	-	-	-
+timor:Nom.Pl	3	m	Nom.Pl	Nom	Pl	219	ēs	timōrēs	es	es	e	-	-	-	-	-	-	-	-
+timor:Acc.Sg	3	m	Acc.Sg	Acc	Sg	219	em	timōrem	e	e	e	e	e	e	e	e	e	e	e
+timor:Acc.Pl	3	m	Acc.Pl	Acc	Pl	219	ēs	timōrēs	es	es	e	e	e	e	e	e	e	e	e
+torus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	98	us	torus	os	o	o	o	o	o	o	o	o	o	o
+torus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	98	ī	torī	i	o	o	o	o	o	o	o	o	o	o
+torus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	98	um	torum	o	o	o	o	o	o	o	o	o	o	o
+torus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	98	ōs	torōs	os	o	o	o	o	o	o	o	o	o	o
+trabs:Nom.Sg	3	f	Nom.Sg	Nom	Sg	57		trabs	-	-	-	-	-	-	-	-	-	-	-
+trabs:Nom.Pl	3	f	Nom.Pl	Nom	Pl	57	ēs	trabēs	es	es	e	-	-	-	-	-	-	-	-
+trabs:Acc.Sg	3	f	Acc.Sg	Acc	Sg	57	em	trabem	e	e	e	e	e	e	e	e	e	e	e
+trabs:Acc.Pl	3	f	Acc.Pl	Acc	Pl	57	ēs	trabēs	es	es	es	e	e	e	e	e	e	e	e
+triumphus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	90	us	triumphus	os	o	o	o	o	o	o	o	o	o	o
+triumphus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	90	ī	triumphī	i	o	o	o	o	o	o	o	o	o	o
+triumphus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	90	um	triumphum	o	o	o	o	o	o	o	o	o	o	o
+triumphus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	90	ōs	triumphōs	os	o	o	o	o	o	o	o	o	o	o
+tumultus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	114	us	tumultus	os	o	o	o	o	o	o	o	o	o	o
+tumultus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	114	ūs	tumultūs	us	o	o	o	o	o	o	o	o	o	o
+tumultus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	114	um	tumultum	o	o	o	o	o	o	o	o	o	o	o
+tumultus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	114	ūs	tumultūs	us	o	o	o	o	o	o	o	o	o	o
+tumulus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	101	us	tumulus	os	o	o	o	o	o	o	o	o	o	o
+tumulus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	101	ī	tumulī	i	o	o	o	o	o	o	o	o	o	o
+tumulus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	101	um	tumulum	o	o	o	o	o	o	o	o	o	o	o
+tumulus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	101	ōs	tumulōs	os	o	o	o	o	o	o	o	o	o	o
+turba:Nom.Sg	1	f	Nom.Sg	Nom	Sg	296	a	turba	a	a	a	a	a	a	a	a	a	a	a
+turba:Nom.Pl	1	f	Nom.Pl	Nom	Pl	296	ae	turbae	e	a	a	a	a	a	a	a	a	a	a
+turba:Acc.Sg	1	f	Acc.Sg	Acc	Sg	296	am	turbam	a	a	a	a	a	a	a	a	a	a	a
+turba:Acc.Pl	1	f	Acc.Pl	Acc	Pl	296	ās	turbās	as	a	a	a	a	a	a	a	a	a	a
+turris:Nom.Sg	3	f	Nom.Sg	Nom	Sg	115	is	turris	es	-	-	-	-	-	-	-	-	-	-
+turris:Nom.Pl	3	f	Nom.Pl	Nom	Pl	115	ēs	turrēs	es	es	e	-	-	-	-	-	-	-	-
+turris:Acc.Sg	3	f	Acc.Sg	Acc	Sg	115	em	turrem	e	e	e	e	e	e	e	e	e	e	e
+turris:Acc.Pl	3	f	Acc.Pl	Acc	Pl	115	ēs	turrēs	es	es	e	e	e	e	e	e	e	e	e
+tympanum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	83	um	tympanum	o	o	o	o	o	o	o	o	o	o	o
+tympanum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	83	a	tympana	a	o	o	o	o	o	o	o	o	o	o
+tympanum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	83	um	tympanum	o	o	o	o	o	o	o	o	o	o	o
+tympanum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	83	a	tympana	a	o	o	o	o	o	o	o	o	o	o
+tyrannus:Nom.Sg	2	mh	Nom.Sg	Nom	Sg	91	us	tyrannus	os	o	o	o	o	o	o	o	o	o	o
+tyrannus:Nom.Pl	2	mh	Nom.Pl	Nom	Pl	91	ī	tyrannī	i	o	o	o	o	o	o	o	o	o	o
+tyrannus:Acc.Sg	2	mh	Acc.Sg	Acc	Sg	91	um	tyrannum	o	o	o	o	o	o	o	o	o	o	o
+tyrannus:Acc.Pl	2	mh	Acc.Pl	Acc	Pl	91	ōs	tyrannōs	os	o	o	o	o	o	o	o	o	o	o
+umbra:Nom.Sg	1	f	Nom.Sg	Nom	Sg	275	a	umbra	a	a	a	a	a	a	a	a	a	a	a
+umbra:Nom.Pl	1	f	Nom.Pl	Nom	Pl	275	ae	umbrae	e	a	a	a	a	a	a	a	a	a	a
+umbra:Acc.Sg	1	f	Acc.Sg	Acc	Sg	275	am	umbram	a	a	a	a	a	a	a	a	a	a	a
+umbra:Acc.Pl	1	f	Acc.Pl	Acc	Pl	275	ās	umbrās	as	a	a	a	a	a	a	a	a	a	a
+unda:Nom.Sg	1	f	Nom.Sg	Nom	Sg	308	a	unda	a	a	a	a	a	a	a	a	a	a	a
+unda:Nom.Pl	1	f	Nom.Pl	Nom	Pl	308	ae	undae	e	a	a	a	a	a	a	a	a	a	a
+unda:Acc.Sg	1	f	Acc.Sg	Acc	Sg	308	am	undam	a	a	a	a	a	a	a	a	a	a	a
+unda:Acc.Pl	1	f	Acc.Pl	Acc	Pl	308	ās	undās	as	a	a	a	a	a	a	a	a	a	a
+urbs:Nom.Sg	3	f	Nom.Sg	Nom	Sg	1116		urbs	-	-	-	-	-	-	-	-	-	-	-
+urbs:Nom.Pl	3	f	Nom.Pl	Nom	Pl	1116	ēs	urbēs	es	es	e	-	-	-	-	-	-	-	-
+urbs:Acc.Sg	3	f	Acc.Sg	Acc	Sg	1116	em	urbem	e	e	e	e	e	e	e	e	e	e	e
+urbs:Acc.Pl	3	f	Acc.Pl	Acc	Pl	1116	ēs	urbēs	es	es	es	e	e	e	e	e	e	e	e
+uxor:Nom.Sg	3	fh	Nom.Sg	Nom	Sg	228		uxor	-	-	e	-	-	-	-	-	-	-	-
+uxor:Nom.Pl	3	fh	Nom.Pl	Nom	Pl	228	ēs	uxōrēs	es	es	e	-	-	-	-	-	-	-	-
+uxor:Acc.Sg	3	fh	Acc.Sg	Acc	Sg	228	em	uxōrem	e	e	e	e	e	e	e	e	e	e	e
+uxor:Acc.Pl	3	fh	Acc.Pl	Acc	Pl	228	ēs	uxōrēs	es	es	es	e	e	e	e	e	e	e	e
+vadum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	88	um	vadum	o	o	o	o	o	o	o	o	o	o	o
+vadum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	88	a	vada	a	o	o	o	o	o	o	o	o	o	o
+vadum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	88	um	vadum	o	o	o	o	o	o	o	o	o	o	o
+vadum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	88	a	vada	a	o	o	o	o	o	o	o	o	o	o
+vallis:Nom.Sg	3	f	Nom.Sg	Nom	Sg	74	is	vallis	es	-	-	-	-	-	-	-	-	-	-
+vallis:Nom.Pl	3	f	Nom.Pl	Nom	Pl	74	ēs	vallēs	es	es	e	-	-	-	-	-	-	-	-
+vallis:Acc.Sg	3	f	Acc.Sg	Acc	Sg	74	em	vallem	e	e	e	e	e	e	e	e	e	e	e
+vallis:Acc.Pl	3	f	Acc.Pl	Acc	Pl	74	ēs	vallēs	es	es	es	e	e	e	e	e	e	e	e
+vates:Nom.Sg	3	mh	Nom.Sg	Nom	Sg	117	ēs	vātēs	es	-	-	-	-	-	-	-	-	-	-
+vates:Nom.Pl	3	mh	Nom.Pl	Nom	Pl	117	ēs	vātēs	es	es	e	-	-	-	-	-	-	-	-
+vates:Acc.Sg	3	mh	Acc.Sg	Acc	Sg	117	em	vātem	e	e	e	e	e	e	e	e	e	e	e
+vates:Acc.Pl	3	mh	Acc.Pl	Acc	Pl	117	ēs	vātēs	es	es	e	e	e	e	e	e	e	e	e
+velum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	111	um	vēlum	o	o	o	o	o	o	o	o	o	o	o
+velum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	111	a	vēla	a	o	o	o	o	o	o	o	o	o	o
+velum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	111	um	vēlum	o	o	o	o	o	o	o	o	o	o	o
+velum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	111	a	vēla	a	o	o	o	o	o	o	o	o	o	o
+vena:Nom.Sg	1	f	Nom.Sg	Nom	Sg	90	a	vēna	a	a	a	a	a	a	a	a	a	a	a
+vena:Nom.Pl	1	f	Nom.Pl	Nom	Pl	90	ae	vēnae	e	a	a	a	a	a	a	a	a	a	a
+vena:Acc.Sg	1	f	Acc.Sg	Acc	Sg	90	am	vēnam	a	a	a	a	a	a	a	a	a	a	a
+vena:Acc.Pl	1	f	Acc.Pl	Acc	Pl	90	ās	vēnās	as	a	a	a	a	a	a	a	a	a	a
+venenum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	134	um	venēnum	o	o	o	o	o	o	o	o	o	o	o
+venenum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	134	a	venēna	a	o	o	o	o	o	o	o	o	o	o
+venenum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	134	um	venēnum	o	o	o	o	o	o	o	o	o	o	o
+venenum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	134	a	venēna	a	o	o	o	o	o	o	o	o	o	o
+venia:Nom.Sg	1	f	Nom.Sg	Nom	Sg	93	a	venia	a	a	a	a	a	a	a	a	a	a	a
+venia:Nom.Pl	1	f	Nom.Pl	Nom	Pl	93	ae	veniae	e	a	a	a	a	a	a	a	a	a	a
+venia:Acc.Sg	1	f	Acc.Sg	Acc	Sg	93	am	veniam	a	a	a	a	a	a	a	a	a	a	a
+venia:Acc.Pl	1	f	Acc.Pl	Acc	Pl	93	ās	veniās	as	a	a	a	a	a	a	a	a	a	a
+venter:Nom.Sg	3	m	Nom.Sg	Nom	Sg	83		venter	-	-	-	-	-	-	-	-	-	-	-
+venter:Nom.Pl	3	m	Nom.Pl	Nom	Pl	83	ēs	ventrēs	es	es	e	-	-	-	-	-	-	-	-
+venter:Acc.Sg	3	m	Acc.Sg	Acc	Sg	83	em	ventrem	e	e	e	e	e	e	e	e	e	e	e
+venter:Acc.Pl	3	m	Acc.Pl	Acc	Pl	83	ēs	ventrēs	es	es	e	e	e	e	e	e	e	e	e
+ventus:Nom.Sg	2	m	Nom.Sg	Nom	Sg	278	us	ventus	os	o	o	o	o	o	o	o	o	o	o
+ventus:Nom.Pl	2	m	Nom.Pl	Nom	Pl	278	ī	ventī	i	o	o	o	o	o	o	o	o	o	o
+ventus:Acc.Sg	2	m	Acc.Sg	Acc	Sg	278	um	ventum	o	o	o	o	o	o	o	o	o	o	o
+ventus:Acc.Pl	2	m	Acc.Pl	Acc	Pl	278	ōs	ventōs	os	o	o	o	o	o	o	o	o	o	o
+ver:Nom.Sg	3	n	Nom.Sg	Nom	Sg	61		vēr	-	-	-	-	-	-	-	-	-	-	-
+ver:Nom.Pl	3	n	Nom.Pl	Nom	Pl	61	a	vēra	a	-	-	-	-	-	-	-	-	-	-
+ver:Acc.Sg	3	n	Acc.Sg	Acc	Sg	61		vēr	-	-	-	-	-	-	-	-	-	-	-
+ver:Acc.Pl	3	n	Acc.Pl	Acc	Pl	61	a	vēra	a	-	-	-	-	-	-	-	-	-	-
+verber:Nom.Sg	3	n	Nom.Sg	Nom	Sg	88		verber	-	-	-	-	-	-	-	-	-	-	-
+verber:Nom.Pl	3	n	Nom.Pl	Nom	Pl	88	a	verbera	a	-	-	-	-	-	-	-	-	-	-
+verber:Acc.Sg	3	n	Acc.Sg	Acc	Sg	88		verber	-	-	-	-	-	-	-	-	-	-	-
+verber:Acc.Pl	3	n	Acc.Pl	Acc	Pl	88	a	verbera	a	-	-	-	-	-	-	-	-	-	-
+verbum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	549	um	verbum	o	o	o	o	o	o	o	o	o	o	o
+verbum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	549	a	verba	a	o	o	o	o	o	o	o	o	o	o
+verbum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	549	um	verbum	o	o	o	o	o	o	o	o	o	o	o
+verbum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	549	a	verba	a	o	o	o	o	o	o	o	o	o	o
+versus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	92	us	versus	os	o	o	o	o	o	o	o	o	o	o
+versus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	92	ūs	versūs	us	o	o	o	o	o	o	o	o	o	o
+versus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	92	um	versum	o	o	o	o	o	o	o	o	o	o	o
+versus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	92	ūs	versūs	us	o	o	o	o	o	o	o	o	o	o
+vertex:Nom.Sg	3	m	Nom.Sg	Nom	Sg	118		vertex	-	-	-	-	-	-	-	-	-	-	-
+vertex:Nom.Pl	3	m	Nom.Pl	Nom	Pl	118	ēs	verticēs	es	es	e	-	-	-	-	-	-	-	-
+vertex:Acc.Sg	3	m	Acc.Sg	Acc	Sg	118	em	verticem	e	e	e	e	e	e	e	e	e	e	e
+vertex:Acc.Pl	3	m	Acc.Pl	Acc	Pl	118	ēs	verticēs	es	es	e	e	e	e	e	e	e	e	e
+verum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	200	um	vērum	o	o	o	o	o	o	o	o	o	o	o
+verum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	200	a	vēra	a	o	o	o	o	o	o	o	o	o	o
+verum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	200	um	vērum	o	o	o	o	o	o	o	o	o	o	o
+verum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	200	a	vēra	a	o	o	o	o	o	o	o	o	o	o
+vestigium:Nom.Sg	2	n	Nom.Sg	Nom	Sg	151	um	vestīgium	o	o	o	o	o	o	o	o	o	o	o
+vestigium:Nom.Pl	2	n	Nom.Pl	Nom	Pl	151	a	vestīgia	a	o	o	o	o	o	o	o	o	o	o
+vestigium:Acc.Sg	2	n	Acc.Sg	Acc	Sg	151	um	vestīgium	o	o	o	o	o	o	o	o	o	o	o
+vestigium:Acc.Pl	2	n	Acc.Pl	Acc	Pl	151	a	vestīgia	a	o	o	o	o	o	o	o	o	o	o
+vestis:Nom.Sg	3	f	Nom.Sg	Nom	Sg	241	is	vestis	es	-	e	-	-	-	-	-	-	-	-
+vestis:Nom.Pl	3	f	Nom.Pl	Nom	Pl	241	ēs	vestēs	es	es	e	-	-	-	-	-	-	-	-
+vestis:Acc.Sg	3	f	Acc.Sg	Acc	Sg	241	em	vestem	e	-	e	e	e	e	e	e	e	e	e
+vestis:Acc.Pl	3	f	Acc.Pl	Acc	Pl	241	ēs	vestēs	es	es	es	e	e	e	e	e	e	e	e
+via:Nom.Sg	1	f	Nom.Sg	Nom	Sg	439	a	via	a	a	a	a	a	a	a	a	a	a	a
+via:Nom.Pl	1	f	Nom.Pl	Nom	Pl	439	ae	viae	e	a	a	a	a	a	a	a	a	a	a
+via:Acc.Sg	1	f	Acc.Sg	Acc	Sg	439	am	viam	a	a	a	a	a	a	a	a	a	a	a
+via:Acc.Pl	1	f	Acc.Pl	Acc	Pl	439	ās	viās	as	a	a	a	a	a	a	a	a	a	a
+vicis:Nom.Sg	3	f	Nom.Sg	Nom	Sg	114			-	-	-	-	-	-	-	-	-	-	-
+vicis:Nom.Pl	3	f	Nom.Pl	Nom	Pl	114	ēs	vicēs	es	es	e	-	-	-	-	-	-	-	-
+vicis:Acc.Sg	3	f	Acc.Sg	Acc	Sg	114	em	vicem	e	e	e	e	e	e	e	e	e	e	e
+vicis:Acc.Pl	3	f	Acc.Pl	Acc	Pl	114	ēs	vicēs	es	es	e	e	e	e	e	e	e	e	e
+victor:Nom.Sg	3	mh	Nom.Sg	Nom	Sg	295		victor	-	-	-	-	-	-	-	-	-	-	-
+victor:Nom.Pl	3	mh	Nom.Pl	Nom	Pl	295	ēs	victōrēs	es	es	e	-	-	-	-	-	-	-	-
+victor:Acc.Sg	3	mh	Acc.Sg	Acc	Sg	295	em	victōrem	e	e	e	e	e	e	e	e	e	e	e
+victor:Acc.Pl	3	mh	Acc.Pl	Acc	Pl	295	ēs	victōrēs	es	es	e	e	e	e	e	e	e	e	e
+villa:Nom.Sg	1	f	Nom.Sg	Nom	Sg	64	a	vīlla	a	a	a	a	a	a	a	a	a	a	a
+villa:Nom.Pl	1	f	Nom.Pl	Nom	Pl	64	ae	vīllae	e	a	a	a	a	a	a	a	a	a	a
+villa:Acc.Sg	1	f	Acc.Sg	Acc	Sg	64	am	vīllam	a	a	a	a	a	a	a	a	a	a	a
+villa:Acc.Pl	1	f	Acc.Pl	Acc	Pl	64	ās	vīllās	as	a	a	a	a	a	a	a	a	a	a
+vinculum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	176	um	vinculum	o	o	o	o	o	o	o	o	o	o	o
+vinculum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	176	a	vincula	a	o	o	o	o	o	o	o	o	o	o
+vinculum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	176	um	vinculum	o	o	o	o	o	o	o	o	o	o	o
+vinculum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	176	a	vincula	a	o	o	o	o	o	o	o	o	o	o
+vinum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	170	um	vīnum	o	o	o	o	o	o	o	o	o	o	o
+vinum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	170	a	vīna	a	o	o	o	o	o	o	o	o	o	o
+vinum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	170	um	vīnum	o	o	o	o	o	o	o	o	o	o	o
+vinum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	170	a	vīna	a	o	o	o	o	o	o	o	o	o	o
+vir:Nom.Sg	2	mh	Nom.Sg	Nom	Sg	1030		vir	-	o	o	o	o	o	o	o	o	o	o
+vir:Nom.Pl	2	mh	Nom.Pl	Nom	Pl	1030	ī	virī	i	o	o	o	o	o	o	o	o	o	o
+vir:Acc.Sg	2	mh	Acc.Sg	Acc	Sg	1030	um	virum	o	o	o	o	o	o	o	o	o	o	o
+vir:Acc.Pl	2	mh	Acc.Pl	Acc	Pl	1030	ōs	virōs	os	o	o	o	o	o	o	o	o	o	o
+virgo:Nom.Sg	3	fh	Nom.Sg	Nom	Sg	182		virgō	-	-	e	-	-	-	-	-	-	-	-
+virgo:Nom.Pl	3	fh	Nom.Pl	Nom	Pl	182	ēs	virginēs	es	es	e	e	-	-	-	-	-	-	-
+virgo:Acc.Sg	3	fh	Acc.Sg	Acc	Sg	182	em	virginem	e	e	e	e	e	e	e	e	e	e	e
+virgo:Acc.Pl	3	fh	Acc.Pl	Acc	Pl	182	ēs	virginēs	es	es	es	e	e	e	e	e	e	e	e
+virtus:Nom.Sg	3	f	Nom.Sg	Nom	Sg	1057		virtūs	-	-	-	-	-	-	-	-	-	-	-
+virtus:Nom.Pl	3	f	Nom.Pl	Nom	Pl	1057	ēs	virtūtēs	es	es	e	-	-	-	-	-	-	-	-
+virtus:Acc.Sg	3	f	Acc.Sg	Acc	Sg	1057	em	virtūtem	e	e	e	e	e	e	e	e	e	e	e
+virtus:Acc.Pl	3	f	Acc.Pl	Acc	Pl	1057	ēs	virtūtēs	es	es	e	e	e	e	e	e	e	e	e
+vis:Nom.Sg	3	f	Nom.Sg	Nom	Sg	929		vīs	-	-	-	-	-	-	-	-	-	-	-
+vis:Nom.Pl	3	f	Nom.Pl	Nom	Pl	929	ēs	vīrēs	es	es	e	-	-	-	-	-	-	-	-
+vis:Acc.Sg	3	f	Acc.Sg	Acc	Sg	929	m	vim	-	e	e	e	e	e	e	e	e	e	e
+vis:Acc.Pl	3	f	Acc.Pl	Acc	Pl	929	ēs	vīrēs	es	es	e	e	e	e	e	e	e	e	e
+viscus:Nom.Sg	3	n	Nom.Sg	Nom	Sg	85		viscus	-	-	-	-	-	-	-	-	-	-	-
+viscus:Nom.Pl	3	n	Nom.Pl	Nom	Pl	85	a	viscera	a	-	-	-	-	-	-	-	-	-	-
+viscus:Acc.Sg	3	n	Acc.Sg	Acc	Sg	85		viscus	-	-	-	-	-	-	-	-	-	-	-
+viscus:Acc.Pl	3	n	Acc.Pl	Acc	Pl	85	a	viscera	a	-	-	-	-	-	-	-	-	-	-
+vita:Nom.Sg	1	f	Nom.Sg	Nom	Sg	1174	a	vīta	a	a	a	a	a	a	a	a	a	a	a
+vita:Nom.Pl	1	f	Nom.Pl	Nom	Pl	1174	ae	vītae	e	a	a	a	a	a	a	a	a	a	a
+vita:Acc.Sg	1	f	Acc.Sg	Acc	Sg	1174	am	vītam	a	a	a	a	a	a	a	a	a	a	a
+vita:Acc.Pl	1	f	Acc.Pl	Acc	Pl	1174	ās	vītās	as	a	a	a	a	a	a	a	a	a	a
+vitis:Nom.Sg	3	f	Nom.Sg	Nom	Sg	72	is	vītis	es	-	-	-	-	-	-	-	-	-	-
+vitis:Nom.Pl	3	f	Nom.Pl	Nom	Pl	72	ēs	vītēs	es	es	e	-	-	-	-	-	-	-	-
+vitis:Acc.Sg	3	f	Acc.Sg	Acc	Sg	72	em	vītem	e	e	e	e	e	e	e	e	e	e	e
+vitis:Acc.Pl	3	f	Acc.Pl	Acc	Pl	72	ēs	vītēs	es	es	e	e	e	e	e	e	e	e	e
+vitium:Nom.Sg	2	n	Nom.Sg	Nom	Sg	438	um	vitium	o	o	o	o	o	o	o	o	o	o	o
+vitium:Nom.Pl	2	n	Nom.Pl	Nom	Pl	438	a	vitia	a	o	o	o	o	o	o	o	o	o	o
+vitium:Acc.Sg	2	n	Acc.Sg	Acc	Sg	438	um	vitium	o	o	o	o	o	o	o	o	o	o	o
+vitium:Acc.Pl	2	n	Acc.Pl	Acc	Pl	438	a	vitia	a	o	o	o	o	o	o	o	o	o	o
+voluptas:Nom.Sg	3	f	Nom.Sg	Nom	Sg	415		voluptās	-	-	-	-	-	-	-	-	-	-	-
+voluptas:Nom.Pl	3	f	Nom.Pl	Nom	Pl	415	ēs	voluptātēs	es	es	e	-	-	-	-	-	-	-	-
+voluptas:Acc.Sg	3	f	Acc.Sg	Acc	Sg	415	em	voluptātem	e	-	e	e	e	e	e	e	e	e	e
+voluptas:Acc.Pl	3	f	Acc.Pl	Acc	Pl	415	ēs	voluptātēs	es	es	e	e	e	e	e	e	e	e	e
+votum:Nom.Sg	2	n	Nom.Sg	Nom	Sg	265	um	vōtum	o	o	o	o	o	o	o	o	o	o	o
+votum:Nom.Pl	2	n	Nom.Pl	Nom	Pl	265	a	vōta	a	o	o	o	o	o	o	o	o	o	o
+votum:Acc.Sg	2	n	Acc.Sg	Acc	Sg	265	um	vōtum	o	o	o	o	o	o	o	o	o	o	o
+votum:Acc.Pl	2	n	Acc.Pl	Acc	Pl	265	a	vōta	a	o	o	o	o	o	o	o	o	o	o
+vox:Nom.Sg	3	f	Nom.Sg	Nom	Sg	568		vōx	-	-	-	-	-	-	-	-	-	-	-
+vox:Nom.Pl	3	f	Nom.Pl	Nom	Pl	568	ēs	vōcēs	es	es	e	-	-	-	-	-	-	-	-
+vox:Acc.Sg	3	f	Acc.Sg	Acc	Sg	568	em	vōcem	e	e	e	e	e	e	e	e	e	e	e
+vox:Acc.Pl	3	f	Acc.Pl	Acc	Pl	568	ēs	vōcēs	es	es	e	e	e	e	e	e	e	e	e
+vulgus:Nom.Sg	2	n	Nom.Sg	Nom	Sg	183	us	vulgus	os	o	o	o	o	o	o	o	o	o	o
+vulgus:Nom.Pl	2	n	Nom.Pl	Nom	Pl	183			-	o	o	o	o	o	o	o	o	o	o
+vulgus:Acc.Sg	2	n	Acc.Sg	Acc	Sg	183	us	vulgus	os	o	o	o	o	o	o	o	o	o	o
+vulgus:Acc.Pl	2	n	Acc.Pl	Acc	Pl	183			-	o	o	o	o	o	o	o	o	o	o
+vulnus:Nom.Sg	3	n	Nom.Sg	Nom	Sg	324		vulnus	-	-	-	-	-	-	-	-	-	-	-
+vulnus:Nom.Pl	3	n	Nom.Pl	Nom	Pl	324	a	vulnera	a	-	-	-	-	-	-	-	-	-	-
+vulnus:Acc.Sg	3	n	Acc.Sg	Acc	Sg	324		vulnus	-	-	-	-	-	-	-	-	-	-	-
+vulnus:Acc.Pl	3	n	Acc.Pl	Acc	Pl	324	a	vulnera	a	-	-	-	-	-	-	-	-	-	-
+vultus:Nom.Sg	4	m	Nom.Sg	Nom	Sg	402	us	vultus	os	o	o	o	o	o	o	o	o	o	o
+vultus:Nom.Pl	4	m	Nom.Pl	Nom	Pl	402	ūs	vultūs	us	o	o	o	o	o	o	o	o	o	o
+vultus:Acc.Sg	4	m	Acc.Sg	Acc	Sg	402	um	vultum	o	o	o	o	o	o	o	o	o	o	o
+vultus:Acc.Pl	4	m	Acc.Pl	Acc	Pl	402	ūs	vultūs	us	o	o	o	o	o	o	o	o	o	o
