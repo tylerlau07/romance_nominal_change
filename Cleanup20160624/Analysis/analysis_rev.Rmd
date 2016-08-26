@@ -22,7 +22,7 @@ ncases <- "2"
 code <- 7
 
 # Look only for most common suffix or for all suffixes below threshold?
-onlymax <- TRUE
+onlymax <- FALSE
 
 # IF APPLY SOUND CHANGE
 if (code == 7) { 
@@ -44,7 +44,7 @@ setwd(paste0(directory, collapse = ""))
 # setwd(paste0('../Main Code ', code, '/Cases', ncases, "/TokFreq", tokfreq))
 
 print(paste0(language, ' Sound Change, Token Freq ', tokfreq, ', Number of cases being considered: ', ncases))
-# print(paste0("Only considering max suffixes: ", onlymax))
+print(paste0("Only considering max suffixes: ", onlymax))
 if (onlymax == FALSE) print(paste0("Dropping suffixes that appear ", above, " or less times" ))
 
 files = list.files(pattern = '\\.txt')
@@ -205,16 +205,31 @@ for (i in 1:length(files)) {
     all_endings[[num]][[as.character(i)]] <- getEndings(ft, above = 0)
     max_endings[[num]][[as.character(i)]] <- maxSuf(ft)
     
-    for (combo in global_casecombos) {
-      # Only Case Combo and Num
-      for (dec in global_decs) {
-        # Only Case Combo and Dec
-        # Case Combo, Dec, and Num
-        ft <- freqTable(df = sub_df, case = unlist(strsplit(combo, ',')), dec = dec, num = num)
-        freq_tables[[paste0(dec, num, combo)]][[as.character(i)]] <- ft
-        endings[[paste0(dec, num, combo)]][[as.character(i)]] <- getEndings(ft, above = above)
-        all_endings[[paste0(dec, num, combo)]][[as.character(i)]] <- getEndings(ft, above = 0)
-        max_endings[[paste0(dec, num, combo)]][[as.character(i)]] <- maxSuf(ft)        
+    if (ncases > 2) {
+      for (combo in global_casecombos) {
+        # Only Case Combo and Num
+        ft <- freqTable(df = sub_df, case = unlist(strsplit(combo, ',')), num = num)
+        freq_tables[[paste0(num, combo)]][[as.character(i)]] <- ft
+        endings[[paste0(num, combo)]][[as.character(i)]] <- getEndings(ft, above = above)
+        all_endings[[paste0(num, combo)]][[as.character(i)]] <- getEndings(ft, above = 0)
+        max_endings[[paste0(num, combo)]][[as.character(i)]] <- maxSuf(ft)        
+        for (dec in global_decs) {
+          # Case Combo, Dec, and Num
+          ft <- freqTable(df = sub_df, case = unlist(strsplit(combo, ',')), dec = dec, num = num)
+          freq_tables[[paste0(dec, num, combo)]][[as.character(i)]] <- ft
+          endings[[paste0(dec, num, combo)]][[as.character(i)]] <- getEndings(ft, above = above)
+          all_endings[[paste0(dec, num, combo)]][[as.character(i)]] <- getEndings(ft, above = 0)
+          max_endings[[paste0(dec, num, combo)]][[as.character(i)]] <- maxSuf(ft)        
+        }
+        
+        for (gender in global_genders) {
+          # Case Combo, Gender, and Num
+          ft <- freqTable(df = sub_df, case = unlist(strsplit(combo, ',')), gender = gender, num = num)
+          freq_tables[[paste0(gender, num, combo)]][[as.character(i)]] <- ft
+          endings[[paste0(gender, num, combo)]][[as.character(i)]] <- getEndings(ft, above = above)
+          all_endings[[paste0(gender, num, combo)]][[as.character(i)]] <- getEndings(ft, above = 0)
+          max_endings[[paste0(gender, num, combo)]][[as.character(i)]] <- maxSuf(ft)        
+        }
       }
     }
     
@@ -290,6 +305,16 @@ for (i in 1:length(files)) {
             systems[[as.character(i)]][[paste0(gender, dec, num, case)]] <- NA
             next
           }
+          # First, only max endings for gender, declension, number (ignore case)
+          ft <- freqTable(df = sub_df, gender = gender, dec = dec, num = num)
+          freq_tables[[paste0(gender, dec, num)]][[as.character(i)]] <- ft
+          if (dec == 5 & above >= 8) {
+            endings[[paste0(gender, dec, num)]][[as.character(i)]] <- getEndings(ft, above = 7)
+          } else endings[[paste0(gender, dec, num)]][[as.character(i)]] <- getEndings(ft, above = above)
+          all_endings[[paste0(gender, dec, num)]][[as.character(i)]] <- getEndings(ft, above = 0)
+          max_endings[[paste0(gender, dec, num)]][[as.character(i)]] <- maxSuf(ft)
+          
+          # Now all 4
           ft <- freqTable(df = sub_df, gender = gender, dec = dec, num = num, case = case)
           freq_tables[[paste0(gender, dec, num, case)]][[as.character(i)]] <- ft
           if (dec == 5 & above >= 8) {
@@ -421,9 +446,24 @@ checkSame <- function(system, to_search) {
   return(sum(equal_vector)/length(equal_vector)*100)
 }
 
-to_compare <- c("n.Sg,m.Sg", "n.Pl,m.Pl", "n.Pl,f.Sg", "n.Pl,f.Pl",
-                "m.Pl,f.Pl", "1,5", "2,4")
-to_compare <- c(to_compare, global_casecombos)
+to_compare <- c("n.Sg,m.Sg", "n.Pl,m.Pl", "n.Pl,f.Sg", "n.Pl,f.Pl", 
+                "m.Pl,f.Pl", "1,5", "2,4", "2Sg,4Sg", "2Pl,4Pl")
+if (ncases > 2) {
+  to_compare <- c(to_compare, "n.Sg(Nom|Acc),m.Sg(Nom|Acc)",
+                "n.Pl(Nom|Acc),m.Pl(Nom|Acc)",
+                "n.Pl(Nom|Acc),f.Sg(Nom|Acc)",
+                "n.Pl(Nom|Acc),f.Pl(Nom|Acc)",
+                "m.Pl(Nom|Acc),f.Pl(Nom|Acc)", 
+                "1.*(Nom|Acc),5.*(Nom|Acc)", 
+                "2.*(Nom|Acc),4.*(Nom|Acc)",
+                "2Sg(Nom|Acc),4Sg(Nom|Acc)", "2Pl(Nom|Acc),4Pl(Nom|Acc)")
+  if (ncases == 3) { to_compare <- c(to_compare, gsub("Nom", "Gen", to_compare), gsub("Acc", "Gen", to_compare))
+  # Check Nom/Acc, Acc/Abl, Nom/Acc/Abl
+  } else if (ncases == 5) to_compare <- c(to_compare, gsub("Nom", "Abl", to_compare), gsub("Acc", "Acc|Abl", to_compare))
+}
+
+# to_compare <- c(to_compare, gsub("\\.", "[124]", to_compare[!grepl("[[:digit:]]", to_compare)]))
+to_compare <- c(to_compare, global_casecombos, paste(global_cases, collapse = ','))
 
 comparisons <- list()
 
@@ -537,5 +577,84 @@ for (combo in names(ending_distrib)) {
   print(new_distrib[with(new_distrib, order(-Percent_Trials)), ])
   
 }
+
+# Now finally let's check if endings overlap or exist by only looking at max endings for f1 (f2, f4 is almost nonexistent; f3 and f5 cause problems because they will either be e or -), m2, m4 (m1 and m5 rare; m3 causes problems b/c e or -); n2 and n4 (n3 problem because either e or -)
+# If we look at ALL endings, there will definitely be overlap and therefore meaningless
+m24Sg_endings <- mapply(c, max_endings$m2Sg, max_endings$m4Sg, SIMPLIFY = FALSE)
+m24Pl_endings <- mapply(c, max_endings$m2Pl, max_endings$m4Pl, SIMPLIFY = FALSE)
+f1Sg_endings <- max_endings$f1Sg
+f1Pl_endings <- max_endings$f1Pl
+n24Sg_endings <- mapply(c, max_endings$n2Sg, max_endings$n4Sg, SIMPLIFY = FALSE)
+n24Pl_endings <- mapply(c, max_endings$n2Pl, max_endings$n4Pl, SIMPLIFY = FALSE)
+m2Sg_endings <- max_endings$m2Sg
+m2Pl_endings <- max_endings$m2Pl
+n2Sg_endings <- max_endings$n2Sg
+n2Pl_endings <- max_endings$n2Pl
+
+# First check if all endings are equal between mSg and nSg
+mnSg_equal <- !is.na(mapply(all.equal, n24Sg_endings, m24Sg_endings, SIMPLIFY = FALSE) == TRUE)
+print(paste0("mSg and nSg fully match ", sum(mnSg_equal)/length(mnSg_equal)*100, "% of the time"))
+# Now mPl and nPl
+mnPl_equal <- !is.na(mapply(all.equal, n24Pl_endings, m24Pl_endings, SIMPLIFY = FALSE) == TRUE)
+print(paste0("mPl and nPl fully match ", sum(mnPl_equal)/length(mnPl_equal)*100, "% of the time"))
+
+# nPl, fSg
+nPlfSg_equal <- !is.na(mapply(all.equal, n2Pl_endings, f1Sg_endings, SIMPLIFY = FALSE) == TRUE)
+print(paste0("nPl and fSg fully match ", sum(nPlfSg_equal)/length(nPlfSg_equal)*100, "% of the time"))
+print(paste("Endings that overlap are", paste(n2Pl_endings[nPlfSg_equal], collapse = ","), "in trials", paste(names(n2Pl_endings[nPlfSg_equal]), collapse = ",")))
+# nPl, fPl
+nPlfPl_equal <- !is.na(mapply(all.equal, n2Pl_endings, f1Pl_endings, SIMPLIFY = FALSE) == TRUE)
+print(paste0("nPl and fPl fully match ", sum(nPlfPl_equal)/length(nPlfPl_equal)*100, "% of the time"))
+print(paste("Endings that overlap are", paste(n2Pl_endings[nPlfPl_equal], collapse = ","), "in trials", paste(names(n2Pl_endings[nPlfPl_equal]), collapse = ",")))
+
+# mPl, fSg
+mPlfSg_equal <- !is.na(mapply(all.equal, m2Pl_endings, f1Sg_endings, SIMPLIFY = FALSE) == TRUE)
+print(paste0("mPl and fSg fully match ", sum(mPlfSg_equal)/length(mPlfSg_equal)*100, "% of the time"))
+print(paste("Endings that overlap are", paste(m2Pl_endings[mPlfSg_equal], collapse = ","), "in trials", paste(names(m2Pl_endings[mPlfSg_equal]), collapse = ",")))
+# mPl, fPl
+mPlfPl_equal <- !is.na(mapply(all.equal, m2Pl_endings, f1Pl_endings, SIMPLIFY = FALSE) == TRUE)
+print(paste0("mPl and fPl fully match ", sum(mPlfPl_equal)/length(nPlfPl_equal)*100, "% of the time"))
+print(paste("Endings that overlap are", paste(m2Pl_endings[mPlfPl_equal], collapse = ","), "in trials", paste(names(m2Pl_endings[mPlfPl_equal]), collapse = ",")))
+
+# Now just check for soft intersection of the two (if there is ANY overlap in the endings)
+# First mSg and nSg
+mnSg_someequal_intersect <- mapply(intersect, n24Sg_endings, m24Sg_endings, SIMPLIFY = FALSE)
+mnSg_someequal <- unlist(lapply(mnSg_someequal_intersect, function(x) length(x) != 0))
+print(paste0("mSg and nSg at least partially match ", sum(mnSg_someequal)/length(mnSg_someequal)*100, "% of the time"))
+# Now mPl and nPl
+mnPl_someequal_intersect <- mapply(intersect, n24Pl_endings, m24Pl_endings, SIMPLIFY = FALSE)
+mnPl_someequal <- unlist(lapply(mnPl_someequal_intersect, function(x) length(x) != 0))
+print(paste0("mPl and nPl at least partially match ", sum(mnPl_someequal)/length(mnPl_someequal)*100, "% of the time"))
+
+# Now nPl and fSg
+fSgnPl_someequal_intersect <- mapply(intersect, n24Pl_endings, f1Sg_endings, SIMPLIFY = FALSE)
+fSgnPl_someequal <- unlist(lapply(fSgnPl_someequal_intersect, function(x) length(x) != 0))
+print(paste0("fSg and nPl at least partially match ", sum(fSgnPl_someequal)/length(fSgnPl_someequal)*100, "% of the time"))
+print(paste("Endings that overlap are", paste(unlist(fSgnPl_someequal_intersect), collapse = ","), "in trials", paste(names(unlist(fSgnPl_someequal_intersect)), collapse = ",")))
+
+# Now nPl and fPl
+fnPl_someequal_intersect <- mapply(intersect, n24Pl_endings, f1Pl_endings, SIMPLIFY = FALSE)
+fnPl_someequal <- unlist(lapply(fnPl_someequal_intersect, function(x) length(x) != 0))
+print(paste0("fPl and nPl at least partially match ", sum(fnPl_someequal)/length(fnPl_someequal)*100, "% of the time"))
+print(paste("Endings that overlap are", paste(unlist(fnPl_someequal_intersect), collapse = ","), "in trials", paste(names(unlist(fnPl_someequal_intersect)), collapse = ",")))
+
+# JUST TO COMPARE
+# mPl and fSg
+fSgmPl_someequal_intersect <- mapply(intersect, m24Pl_endings, f1Sg_endings, SIMPLIFY = FALSE)
+fSgmPl_someequal <- unlist(lapply(fSgmPl_someequal_intersect, function(x) length(x) != 0))
+print(paste0("fSg and mPl at least partially match ", sum(fSgmPl_someequal)/length(fSgmPl_someequal)*100, "% of the time"))
+print(paste("Endings that overlap are", paste(unlist(fSgmPl_someequal_intersect), collapse = ","), "in trials", paste(names(unlist(fSgmPl_someequal_intersect)), collapse = ",")))
+
+# mPl and fPl
+fmPl_someequal_intersect <- mapply(intersect, m24Pl_endings, f1Pl_endings, SIMPLIFY = FALSE)
+fmPl_someequal <- unlist(lapply(fmPl_someequal_intersect, function(x) length(x) != 0))
+print(paste0("fPl and mPl at least partially match ", sum(fmPl_someequal)/length(fmPl_someequal)*100, "% of the time"))
+print(paste("Endings that overlap are", paste(unlist(fmPl_someequal_intersect), collapse = ","), "in trials", paste(names(unlist(fmPl_someequal_intersect)), collapse = ",")))
+
+# ALL THREE PL
+fmnPl_someequal_intersect <- mapply(intersect, fnPl_someequal_intersect, m24Pl_endings, SIMPLIFY = FALSE)
+fmnPl_someequal <- unlist(lapply(fmnPl_someequal_intersect, function(x) length(x) != 0))
+print(paste0("fPl, mPl, and nPl at least partially match ", sum(fmnPl_someequal)/length(fmnPl_someequal)*100, "% of the time"))
+print(paste("Endings that overlap are", paste(unlist(fmnPl_someequal_intersect), collapse = ","), "in trials", paste(names(unlist(fmnPl_someequal_intersect)), collapse = ",")))
 
 ```

@@ -19,13 +19,13 @@ corpus_file = "../Corpus Preparation/latin_corpus.txt"
 ##############
 
 # Trial number
-trial = "16"
+trial = "50"
 
 # Generations to run simulation
 total_generations = 10
 
 # Make false to test with no token frequency
-token_freq = True
+token_freq = False
 
 # Number of times to introduce training set: P&VE uses 3, HareEllman uses 10
 epochs = 3
