@@ -294,6 +294,18 @@ for (i in 1:length(files)) {
         endings[[paste0(gender, num, case)]][[as.character(i)]] <- getEndings(ft, above = above)
         all_endings[[paste0(gender, num, case)]][[as.character(i)]] <- getEndings(ft, above = 0)
         max_endings[[paste0(gender, num, case)]][[as.character(i)]] <- maxSuf(ft)
+        
+        # Gender, Num, and Dec COMBOS
+        for (combo in c("f_1,3,5", "m_2,4", "n_2,4", "m_2,3,4", "m_2,3,4,5")) {
+          temp_gender <- unlist(strsplit(combo, split = "_"))[1]
+          temp_dec <- unlist(strsplit(unlist(strsplit(combo, split = "_"))[2], ","))
+          
+          ft <- freqTable(df = sub_df, gender = temp_gender, dec = temp_dec, num = num)
+          freq_tables[[paste0(temp_gender, paste(temp_dec, collapse = ""), num)]][[as.character(i)]] <- ft
+          endings[[paste0(temp_gender, paste(temp_dec, collapse = ""), num)]][[as.character(i)]] <- getEndings(ft, above = 7)
+          all_endings[[paste0(temp_gender, paste(temp_dec, collapse = ""), num)]][[as.character(i)]] <- getEndings(ft, above = 0)
+          max_endings[[paste0(temp_gender, paste(temp_dec, collapse = ""), num)]][[as.character(i)]] <- maxSuf(ft)
+        }
   
         # Create vector to be added to data frame of representative endings
         to_add <- paste0(gender, num, case)
@@ -450,13 +462,7 @@ checkSame <- function(system, to_search) {
   return(sum(equal_vector)/length(equal_vector)*100)
 }
 
-to_compare <- c("n.Sg,m.Sg", "n.Pl,m.Pl", "n.Pl,f.Sg", "n.Pl,f.Pl", 
-                "m.Pl,f.Pl", "1,5", "2,4", "2Sg,4Sg", "2Pl,4Pl",
-                "n[24]Sg,m[24]Sg", "n[24]Pl,m[24]Pl",
-                "n[24]Pl,f1Sg", "n[24]Pl,f1Pl",
-                "m[24]Pl,f1Sg", "m[24]Pl,f1Pl")
-if (ncases > 2) {
-  to_compare <- c(to_compare, "n.Sg(Nom|Acc),m.Sg(Nom|Acc)",
+to_compare <- c("n.Sg(Nom|Acc),m.Sg(Nom|Acc)",
                 "n.Pl(Nom|Acc),m.Pl(Nom|Acc)",
                 "n.Pl(Nom|Acc),f.Sg(Nom|Acc)",
                 "n.Pl(Nom|Acc),f.Pl(Nom|Acc)",
@@ -470,9 +476,12 @@ if (ncases > 2) {
                 "n[24]Pl(Nom|Acc),f1Pl(Nom|Acc)", 
                 "m[24]Pl(Nom|Acc),f1Sg(Nom|Acc)",
                 "m[24]Pl(Nom|Acc),f1Pl(Nom|Acc)")
+if (ncases == 2) { to_compare <- gsub("\\(Nom\\|Acc\\)", "", to_compare) 
+} else {
   if (ncases == 3) { to_compare <- c(to_compare, gsub("Nom", "Gen", to_compare), gsub("Acc", "Gen", to_compare))
   # Check Nom/Acc, Acc/Abl, Nom/Acc/Abl
-  } else if (ncases == 5) to_compare <- c(to_compare, gsub("Nom", "Abl", to_compare), gsub("Acc", "Acc|Abl", to_compare))
+  } else if (ncases == 5) to_compare <- c(to_compare, gsub("(Nom|Acc)", "", to_compare), gsub("Nom", "Abl", to_compare), gsub("Acc", "Acc|Abl", to_compare))
+  to_compare <- c(to_compare, gsub("\\(Nom\\|Acc\\)", "", to_compare))
 }
 
 # to_compare <- c(to_compare, gsub("\\.", "[124]", to_compare[!grepl("[[:digit:]]", to_compare)]))
@@ -528,17 +537,18 @@ for (comparison_name in names(comparisons)) {
 # Now we want to observe how many obey certain trends
 # First overall trends
 trends <- c(# Trends by Nom/Acc
-            "1Sg(Nom|Acc)_a($|,)", "[24]Sg(Nom|Acc)_o($|,)", "3Sg(Nom|Acc)_[e-]($|,)", "3Pl(Nom|Acc)_e?s($|,)", "[124]Pl(Nom|Acc)_s($|,)", "[24]Pl(Nom|Acc)_os($|,)", "1Pl(Nom|Acc)_as($|,)", "n.Pl(Nom|Acc)_a($|,)", "n.Pl(Nom|Acc)_as($|,)", "n.Pl(Nom|Acc)_os($|,)", "m.Pl(Nom|Acc)_as($|,)", "m.Pl(Nom|Acc)_os($|,)", "Pl(Nom|Acc)_s($|,)")
+            "Sg(Nom|Acc)_nots", "1Sg(Nom|Acc)_a($|,)", "[24]Sg(Nom|Acc)_o($|,)", "3Sg(Nom|Acc)_[e-]($|,)",
+            "Pl(Nom|Acc)_s($|,)", "[mf].Pl(Nom|Acc)_s($|,)", "[124]Pl(Nom|Acc)_s($|,)", "1Pl(Nom|Acc)_s($|,)", "[24]Pl(Nom|Acc)_s($|,)", "n.Pl(Nom|Acc)_s($|,)", 
+            "1Pl(Nom|Acc)_as($|,)", "[24]Pl(Nom|Acc)_os($|,)", "3Pl(Nom|Acc)_e?s($|,)", "n.Pl(Nom|Acc)_a($|,)", "n.Pl(Nom|Acc)_as($|,)", "n.Pl(Nom|Acc)_os($|,)", "m.Pl(Nom|Acc)_as($|,)", "m.Pl(Nom|Acc)_os($|,)")
 
 # Check Nom/Acc, Acc/Gen, Nom/Gen, Nom/Acc/Gen
-if (ncases == 3) { trends <- c(trends, gsub("Nom", "Gen", trends), gsub("Acc", "Gen", trends))
+if (ncases == 2) { trends <- gsub("\\(Nom\\|Acc\\)", "", trends)
+  } else {
+    if (ncases == 3) { trends <- c(trends, gsub("Nom", "Gen", trends), gsub("Acc", "Gen", trends))
 # Check Nom/Acc, Acc/Abl, Nom/Acc/Abl
-} else if (ncases == 5) trends <- c(trends, gsub("Nom", "Abl", trends), gsub("Acc", "Acc|Abl", trends), "1Sg(Gen|Dat)_e($|,)", "Pl(Gen|Dat)_s($|,)", "[124]Pl(Gen|Dat)_s($|,)")
-
-# Add general trends
-trends <- c(trends, "Sg_nots", "Pl_s($|,)", "[mf].Pl_s($|,)", "[124]Pl_s($|,)", "n.Pl_s($|,)",
-            "1Sg_a($|,)", "[24]Sg_o($|,)", "3Sg_[e-]($|,)", "3Pl_e?s",
-            "[24]Pl_os($|,)", "1Pl_as($|,)", "n.Pl_a($|,)", "n.Pl_as($|,)", "n.Pl_os($|,)", "m.Pl_as($|,)", "m.Pl_os($|,)")
+  } else if (ncases == 5) trends <- c(trends, gsub("Nom", "Abl", trends), gsub("Acc", "Acc|Abl", trends), "1Sg(Gen|Dat)_e($|,)", "Pl(Gen|Dat)_s($|,)", "[124]Pl(Gen|Dat)_s($|,)")
+  trends <- c(trends, gsub("\\(Nom\\|Acc\\)", "", trends))
+}
 
 trend_distribs <- list()
 
@@ -552,7 +562,6 @@ for (trend in trends) {
     sub_sys <- sub_sys[!is.na(sub_sys)]
     if (ending == "nots") { trend_success <- c(trend_success, sum(!grepl("s($|,)", sub_sys))/length(sub_sys)*100)
     } else trend_success <- c(trend_success, sum(grepl(ending, sub_sys))/length(sub_sys)*100)
-    # if (trend == "n.Pl(Nom|Acc)_as($|,)" & round(sum(grepl(ending, sub_sys))/length(sub_sys)*100, digits = 5) == 66.66667) print(sub_sys)
   }
   trend_distrib <- count(trend_success)
   colnames(trend_distrib)[1] <- "Percent_Match"
@@ -665,5 +674,73 @@ fmnPl_someequal_intersect <- mapply(intersect, fnPl_someequal_intersect, m24Pl_e
 fmnPl_someequal <- unlist(lapply(fmnPl_someequal_intersect, function(x) length(x) != 0))
 print(paste0("fPl, mPl, and nPl at least partially match ", sum(fmnPl_someequal)/length(fmnPl_someequal)*100, "% of the time"))
 print(paste("Endings that overlap are", paste(unlist(fmnPl_someequal_intersect), collapse = ","), "in trials", paste(names(unlist(fmnPl_someequal_intersect)), collapse = ",")))
+
+### Now looking at ALL endings
+# Pl ending in as
+print(paste(sum(grepl("as($|,)", all_endings$f135Pl))/length(files)*100, "percent of trials contain fPl (135) ending in -as. Those trials are", paste(grep("as($|,)", all_endings$f135Pl), collapse = ",")))
+print(paste(sum(grepl("as($|,)", all_endings$nPl))/length(files)*100, "percent of trials contain nPl ending in -as. Those trials are", paste(grep("as($|,)", all_endings$nPl), collapse = ",")))
+print(paste(sum(grepl("as($|,)", all_endings$m234Pl))/length(files)*100, "percent of trials contain mPl (234) ending in -as. Those trials are", paste(grep("as($|,)", all_endings$m234Pl), collapse = ",")))
+print(paste(sum(grepl("as($|,)", all_endings$m2345Pl))/length(files)*100, "percent of trials contain mPl (2345) ending in -as. Those trials are", paste(grep("as($|,)", all_endings$m2345Pl), collapse = ",")))
+
+# Pl ending in os
+print(paste(sum(grepl("os($|,)", all_endings$f135Pl))/length(files)*100, "percent of trials contain fPl (135) ending in -os. Those trials are", paste(grep("os($|,)", all_endings$f135Pl), collapse = ",")))
+print(paste(sum(grepl("os($|,)", all_endings$nPl))/length(files)*100, "percent of trials contain nPl ending in -os. Those trials are", paste(grep("os($|,)", all_endings$nPl), collapse = ",")))
+print(paste(sum(grepl("os($|,)", all_endings$m234Pl))/length(files)*100, "percent of trials contain mPl (234) ending in -os. Those trials are", paste(grep("os($|,)", all_endings$m234Pl), collapse = ",")))
+print(paste(sum(grepl("os($|,)", all_endings$m2345Pl))/length(files)*100, "percent of trials contain mPl (2345) ending in -os. Those trials are", paste(grep("os($|,)", all_endings$m2345Pl), collapse = ",")))
+
+# Pl ending in s
+print(paste(sum(grepl("s($|,)", all_endings$fPl))/length(files)*100, "percent of trials contain fPl ending in -s. Those trials are", paste(grep("s($|,)", all_endings$fPl), collapse = ",")))
+print(paste(sum(grepl("s($|,)", all_endings$nPl))/length(files)*100, "percent of trials contain nPl ending in -s. Those trials are", paste(grep("s($|,)", all_endings$nPl), collapse = ",")))
+print(paste(sum(grepl("s($|,)", all_endings$mPl))/length(files)*100, "percent of trials contain mPl ending in -s. Those trials are", paste(grep("s($|,)", all_endings$mPl), collapse = ",")))
+
+# Pl ending in a
+print(paste(sum(grepl("a($|,)", all_endings$f135Pl))/length(files)*100, "percent of trials contain fPl (135) ending in -a. Those trials are", paste(grep("a($|,)", all_endings$f135Pl), collapse = ",")))
+print(paste(sum(grepl("a($|,)", all_endings$nPl))/length(files)*100, "percent of trials contain nPl ending in -a. Those trials are", paste(grep("a($|,)", all_endings$nPl), collapse = ",")))
+print(paste(sum(grepl("a($|,)", all_endings$m234Pl))/length(files)*100, "percent of trials contain mPl (234) ending in -a. Those trials are", paste(grep("a($|,)", all_endings$m234Pl), collapse = ",")))
+print(paste(sum(grepl("a($|,)", all_endings$m2345Pl))/length(files)*100, "percent of trials contain mPl (2345) ending in -a. Those trials are", paste(grep("a($|,)", all_endings$m2345Pl), collapse = ",")))
+
+# Pl ending in e
+print(paste(sum(grepl("e($|,)", all_endings$f1Pl))/length(files)*100, "percent of trials contain fPl (1) ending in -e. Those trials are", paste(grep("e($|,)", all_endings$f1Pl), collapse = ",")))
+print(paste(sum(grepl("e($|,)", all_endings$f135Pl))/length(files)*100, "percent of trials contain fPl (135) ending in -e. Those trials are", paste(grep("e($|,)", all_endings$f135Pl), collapse = ",")))
+print(paste(sum(grepl("e($|,)", all_endings$n3Pl))/length(files)*100, "percent of trials contain nPl (3) ending in -e. Those trials are", paste(grep("e($|,)", all_endings$n3Pl), collapse = ",")))
+print(paste(sum(grepl("e($|,)", all_endings$n24Pl))/length(files)*100, "percent of trials contain nPl (24) ending in -e. Those trials are", paste(grep("e($|,)", all_endings$n24Pl), collapse = ",")))
+print(paste(sum(grepl("e($|,)", all_endings$nPl))/length(files)*100, "percent of trials contain nPl ending in -e. Those trials are", paste(grep("e($|,)", all_endings$nPl), collapse = ",")))
+print(paste(sum(grepl("e($|,)", all_endings$m3Pl))/length(files)*100, "percent of trials contain mPl (3) ending in -e. Those trials are", paste(grep("e($|,)", all_endings$m3Pl), collapse = ",")))
+print(paste(sum(grepl("e($|,)", all_endings$m24Pl))/length(files)*100, "percent of trials contain mPl (24) ending in -e. Those trials are", paste(grep("e($|,)", all_endings$m24Pl), collapse = ",")))
+print(paste(sum(grepl("e($|,)", all_endings$m234Pl))/length(files)*100, "percent of trials contain mPl (234) ending in -e. Those trials are", paste(grep("e($|,)", all_endings$m234Pl), collapse = ",")))
+print(paste(sum(grepl("e($|,)", all_endings$m2345Pl))/length(files)*100, "percent of trials contain mPl (2345) ending in -e. Those trials are", paste(grep("e($|,)", all_endings$m2345Pl), collapse = ",")))
+
+# Sg ending in a
+print(paste(sum(grepl("a($|,)", all_endings$f1Sg))/length(files)*100, "percent of trials contain fSg (1) ending in -a. Those trials are", paste(grep("a($|,)", all_endings$f1Sg), collapse = ",")))
+print(paste(sum(grepl("a($|,)", all_endings$f5Sg))/length(files)*100, "percent of trials contain fSg (5) ending in -a. Those trials are", paste(grep("a($|,)", all_endings$f5Sg), collapse = ",")))
+print(paste(sum(grepl("a($|,)", all_endings$f3Sg))/length(files)*100, "percent of trials contain fSg (3) ending in -a. Those trials are", paste(grep("a($|,)", all_endings$f3Sg), collapse = ",")))
+print(paste(sum(grepl("a($|,)", all_endings$nSg))/length(files)*100, "percent of trials contain nSg ending in -a. Those trials are", paste(grep("a($|,)", all_endings$nPl), collapse = ",")))
+print(paste(sum(grepl("a($|,)", all_endings$m234Sg))/length(files)*100, "percent of trials contain mSg (234) ending in -a. Those trials are", paste(grep("a($|,)", all_endings$m234Sg), collapse = ",")))
+print(paste(sum(grepl("a($|,)", all_endings$m2345Sg))/length(files)*100, "percent of trials contain mSg (2345) ending in -a. Those trials are", paste(grep("a($|,)", all_endings$m2345Sg), collapse = ",")))
+
+# Sg ending in o
+print(paste(sum(grepl("o($|,)", all_endings$f1Sg))/length(files)*100, "percent of trials contain fSg (1) ending in -o. Those trials are", paste(grep("o($|,)", all_endings$f1Sg), collapse = ",")))
+print(paste(sum(grepl("o($|,)", all_endings$nSg))/length(files)*100, "percent of trials contain nSg ending in -o. Those trials are", paste(grep("o($|,)", all_endings$nPl), collapse = ",")))
+print(paste(sum(grepl("o($|,)", all_endings$m24Sg))/length(files)*100, "percent of trials contain mSg (24) ending in -o. Those trials are", paste(grep("o($|,)", all_endings$m24Sg), collapse = ",")))
+print(paste(sum(grepl("o($|,)", all_endings$m2345Sg))/length(files)*100, "percent of trials contain mSg (2345) ending in -o. Those trials are", paste(grep("o($|,)", all_endings$m2345Sg), collapse = ",")))
+
+# Sg ending in e
+print(paste(sum(grepl("e($|,)", all_endings$f1Sg))/length(files)*100, "percent of trials contain fSg (1) ending in -e. Those trials are", paste(grep("e($|,)", all_endings$f1Sg), collapse = ",")))
+print(paste(sum(grepl("e($|,)", all_endings$f135Sg))/length(files)*100, "percent of trials contain fSg (135) ending in -e. Those trials are", paste(grep("e($|,)", all_endings$f135Sg), collapse = ",")))
+print(paste(sum(grepl("e($|,)", all_endings$n3Sg))/length(files)*100, "percent of trials contain nSg (3) ending in -e. Those trials are", paste(grep("e($|,)", all_endings$n3Sg), collapse = ",")))
+print(paste(sum(grepl("e($|,)", all_endings$n24Sg))/length(files)*100, "percent of trials contain nSg (24) ending in -e. Those trials are", paste(grep("e($|,)", all_endings$n24Sg), collapse = ",")))
+print(paste(sum(grepl("e($|,)", all_endings$nSg))/length(files)*100, "percent of trials contain nSg ending in -e. Those trials are", paste(grep("e($|,)", all_endings$nSg), collapse = ",")))
+print(paste(sum(grepl("e($|,)", all_endings$m3Sg))/length(files)*100, "percent of trials contain mSg (3) ending in -e. Those trials are", paste(grep("e($|,)", all_endings$m3Sg), collapse = ",")))
+print(paste(sum(grepl("e($|,)", all_endings$m24Sg))/length(files)*100, "percent of trials contain mSg (24) ending in -e. Those trials are", paste(grep("e($|,)", all_endings$m24Sg), collapse = ",")))
+print(paste(sum(grepl("e($|,)", all_endings$m234Sg))/length(files)*100, "percent of trials contain mSg (234) ending in -e. Those trials are", paste(grep("e($|,)", all_endings$m234Sg), collapse = ",")))
+print(paste(sum(grepl("e($|,)", all_endings$m2345Sg))/length(files)*100, "percent of trials contain mSg (2345) ending in -e. Those trials are", paste(grep("e($|,)", all_endings$m2345Sg), collapse = ",")))
+
+# Trials that contain all of these?
+sum(grepl("as($|,)", all_endings$fPl) & grepl("os($|,)", all_endings$mPl) & grepl("os($|,)", all_endings$nPl))
+sum(grepl("as($|,)", all_endings$fPl) & grepl("s($|,)", all_endings$mPl) & grepl("s($|,)", all_endings$nPl))
+sum(grepl("s($|,)", all_endings$fPl) & grepl("s($|,)", all_endings$mPl) & grepl("s($|,)", all_endings$nPl))
+sum(grepl("as($|,)", all_endings$fPl) & grepl("s($|,)", all_endings$mPl) & grepl("a($|,)", all_endings$nPl))
+sum(grepl("as($|,)", all_endings$fPl) & grepl("s($|,)", all_endings$mPl) & grepl("as($|,)", all_endings$nPl))
+sum(grepl("as($|,)", all_endings$fPl) & grepl("as($|,)", all_endings$mPl) & grepl("as($|,)", all_endings$nPl))
 
 ```
